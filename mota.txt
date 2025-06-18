@@ -1,0 +1,162 @@
+Giới thiệu trang web
+Đây là một website thương mại điện tử chuyên về các sản phẩm công nghệ, điện tử, gia dụng, phụ kiện, thời trang... Ứng dụng được xây dựng với mục tiêu cung cấp trải nghiệm mua sắm trực tuyến hiện đại, dễ sử dụng, quản lý hiệu quả cho cả khách hàng và quản trị viên.
+Trang web sử dụng công nghệ Laravel (PHP) cho backend, kết hợp với hệ thống quản trị (admin) và giao diện người dùng (client) rõ ràng, trực quan.
+Chức năng chính của hệ thống
+1. Chức năng dành cho khách hàng (Client/User)
+Đăng ký, đăng nhập, đăng xuất: Người dùng có thể tạo tài khoản, đăng nhập, đăng xuất an toàn.
+Quản lý tài khoản cá nhân: Xem, cập nhật thông tin cá nhân, đổi mật khẩu.
+Quản lý địa chỉ giao hàng: Thêm, sửa, xóa, chọn địa chỉ mặc định khi đặt hàng.
+Xem danh mục sản phẩm: Duyệt các danh mục như điện thoại, laptop, phụ kiện, đồng hồ, tủ lạnh, máy lạnh, máy giặt, thời trang...
+Tìm kiếm, lọc, sắp xếp sản phẩm: Theo tên, giá, danh mục, sản phẩm nổi bật...
+Xem chi tiết sản phẩm: Hình ảnh, mô tả, giá, thông số, sản phẩm liên quan.
+Thêm vào giỏ hàng: Quản lý giỏ hàng, cập nhật số lượng, xóa sản phẩm.
+Đặt hàng/Thanh toán: Chọn địa chỉ, phương thức thanh toán (COD, chuyển khoản, ví điện tử...), xác nhận đơn hàng.
+Xem lịch sử đơn hàng: Theo dõi trạng thái đơn hàng, xem chi tiết từng đơn, in hóa đơn.
+Đổi ngôn ngữ: Hỗ trợ đa ngôn ngữ (Việt/Anh).
+2. Chức năng dành cho quản trị viên (Admin)
+Đăng nhập quản trị: Chỉ admin mới truy cập được trang quản trị.
+Dashboard thống kê:
+Tổng số đơn hàng, doanh thu, số khách hàng, sản phẩm bán chạy.
+Biểu đồ trực quan: doanh thu, trạng thái đơn hàng, số lượng đơn theo ngày, top sản phẩm...
+Lọc thống kê theo thời gian.
+Quản lý danh mục sản phẩm: Thêm, sửa, xóa, sắp xếp danh mục, chọn danh mục cha/con.
+Quản lý sản phẩm: Thêm mới, chỉnh sửa, xóa, cập nhật trạng thái hiển thị, sản phẩm nổi bật, hình ảnh, mô tả, giá, tồn kho...
+Quản lý đơn hàng:
+Xem danh sách, lọc theo ngày, khách hàng, trạng thái.
+Xem chi tiết đơn hàng, cập nhật trạng thái (chờ xử lý, đang xử lý, đang giao, hoàn thành, hủy).
+Xem thông tin khách hàng, địa chỉ giao hàng, sản phẩm trong đơn.
+Quản lý người dùng: Xem danh sách, chi tiết, xóa, phân quyền admin, tìm kiếm người dùng.
+Quản lý banner, quảng cáo: Thêm, sửa, xóa banner hiển thị trên trang chủ.
+Quản lý các section trang chủ: Tùy chỉnh các khu vực nổi bật, danh mục, sản phẩm nổi bật trên trang chủ.
+Quản lý cấu hình website: Thay đổi logo, tên website, mô tả, thông tin liên hệ...
+Quản lý đa ngôn ngữ: Thay đổi nội dung hiển thị theo ngôn ngữ.
+Công nghệ sử dụng
+Backend: Laravel (PHP)
+Frontend: Blade template, Bootstrap, Chart.js (biểu đồ), jQuery
+Database: MySQL/MariaDB
+Quản lý file: Laravel File Manager
+Hệ thống đa ngôn ngữ: Laravel Localization
+Bảo mật: Xác thực, phân quyền, CSRF, validation...
+Tóm tắt giá trị ứng dụng
+Dễ sử dụng cho cả khách hàng và quản trị viên.
+Quản lý sản phẩm, đơn hàng, khách hàng hiệu quả.
+Thống kê, báo cáo trực quan giúp admin nắm bắt tình hình kinh doanh.
+Mở rộng dễ dàng cho nhiều loại sản phẩm, danh mục, tính năng mới.
+
+
+1. Tác nhân: Client (Khách hàng)
+1.1. Đăng ký tài khoản
+Mục đích: Tạo tài khoản mới để sử dụng các chức năng mua sắm.
+Luồng:
+Người dùng truy cập trang đăng ký.
+Nhập thông tin (họ tên, email, mật khẩu...).
+Hệ thống kiểm tra hợp lệ, lưu vào DB.
+Đăng nhập tự động hoặc chuyển sang trang đăng nhập.
+1.2. Đăng nhập/Đăng xuất
+Mục đích: Xác thực người dùng để sử dụng các chức năng cá nhân.
+Luồng:
+Người dùng nhập email/mật khẩu.
+Hệ thống xác thực, tạo session.
+Đăng xuất: xóa session, chuyển về trang chủ.
+1.3. Quản lý tài khoản cá nhân
+Mục đích: Xem, cập nhật thông tin cá nhân, đổi mật khẩu.
+Luồng:
+Người dùng vào trang tài khoản.
+Xem thông tin, cập nhật, lưu thay đổi.
+1.4. Quản lý địa chỉ giao hàng
+Mục đích: Thêm, sửa, xóa, chọn địa chỉ mặc định.
+Luồng:
+Người dùng vào trang địa chỉ.
+Thêm/sửa/xóa địa chỉ.
+Chọn địa chỉ mặc định khi đặt hàng.
+1.5. Duyệt, tìm kiếm, lọc sản phẩm
+Mục đích: Xem danh sách sản phẩm, lọc theo danh mục, giá, tên, nổi bật...
+Luồng:
+Người dùng vào trang sản phẩm/danh mục.
+Sử dụng bộ lọc, tìm kiếm, sắp xếp.
+Xem chi tiết sản phẩm.
+1.6. Quản lý giỏ hàng
+Mục đích: Thêm, sửa, xóa sản phẩm trong giỏ.
+Luồng:
+Thêm sản phẩm vào giỏ.
+Xem giỏ hàng, cập nhật số lượng, xóa sản phẩm.
+1.7. Đặt hàng/Thanh toán
+Mục đích: Đặt mua sản phẩm, chọn địa chỉ, phương thức thanh toán.
+Luồng:
+Chọn sản phẩm, vào giỏ hàng.
+Chọn địa chỉ giao hàng, phương thức thanh toán.
+Xác nhận đặt hàng.
+Hệ thống tạo đơn hàng, gửi thông báo.
+1.8. Xem lịch sử đơn hàng
+Mục đích: Theo dõi trạng thái, xem chi tiết đơn hàng đã đặt.
+Luồng:
+Vào trang lịch sử đơn hàng.
+Xem danh sách, chi tiết từng đơn, trạng thái, in hóa đơn.
+1.9. Đổi ngôn ngữ
+Mục đích: Chuyển đổi giao diện giữa các ngôn ngữ (Việt/Anh).
+Luồng:
+Chọn ngôn ngữ trên giao diện.
+Hệ thống đổi toàn bộ nội dung sang ngôn ngữ đã chọn.
+2. Tác nhân: Admin (Quản trị viên)
+2.1. Đăng nhập quản trị
+Mục đích: Chỉ admin mới truy cập được trang quản trị.
+Luồng:
+Nhập email/mật khẩu.
+Hệ thống xác thực quyền admin.
+2.2. Dashboard thống kê
+Mục đích: Xem tổng quan hoạt động kinh doanh.
+Luồng:
+Truy cập dashboard.
+Xem tổng số đơn, doanh thu, số khách hàng, sản phẩm bán chạy.
+Xem biểu đồ doanh thu, trạng thái đơn, lọc theo thời gian.
+2.3. Quản lý danh mục sản phẩm
+Mục đích: Thêm, sửa, xóa, sắp xếp danh mục.
+Luồng:
+Vào trang danh mục.
+Thêm mới, chỉnh sửa, xóa, sắp xếp thứ tự, chọn danh mục cha/con.
+2.4. Quản lý sản phẩm
+Mục đích: Thêm, sửa, xóa, cập nhật trạng thái, hình ảnh, mô tả, giá, tồn kho...
+Luồng:
+Vào trang sản phẩm.
+Thêm mới, chỉnh sửa, xóa, cập nhật trạng thái hiển thị/nổi bật.
+2.5. Quản lý đơn hàng
+Mục đích: Xem, lọc, cập nhật trạng thái đơn hàng.
+Luồng:
+Vào trang đơn hàng.
+Lọc theo ngày, khách hàng, trạng thái.
+Xem chi tiết, cập nhật trạng thái (chờ xử lý, đang xử lý, đang giao, hoàn thành, hủy).
+2.6. Quản lý người dùng
+Mục đích: Xem, tìm kiếm, xóa, phân quyền admin.
+Luồng:
+Vào trang người dùng.
+Xem danh sách, chi tiết, xóa, chuyển đổi quyền admin.
+2.7. Quản lý banner, quảng cáo
+Mục đích: Thêm, sửa, xóa banner hiển thị trên trang chủ.
+Luồng:
+Vào trang banner.
+Thêm mới, chỉnh sửa, xóa, sắp xếp thứ tự hiển thị.
+2.8. Quản lý các section trang chủ
+Mục đích: Tùy chỉnh các khu vực nổi bật, danh mục, sản phẩm nổi bật trên trang chủ.
+Luồng:
+Vào trang quản lý section.
+Thêm, sửa, xóa, sắp xếp section.
+2.9. Quản lý cấu hình website
+Mục đích: Thay đổi logo, tên website, mô tả, thông tin liên hệ...
+Luồng:
+Vào trang cấu hình.
+Cập nhật thông tin, lưu thay đổi.
+2.10. Quản lý đa ngôn ngữ
+Mục đích: Thay đổi nội dung hiển thị theo ngôn ngữ.
+Luồng:
+Vào trang quản lý ngôn ngữ.
+Thêm, sửa, xóa bản dịch.
+Gợi ý vẽ sơ đồ Use Case
+Tác nhân Client: Đăng ký, Đăng nhập, Quản lý tài khoản, Quản lý địa chỉ, Duyệt sản phẩm, Quản lý giỏ hàng, Đặt hàng, Xem lịch sử đơn hàng, Đổi ngôn ngữ.
+Tác nhân Admin: Đăng nhập, Dashboard, Quản lý danh mục, Quản lý sản phẩm, Quản lý đơn hàng, Quản lý người dùng, Quản lý banner, Quản lý section, Quản lý cấu hình, Quản lý ngôn ngữ.
+Gợi ý vẽ sơ đồ tuần tự (Sequence Diagram)
+Đặt hàng (Client):
+Client → Sản phẩm → Giỏ hàng → Địa chỉ → Đặt hàng → Hệ thống tạo đơn → Xác nhận → Thông báo
+Cập nhật trạng thái đơn hàng (Admin):
+Admin → Đơn hàng → Chọn đơn → Cập nhật trạng thái → Hệ thống lưu DB → Thông báo cho khách hàng
+Thêm sản phẩm (Admin):
+Admin → Trang sản phẩm → Nhập thông tin → Lưu → Hệ thống kiểm tra → Lưu DB → Hiển thị sản phẩm mới

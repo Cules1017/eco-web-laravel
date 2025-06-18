@@ -1,0 +1,11 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Hãy đọc kỹ src rồi mới bắt đầu thực hiện.
+Không được tác động tới cấu trúc DB tất cả mọi thứ đã thiết kế chuẩn bạn hãy Chỉnh code.
+Hãy tận dụng những thức có sẳn để code được đồng bộ.
+Hãy sáng tạo trong việc xây dựng giao diện, điều quan trọng hơn là giao diện phải đồng nhất.
+
+Điều quan trọng là khi bạn chỉnh sửa không làm hỏng tính năng đã có.
