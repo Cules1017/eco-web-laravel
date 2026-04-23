@@ -1,5 +1,11 @@
 @php
-    $logo = config('settings.logo') ?? 'https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg';
+    use App\Models\Setting;
+    $logoRaw = Setting::getValue('site_logo');
+    $logo = null;
+    if ($logoRaw) {
+        $logo = str_starts_with($logoRaw, 'http') ? $logoRaw : asset('storage/' . ltrim($logoRaw, '/'));
+    }
+    $siteName = Setting::getValue('site_name', config('app.name', 'Venshop'));
 @endphp
 
 @extends('layouts.eshopper')
@@ -7,20 +13,25 @@
 @section('title', __('messages.register'))
 
 @section('content')
-<div class="d-flex justify-content-center align-items-center min-vh-100 bg-light">
-    <div class="w-100" style="max-width: 450px;">
+<div class="vs-auth-wrapper">
+    <div class="vs-auth-card wide">
         <div class="text-center mb-4">
-            <img src="{{ $logo }}" alt="Logo" style="max-height: 60px;">
+            @if($logo)
+                <img src="{{ $logo }}" alt="{{ $siteName }}" style="max-height: 60px;">
+            @else
+                <div class="vs-auth-brand"><i class="fas fa-user-plus"></i></div>
+            @endif
+            <h3 class="fw-bold mt-3 mb-1">{{ __('messages.register') }}</h3>
+            <p class="text-muted mb-0" style="font-size: 0.95rem;">Tạo tài khoản để mua sắm dễ dàng hơn</p>
         </div>
-        <div class="card shadow-sm">
-            <div class="card-body">
-                <h3 class="text-center mb-3">{{ __('messages.register') }}</h3>
-                @if(session('error'))
-                    <div class="alert alert-danger">{{ session('error') }}</div>
-                @endif
-                @if(session('success'))
-                    <div class="alert alert-success">{{ session('success') }}</div>
-                @endif
+
+        @if(session('error'))
+            <div class="alert alert-danger">{{ session('error') }}</div>
+        @endif
+        @if(session('success'))
+            <div class="alert alert-success">{{ session('success') }}</div>
+        @endif
+        <div class="auth-form-body">
                 <form method="POST" action="{{ route('register') }}">
                     @csrf
                     <div class="row">
@@ -44,7 +55,7 @@
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="username" class="form-label">Username</label>
+                        <label for="username" class="form-label">{{ __('messages.username') }}</label>
                         <input id="username" type="text" class="form-control @error('username') is-invalid @enderror" name="username" value="{{ old('username') }}" required>
                         @error('username')
                             <span class="invalid-feedback" role="alert">
@@ -129,23 +140,29 @@
                             @enderror
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-warning w-100 mb-2">{{ __('messages.register') }}</button>
+                    <button type="submit" class="btn btn-primary w-100 mb-2 py-2">
+                        <i class="fas fa-user-plus me-1"></i> {{ __('messages.register') }}
+                    </button>
                 </form>
-                <div class="text-center mt-3">
-                    <a href="{{ route('login') }}" class="btn btn-outline-secondary w-100">{{ __('messages.login') }}</a>
+
+                <div class="text-center mt-3 text-muted" style="font-size: 0.9rem;">
+                    Đã có tài khoản?
+                    <a href="{{ route('login') }}" class="fw-semibold text-decoration-none" style="color: var(--vs-primary);">
+                        {{ __('messages.login') }}
+                    </a>
                 </div>
+
                 <div class="text-center mt-3">
-                    <form action="{{ route('language.switch', ['locale' => app()->getLocale() === 'en' ? 'vi' : 'en']) }}" method="get" style="display:inline;">
-                        <button type="submit" class="btn btn-link p-0 border-0 align-baseline">
-                            <span class="me-1">🌐</span>
-                            {{ app()->getLocale() === 'en' ? 'Tiếng Việt' : 'English' }}
-                        </button>
-                    </form>
+                    <a href="{{ route('language.switch', ['locale' => app()->getLocale() === 'en' ? 'vi' : 'en']) }}"
+                       class="btn btn-link p-0 text-muted text-decoration-none" style="font-size: 0.85rem;">
+                        <i class="fas fa-globe me-1"></i>
+                        {{ app()->getLocale() === 'en' ? 'Tiếng Việt' : 'English' }}
+                    </a>
                 </div>
-            </div>
-        </div>
-        <div class="text-center mt-4 text-muted small">
-            &copy; {{ date('Y') }} {{ config('app.name', 'Your App') }}
+
+                <div class="text-center mt-4 text-muted small">
+                    &copy; {{ date('Y') }} {{ $siteName }}
+                </div>
         </div>
     </div>
 </div>

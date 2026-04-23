@@ -8,7 +8,7 @@
     $featuredCategories = \App\Models\Category::whereNull('parent_id')->where('is_active', true)->orderBy('order')->get();
 @endphp
 @if($banners->count())
-<div class="mb-5" style="padding-top: 100px;">
+<div class="mb-5">
     <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             @foreach($banners as $i => $banner)
@@ -34,7 +34,6 @@
     </div>
 </div>
 @endif
-<script>console.log('layout loaded');</script>
 {{-- <div class="row align-items-center mb-5">
     <div class="col-md-7">
         <h1 class="display-4 fw-bold mb-3">{{ __('messages.welcome') }}</h1>
@@ -46,7 +45,7 @@
     </div>
 </div> --}}
 
-<h2 class="mb-4">{{ __('messages.featured_categories') }}</h2>
+<h2 class="vs-section-title">{{ __('messages.featured_categories') }}</h2>
 <div class="featured-categories-scroll mb-5 position-relative">
     <button class="scroll-btn left d-none" type="button" aria-label="Scroll left">
         <svg width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="#fff"/><polyline points="19,9 13,16 19,23" fill="none" stroke="#aaa" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -97,7 +96,7 @@
         </div>
         <div class="row">
             @foreach($section->getProducts() as $product)
-                <div class="col-md-3 col-sm-6 mb-4 flex justify-center">
+                <div class="col-md-3 col-sm-6 mb-4 d-flex justify-content-center">
                     @include('client.products.ProductItem', ['product' => $product])
                 </div>
             @endforeach
@@ -105,21 +104,17 @@
     </div>
 </section>
 @endforeach
-@endsection
 
+@push('styles')
 <style>
     .eshopper-logo { max-height: 50px; }
     .dropdown-menu { z-index: 1051 !important; }
-    .navbar, .container-fluid, .container { position: relative; }
-</style> 
 
-<style>
-    /* Tuỳ chỉnh indicator cho carousel */
+    /* Carousel indicators */
     .carousel-indicators [data-bs-target] {
-        width: 16px;
-        height: 16px;
+        width: 16px; height: 16px;
         border-radius: 4px;
-        background-color: rgba(176, 176, 172, 0.4); /* xám nhạt trong suốt */
+        background-color: rgba(176, 176, 172, 0.4);
         border: none;
         margin: 0 6px;
         opacity: 1;
@@ -128,50 +123,34 @@
         cursor: pointer;
     }
     .carousel-indicators .active {
-        background-color: rgba(50, 205, 50, 0.5); /* xanh lá cây nhạt trong suốt */
-        width: 22px;
-        height: 22px;
+        background-color: rgba(50, 205, 50, 0.5);
+        width: 22px; height: 22px;
         border-radius: 6px;
-        box-shadow: none;
-        opacity: 1;
-        transition: none;
     }
     .carousel-indicators {
         position: absolute;
-        bottom: 23px; /* 18px + 5px nâng lên */
-        left: 0;
-        right: 0;
+        bottom: 23px;
+        left: 0; right: 0;
         display: flex;
         justify-content: center;
         align-items: center;
         z-index: 2;
-        margin: 0;
-        padding: 0;
-        pointer-events: auto;
+        margin: 0; padding: 0;
     }
-    .carousel-indicators [data-bs-target]:focus {
-        outline: none;
-        box-shadow: none;
-    }
+    .carousel-indicators [data-bs-target]:focus,
     .carousel-indicators [data-bs-target]:active {
         outline: none;
         box-shadow: none;
-        background-color: rgba(50, 205, 50, 0.5);
     }
-</style> 
 
-<style>
+    /* Featured categories */
     .featured-category-img {
-        width: 90px;
-        height: 90px;
+        width: 90px; height: 90px;
         object-fit: cover;
         border-radius: 18px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.06);
         background: #fff;
     }
-</style> 
-
-<style>
     .featured-categories-scroll {
         background: #fcfcf7;
         border-radius: 16px;
@@ -189,9 +168,7 @@
         scrollbar-width: thin;
         scrollbar-color: #e0e0e0 #fcfcf7;
     }
-    .featured-cate-grid::-webkit-scrollbar {
-        height: 8px;
-    }
+    .featured-cate-grid::-webkit-scrollbar { height: 8px; }
     .featured-cate-grid::-webkit-scrollbar-thumb {
         background: #e0e0e0;
         border-radius: 4px;
@@ -215,7 +192,14 @@
     @media (max-width: 600px) {
         .featured-cate-grid .text-center { width: 90px !important; }
     }
+
+    .hover-shadow-lg:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.13) !important; }
+    .hover-bg-success-dark:hover { background: #218838 !important; }
+    .btn.bg-transparent:hover,
+    .btn.bg-transparent:focus { background: rgba(0,0,0,0.06) !important; }
 </style>
+@endpush
+
 @push('scripts')
 <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -241,13 +225,5 @@
         }
     });
 </script>
-@endpush 
-
-<style>
-.hover-shadow-lg:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.13)!important; }
-.hover-bg-success-dark:hover { background:#218838!important; }
-</style> 
-
-<style>
-.btn.bg-transparent:hover, .btn.bg-transparent:focus { background:rgba(0,0,0,0.06)!important; }
-</style> 
+@endpush
+@endsection

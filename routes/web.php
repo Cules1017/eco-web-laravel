@@ -17,6 +17,8 @@ use App\Http\Controllers\Admin\BannerController;
 use App\Http\Controllers\Admin\HomeSectionController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Client\AiAssistantController;
+use App\Http\Controllers\Client\PaymentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,6 +36,11 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/products', [ClientProductController::class, 'index'])->name('products.index');
 Route::get('/products/{product:slug}', [ClientProductController::class, 'show'])->name('products.show');
+Route::post('/ai/consult', [AiAssistantController::class, 'consult'])->name('ai.consult');
+
+// MoMo Payment IPN & Return (public, KHÔNG yêu cầu auth)
+Route::post('/payment/momo/ipn', [PaymentController::class, 'momoIpn'])->name('payment.momo.ipn');
+Route::match(['get', 'post'], '/payment/momo/return', [PaymentController::class, 'momoReturn'])->name('payment.momo.return');
 
 // Protected Routes (Login Required)
 Route::middleware(['auth'])->group(function () {
@@ -48,6 +55,16 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/orders', [ClientOrderController::class, 'index'])->name('orders.index');
     Route::get('/orders/{order}', [ClientOrderController::class, 'show'])->name('orders.show');
     Route::post('/orders', [ClientOrderController::class, 'store'])->name('orders.store');
+
+    // MoMo Payment (cần auth)
+    Route::get('/payment/momo/{order}', [PaymentController::class, 'momoShow'])->name('payment.momo.show');
+    Route::get('/payment/momo/{order}/status', [PaymentController::class, 'momoStatus'])->name('payment.momo.status');
+    Route::post('/payment/momo/{order}/mock-success', [PaymentController::class, 'momoMockSuccess'])->name('payment.momo.mock');
+
+    // Bank Transfer Payment (cần auth)
+    Route::get('/payment/bank/{order}', [PaymentController::class, 'bankShow'])->name('payment.bank.show');
+    Route::post('/payment/bank/{order}/notify', [PaymentController::class, 'bankNotify'])->name('payment.bank.notify');
+    Route::post('/payment/bank/{order}/mock-success', [PaymentController::class, 'bankMockSuccess'])->name('payment.bank.mock');
     
     // Address routes
     Route::get('/addresses', [AddressController::class, 'index'])->name('addresses.index');
@@ -77,6 +94,8 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
     Route::resource('products', ProductController::class);
     Route::resource('orders', OrderController::class);
     Route::post('/orders/{order}/update-status', [OrderController::class, 'updateStatus'])->name('orders.updateStatus');
+    Route::post('/orders/{order}/mark-paid', [OrderController::class, 'markPaid'])->name('orders.markPaid');
+    Route::post('/orders/{order}/mark-unpaid', [OrderController::class, 'markUnpaid'])->name('orders.markUnpaid');
     Route::resource('banners', BannerController::class);
 
     // Settings

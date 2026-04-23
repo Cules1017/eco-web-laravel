@@ -1,0 +1,558 @@
+/* ============================================================
+ * Venshop — UI Theme / Design Tokens
+ * Dùng chung cho toàn bộ giao diện khách hàng.
+ * ============================================================ */
+
+:root {
+    --vs-primary: #6366f1;
+    --vs-primary-dark: #4f46e5;
+    --vs-accent: #ec4899;
+    --vs-gradient: linear-gradient(135deg, #6366f1, #ec4899);
+    --vs-gradient-soft: linear-gradient(135deg, #eef2ff, #fdf2f8);
+
+    --vs-success: #16a34a;
+    --vs-success-dark: #15803d;
+    --vs-success-gradient: linear-gradient(135deg, #22c55e, #10b981);
+
+    --vs-danger: #ef4444;
+    --vs-danger-dark: #dc2626;
+
+    --vs-warning: #f59e0b;
+    --vs-warning-dark: #d97706;
+
+    --vs-info: #0ea5e9;
+    --vs-info-dark: #0284c7;
+
+    --vs-secondary: #64748b;
+    --vs-secondary-soft: #f1f5f9;
+
+    --vs-price: #ec4899;
+
+    --vs-text: #0f172a;
+    --vs-text-muted: #64748b;
+    --vs-border: #e5e7eb;
+    --vs-bg: #f8fafc;
+    --vs-bg-soft: #f1f5f9;
+
+    --vs-radius-sm: 8px;
+    --vs-radius: 12px;
+    --vs-radius-lg: 16px;
+    --vs-radius-pill: 999px;
+
+    --vs-shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05);
+    --vs-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+    --vs-shadow-lg: 0 16px 40px rgba(15, 23, 42, 0.12);
+
+    --vs-transition: 0.2s ease;
+}
+
+body {
+    color: var(--vs-text);
+    background: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ============================================================
+ * Button system — qui hoạch màu toàn app
+ * ============================================================
+ * - btn-primary  : CTA chính (mua, thanh toán, lưu, đăng nhập)
+ * - btn-success  : Xác nhận cuối (đặt hàng, xác nhận thành công)
+ * - btn-danger   : Xoá, huỷ phá huỷ
+ * - btn-warning  : Cảnh báo (xoá tài khoản, huỷ đơn)
+ * - btn-secondary: Hành động phụ (Huỷ, Quay lại, Đóng)
+ * - btn-info     : Thông tin phụ
+ * - btn-light    : Neutral trắng
+ * - btn-dark     : Neutral đen
+ * - btn-link     : Text-only link
+ * ============================================================ */
+
+.btn {
+    border-radius: var(--vs-radius-sm);
+    font-weight: 600;
+    border: 1.5px solid transparent;
+    transition: transform var(--vs-transition), box-shadow var(--vs-transition),
+        background var(--vs-transition), color var(--vs-transition),
+        border-color var(--vs-transition);
+}
+.btn:focus,
+.btn:focus-visible {
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25);
+    outline: none;
+}
+.btn:active { transform: translateY(0) !important; }
+.btn:disabled,
+.btn.disabled { opacity: 0.6; cursor: not-allowed; box-shadow: none !important; }
+
+/* ---------- Primary (gradient) ---------- */
+.btn-primary,
+.vs-btn-gradient {
+    background: var(--vs-gradient) !important;
+    border-color: transparent !important;
+    color: #fff !important;
+    box-shadow: 0 6px 14px rgba(99, 102, 241, 0.25);
+}
+.btn-primary:hover,
+.vs-btn-gradient:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 22px rgba(236, 72, 153, 0.32);
+    color: #fff !important;
+}
+.btn-outline-primary {
+    background: transparent !important;
+    border-color: var(--vs-primary) !important;
+    color: var(--vs-primary) !important;
+    box-shadow: none !important;
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary.active,
+.btn-outline-primary.show {
+    background: var(--vs-gradient) !important;
+    border-color: transparent !important;
+    color: #fff !important;
+}
+
+/* ---------- Success (xác nhận cuối) ---------- */
+.btn-success {
+    background: var(--vs-success-gradient) !important;
+    border-color: transparent !important;
+    color: #fff !important;
+    box-shadow: 0 6px 14px rgba(22, 163, 74, 0.22);
+}
+.btn-success:hover,
+.btn-success:focus {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 22px rgba(22, 163, 74, 0.3);
+    color: #fff !important;
+}
+.btn-outline-success {
+    background: transparent !important;
+    border-color: var(--vs-success) !important;
+    color: var(--vs-success) !important;
+}
+.btn-outline-success:hover,
+.btn-outline-success:focus {
+    background: var(--vs-success) !important;
+    border-color: transparent !important;
+    color: #fff !important;
+}
+
+/* ---------- Danger ---------- */
+.btn-danger {
+    background: var(--vs-danger) !important;
+    border-color: var(--vs-danger) !important;
+    color: #fff !important;
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.22);
+}
+.btn-danger:hover,
+.btn-danger:focus {
+    background: var(--vs-danger-dark) !important;
+    border-color: var(--vs-danger-dark) !important;
+    color: #fff !important;
+    transform: translateY(-1px);
+}
+.btn-outline-danger {
+    background: transparent !important;
+    border-color: var(--vs-danger) !important;
+    color: var(--vs-danger) !important;
+}
+.btn-outline-danger:hover,
+.btn-outline-danger:focus {
+    background: var(--vs-danger) !important;
+    color: #fff !important;
+}
+
+/* ---------- Warning ---------- */
+.btn-warning {
+    background: var(--vs-warning) !important;
+    border-color: var(--vs-warning) !important;
+    color: #fff !important;
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.22);
+}
+.btn-warning:hover,
+.btn-warning:focus {
+    background: var(--vs-warning-dark) !important;
+    border-color: var(--vs-warning-dark) !important;
+    color: #fff !important;
+    transform: translateY(-1px);
+}
+.btn-outline-warning {
+    background: transparent !important;
+    border-color: var(--vs-warning) !important;
+    color: var(--vs-warning-dark) !important;
+}
+.btn-outline-warning:hover,
+.btn-outline-warning:focus {
+    background: var(--vs-warning) !important;
+    color: #fff !important;
+}
+
+/* ---------- Info ---------- */
+.btn-info {
+    background: var(--vs-info) !important;
+    border-color: var(--vs-info) !important;
+    color: #fff !important;
+    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.22);
+}
+.btn-info:hover,
+.btn-info:focus {
+    background: var(--vs-info-dark) !important;
+    border-color: var(--vs-info-dark) !important;
+    color: #fff !important;
+    transform: translateY(-1px);
+}
+.btn-outline-info {
+    background: transparent !important;
+    border-color: var(--vs-info) !important;
+    color: var(--vs-info) !important;
+}
+.btn-outline-info:hover,
+.btn-outline-info:focus {
+    background: var(--vs-info) !important;
+    color: #fff !important;
+}
+
+/* ---------- Secondary (hành động phụ: Huỷ, Quay lại) ---------- */
+.btn-secondary {
+    background: var(--vs-secondary-soft) !important;
+    border-color: var(--vs-border) !important;
+    color: var(--vs-text) !important;
+    box-shadow: none !important;
+}
+.btn-secondary:hover,
+.btn-secondary:focus {
+    background: #e2e8f0 !important;
+    border-color: #cbd5e1 !important;
+    color: var(--vs-text) !important;
+}
+.btn-outline-secondary {
+    background: transparent !important;
+    border-color: var(--vs-border) !important;
+    color: var(--vs-text-muted) !important;
+}
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus {
+    background: var(--vs-secondary-soft) !important;
+    border-color: #cbd5e1 !important;
+    color: var(--vs-text) !important;
+}
+
+/* ---------- Light / Dark ---------- */
+.btn-light {
+    background: #fff !important;
+    border-color: var(--vs-border) !important;
+    color: var(--vs-text) !important;
+}
+.btn-light:hover,
+.btn-light:focus {
+    background: var(--vs-bg-soft) !important;
+    color: var(--vs-text) !important;
+}
+.btn-dark {
+    background: var(--vs-text) !important;
+    border-color: var(--vs-text) !important;
+    color: #fff !important;
+}
+.btn-dark:hover,
+.btn-dark:focus {
+    background: #1e293b !important;
+    color: #fff !important;
+}
+
+/* ---------- Link ---------- */
+.btn-link {
+    color: var(--vs-primary) !important;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 4px 6px;
+    box-shadow: none !important;
+}
+.btn-link:hover,
+.btn-link:focus {
+    color: var(--vs-primary-dark) !important;
+    text-decoration: underline;
+}
+
+/* ---------- Button sizes tuning ---------- */
+.btn-lg { padding: 10px 22px; font-size: 1.05rem; }
+.btn-sm { padding: 5px 12px; font-size: 0.85rem; }
+
+/* ---------- Icon-only round buttons (favorite, share, ...) ---------- */
+.vs-icon-btn {
+    width: 42px;
+    height: 42px;
+    padding: 0 !important;
+    border-radius: 50% !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff !important;
+    border: 1px solid var(--vs-border) !important;
+    color: var(--vs-text-muted) !important;
+    box-shadow: var(--vs-shadow-sm) !important;
+    transition: all var(--vs-transition);
+}
+.vs-icon-btn:hover,
+.vs-icon-btn:focus {
+    transform: translateY(-1px);
+    box-shadow: var(--vs-shadow) !important;
+}
+.vs-icon-btn-danger:hover,
+.vs-icon-btn-danger.active {
+    color: var(--vs-danger) !important;
+    border-color: var(--vs-danger) !important;
+}
+.vs-icon-btn-primary:hover,
+.vs-icon-btn-primary.active {
+    color: var(--vs-primary) !important;
+    border-color: var(--vs-primary) !important;
+}
+.vs-icon-btn-success:hover,
+.vs-icon-btn-success.active {
+    color: var(--vs-success) !important;
+    border-color: var(--vs-success) !important;
+}
+
+/* ---------- Section heading ---------- */
+.vs-section-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--vs-text);
+    margin-bottom: 1.25rem;
+    position: relative;
+    padding-left: 14px;
+}
+.vs-section-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    bottom: 6px;
+    width: 4px;
+    border-radius: 4px;
+    background: var(--vs-gradient);
+}
+
+/* ---------- Cards ---------- */
+.card {
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius-lg);
+    box-shadow: var(--vs-shadow-sm);
+}
+.card .card-header {
+    background: #fff;
+    border-bottom: 1px solid var(--vs-border);
+    border-top-left-radius: var(--vs-radius-lg) !important;
+    border-top-right-radius: var(--vs-radius-lg) !important;
+    font-weight: 600;
+}
+
+/* ---------- Form controls ---------- */
+.form-control,
+.form-select {
+    border-radius: var(--vs-radius-sm);
+    border: 1px solid var(--vs-border);
+    transition: border-color var(--vs-transition), box-shadow var(--vs-transition);
+}
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--vs-primary);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+.form-label { font-weight: 500; color: var(--vs-text); }
+
+/* ---------- List group (filter sidebar) ---------- */
+.list-group-item {
+    border: 1px solid var(--vs-border);
+    color: var(--vs-text);
+    transition: background var(--vs-transition);
+}
+.list-group-item.active,
+.list-group-item-action.active {
+    background: var(--vs-gradient) !important;
+    border-color: transparent !important;
+    color: #fff !important;
+    font-weight: 600;
+}
+.list-group-item-action:hover:not(.active) {
+    background: var(--vs-bg-soft);
+}
+
+/* ---------- Pagination ---------- */
+.pagination {
+    gap: 6px;
+}
+.pagination .page-link {
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius-sm) !important;
+    color: var(--vs-text);
+    padding: 8px 14px;
+    font-weight: 500;
+    transition: all var(--vs-transition);
+}
+.pagination .page-link:hover {
+    background: var(--vs-bg-soft);
+    color: var(--vs-primary);
+    border-color: var(--vs-primary);
+}
+.pagination .page-item.active .page-link {
+    background: var(--vs-gradient);
+    border-color: transparent;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(99, 102, 241, 0.25);
+}
+.pagination .page-item.disabled .page-link {
+    color: #cbd5e1;
+    background: #fff;
+}
+
+/* ---------- Alerts ---------- */
+.alert {
+    border: none;
+    border-radius: var(--vs-radius);
+    padding: 12px 16px;
+}
+.alert-success { background: #dcfce7; color: #166534; }
+.alert-danger  { background: #fee2e2; color: #991b1b; }
+.alert-info    { background: #dbeafe; color: #1e40af; }
+
+/* ---------- Tables (cart, orders) ---------- */
+.table {
+    --bs-table-bg: transparent;
+    color: var(--vs-text);
+}
+.table thead th {
+    border-bottom: 2px solid var(--vs-border);
+    font-weight: 600;
+    color: var(--vs-text-muted);
+    text-transform: uppercase;
+    font-size: 0.78rem;
+    letter-spacing: 0.4px;
+}
+.table tbody td { vertical-align: middle; }
+
+/* ---------- Product card modern ---------- */
+.product-card-modern {
+    background: #fff;
+    border-radius: var(--vs-radius-lg);
+    box-shadow: var(--vs-shadow-sm);
+    border: 1px solid var(--vs-border);
+    overflow: hidden;
+    transition: transform var(--vs-transition), box-shadow var(--vs-transition),
+        border-color var(--vs-transition);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.product-card-modern:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--vs-shadow-lg);
+    border-color: var(--vs-primary);
+}
+.product-card-modern .product-price {
+    color: var(--vs-price) !important;
+    font-weight: 700;
+}
+.product-card-modern .btn-modern-cart {
+    background: #fff;
+    color: var(--vs-primary);
+    border: 1.5px solid var(--vs-primary);
+    border-radius: var(--vs-radius-sm);
+    padding: 8px 0;
+    font-weight: 600;
+    transition: all var(--vs-transition);
+    margin-top: auto;
+}
+.product-card-modern .btn-modern-cart:hover {
+    background: var(--vs-gradient);
+    color: #fff;
+    border-color: transparent;
+}
+
+/* ---------- Empty state ---------- */
+.vs-empty-state {
+    text-align: center;
+    padding: 60px 16px;
+}
+.vs-empty-state .vs-empty-icon {
+    width: 88px;
+    height: 88px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: var(--vs-gradient-soft);
+    color: var(--vs-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+}
+
+/* ---------- Auth pages ---------- */
+.vs-auth-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 16px;
+    background: var(--vs-gradient-soft);
+}
+.vs-auth-card {
+    width: 100%;
+    max-width: 440px;
+    background: #fff;
+    border-radius: var(--vs-radius-lg);
+    box-shadow: var(--vs-shadow-lg);
+    padding: 32px 28px;
+}
+.vs-auth-card.wide { max-width: 560px; }
+.vs-auth-brand {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: var(--vs-gradient);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    margin: 0 auto 12px;
+    box-shadow: 0 10px 24px rgba(99, 102, 241, 0.3);
+}
+
+/* ---------- Breadcrumb ---------- */
+.breadcrumb {
+    background: transparent;
+    padding: 0;
+    font-size: 0.9rem;
+}
+.breadcrumb-item + .breadcrumb-item::before { color: #94a3b8; }
+.breadcrumb-item a {
+    color: var(--vs-text-muted);
+    text-decoration: none;
+}
+.breadcrumb-item a:hover { color: var(--vs-primary); }
+.breadcrumb-item.active { color: var(--vs-text); font-weight: 600; }
+
+/* ---------- Badge price VND helper ---------- */
+.vs-price-vnd { color: var(--vs-price); font-weight: 700; }
+
+/* ---------- Cart badge bump animation ---------- */
+#cart-badge {
+    transition: transform 0.2s ease;
+}
+.cart-badge-bump {
+    animation: vsCartBump 0.45s cubic-bezier(.22,1.5,.36,1);
+}
+@keyframes vsCartBump {
+    0%   { transform: translate(-50%, -50%) scale(1); }
+    40%  { transform: translate(-50%, -50%) scale(1.5); }
+    70%  { transform: translate(-50%, -50%) scale(0.9); }
+    100% { transform: translate(-50%, -50%) scale(1); }
+}
+
+/* ---------- Utility spacing safe for header ---------- */
+.vs-page-wrapper { padding-top: 40px; }
+@media (max-width: 768px) {
+    .vs-page-wrapper { padding-top: 16px; }
+}

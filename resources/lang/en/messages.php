@@ -13,6 +13,7 @@ return [
     'logout' => 'Logout',
     'language' => 'Language',
     'email_or_username' => 'Email or Username',
+    'username' => 'Username',
     'password' => 'Password',
     'forgot_password' => 'Forgot Password?',
     'remember_me' => 'Remember Me',

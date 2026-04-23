@@ -51,16 +51,16 @@ class ProductSeeder extends Seeder
             'Điện thoại' => [
                 'https://th.bing.com/th/id/OIP.zndktJVCQO8B4PpT2zTe7wHaEm?w=316&h=196&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3',
                 'https://th.bing.com/th/id/OIP.b5jNxB-SLFKRyKt3iLY77wHaHa?w=197&h=196&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3',
-                'https://th.bing.com/th/id/OIP._TNU1Jevs3BuaHZ0drjwywHaGN?w=207&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3',
+                'https://image.dienthoaivui.com.vn/x,webp,q90/https://dashboard.dienthoaivui.com.vn/uploads/dashboard/editor_upload/5EyToh7SDLkcOg7qzmhaLFnFxqeha7CPnbDyu0Tx.jpg',
                 'https://th.bing.com/th/id/OIP.JG-a7UDKnhlWiB18sBLaPAHaEw?w=208&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3',
                 'https://th.bing.com/th/id/OIP.N8pGIVTkaEDa-fxbE37yFAHaDD?w=289&h=144&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3',
-                'https://th.bing.com/th?id=OIF.kqdNM3d%2fihEAgPkB4WFhZQ&w=184&h=184&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3'
+                'https://cdn.phuckhangmobile.com/image/iphone-16-pro-max-titan-sa-mac-665-31870j.jpg'
             ],
             'Laptop' => [
-                'https://th.bing.com/th/id/OIP.VKgu7VPcY6IrtLdd64zgvgHaEK?w=297&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3',
-                'https://th.bing.com/th/id/OIP.5oYd7xs2reD3H5gBFUOw2gHaEK?w=320&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3',
-                'https://th.bing.com/th/id/OIP.jXa6_P7aiOOS_LJ7ekjL3gHaEK?w=320&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3',
-                'https://th.bing.com/th/id/OIP.kdIiAvKxZ7D6eOkGEIF-lwHaEK?w=320&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3',
+                'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTDLtXNU4EugQfWZ7RyJr4RUTuNSUgpu73KE1H3e6OcKIrnwUusJwj-6psgVEnCFT3eXMdmCuUKIptc2up03XfHDd8ENKd8JWavhn1Gn-LPY7yVRBAkR5ss8VJop1PzgZNcuppGwy8&usqp=CAc',
+                'https://minhvu.vn/upload/macbook-pro/macbook-pro-2012-md212/macbook-pro-2012-md212-jp.jpg',
+                'https://minhvu.vn/upload/macbook-pro/macbook-pro-2012-md212/macbook-pro-2012-md212-jp.jpg',
+                'https://macone.vn/wp-content/uploads/2024/09/Apple-MacBook-Air-2-up-hero-240304.jpg',
                 'https://th.bing.com/th/id/OIP.1Dr8Gi8s37jJ00UB06cE2wHaEK?w=307&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3',
                 'https://th.bing.com/th/id/OIP.zDmoN7FQEW8t4NrDOAhW9QHaEK?w=290&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3',
                 'https://th.bing.com/th/id/OIP.fo3-36w66u4ViiIDEKLBxQHaEK?w=316&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3',
@@ -122,7 +122,7 @@ class ProductSeeder extends Seeder
             'Máy lạnh' => ['Daikin Inverter 1HP', 'Panasonic Inverter 1.5HP', 'LG DualCool 2HP', 'Samsung WindFree 1HP', 'Toshiba Inverter 1.5HP', 'Mitsubishi Heavy 1HP', 'Sharp Inverter 1HP', 'Aqua AQA-KCRV9WN'],
             'Máy giặt' => ['LG Inverter 9kg', 'Samsung AddWash 8kg', 'Panasonic NA-F90A4GRV', 'Toshiba AW-DUH1100GV', 'Electrolux EWF1024BDWA', 'Aqua AQW-FR100ET', 'Sharp ES-U102HV-S', 'Beko WCV10746M'],
             'Thời trang' => ['Áo thun nam basic', 'Váy nữ dáng dài', 'Quần jeans rách', 'Áo sơ mi caro', 'Giày sneaker trắng', 'Áo khoác bomber', 'Chân váy xếp ly', 'Áo hoodie oversize'],
-            'default' => ['Sản phẩm đặc biệt', 'Mẫu mã mới', 'Phiên bản giới hạn', 'Sản phẩm cao cấp', 'Hàng nhập khẩu', 'Sản phẩm phổ biến', 'Mẫu mã hot', 'Sản phẩm tiêu chuẩn'],
+            'default' => ['Sản phẩm đặc biệt', 'Mẫu mã mới nhất', 'Phiên bản giới hạn', 'Sản phẩm cao cấp', 'Hàng nhập khẩu', 'Sản phẩm phổ biến', 'Mẫu mã hot', 'Sản phẩm tiêu chuẩn'],
         ];
     }
 

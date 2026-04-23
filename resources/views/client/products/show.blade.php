@@ -3,7 +3,7 @@
 @section('title', $product->name)
 
 @section('content')
-<div class="container product-detail-modern" style="padding-top: 60px; max-width: 1100px;">
+<div class="container product-detail-modern" style="max-width: 1100px;">
     <!-- Breadcrumb -->
     <nav aria-label="breadcrumb" class="mb-4">
         <ol class="breadcrumb">
@@ -40,10 +40,10 @@
         <div class="col-md-7">
             <div class="d-flex align-items-center mb-2" style="gap: 8px;">
                 <h1 class="product-title-modern mb-0">{{ $product->name }}</h1>
-                <button id="btn-favorite" class="btn p-0" style="font-size: 2rem; color: #ee4d2d; background: none; border: none; outline: none; margin-left: 4px;" title="Yêu thích">
+                <button id="btn-favorite" class="btn p-0 vs-icon-btn vs-icon-btn-danger" style="font-size: 1.6rem;" title="Yêu thích">
                     <i id="icon-favorite" class="fa{{ in_array($product->id, json_decode(request()->cookie('favorite_products', '[]'), true) ?? []) ? 's' : 'r' }} fa-heart"></i>
                 </button>
-                <button id="btn-share" class="btn p-0" style="font-size: 2rem; color: #22c55e; background: none; border: none; outline: none; margin-left: 4px;" title="Chia sẻ">
+                <button id="btn-share" class="btn p-0 vs-icon-btn vs-icon-btn-primary" style="font-size: 1.6rem;" title="Chia sẻ">
                     <i class="fas fa-share-alt"></i>
                 </button>
             </div>
@@ -67,8 +67,12 @@
                     </div>
                     <div class="col">
                         <div class="d-flex flex-row gap-3">
-                            <button type="button" class="btn btn-modern-cart flex-fill btn-add-to-cart" style="margin-right: 10px; height: 60px;" data-product-id="{{ $product->id }}" data-image-id="product-img-{{ $product->id }}">Thêm vào giỏ</button>
-                            <button type="button" class="btn btn-modern-buy flex-fill btn-add-to-cart" style="height: 60px;" data-product-id="{{ $product->id }}" data-image-id="product-img-{{ $product->id }}" data-buy-now="1">Mua ngay</button>
+                            <button type="button" class="btn btn-outline-primary flex-fill btn-add-to-cart" style="height: 56px; font-size: 1.05rem;" data-product-id="{{ $product->id }}" data-image-id="product-img-{{ $product->id }}">
+                                <i class="fas fa-cart-plus me-2"></i>Thêm vào giỏ
+                            </button>
+                            <button type="button" class="btn btn-primary flex-fill btn-add-to-cart" style="height: 56px; font-size: 1.05rem;" data-product-id="{{ $product->id }}" data-image-id="product-img-{{ $product->id }}" data-buy-now="1">
+                                <i class="fas fa-bolt me-2"></i>Mua ngay
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -77,7 +81,7 @@
             <div class="product-desc-toggle mt-2">
                 <h5 class="fw-semibold mb-2">Mô tả sản phẩm</h5>
                 <div id="desc-content" class="product-desc-modern shopee-desc-collapsed">{!! $product->description !!}</div>
-                <button id="btn-toggle-desc" class="btn btn-link px-0 mt-2" style="font-weight:600; color:#1677ff; display:none;">Xem thêm <i class="fas fa-chevron-down"></i></button>
+                <button id="btn-toggle-desc" class="btn btn-link px-0 mt-2" style="display:none;">Xem thêm <i class="fas fa-chevron-down"></i></button>
             </div>
         </div>
     </div>
@@ -164,38 +168,6 @@
         padding: 12px 16px;
         min-height: 56px;
     }
-    .btn-modern-cart {
-        background: #fff;
-        color: #ee4d2d;
-        border: 2px solid #ee4d2d;
-        border-radius: 8px;
-        padding: 10px 0;
-        font-weight: 600;
-        font-size: 1.08em;
-        transition: all 0.18s;
-        cursor: pointer;
-    }
-    .btn-modern-cart:hover {
-        background: #ee4d2d;
-        color: #fff;
-        border-color: #ee4d2d;
-    }
-    .btn-modern-buy {
-        background: #22c55e;
-        color: #fff;
-        border: 2px solid #22c55e;
-        border-radius: 8px;
-        padding: 10px 0;
-        font-weight: 600;
-        font-size: 1.08em;
-        transition: all 0.18s;
-        cursor: pointer;
-    }
-    .btn-modern-buy:hover {
-        background: #16a34a;
-        border-color: #16a34a;
-        color: #fff;
-    }
     .badge-modern {
         font-size: 1em;
         padding: 0.5em 1.2em;
@@ -260,8 +232,6 @@
     }
     </style>
     <script>
-        console.log('show');
-        
     // Zoom on click for modal image
     document.addEventListener('DOMContentLoaded', function() {
         var modalImg = document.getElementById('modal-product-img-{{ $product->id }}');

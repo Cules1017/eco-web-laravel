@@ -56,6 +56,7 @@ php artisan key:generate
 ### 6. Migrate & seed database
 ```bash
 php artisan migrate --seed
+php artisan migrate:fresh --seed
 ```
 - Nếu muốn seed lại dữ liệu mẫu:
 ```bash

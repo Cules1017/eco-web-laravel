@@ -3,8 +3,8 @@
 @section('title', __('messages.shopping_cart'))
 
 @section('content')
-<div class="container" style="padding-top: 100px;">
-    <h1 class="mb-4">{{ __('messages.shopping_cart') }}</h1>
+<div class="container vs-page-wrapper">
+    <h1 class="vs-section-title mb-4">{{ __('messages.shopping_cart') }}</h1>
 
     @if(session('success'))
     <div class="alert alert-success">
@@ -51,7 +51,7 @@
                                     </div>
                                 </div>
                             </td>
-                            <td>${{ number_format($item->product->price, 2) }}</td>
+                            <td class="vs-price-vnd">{{ number_format($item->product->price, 0, ',', '.') }}₫</td>
                             <td>
                                 <form class="cart-update-form d-flex align-items-center" data-product-id="{{ $item->product->id }}">
                                     @csrf
@@ -64,7 +64,7 @@
                                     </button>
                                 </form>
                             </td>
-                            <td>${{ number_format($item->product->price * $item->quantity, 2) }}</td>
+                            <td class="vs-price-vnd">{{ number_format($item->product->price * $item->quantity, 0, ',', '.') }}₫</td>
                             <td>
                                 <form class="cart-remove-form" data-product-id="{{ $item->product->id }}">
                                     @csrf
@@ -80,7 +80,7 @@
                     <tfoot>
                         <tr>
                             <td colspan="3" class="text-end"><strong>{{ __('messages.total') }}:</strong></td>
-                            <td><strong>${{ number_format($total, 2) }}</strong></td>
+                            <td><strong class="vs-price-vnd" style="font-size: 1.1rem;">{{ number_format($total, 0, ',', '.') }}₫</strong></td>
                             <td></td>
                         </tr>
                     </tfoot>
@@ -98,39 +98,22 @@
         </div>
     </div>
     @else
-    <div class="text-center py-5">
-        <i class="fas fa-shopping-cart fa-3x text-muted mb-3"></i>
-        <h3>{{ __('messages.empty_cart') }}</h3>
+    <div class="vs-empty-state">
+        <div class="vs-empty-icon"><i class="fas fa-shopping-cart"></i></div>
+        <h4 class="mb-2">{{ __('messages.empty_cart') }}</h4>
         <p class="text-muted">{{ __('messages.add_products') }}</p>
-        <a href="{{ route('products.index') }}" class="btn btn-primary">
-            {{ __('messages.browse_products') }}
+        <a href="{{ route('products.index') }}" class="btn btn-primary mt-2">
+            <i class="fas fa-bag-shopping me-1"></i> {{ __('messages.browse_products') }}
         </a>
     </div>
     @endif
 
-    <!-- Toast thông báo -->
-    <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 1080;">
-      <div id="cartToast" class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="d-flex">
-          <div class="toast-body" id="cartToastMsg"></div>
-          <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-        </div>
-      </div>
-    </div>
 </div>
 @endsection
 
 @push('scripts')
 <script>
-function showCartToast(msg, success = true) {
-    const toastEl = document.getElementById('cartToast');
-    const toastMsg = document.getElementById('cartToastMsg');
-    toastMsg.textContent = msg;
-    toastEl.classList.remove('text-bg-primary', 'text-bg-danger', 'text-bg-success');
-    toastEl.classList.add(success ? 'text-bg-success' : 'text-bg-danger');
-    const toast = new bootstrap.Toast(toastEl);
-    toast.show();
-}
+var showCartToast = window.showCartToast || function(){};
 
 function setBtnLoading(btn, loading) {
     if (loading) {

@@ -1,9 +1,9 @@
-@extends('layouts.app')
+@extends('layouts.eshopper')
 
 @section('title', __('messages.order_confirmation'))
 
 @section('content')
-<div class="container" style="padding-top: 100px;">
+<div class="container vs-page-wrapper">
     <!-- Success Message -->
     <div class="text-center mb-5">
         <i class="fas fa-check-circle text-success fa-4x mb-3"></i>
@@ -74,23 +74,23 @@
                                             </div>
                                         </td>
                                         <td>{{ $item->quantity }}</td>
-                                        <td>${{ number_format($item->price, 2) }}</td>
-                                        <td class="text-end">${{ number_format($item->price * $item->quantity, 2) }}</td>
+                                        <td>{{ number_format($item->price, 0, ',', '.') }}₫</td>
+                                        <td class="text-end">{{ number_format($item->price * $item->quantity, 0, ',', '.') }}₫</td>
                                     </tr>
                                 @endforeach
                             </tbody>
                             <tfoot>
                                 <tr>
                                     <td colspan="3" class="text-end"><strong>{{ __('messages.subtotal') }}:</strong></td>
-                                    <td class="text-end">${{ number_format($order->subtotal, 2) }}</td>
+                                    <td class="text-end">{{ number_format($order->subtotal, 0, ',', '.') }}₫</td>
                                 </tr>
                                 <tr>
                                     <td colspan="3" class="text-end"><strong>{{ __('messages.tax') }}:</strong></td>
-                                    <td class="text-end">${{ number_format($order->tax, 2) }}</td>
+                                    <td class="text-end">{{ number_format($order->tax, 0, ',', '.') }}₫</td>
                                 </tr>
                                 <tr>
                                     <td colspan="3" class="text-end"><strong>{{ __('messages.total') }}:</strong></td>
-                                    <td class="text-end"><strong>${{ number_format($order->total, 2) }}</strong></td>
+                                    <td class="text-end"><strong class="vs-price-vnd">{{ number_format($order->total, 0, ',', '.') }}₫</strong></td>
                                 </tr>
                             </tfoot>
                         </table>

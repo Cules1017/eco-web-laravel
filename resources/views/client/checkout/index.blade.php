@@ -1,10 +1,10 @@
-@extends('layouts.app')
+@extends('layouts.eshopper')
 
 @section('title', __('messages.checkout'))
 
 @section('content')
-<div class="container" style="padding-top: 100px;">
-    <h1 class="mb-4">{{ __('messages.checkout') }}</h1>
+<div class="container vs-page-wrapper">
+    <h1 class="vs-section-title mb-4">{{ __('messages.checkout') }}</h1>
 
     @if(session('error'))
     <div class="alert alert-danger">
@@ -34,22 +34,22 @@
                                 <tr>
                                     <td>{{ $item->product->name }}</td>
                                     <td>{{ $item->quantity }}</td>
-                                    <td>${{ number_format($item->product->price * $item->quantity, 2) }}</td>
+                                    <td class="vs-price-vnd">{{ number_format($item->product->price * $item->quantity, 0, ',', '.') }}₫</td>
                                 </tr>
                                 @endforeach
                             </tbody>
                             <tfoot>
                                 <tr>
                                     <td colspan="2" class="text-end"><strong>{{ __('messages.subtotal') }}:</strong></td>
-                                    <td>${{ number_format($subtotal, 2) }}</td>
+                                    <td>{{ number_format($subtotal, 0, ',', '.') }}₫</td>
                                 </tr>
                                 <tr>
                                     <td colspan="2" class="text-end"><strong>{{ __('messages.tax') }}:</strong></td>
-                                    <td>${{ number_format($tax, 2) }}</td>
+                                    <td>{{ number_format($tax, 0, ',', '.') }}₫</td>
                                 </tr>
                                 <tr>
                                     <td colspan="2" class="text-end"><strong>{{ __('messages.total') }}:</strong></td>
-                                    <td><strong>${{ number_format($total, 2) }}</strong></td>
+                                    <td><strong class="vs-price-vnd">{{ number_format($total, 0, ',', '.') }}₫</strong></td>
                                 </tr>
                             </tfoot>
                         </table>

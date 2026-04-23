@@ -3,7 +3,7 @@
 @section('title', __('messages.order_details') . ' #' . $order->id)
 
 @section('content')
-<div class="container py-5"  style="margin-top: 100px;">
+<div class="container vs-page-wrapper">
     <div class="row">
         <div class="col-md-8">
             <div class="card mb-4">

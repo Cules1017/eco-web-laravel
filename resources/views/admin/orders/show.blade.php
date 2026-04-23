@@ -171,6 +171,69 @@
                             </form>
                         </div>
                     </div>
+
+                    <!-- Payment Confirmation -->
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <h4><i class="fas fa-money-bill-transfer me-1"></i> Xác nhận thanh toán</h4>
+
+                            @php
+                                $payload = $order->payment_payload ?? [];
+                                $notifiedAt = $payload['bank_notified_at'] ?? null;
+                            @endphp
+
+                            @if($notifiedAt && $order->payment_status !== 'paid')
+                                <div class="alert alert-info">
+                                    <i class="fas fa-bell me-1"></i>
+                                    Khách hàng đã báo chuyển khoản lúc
+                                    <strong>{{ \Carbon\Carbon::parse($notifiedAt)->format('H:i d/m/Y') }}</strong>.
+                                    Vui lòng đối chiếu sao kê ngân hàng trước khi xác nhận.
+                                </div>
+                            @endif
+
+                            @if($order->payment_status !== 'paid')
+                                <form action="{{ route('admin.orders.markPaid', $order) }}" method="POST" class="row g-2 align-items-end">
+                                    @csrf
+                                    <div class="col-md-4">
+                                        <label class="form-label">Mã giao dịch (tuỳ chọn)</label>
+                                        <input type="text" name="payment_transaction_id" class="form-control"
+                                               placeholder="VD: FT25012345678">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label">Ghi chú</label>
+                                        <input type="text" name="payment_note" class="form-control"
+                                               placeholder="VD: Đã check sao kê VCB lúc 14:30">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button type="submit" class="btn btn-success w-100"
+                                                onclick="return confirm('Xác nhận đã nhận được tiền cho đơn này?');">
+                                            <i class="fas fa-check-circle me-1"></i> Xác nhận đã nhận tiền
+                                        </button>
+                                    </div>
+                                </form>
+                            @else
+                                <div class="alert alert-success d-flex align-items-center justify-content-between flex-wrap gap-2">
+                                    <div>
+                                        <i class="fas fa-circle-check me-1"></i>
+                                        <strong>Đã xác nhận thanh toán</strong>
+                                        @if($order->paid_at)
+                                            lúc {{ $order->paid_at->format('H:i d/m/Y') }}
+                                        @endif
+                                        @if($order->payment_transaction_id)
+                                            — GD: <code>{{ $order->payment_transaction_id }}</code>
+                                        @endif
+                                    </div>
+                                    <form action="{{ route('admin.orders.markUnpaid', $order) }}" method="POST"
+                                          onsubmit="return confirm('Huỷ xác nhận thanh toán? Trạng thái sẽ đổi sang Thất bại.');">
+                                        @csrf
+                                        <button type="submit" class="btn btn-outline-danger btn-sm">
+                                            <i class="fas fa-rotate-left me-1"></i> Huỷ xác nhận
+                                        </button>
+                                    </form>
+                                </div>
+                            @endif
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

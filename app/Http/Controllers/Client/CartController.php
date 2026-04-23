@@ -26,13 +26,21 @@ class CartController extends Controller
             'quantity' => $request->quantity,
         ];
         session(['cart' => $cart]);
-        if ($request->has('buy_now')) {
+
+        $cartCount = array_sum(array_column($cart, 'quantity'));
+
+        if ($request->ajax() || $request->wantsJson()) {
+            return response()->json([
+                'success' => true,
+                'cart_count' => $cartCount,
+                'message' => __('messages.added_to_cart'),
+            ]);
+        }
+
+        if ($request->boolean('buy_now')) {
             return redirect()->route('checkout');
         }
-        if ($request->ajax()) {
-            $cartCount = count($cart);
-            return response()->json(['cart_count' => $cartCount, 'success' => true]);
-        }
+
         return redirect()->route('cart.index')->with('success', __('messages.added_to_cart'));
     }
 

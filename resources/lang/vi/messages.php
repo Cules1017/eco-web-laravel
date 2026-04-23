@@ -15,6 +15,7 @@ return [
     'logout' => 'Đăng xuất',
     'language' => 'Ngôn ngữ',
     'email_or_username' => 'Email hoặc tên tài khoản',
+    'username' => 'Tên tài khoản',
     'password' => 'Mật khẩu',
     'forgot_password' => 'Quên mật khẩu?',
     'remember_me' => 'Ghi nhớ tôi',
@@ -221,6 +222,8 @@ return [
     'payment_status_paid' => 'Đã thanh toán',
     'payment_status_failed' => 'Thanh toán thất bại',
     'payment_status_refunded' => 'Đã hoàn tiền',
+    'order_created' => 'Tạo đơn hàng thành công!',
+    'order_paid_success' => 'Thanh toán thành công! Cảm ơn bạn đã mua hàng.',
 
     // Payment method
     'payment_method' => 'Phương thức thanh toán',

@@ -63,6 +63,15 @@ class OrderController extends Controller
         }
 
         session()->forget('cart');
+
+        if ($order->payment_method === 'momo') {
+            return redirect()->route('payment.momo.show', $order);
+        }
+
+        if ($order->payment_method === 'bank') {
+            return redirect()->route('payment.bank.show', $order);
+        }
+
         return redirect()->route('orders.show', $order)->with('success', __('messages.order_created'));
     }
 }

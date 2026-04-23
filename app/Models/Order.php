@@ -15,13 +15,19 @@ class Order extends Model
         'status',
         'payment_status',
         'payment_method',
+        'payment_transaction_id',
+        'payment_request_id',
+        'payment_payload',
+        'paid_at',
         'shipping_address_id',
         'total_amount',
         'notes',
     ];
 
     protected $casts = [
-        'total_amount' => 'decimal:2',
+        'total_amount'    => 'decimal:2',
+        'payment_payload' => 'array',
+        'paid_at'         => 'datetime',
     ];
 
     public function user()
