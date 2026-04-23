@@ -71,10 +71,17 @@ body {
     border-radius: var(--vs-radius-sm);
     font-weight: 600;
     border: 1.5px solid transparent;
+    padding: 8px 18px;
+    line-height: 1.4;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
     transition: transform var(--vs-transition), box-shadow var(--vs-transition),
         background var(--vs-transition), color var(--vs-transition),
         border-color var(--vs-transition);
 }
+.btn i { line-height: 1; }
 .btn:focus,
 .btn:focus-visible {
     box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25);
@@ -275,8 +282,9 @@ body {
 }
 
 /* ---------- Button sizes tuning ---------- */
-.btn-lg { padding: 10px 22px; font-size: 1.05rem; }
-.btn-sm { padding: 5px 12px; font-size: 0.85rem; }
+.btn-lg { padding: 12px 26px; font-size: 1.05rem; }
+.btn-sm { padding: 7px 14px; font-size: 0.85rem; gap: 5px; }
+.btn-group > .btn { padding: 7px 14px; }
 
 /* ---------- Icon-only round buttons (favorite, share, ...) ---------- */
 .vs-icon-btn {
@@ -354,13 +362,34 @@ body {
     border-radius: var(--vs-radius-sm);
     border: 1px solid var(--vs-border);
     transition: border-color var(--vs-transition), box-shadow var(--vs-transition);
+    width: 100% !important;
+    display: block !important;
+    box-sizing: border-box;
+}
+select.form-select {
+    padding: 0.5rem 2.25rem 0.5rem 0.75rem !important;
+    min-height: 40px;
+    height: auto !important;
+    background-color: #fff;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 0.75rem center !important;
+    background-size: 16px 12px !important;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--vs-text);
 }
 .form-control:focus,
 .form-select:focus {
     border-color: var(--vs-primary);
     box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+    outline: none;
 }
 .form-label { font-weight: 500; color: var(--vs-text); }
+.form-select[disabled] { background-color: #f8fafc; cursor: not-allowed; opacity: 0.7; }
 
 /* ---------- List group (filter sidebar) ---------- */
 .list-group-item {
