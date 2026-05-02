@@ -102,7 +102,7 @@
 
 @push('scripts')
 <script src="/vendor/laravel-filemanager/js/stand-alone-button.js"></script>
-<script src="https://cdn.tiny.cloud/1/fzcxmrnujn12zebeylcj8ku45qb2el9jt6zgbk37w0nlc36q/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+<script src="https://cdn.tiny.cloud/1/{{ config('services.tinymce.api_key') }}/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 <script>
     $('#lfm').filemanager('image');
     $('input[name=upload_type]').change(function() {

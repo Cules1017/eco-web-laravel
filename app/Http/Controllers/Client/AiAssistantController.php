@@ -10,6 +10,7 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
 
 class AiAssistantController extends Controller
@@ -31,6 +32,10 @@ class AiAssistantController extends Controller
 
         $apiKey = config('services.gemini.api_key');
         if (!$apiKey) {
+            Log::channel('ai_assistant')->warning('GEMINI_API_KEY missing', [
+                'ip' => $request->ip(),
+            ]);
+
             return response()->json([
                 'success' => false,
                 'message' => 'Chưa cấu hình GEMINI_API_KEY trong file .env',
@@ -60,36 +65,21 @@ class AiAssistantController extends Controller
         $contents = $this->buildContents($history, $validated['message']);
 
         try {
-            $response = Http::timeout(25)
-                ->withHeaders([
-                    'Content-Type' => 'application/json',
-                    'X-goog-api-key' => $apiKey,
-                ])
-                ->post(
-                    'https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent',
-                    [
-                        'system_instruction' => [
-                            'parts' => [
-                                ['text' => $systemInstruction],
-                            ],
-                        ],
-                        'contents' => $contents,
-                        'generationConfig' => [
-                            'temperature' => 0.7,
-                            'topP' => 0.95,
-                            'maxOutputTokens' => 1500,
-                        ],
-                    ]
-                );
+            $responsePack = $this->callGeminiWithFallback(
+                $apiKey,
+                $systemInstruction,
+                $contents,
+                $validated['message']
+            );
 
-            if (!$response->successful()) {
+            if (!$responsePack['success']) {
                 return response()->json([
                     'success' => false,
                     'message' => 'Không thể kết nối AI lúc này, vui lòng thử lại sau.',
                 ], 502);
             }
 
-            $json = $response->json();
+            $json = $responsePack['json'];
             $parts = data_get($json, 'candidates.0.content.parts', []);
             $answer = collect($parts)
                 ->pluck('text')
@@ -103,6 +93,14 @@ class AiAssistantController extends Controller
 
             if (trim($answer) === '') {
                 $blockReason = data_get($json, 'promptFeedback.blockReason');
+                Log::channel('ai_assistant')->warning('Gemini returned empty answer', [
+                    'model' => $responsePack['model'],
+                    'finish_reason' => $finishReason,
+                    'block_reason' => $blockReason,
+                    'prompt_feedback' => data_get($json, 'promptFeedback'),
+                    'candidates_preview' => Str::limit(json_encode(data_get($json, 'candidates'), JSON_UNESCAPED_UNICODE), 1500),
+                    'user_message_preview' => Str::limit($validated['message'], 300),
+                ]);
                 if ($blockReason) {
                     $answer = 'Xin lỗi, nội dung câu hỏi bị hệ thống lọc. Bạn vui lòng thử lại với cách diễn đạt khác nhé!';
                 } else {
@@ -124,12 +122,114 @@ class AiAssistantController extends Controller
             ]);
         } catch (\Throwable $exception) {
             report($exception);
+            Log::channel('ai_assistant')->error('AiAssistant consult exception', [
+                'exception' => get_class($exception),
+                'message' => $exception->getMessage(),
+                'file' => $exception->getFile(),
+                'line' => $exception->getLine(),
+                'user_message_preview' => Str::limit($validated['message'] ?? '', 300),
+            ]);
 
             return response()->json([
                 'success' => false,
                 'message' => 'Hệ thống AI đang bận. Vui lòng thử lại sau.',
             ], 500);
         }
+    }
+
+    private function callGeminiWithFallback(string $apiKey, string $systemInstruction, array $contents, string $userMessage): array
+    {
+        $models = $this->resolveGeminiModels();
+        $lastStatus = 502;
+
+        foreach ($models as $index => $model) {
+            try {
+                $response = Http::timeout(25)
+                    ->withHeaders([
+                        'Content-Type' => 'application/json',
+                        'X-goog-api-key' => $apiKey,
+                    ])
+                    ->post(
+                        "https://generativelanguage.googleapis.com/v1beta/models/{$model}:generateContent",
+                        [
+                            'system_instruction' => [
+                                'parts' => [
+                                    ['text' => $systemInstruction],
+                                ],
+                            ],
+                            'contents' => $contents,
+                            'generationConfig' => [
+                                'temperature' => 0.7,
+                                'topP' => 0.95,
+                                'maxOutputTokens' => 1500,
+                            ],
+                        ]
+                    );
+
+                if ($response->successful()) {
+                    if ($index > 0) {
+                        Log::channel('ai_assistant')->info('Gemini fallback model selected', [
+                            'model' => $model,
+                            'attempt' => $index + 1,
+                            'models' => $models,
+                        ]);
+                    }
+
+                    return [
+                        'success' => true,
+                        'model' => $model,
+                        'json' => $response->json(),
+                    ];
+                }
+
+                $lastStatus = $response->status();
+                $errorJson = $response->json();
+                Log::channel('ai_assistant')->error('Gemini API HTTP error', [
+                    'model' => $model,
+                    'attempt' => $index + 1,
+                    'http_status' => $lastStatus,
+                    'gemini_error' => data_get($errorJson, 'error'),
+                    'body_preview' => Str::limit($response->body(), 2000),
+                    'user_message_preview' => Str::limit($userMessage, 300),
+                ]);
+
+                if (!$this->shouldTryNextModel($lastStatus)) {
+                    break;
+                }
+            } catch (\Throwable $exception) {
+                Log::channel('ai_assistant')->error('Gemini request exception on model', [
+                    'model' => $model,
+                    'attempt' => $index + 1,
+                    'exception' => get_class($exception),
+                    'message' => $exception->getMessage(),
+                    'user_message_preview' => Str::limit($userMessage, 300),
+                ]);
+
+                if (!$this->shouldTryNextModel(503)) {
+                    break;
+                }
+            }
+        }
+
+        return [
+            'success' => false,
+            'status' => $lastStatus,
+        ];
+    }
+
+    private function resolveGeminiModels(): array
+    {
+        $models = config('services.gemini.models', []);
+        if (!is_array($models) || empty($models)) {
+            return ['gemini-flash-latest'];
+        }
+
+        return array_values(array_unique(array_filter(array_map('trim', $models))));
+    }
+
+    private function shouldTryNextModel(int $status): bool
+    {
+        return in_array($status, [408, 409, 425, 429, 500, 502, 503, 504], true);
     }
 
     private function findRelatedProducts(string $message, array $context): Collection
@@ -164,7 +264,9 @@ class AiAssistantController extends Controller
         return Product::query()
             ->where('is_active', true)
             ->where('is_featured', true)
-            ->when(!empty($excludeIds), fn ($q) => $q->whereNotIn('id', $excludeIds))
+            ->when(!empty($excludeIds), function ($q) use ($excludeIds) {
+                $q->whereNotIn('id', $excludeIds);
+            })
             ->with('category:id,name,slug')
             ->limit(5)
             ->get(['id', 'name', 'slug', 'description', 'price', 'stock', 'category_id']);

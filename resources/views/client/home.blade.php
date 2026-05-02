@@ -71,7 +71,8 @@
 
 
 @foreach($sections as $section)
-<section class="product-section" id="{{ $section->slug }}">
+{{-- id có tiền tố để không trùng id toàn trang (vd: ai-assistant-btn, cart-badge, bannerCarousel) --}}
+<section class="product-section" id="home-section-{{ $section->slug }}">
     <div class="container">
         <div class="section-header d-flex justify-content-between align-items-center">
             <div>

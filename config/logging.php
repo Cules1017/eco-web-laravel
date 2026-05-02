@@ -123,6 +123,17 @@ return [
             'handler' => NullHandler::class,
         ],
 
+        /*
+        | Trợ lý AI (Gemini): lỗi API, HTTP, ngoại lệ — xem storage/logs/ai-assistant-*.log
+        */
+        'ai_assistant' => [
+            'driver' => 'daily',
+            'path' => storage_path('logs/ai-assistant.log'),
+            'level' => env('LOG_LEVEL', 'debug'),
+            'days' => 14,
+            'replace_placeholders' => true,
+        ],
+
         'emergency' => [
             'path' => storage_path('logs/laravel.log'),
         ],

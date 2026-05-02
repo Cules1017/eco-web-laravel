@@ -25,6 +25,13 @@
             .navbar-nav .dropdown.show .dropdown-toggle::after {
                 transform: rotate(180deg);
             }
+            /* Sản phẩm: hover chỉ bật display — Popper không chạy nên cần neo theo mục menu, không dùng position-static (full-width mega-menu). */
+            .navbar-nav .products-categories-dropdown .dropdown-menu {
+                left: 0 !important;
+                top: 100% !important;
+                transform: none !important;
+                right: auto;
+            }
         }
         body, html {
             scrollbar-width: none; /* Firefox */
@@ -39,7 +46,7 @@
             position: fixed;
             right: 22px;
             bottom: 22px;
-            z-index: 1200;
+            z-index: 10050;
             width: 60px;
             height: 60px;
             border-radius: 50%;
@@ -75,7 +82,7 @@
             position: fixed;
             right: 22px;
             bottom: 96px;
-            z-index: 1200;
+            z-index: 10050;
             width: min(400px, calc(100vw - 24px));
             height: min(560px, calc(100vh - 120px));
             border-radius: 18px;
@@ -298,7 +305,7 @@
             inset: 0;
             background: rgba(15, 23, 42, 0.45);
             backdrop-filter: blur(4px);
-            z-index: 1300;
+            z-index: 10060;
             display: none;
             align-items: center;
             justify-content: center;
@@ -443,11 +450,11 @@
             <div class="collapse navbar-collapse d-flex align-items-center flex-nowrap" id="mainNav">
                 <ul class="navbar-nav mb-2 mb-lg-0 flex-grow-1">
                     <li class="nav-item"><a class="nav-link" href="/">{{ __('messages.home') }}</a></li>
-                    <li class="nav-item dropdown position-static">
+                    <li class="nav-item dropdown position-relative products-categories-dropdown">
                         <a class="nav-link dropdown-toggle" href="{{ route('products.index') }}" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             {{ __('messages.products') }}
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="productsDropdown" style="min-width:220px; max-height:70vh; overflow-y:auto;">
+                        <ul class="dropdown-menu" aria-labelledby="productsDropdown" style="min-width:220px; max-height:70vh; overflow-y:auto;">
                             @foreach($parentCategories as $cat)
                                 <li><a class="dropdown-item" href="{{ route('products.index', ['category' => $cat->slug]) }}">{{ $cat->name }}</a></li>
                             @endforeach
@@ -591,6 +598,7 @@
         }
 
         function renderHistory() {
+            if (!aiChatBox) return;
             aiChatBox.innerHTML = '';
             appendMessage(AI_WELCOME, 'bot', false);
             aiHistory.forEach(item => {
@@ -733,11 +741,20 @@
                 try { return JSON.parse(localStorage.getItem(AI_BTN_POS_KEY) || 'null'); }
                 catch (e) { return null; }
             })();
+            const clampBtnPos = (left, top) => {
+                const size = aiButton.offsetWidth || 60;
+                const pad = 6;
+                return {
+                    left: Math.max(pad, Math.min(window.innerWidth - size - pad, left)),
+                    top: Math.max(pad, Math.min(window.innerHeight - size - pad, top))
+                };
+            };
             const applyPos = (left, top) => {
+                const c = clampBtnPos(left, top);
                 aiButton.style.right = 'auto';
                 aiButton.style.bottom = 'auto';
-                aiButton.style.left = left + 'px';
-                aiButton.style.top = top + 'px';
+                aiButton.style.left = c.left + 'px';
+                aiButton.style.top = c.top + 'px';
                 positionPanel();
             };
             if (saved && typeof saved.left === 'number' && typeof saved.top === 'number') {
@@ -788,7 +805,12 @@
             aiButton.addEventListener('touchstart', onDown, { passive: false });
             document.addEventListener('touchmove', onMove, { passive: false });
             document.addEventListener('touchend', onUp);
-            window.addEventListener('resize', positionPanel);
+            window.addEventListener('resize', function() {
+                if (aiButton.style.left && aiButton.style.top) {
+                    applyPos(parseFloat(aiButton.style.left) || 0, parseFloat(aiButton.style.top) || 0);
+                }
+                positionPanel();
+            });
 
             aiButton.addEventListener('click', function(e) {
                 if (moved) { e.preventDefault(); e.stopImmediatePropagation(); moved = false; return; }

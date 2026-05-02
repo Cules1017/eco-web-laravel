@@ -38,6 +38,11 @@ return [
 
     'gemini' => [
         'api_key' => env('GEMINI_API_KEY'),
+        'models' => array_values(array_filter(array_map('trim', explode(',', (string) env('GEMINI_MODELS', 'gemini-flash-latest,gemini-1.5-flash-latest,gemini-1.5-pro-latest'))))),
+    ],
+
+    'tinymce' => [
+        'api_key' => env('TINYMCE_API_KEY'),
     ],
 
     'momo' => [
