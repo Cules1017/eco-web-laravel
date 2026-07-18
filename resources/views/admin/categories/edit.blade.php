@@ -49,23 +49,35 @@
                             @enderror
                         </div>
 
+                        @php
+                            $currentImage = old('image', $category->image);
+                            $isUrl = $currentImage && Str::startsWith($currentImage, ['http://', 'https://']);
+                            $isLocalFile = $currentImage && !$isUrl;
+                            $imagePreviewSrc = $isUrl ? $currentImage : ($isLocalFile ? asset('storage/' . $currentImage) : null);
+                        @endphp
                         <div class="form-group mb-3">
                             <label>{{ __('messages.category_image') }}</label>
                             <div>
-                                <input type="radio" id="upload_type_file" name="upload_type" value="file">
+                                <input type="radio" id="upload_type_file" name="upload_type" value="file" {{ $isLocalFile ? 'checked' : '' }}>
                                 <label for="upload_type_file">Tải file</label>
-                                <input type="radio" id="upload_type_url" name="upload_type" value="url" checked>
+                                <input type="radio" id="upload_type_url" name="upload_type" value="url" {{ !$isLocalFile ? 'checked' : '' }}>
                                 <label for="upload_type_url">Nhập link/chọn ảnh</label>
                             </div>
-                            <div id="upload_file_block" style="display:none;">
+                            <div id="upload_file_block" style="{{ $isLocalFile ? '' : 'display:none;' }}">
                                 <input type="file" class="form-control mt-2 @error('image_file') is-invalid @enderror" name="image_file">
+                                @if($isLocalFile)
+                                    <div class="mt-2">
+                                        <img src="{{ $imagePreviewSrc }}" style="max-height: 80px;" alt="Current image">
+                                        <small class="text-muted d-block">Ảnh hiện tại. Chọn file mới để thay thế.</small>
+                                    </div>
+                                @endif
                                 @error('image_file')
                                     <span class="invalid-feedback">{{ $message }}</span>
                                 @enderror
                             </div>
-                            <div id="upload_url_block">
+                            <div id="upload_url_block" style="{{ $isLocalFile ? 'display:none;' : '' }}">
                                 <div class="input-group mt-2">
-                                    <input id="image" class="form-control @error('image') is-invalid @enderror" type="text" name="image" value="{{ old('image', $category->image) }}">
+                                    <input id="image" class="form-control @error('image') is-invalid @enderror" type="text" name="image" value="{{ $isUrl ? $currentImage : '' }}">
                                     <span class="input-group-btn">
                                         <button id="lfm" data-input="image" data-preview="holder" class="btn btn-secondary" type="button">
                                             <i class="fa fa-picture-o"></i> {{ __('messages.choose_image') }}
@@ -73,8 +85,8 @@
                                     </span>
                                 </div>
                                 <div id="holder" style="margin-top:15px;max-height:100px;">
-                                    @if($category->image)
-                                        <img src="{{ $category->image }}" style="height: 5rem;">
+                                    @if($imagePreviewSrc && $isUrl)
+                                        <img src="{{ $imagePreviewSrc }}" style="height: 5rem;">
                                     @endif
                                 </div>
                                 @error('image')

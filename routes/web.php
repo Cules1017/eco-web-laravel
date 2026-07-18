@@ -103,6 +103,8 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
     Route::post('settings', [SettingController::class, 'update'])->name('settings.update');
 
     Route::post('products/{product}/toggle', [ProductController::class, 'toggle'])->name('products.toggle');
+    Route::post('products/{product}/upload-gallery', [ProductController::class, 'uploadGallery'])->name('products.uploadGallery');
+    Route::delete('products/image/{id}', [ProductController::class, 'deleteImage'])->name('products.deleteImage');
 
     // Home Sections Management
     Route::resource('home-sections', HomeSectionController::class);

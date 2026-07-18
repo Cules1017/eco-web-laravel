@@ -10,41 +10,46 @@
             <p>{{ __('messages.welcome_admin_dashboard') }}</p>
         </div>
     </div>
-    <form method="GET" class="row g-2 mb-4 align-items-end">
-        <div class="col-md-3">
-            <label for="date_from" class="form-label">Từ ngày</label>
-            <input type="date" name="date_from" id="date_from" class="form-control" value="{{ $date_from }}">
-        </div>
-        <div class="col-md-3">
-            <label for="date_to" class="form-label">Đến ngày</label>
-            <input type="date" name="date_to" id="date_to" class="form-control" value="{{ $date_to }}">
-        </div>
-        <div class="col-md-2">
-            <button type="submit" class="btn btn-primary w-100">Lọc</button>
+    <form method="GET" class="mb-4">
+        <div class="form-row align-items-end">
+            <div class="col-md-3">
+                <label for="date_from">Từ ngày</label>
+                <input type="date" name="date_from" id="date_from" class="form-control" value="{{ $date_from }}">
+            </div>
+            <div class="col-md-3">
+                <label for="date_to">Đến ngày</label>
+                <input type="date" name="date_to" id="date_to" class="form-control" value="{{ $date_to }}">
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-primary btn-block">Lọc</button>
+            </div>
         </div>
     </form>
     <div class="row mb-4">
-        <div class="col-md-3">
-            <div class="card text-white bg-primary mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">Tổng số đơn</h5>
-                    <p class="card-text fs-3">{{ $order_count }}</p>
+        <div class="col-md-4">
+            <div class="info-box bg-white">
+                <span class="info-box-icon text-muted"><i class="fas fa-shopping-bag"></i></span>
+                <div class="info-box-content">
+                    <span class="info-box-text text-muted">Tổng số đơn</span>
+                    <span class="info-box-number mb-0 h4">{{ $order_count }}</span>
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
-            <div class="card text-white bg-success mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">Doanh thu</h5>
-                    <p class="card-text fs-3">{{ number_format($revenue) }}đ</p>
+        <div class="col-md-4">
+            <div class="info-box bg-white">
+                <span class="info-box-icon text-muted"><i class="fas fa-chart-line"></i></span>
+                <div class="info-box-content">
+                    <span class="info-box-text text-muted">Doanh thu</span>
+                    <span class="info-box-number mb-0 h4">{{ number_format($revenue) }}đ</span>
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
-            <div class="card text-white bg-info mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">Số khách hàng</h5>
-                    <p class="card-text fs-3">{{ $user_count }}</p>
+        <div class="col-md-4">
+            <div class="info-box bg-white">
+                <span class="info-box-icon text-muted"><i class="fas fa-users"></i></span>
+                <div class="info-box-content">
+                    <span class="info-box-text text-muted">Số khách hàng</span>
+                    <span class="info-box-number mb-0 h4">{{ $user_count }}</span>
                 </div>
             </div>
         </div>
@@ -52,20 +57,20 @@
     <div class="row mb-4">
         <div class="col-md-6">
             <div class="card mb-3">
-                <div class="card-header">Top sản phẩm bán chạy</div>
-                <div class="card-body p-0">
-                    <table class="table mb-0">
+                <div class="card-header border-0 font-weight-bold">Top sản phẩm bán chạy</div>
+                <div class="card-body p-0 table-responsive">
+                    <table class="table table-hover mb-0">
                         <thead>
                             <tr>
                                 <th>Sản phẩm</th>
-                                <th>Số lượng bán</th>
+                                <th class="text-right">Số lượng bán</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach($top_products as $product)
                                 <tr>
                                     <td>{{ $product->name }}</td>
-                                    <td>{{ $product->total_sold }}</td>
+                                    <td class="text-right">{{ $product->total_sold }}</td>
                                 </tr>
                             @endforeach
                         </tbody>
@@ -75,7 +80,7 @@
         </div>
         <div class="col-md-6">
             <div class="card mb-3">
-                <div class="card-header">Biểu đồ doanh thu (mẫu)</div>
+                <div class="card-header border-0 font-weight-bold">Biểu đồ doanh thu (mẫu)</div>
                 <div class="card-body">
                     <canvas id="revenueChart" height="200"></canvas>
                 </div>
@@ -85,7 +90,7 @@
     <div class="row mb-4">
         <div class="col-md-4">
             <div class="card mb-3">
-                <div class="card-header">Tỷ lệ trạng thái đơn hàng</div>
+                <div class="card-header border-0 font-weight-bold">Tỷ lệ trạng thái đơn hàng</div>
                 <div class="card-body">
                     <canvas id="orderStatusPie" height="200"></canvas>
                 </div>
@@ -93,7 +98,7 @@
         </div>
         <div class="col-md-4">
             <div class="card mb-3">
-                <div class="card-header">Số lượng đơn theo ngày (mẫu)</div>
+                <div class="card-header border-0 font-weight-bold">Số lượng đơn theo ngày (mẫu)</div>
                 <div class="card-body">
                     <canvas id="orderLineChart" height="200"></canvas>
                 </div>
@@ -101,7 +106,7 @@
         </div>
         <div class="col-md-4">
             <div class="card mb-3">
-                <div class="card-header">Số lượng đơn theo trạng thái (mẫu)</div>
+                <div class="card-header border-0 font-weight-bold">Số lượng đơn theo trạng thái (mẫu)</div>
                 <div class="card-body">
                     <canvas id="orderStatusBar" height="200"></canvas>
                 </div>
@@ -112,6 +117,22 @@
 @push('scripts')
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
+// Cấu hình bảng màu monochrome/slate
+const slatePalette = [
+    'rgba(71, 85, 105, 0.8)',   // Slate 600
+    'rgba(100, 116, 139, 0.8)', // Slate 500
+    'rgba(148, 163, 184, 0.8)', // Slate 400
+    'rgba(15, 23, 42, 0.8)',    // Slate 900
+    'rgba(203, 213, 225, 0.8)'  // Slate 300
+];
+const slateBorders = [
+    'rgba(71, 85, 105, 1)',
+    'rgba(100, 116, 139, 1)',
+    'rgba(148, 163, 184, 1)',
+    'rgba(15, 23, 42, 1)',
+    'rgba(203, 213, 225, 1)'
+];
+
 // Biểu đồ doanh thu (mẫu)
 const ctx = document.getElementById('revenueChart').getContext('2d');
 const revenueChart = new Chart(ctx, {
@@ -121,8 +142,8 @@ const revenueChart = new Chart(ctx, {
         datasets: [{
             label: 'Doanh thu',
             data: [12000000, 15000000, 10000000, 18000000, 20000000, 17000000, 22000000],
-            backgroundColor: 'rgba(54, 162, 235, 0.5)',
-            borderColor: 'rgba(54, 162, 235, 1)',
+            backgroundColor: slatePalette[0],
+            borderColor: slateBorders[0],
             borderWidth: 1
         }]
     },
@@ -142,13 +163,9 @@ const orderStatusPie = new Chart(pieCtx, {
         labels: ['Chờ xử lý', 'Đang xử lý', 'Đang giao hàng', 'Hoàn thành', 'Đã hủy'],
         datasets: [{
             data: [10, 15, 8, 20, 5],
-            backgroundColor: [
-                'rgba(255, 205, 86, 0.7)',
-                'rgba(54, 162, 235, 0.7)',
-                'rgba(255, 99, 132, 0.7)',
-                'rgba(75, 192, 192, 0.7)',
-                'rgba(201, 203, 207, 0.7)'
-            ]
+            backgroundColor: slatePalette,
+            borderColor: slateBorders,
+            borderWidth: 1
         }]
     }
 });
@@ -162,7 +179,8 @@ const orderLineChart = new Chart(lineCtx, {
             label: 'Số lượng đơn',
             data: [5, 8, 6, 10, 7, 12, 9],
             fill: false,
-            borderColor: 'rgba(255, 99, 132, 1)',
+            borderColor: slateBorders[1],
+            backgroundColor: slatePalette[1],
             tension: 0.1
         }]
     }
@@ -176,20 +194,8 @@ const orderStatusBar = new Chart(barCtx, {
         datasets: [{
             label: 'Số lượng đơn',
             data: [10, 15, 8, 20, 5],
-            backgroundColor: [
-                'rgba(255, 205, 86, 0.7)',
-                'rgba(54, 162, 235, 0.7)',
-                'rgba(255, 99, 132, 0.7)',
-                'rgba(75, 192, 192, 0.7)',
-                'rgba(201, 203, 207, 0.7)'
-            ],
-            borderColor: [
-                'rgba(255, 205, 86, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 99, 132, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(201, 203, 207, 1)'
-            ],
+            backgroundColor: slatePalette,
+            borderColor: slateBorders,
             borderWidth: 1
         }]
     },

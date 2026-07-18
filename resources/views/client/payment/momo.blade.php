@@ -14,9 +14,9 @@
         <div class="alert alert-danger">{{ session('error') }}</div>
     @endif
 
-    <div class="row g-4 justify-content-center">
-        <div class="col-lg-10">
-            <div class="card momo-card">
+    <div class="row g-4 justify-content-center align-items-center min-vh-75 py-5">
+        <div class="col-lg-10 col-xl-8">
+            <div class="card momo-card mx-auto">
                 <div class="card-body p-4 p-md-5">
                     <div class="row g-4 align-items-center">
                         <!-- QR -->
@@ -155,8 +155,8 @@
 <style>
 .momo-card {
     border: none;
-    box-shadow: var(--vs-shadow-lg);
-    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(165, 0, 100, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05);
+    border-radius: 24px;
     overflow: hidden;
     background: #fff;
 }
@@ -172,12 +172,17 @@
 }
 .momo-qr-wrap {
     background: #fff;
-    border: 2px dashed #e5e7eb;
-    border-radius: 16px;
-    padding: 14px;
+    border: none;
+    border-radius: 20px;
+    padding: 16px;
     display: inline-block;
+    box-shadow: 0 12px 28px rgba(165, 0, 100, 0.15), 0 4px 10px rgba(165, 0, 100, 0.05);
+    transition: transform 0.3s ease;
 }
-.momo-qr-wrap img { border-radius: 8px; }
+.momo-qr-wrap:hover {
+    transform: translateY(-5px);
+}
+.momo-qr-wrap img { border-radius: 12px; }
 .momo-success-overlay {
     position: absolute; inset: 0;
     background: rgba(255,255,255,0.96);
@@ -287,10 +292,14 @@
         const mockUrl = @json(route('payment.momo.mock', $order));
         const csrf = document.querySelector('meta[name="csrf-token"]')?.getAttribute('content');
         mockBtn.addEventListener('click', async function() {
-            const ok = window.aiConfirm
-                ? await window.aiConfirm('Bạn có chắc muốn giả lập thanh toán thành công cho đơn này?')
-                : confirm('Bạn có chắc muốn giả lập thanh toán thành công cho đơn này?');
-            if (!ok) return;
+            const result = await Swal.fire({
+                text: 'Bạn có chắc muốn giả lập thanh toán thành công cho đơn này?',
+                icon: 'question',
+                showCancelButton: true,
+                confirmButtonText: 'Đồng ý',
+                cancelButtonText: 'Hủy'
+            });
+            if (!result.isConfirmed) return;
 
             mockBtn.disabled = true;
             mockBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-1"></i> Đang xử lý...';
@@ -317,12 +326,12 @@
                 } else {
                     mockBtn.disabled = false;
                     mockBtn.innerHTML = '<i class="fas fa-bolt me-1"></i> Giả lập thanh toán thành công';
-                    alert(data.message || 'Giả lập thất bại.');
+                    Swal.fire(data.message || 'Giả lập thất bại.');
                 }
             } catch (e) {
                 mockBtn.disabled = false;
                 mockBtn.innerHTML = '<i class="fas fa-bolt me-1"></i> Giả lập thanh toán thành công';
-                alert('Lỗi kết nối: ' + e.message);
+                Swal.fire('Lỗi kết nối: ' + e.message);
             }
         });
     }

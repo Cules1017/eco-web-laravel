@@ -3,83 +3,77 @@
 @section('title', __('messages.addresses'))
 
 @section('content')
-<div class="container vs-page-wrapper">
-    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
-        <h1 class="vs-section-title mb-0">{{ __('messages.addresses') }}</h1>
-        <a href="{{ route('addresses.create') }}" class="btn btn-primary">
-            <i class="fas fa-plus me-1"></i> {{ __('messages.add_new_address') }}
+<style>
+    .address-card { background: #fff; padding: 24px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); margin-bottom: 20px; transition: transform 0.2s; }
+    .address-card:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,0,0,0.06); }
+</style>
+<div class="container py-5">
+    <div class="d-flex justify-content-between align-items-center mb-5 flex-wrap gap-2">
+        <h1 class="mb-0 fw-normal text-uppercase fs-3">{{ __('messages.addresses') }}</h1>
+        <a href="{{ route('addresses.create') }}" class="btn btn-dark text-uppercase rounded-0 px-4 py-2">
+            {{ __('messages.add_new_address') }}
         </a>
     </div>
 
     @if($addresses->isEmpty())
-        <div class="vs-empty-state">
-            <div class="vs-empty-icon"><i class="fas fa-location-dot"></i></div>
-            <h4 class="mb-2">{{ __('messages.no_addresses') }}</h4>
-            <p class="text-muted">Thêm địa chỉ giao hàng để thanh toán nhanh hơn.</p>
-            <a href="{{ route('addresses.create') }}" class="btn btn-primary mt-2">
-                <i class="fas fa-plus me-1"></i> {{ __('messages.add_new_address') }}
+        <div class="text-center py-5">
+            <h4 class="mb-3 fw-normal">{{ __('messages.no_addresses') }}</h4>
+            <p class="text-muted mb-4">Thêm địa chỉ giao hàng để thanh toán nhanh hơn.</p>
+            <a href="{{ route('addresses.create') }}" class="btn btn-dark text-uppercase rounded-0 px-5 py-3">
+                {{ __('messages.add_new_address') }}
             </a>
         </div>
     @else
-        <div class="row g-4">
+        <div class="d-flex flex-column">
             @foreach($addresses as $address)
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 address-card {{ $address->is_default ? 'address-card-default' : '' }}">
-                        <div class="card-body d-flex flex-column">
+                <div class="address-card d-flex flex-column flex-md-row justify-content-between {{ $address->is_default ? 'bg-light' : '' }}">
+                    <div class="mb-4 mb-md-0">
+                        <div class="d-flex align-items-center gap-3 mb-2">
+                            <h5 class="mb-0 fs-4">{{ $address->full_name }}</h5>
                             @if($address->is_default)
-                                <span class="badge bg-primary align-self-start mb-2">
-                                    <i class="fas fa-star me-1"></i>{{ __('messages.default_address') }}
+                                <span class="badge bg-dark text-white rounded-0 fw-normal px-2 py-1 small">
+                                    {{ __('messages.default_address') }}
                                 </span>
                             @endif
-
-                            <h5 class="mb-1">{{ $address->full_name }}</h5>
-                            <div class="text-muted small mb-2">
-                                <i class="fas fa-phone me-1"></i>{{ $address->phone }}
-                            </div>
-                            <p class="mb-3 flex-grow-1">
-                                <i class="fas fa-location-dot text-primary me-1"></i>{{ $address->full_address }}
-                            </p>
-
-                            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mt-auto">
-                                <div class="d-flex gap-2">
-                                    <a href="{{ route('addresses.edit', $address) }}" class="btn btn-sm btn-outline-primary">
-                                        <i class="fas fa-pen me-1"></i>{{ __('messages.edit') }}
-                                    </a>
-                                    <form action="{{ route('addresses.destroy', $address) }}" method="POST" class="d-inline">
-                                        @csrf
-                                        @method('DELETE')
-                                        <button type="submit" class="btn btn-sm btn-outline-danger"
-                                                onclick="return confirm('{{ __('messages.delete_address_confirm') }}')">
-                                            <i class="fas fa-trash me-1"></i>{{ __('messages.delete') }}
-                                        </button>
-                                    </form>
-                                </div>
-
-                                @if(!$address->is_default)
-                                    <form action="{{ route('addresses.default', $address) }}" method="POST" class="d-inline">
-                                        @csrf
-                                        <button type="submit" class="btn btn-sm btn-link text-decoration-none">
-                                            {{ __('messages.set_as_default') }}
-                                        </button>
-                                    </form>
-                                @endif
-                            </div>
                         </div>
+                        <div class="text-muted mb-3 fs-5">
+                            {{ $address->phone }}
+                        </div>
+                        <div class="fs-5 lh-base text-dark" style="max-width: 600px;">
+                            {{ $address->full_address }}
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column justify-content-start align-items-md-end gap-3">
+                        <div class="d-flex align-items-center gap-3">
+                            <a href="{{ route('addresses.edit', $address) }}" class="text-dark text-decoration-none text-uppercase fw-bold pb-1 border-bottom border-dark small" style="margin-right: 15px;">
+                                {{ __('messages.edit') }}
+                            </a>
+                            <form action="{{ route('addresses.destroy', $address) }}" method="POST" class="m-0 p-0">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-link p-0 text-danger text-decoration-none text-uppercase fw-bold small"
+                                        style="transition: all 0.3s ease;"
+                                        onmouseover="this.style.textDecoration='underline'"
+                                        onmouseout="this.style.textDecoration='none'"
+                                        onclick="return confirm('{{ __('messages.delete_address_confirm') }}')">
+                                    {{ __('messages.delete') }}
+                                </button>
+                            </form>
+                        </div>
+
+                        @if(!$address->is_default)
+                            <form action="{{ route('addresses.default', $address) }}" method="POST" class="mt-2">
+                                @csrf
+                                <button type="submit" class="btn btn-outline-dark text-uppercase rounded-0 px-3 py-1 small">
+                                    {{ __('messages.set_as_default') }}
+                                </button>
+                            </form>
+                        @endif
                     </div>
                 </div>
             @endforeach
         </div>
     @endif
 </div>
-
-@push('styles')
-<style>
-.address-card { border-radius: 14px; transition: box-shadow .2s, transform .2s; }
-.address-card:hover { box-shadow: 0 10px 24px rgba(99, 102, 241, 0.12); transform: translateY(-2px); }
-.address-card-default {
-    border: 2px solid var(--vs-primary, #6366f1);
-    background: linear-gradient(180deg, #eef2ff 0%, #fff 40%);
-}
-</style>
-@endpush
 @endsection

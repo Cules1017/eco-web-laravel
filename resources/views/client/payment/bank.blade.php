@@ -15,9 +15,9 @@
         <div class="col-lg-10">
             <div class="card bank-card">
                 <div class="card-body p-4 p-md-5">
-                    <div class="row g-4 align-items-center">
+                    <div class="row g-5 flex-column align-items-center text-center">
                         <!-- QR VietQR -->
-                        <div class="col-md-5 text-center">
+                        <div class="col-md-8 col-lg-6">
                             <div class="bank-brand mb-3">
                                 <div class="bank-brand-logo">
                                     <i class="fas fa-university"></i>
@@ -57,8 +57,8 @@
                         </div>
 
                         <!-- Thông tin chuyển khoản -->
-                        <div class="col-md-7">
-                            <h4 class="mb-3">Thông tin chuyển khoản</h4>
+                        <div class="col-md-10 col-lg-8">
+                            <h4 class="mb-4 fw-bold">Thông tin chuyển khoản</h4>
 
                             <ul class="list-unstyled bank-info">
                                 <li>
@@ -72,12 +72,12 @@
                                     <span class="lbl">Chủ tài khoản</span>
                                     <span class="val">{{ $bank['account_name'] ?: '—' }}</span>
                                 </li>
-                                <li>
+                                <li class="highlight-row">
                                     <span class="lbl">Số tài khoản</span>
-                                    <span class="val d-flex align-items-center gap-2 flex-wrap">
-                                        <strong id="bank-acc-no">{{ $bank['account_no'] ?: '—' }}</strong>
+                                    <span class="val d-flex align-items-center justify-content-center gap-3 flex-wrap">
+                                        <strong id="bank-acc-no" class="bank-acc-number-highlight">{{ $bank['account_no'] ?: '—' }}</strong>
                                         @if($bank['account_no'])
-                                            <button type="button" class="btn btn-sm btn-outline-primary copy-btn" data-copy="bank-acc-no">
+                                            <button type="button" class="btn btn-primary btn-lg shadow-sm copy-btn" data-copy="bank-acc-no">
                                                 <i class="fas fa-copy me-1"></i> Sao chép
                                             </button>
                                         @endif
@@ -85,10 +85,10 @@
                                 </li>
                                 <li>
                                     <span class="lbl">Số tiền</span>
-                                    <span class="val d-flex align-items-center gap-2 flex-wrap">
-                                        <strong class="vs-price-vnd fs-4" id="bank-amount">{{ number_format($order->total_amount, 0, ',', '.') }}</strong>
-                                        <span class="vs-price-vnd fs-5">₫</span>
-                                        <button type="button" class="btn btn-sm btn-outline-primary copy-btn" data-copy-value="{{ (int) $order->total_amount }}">
+                                    <span class="val d-flex align-items-center justify-content-center gap-2 flex-wrap">
+                                        <strong class="vs-price-vnd fs-2 text-danger" id="bank-amount">{{ number_format($order->total_amount, 0, ',', '.') }}</strong>
+                                        <span class="vs-price-vnd fs-4 text-danger">₫</span>
+                                        <button type="button" class="btn btn-sm btn-outline-danger copy-btn" data-copy-value="{{ (int) $order->total_amount }}">
                                             <i class="fas fa-copy me-1"></i> Sao chép
                                         </button>
                                     </span>
@@ -96,10 +96,10 @@
                                 <li class="bank-content-row">
                                     <span class="lbl">
                                         Nội dung chuyển khoản
-                                        <div class="small text-danger">Bắt buộc ghi đúng</div>
+                                        <div class="small text-danger mt-1">Bắt buộc ghi đúng</div>
                                     </span>
-                                    <span class="val d-flex align-items-center gap-2 flex-wrap">
-                                        <strong class="bank-content-code" id="bank-memo">{{ $transferContent }}</strong>
+                                    <span class="val d-flex align-items-center justify-content-center gap-2 flex-wrap">
+                                        <strong class="bank-content-code fs-4" id="bank-memo">{{ $transferContent }}</strong>
                                         <button type="button" class="btn btn-sm btn-outline-primary copy-btn" data-copy="bank-memo">
                                             <i class="fas fa-copy me-1"></i> Sao chép
                                         </button>
@@ -129,12 +129,12 @@
                                 Toàn bộ thông tin (số TK, số tiền, nội dung) sẽ được điền tự động, bạn chỉ cần xác nhận.
                             </div>
 
-                            <div class="d-flex gap-2 mt-4 flex-wrap">
-                                <a href="{{ route('orders.show', $order) }}" class="btn btn-secondary">
-                                    <i class="fas fa-arrow-left me-1"></i> Về đơn hàng
+                            <div class="d-flex justify-content-center gap-3 mt-5 flex-wrap">
+                                <a href="{{ route('orders.show', $order) }}" class="btn btn-secondary btn-lg px-4">
+                                    <i class="fas fa-arrow-left me-2"></i> Về đơn hàng
                                 </a>
-                                <button type="button" class="btn btn-success" id="btn-notified">
-                                    <i class="fas fa-paper-plane me-1"></i>
+                                <button type="button" class="btn btn-success btn-lg px-4 shadow-sm" id="btn-notified">
+                                    <i class="fas fa-paper-plane me-2"></i>
                                     {{ $notifiedAt ? 'Đã báo chuyển khoản' : 'Tôi đã chuyển khoản' }}
                                 </button>
                             </div>
@@ -168,10 +168,11 @@
 <style>
 .bank-card {
     border: none;
-    box-shadow: var(--vs-shadow-lg);
-    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    border-radius: 24px;
     overflow: hidden;
     background: #fff;
+    padding: 20px;
 }
 .bank-brand-logo {
     width: 68px; height: 68px;
@@ -200,13 +201,28 @@
 }
 .bank-info { margin: 0; padding: 0; }
 .bank-info li {
-    display: flex; justify-content: space-between; align-items: center; gap: 12px;
-    padding: 10px 0;
+    display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 12px;
+    padding: 24px 0;
     border-bottom: 1px dashed #e5e7eb;
+    text-align: center;
 }
 .bank-info li:last-child { border-bottom: none; }
-.bank-info .lbl { color: var(--vs-text-muted); flex: 0 0 auto; }
-.bank-info .val { font-weight: 600; color: var(--vs-text); text-align: right; }
+.bank-info .lbl { color: var(--vs-text-muted); font-size: 15px; text-transform: uppercase; letter-spacing: 0.5px; }
+.bank-info .val { font-weight: 600; color: var(--vs-text); justify-content: center; }
+.bank-info .highlight-row {
+    background: #f8f9fa;
+    border-radius: 16px;
+    padding: 32px 16px;
+    margin: 16px 0;
+    border: 2px dashed #198754;
+    box-shadow: 0 4px 12px rgba(25, 135, 84, 0.05);
+}
+.bank-acc-number-highlight {
+    font-size: 32px;
+    font-weight: 900;
+    color: #198754;
+    letter-spacing: 2px;
+}
 .bank-info .bank-content-code {
     background: #fef3c7;
     border: 1px dashed #f59e0b;
@@ -289,17 +305,21 @@
             } else {
                 notifyBtn.disabled = false;
                 notifyBtn.innerHTML = old;
-                alert(data.message || 'Không gửi được thông báo.');
+                Swal.fire(data.message || 'Không gửi được thông báo.');
             }
         });
     }
 
     if (mockBtn) {
         mockBtn.addEventListener('click', async () => {
-            const ok = window.aiConfirm
-                ? await window.aiConfirm('Giả lập ngân hàng báo đã nhận tiền cho đơn này?')
-                : confirm('Giả lập ngân hàng báo đã nhận tiền cho đơn này?');
-            if (!ok) return;
+            const result = await Swal.fire({
+                text: 'Giả lập ngân hàng báo đã nhận tiền cho đơn này?',
+                icon: 'question',
+                showCancelButton: true,
+                confirmButtonText: 'Đồng ý',
+                cancelButtonText: 'Hủy'
+            });
+            if (!result.isConfirmed) return;
             mockBtn.disabled = true;
             const old = mockBtn.innerHTML;
             mockBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-1"></i> Đang xử lý...';
@@ -314,7 +334,7 @@
             } else {
                 mockBtn.disabled = false;
                 mockBtn.innerHTML = old;
-                alert(res.data.message || 'Giả lập thất bại.');
+                Swal.fire(res.data.message || 'Giả lập thất bại.');
             }
         });
     }

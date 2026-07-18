@@ -110,6 +110,8 @@ class CategoryController extends Controller
             $data['image'] = $request->file('image_file')->store('categories', 'public');
         } elseif ($request->filled('image')) {
             $data['image'] = $request->input('image');
+        } elseif ($request->input('upload_type') === 'file') {
+            $data['image'] = $category->image;
         } else {
             $data['image'] = null;
         }

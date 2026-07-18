@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Axiology Lip-to-Lid Balmies",
+        "description": "These multi-use crayons offer vibrant color for lips, cheeks, and eyes without any plastic packaging. Wrapped in recyclable paper, they are as kind to the earth as they are to your skin. A truly zero-waste addition to your makeup routine.",
+        "price": 36,
+        "stock": 45,
+        "image": "https://loremflickr.com/800/800/lipstick?lock=5623",
+        "category": "Eco-friendly Cosmetics",
+        "is_featured": true
+    },
+    {
+        "name": "Elate Cosmetics Essential Mascara",
+        "description": "Achieve beautifully lengthened and volumized lashes with this water- and sweat-resistant formula. Packaged in a sustainable bamboo tube, it minimizes plastic waste while keeping your eyes looking stunning all day long. Perfect for sensitive eyes and conscious consumers.",
+        "price": 28,
+        "stock": 60,
+        "image": "https://loremflickr.com/800/800/mascara?lock=7095",
+        "category": "Eco-friendly Cosmetics",
+        "is_featured": false
+    },
+    {
+        "name": "Kjaer Weis Cream Blush",
+        "description": "Experience a healthy, lit-from-within glow with this luxurious organic cream blush. Housed in a stunning, refillable metal compact, it redefines sustainable luxury. Its nourishing formula melts effortlessly into the skin for a flawless finish.",
+        "price": 56,
+        "stock": 30,
+        "image": "https://loremflickr.com/800/800/blush?lock=4730",
+        "category": "Eco-friendly Cosmetics",
+        "is_featured": true
+    },
+    {
+        "name": "RMS Beauty UnCoverup Concealer",
+        "description": "Formulated with raw, organic ingredients, this lightweight concealer seamlessly covers imperfections while hydrating the skin. Packaged in a recyclable glass pot with an aluminum lid, it champions sustainable beauty. Leaves your complexion looking naturally radiant and refreshed.",
+        "price": 38,
+        "stock": 85,
+        "image": "https://loremflickr.com/800/800/concealer?lock=5157",
+        "category": "Eco-friendly Cosmetics",
+        "is_featured": false
+    },
+    {
+        "name": "Ilia Beauty Super Serum Skin Tint SPF 40",
+        "description": "A pioneering formula that fuses skincare, makeup, and sun protection into one effortless step. Crafted with clean, ethically sourced ingredients and delivered in recyclable packaging, it protects both your skin and the environment. Gives a dewy, glowing finish that lasts.",
+        "price": 48,
+        "stock": 70,
+        "image": "https://loremflickr.com/800/800/skincare?lock=5059",
+        "category": "Eco-friendly Cosmetics",
+        "is_featured": false
+    },
+    {
+        "name": "100% Pure Fruit Pigmented Foundation",
+        "description": "Achieve full, flawless coverage with a formula colored entirely by antioxidant-rich fruit and vegetable pigments. Enriched with aloe and green tea, it soothes the skin while offering a matte, long-lasting finish. Committed to cruelty-free and natural ingredients for a healthier planet.",
+        "price": 42,
+        "stock": 55,
+        "image": "https://loremflickr.com/800/800/foundation?lock=4383",
+        "category": "Eco-friendly Cosmetics",
+        "is_featured": false
+    },
+    {
+        "name": "Ethique Solid Lipstick",
+        "description": "Richly pigmented and incredibly nourishing, this solid lipstick delivers beautiful color without a hint of plastic. Its compostable cardboard tube ensures that your beauty ritual leaves absolutely no trace behind. Infused with moringa and castor oils for supreme lip hydration.",
+        "price": 25,
+        "stock": 90,
+        "image": "https://loremflickr.com/800/800/makeup?lock=5437",
+        "category": "Eco-friendly Cosmetics",
+        "is_featured": false
+    }
+]

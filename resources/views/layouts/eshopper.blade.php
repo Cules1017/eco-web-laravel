@@ -7,6 +7,9 @@
     <title>@yield('title', config('app.name'))</title>
     <link rel="icon" href="{{ $logo ?? asset('favicon.ico') }}">
     <!-- EShopper CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://themewagon.github.io/eshopper/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="{{ asset('css/theme.css') }}?v={{ filemtime(public_path('css/theme.css')) }}">
@@ -386,9 +389,46 @@
             from { opacity: 0; transform: scale(0.9) translateY(10px); }
             to { opacity: 1; transform: scale(1) translateY(0); }
         }
+
+        /* Navbar Underline Slide Effect */
+        .navbar-nav .nav-item .nav-link {
+            position: relative;
+        }
+        .navbar-nav .nav-item .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 4px;
+            left: 8px;
+            background-color: #fff;
+            transition: width 0.3s ease-in-out;
+        }
+        .navbar-nav .nav-item .nav-link:hover::after,
+        .navbar-nav .nav-item .nav-link:focus::after {
+            width: calc(100% - 16px);
+        }
+        
+        /* Tùy chỉnh scrollbar cho dropdown menu */
+        .custom-scrollbar-dropdown::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar-dropdown::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar-dropdown::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 3px;
+        }
+        .custom-scrollbar-dropdown::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
     </style>
 </head>
 <body>
+    <!-- Interactive Particles Background -->
+    <div id="particles-js" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1; background-color: #f8fafc;"></div>
+
     @php
         $logo = \App\Models\Setting::getValue('site_logo') ? asset('storage/' . \App\Models\Setting::getValue('site_logo')) : 'https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg';
         $siteName = \App\Models\Setting::getValue('site_name', config('app.name'));
@@ -454,7 +494,7 @@
                         <a class="nav-link dropdown-toggle" href="{{ route('products.index') }}" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             {{ __('messages.products') }}
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="productsDropdown" style="min-width:220px; max-height:70vh; overflow-y:auto;">
+                        <ul class="dropdown-menu custom-scrollbar-dropdown" aria-labelledby="productsDropdown" style="min-width:220px; max-height:70vh; overflow-y:auto; background: #ffffff; box-shadow: 0 10px 40px rgba(0,0,0,0.08); border-radius: 12px; border: none;">
                             @foreach($parentCategories as $cat)
                                 <li><a class="dropdown-item" href="{{ route('products.index', ['category' => $cat->slug]) }}">{{ $cat->name }}</a></li>
                             @endforeach
@@ -471,8 +511,8 @@
         </div>
     </nav>
     <!-- Main Content -->
-    <main class="bg-white" style="padding-top: 130px; padding-bottom: 2rem;">
-        <div class="container">
+    <main style="background: transparent; padding-top: 130px; padding-bottom: 4rem; position: relative;">
+        <div class="container" style="max-width: 1440px;">
             @if(session('success'))
                 <div class="alert alert-success">{{ session('success') }}</div>
             @endif
@@ -548,6 +588,7 @@
     </div>
 
     <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
@@ -1113,6 +1154,50 @@
             });
         });
     });
+    </script>
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        if (typeof particlesJS !== 'undefined') {
+            particlesJS('particles-js', {
+              "particles": {
+                "number": { "value": 70, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#94a3b8" },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.5, "random": false },
+                "size": { "value": 3, "random": true },
+                "line_linked": {
+                  "enable": true,
+                  "distance": 150,
+                  "color": "#cbd5e1",
+                  "opacity": 0.4,
+                  "width": 1
+                },
+                "move": {
+                  "enable": true,
+                  "speed": 1.5,
+                  "direction": "none",
+                  "random": true,
+                  "straight": false,
+                  "out_mode": "out",
+                  "bounce": false,
+                }
+              },
+              "interactivity": {
+                "detect_on": "window",
+                "events": {
+                  "onhover": { "enable": true, "mode": "grab" },
+                  "onclick": { "enable": true, "mode": "push" },
+                  "resize": true
+                },
+                "modes": {
+                  "grab": { "distance": 180, "line_linked": { "opacity": 0.8, "color": "#6366f1" } },
+                  "push": { "particles_nb": 3 }
+                }
+              },
+              "retina_detect": true
+            });
+        }
     </script>
     @stack('scripts')
 </body>

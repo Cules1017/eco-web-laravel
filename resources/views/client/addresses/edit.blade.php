@@ -3,15 +3,31 @@
 @section('title', __('messages.edit_address'))
 
 @section('content')
-<div class="container vs-page-wrapper">
-    <h1 class="vs-section-title mb-4">{{ __('messages.edit_address') }}</h1>
+@push('styles')
+<style>
+    .form-control, .form-select {
+        border: 1px solid #e0e0e0 !important;
+        border-radius: 8px !important;
+        padding: 12px 16px !important;
+        transition: all 0.3s ease !important;
+        background-color: #fff !important;
+    }
+    .form-control:focus, .form-select:focus {
+        border-color: #333 !important;
+        box-shadow: 0 0 0 4px rgba(0,0,0,0.05) !important;
+        outline: none !important;
+    }
+</style>
+@endpush
+<div class="container py-5">
+    <h1 class="mb-5 fw-normal text-uppercase fs-3">{{ __('messages.edit_address') }}</h1>
 
     <div class="row justify-content-center">
         <div class="col-lg-8">
-            <div class="card">
-                <div class="card-body p-4">
+            <div class="card shadow-none border-0 bg-transparent">
+                <div class="card-body p-0">
                     @if($errors->any())
-                        <div class="alert alert-danger">
+                        <div class="alert alert-danger rounded-0">
                             <ul class="mb-0 small">
                                 @foreach($errors->all() as $error)
                                     <li>{{ $error }}</li>
@@ -24,27 +40,27 @@
                         @csrf
                         @method('PUT')
 
-                        <div class="row g-3 mb-3">
+                        <div class="row g-5 mb-5">
                             <div class="col-md-7">
-                                <label for="full_name" class="form-label fw-semibold">Họ và tên người nhận</label>
+                                <label for="full_name" class="form-label text-uppercase text-muted small fw-bold mb-2">Họ và tên người nhận</label>
                                 <input type="text" name="full_name" id="full_name"
                                        value="{{ old('full_name', $address->full_name) }}"
-                                       class="form-control @error('full_name') is-invalid @enderror" required>
+                                       class="form-control form-control-lg border-0 border-bottom rounded-0 bg-transparent px-0 @error('full_name') is-invalid @enderror" required>
                                 @error('full_name')<div class="invalid-feedback">{{ $message }}</div>@enderror
                             </div>
                             <div class="col-md-5">
-                                <label for="phone" class="form-label fw-semibold">{{ __('messages.phone') }}</label>
+                                <label for="phone" class="form-label text-uppercase text-muted small fw-bold mb-2">{{ __('messages.phone') }}</label>
                                 <input type="tel" name="phone" id="phone"
                                        value="{{ old('phone', $address->phone) }}"
-                                       class="form-control @error('phone') is-invalid @enderror" required>
+                                       class="form-control form-control-lg border-0 border-bottom rounded-0 bg-transparent px-0 @error('phone') is-invalid @enderror" required>
                                 @error('phone')<div class="invalid-feedback">{{ $message }}</div>@enderror
                             </div>
                         </div>
 
-                        <div class="row g-3 mb-3">
+                        <div class="row g-5 mb-5">
                             <div class="col-md-4">
-                                <label for="province" class="form-label fw-semibold">{{ __('messages.province') }}</label>
-                                <select id="province" class="form-select" required>
+                                <label for="province" class="form-label text-uppercase text-muted small fw-bold mb-2">{{ __('messages.province') }}</label>
+                                <select id="province" class="form-select form-select-lg border-0 border-bottom rounded-0 bg-transparent px-0" required>
                                     <option value="">{{ __('messages.select_province') }}</option>
                                 </select>
                                 <input type="hidden" name="province_name" id="province_name"
@@ -52,8 +68,8 @@
                                 @error('province_name')<div class="invalid-feedback d-block">{{ $message }}</div>@enderror
                             </div>
                             <div class="col-md-4">
-                                <label for="district" class="form-label fw-semibold">{{ __('messages.district') }}</label>
-                                <select id="district" class="form-select" required disabled>
+                                <label for="district" class="form-label text-uppercase text-muted small fw-bold mb-2">{{ __('messages.district') }}</label>
+                                <select id="district" class="form-select form-select-lg border-0 border-bottom rounded-0 bg-transparent px-0" required disabled>
                                     <option value="">{{ __('messages.select_district') }}</option>
                                 </select>
                                 <input type="hidden" name="district_name" id="district_name"
@@ -61,8 +77,8 @@
                                 @error('district_name')<div class="invalid-feedback d-block">{{ $message }}</div>@enderror
                             </div>
                             <div class="col-md-4">
-                                <label for="ward" class="form-label fw-semibold">{{ __('messages.ward') }}</label>
-                                <select id="ward" class="form-select" required disabled>
+                                <label for="ward" class="form-label text-uppercase text-muted small fw-bold mb-2">{{ __('messages.ward') }}</label>
+                                <select id="ward" class="form-select form-select-lg border-0 border-bottom rounded-0 bg-transparent px-0" required disabled>
                                     <option value="">{{ __('messages.select_ward') }}</option>
                                 </select>
                                 <input type="hidden" name="ward_name" id="ward_name"
@@ -71,29 +87,29 @@
                             </div>
                         </div>
 
-                        <div class="mb-3">
-                            <label for="address" class="form-label fw-semibold">Số nhà, tên đường</label>
+                        <div class="mb-5">
+                            <label for="address" class="form-label text-uppercase text-muted small fw-bold mb-2">Số nhà, tên đường</label>
                             <input type="text" name="address" id="address"
                                    value="{{ old('address', $address->address) }}"
-                                   class="form-control @error('address') is-invalid @enderror" required>
+                                   class="form-control form-control-lg border-0 border-bottom rounded-0 bg-transparent px-0 @error('address') is-invalid @enderror" required>
                             @error('address')<div class="invalid-feedback">{{ $message }}</div>@enderror
                         </div>
 
-                        <div class="form-check mb-4">
-                            <input class="form-check-input" type="checkbox" name="is_default" value="1"
+                        <div class="form-check mb-5">
+                            <input class="form-check-input border-dark" type="checkbox" name="is_default" value="1"
                                    id="is_default" {{ old('is_default', $address->is_default) ? 'checked' : '' }}>
-                            <label class="form-check-label" for="is_default">
+                            <label class="form-check-label ms-2 mt-1" for="is_default">
                                 {{ __('messages.set_as_default') }}
                             </label>
                         </div>
 
-                        <div class="d-flex gap-2 flex-wrap justify-content-end">
-                            <a href="{{ route('addresses.index') }}" class="btn btn-secondary">
-                                <i class="fas fa-arrow-left me-1"></i>{{ __('messages.cancel') }}
-                            </a>
-                            <button type="submit" class="btn btn-primary">
-                                <i class="fas fa-floppy-disk me-1"></i>{{ __('messages.update_address') }}
+                        <div class="d-flex gap-4 mt-5 pt-4 flex-wrap border-top">
+                            <button type="submit" class="btn btn-dark text-uppercase rounded-0 px-5 py-3">
+                                {{ __('messages.update_address') }}
                             </button>
+                            <a href="{{ route('addresses.index') }}" class="btn btn-outline-dark text-uppercase rounded-0 px-5 py-3 border-0 border-bottom text-muted">
+                                {{ __('messages.cancel') }}
+                            </a>
                         </div>
                     </form>
                 </div>

@@ -3,11 +3,11 @@
 @section('title', __('messages.shopping_cart'))
 
 @section('content')
-<div class="container vs-page-wrapper">
-    <h1 class="vs-section-title mb-4">{{ __('messages.shopping_cart') }}</h1>
+<div class="container vs-page-wrapper py-5">
+    <h1 class="mb-5 text-uppercase" style="font-weight: 300; letter-spacing: 2px;">{{ __('messages.shopping_cart') }}</h1>
 
     @if(session('success'))
-    <div class="alert alert-success">
+    <div class="alert alert-success rounded-0">
         {{ session('success') }}
     </div>
     @endif
@@ -18,83 +18,104 @@
     </div>
     @endif
 
+    <style>
+        .cart-table th {
+            border-bottom: 1px solid #f1f3f5 !important;
+            padding-bottom: 1rem !important;
+            color: #6c757d;
+        }
+        .cart-item-row {
+            transition: background 0.3s ease;
+            border-bottom: 1px solid #f1f3f5;
+        }
+        .cart-item-row td {
+            padding: 1.5rem 0.5rem !important;
+        }
+        .cart-item-row:hover {
+            background-color: #f9fafb !important;
+        }
+        .quantity-input {
+            border-radius: 8px !important;
+        }
+        .quantity-btn {
+            border-radius: 8px !important;
+        }
+    </style>
     @if(count($cartItems) > 0)
-    <div class="card">
-        <div class="card-body">
-            <div class="table-responsive">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>{{ __('messages.product') }}</th>
-                            <th>{{ __('messages.price') }}</th>
-                            <th>{{ __('messages.quantity') }}</th>
-                            <th>{{ __('messages.subtotal') }}</th>
-                            <th>{{ __('messages.actions') }}</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach($cartItems as $item)
-                        <tr>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <img src="{{ $item->product->image ? (Str::startsWith($item->product->image, ['http://', 'https://']) ? $item->product->image : asset('storage/' . $item->product->image)) : 'https://via.placeholder.com/100x100' }}" 
-                                         alt="{{ $item->product->name }}" 
-                                         class="img-thumbnail me-3" 
-                                         style="width: 100px; max-width: 100px; max-height: 100px; object-fit: contain;">
-                                    <div>
-                                        <h5 class="mb-1">
-                                            <a href="{{ route('products.show', $item->product->slug) }}" class="text-decoration-none">
-                                                {{ $item->product->name }}
-                                            </a>
-                                        </h5>
-                                        <p class="text-muted mb-0">{{ $item->product->category->name }}</p>
-                                    </div>
+    <div class="cart-list">
+        <div class="table-responsive">
+            <table class="table table-borderless cart-table align-middle">
+                <thead>
+                    <tr class="text-uppercase" style="font-weight: 600; letter-spacing: 1px; font-size: 0.85rem;">
+                        <th>{{ __('messages.product') }}</th>
+                        <th>{{ __('messages.price') }}</th>
+                        <th>{{ __('messages.quantity') }}</th>
+                        <th>{{ __('messages.subtotal') }}</th>
+                        <th>{{ __('messages.actions') }}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach($cartItems as $item)
+                    <tr class="cart-item-row">
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <img src="{{ $item->product->image ? (Str::startsWith($item->product->image, ['http://', 'https://']) ? $item->product->image : asset('storage/' . $item->product->image)) : 'https://via.placeholder.com/100x100' }}" 
+                                     alt="{{ $item->product->name }}" 
+                                     class="me-3" 
+                                     style="width: 100px; max-width: 100px; max-height: 100px; object-fit: contain;">
+                                <div>
+                                    <h5 class="mb-1">
+                                        <a href="{{ route('products.show', $item->product->slug) }}" class="text-decoration-none">
+                                            {{ $item->product->name }}
+                                        </a>
+                                    </h5>
+                                    <p class="text-muted mb-0">{{ $item->product->category->name }}</p>
                                 </div>
-                            </td>
-                            <td class="vs-price-vnd">{{ number_format($item->product->price, 0, ',', '.') }}₫</td>
-                            <td>
-                                <form class="cart-update-form d-flex align-items-center" data-product-id="{{ $item->product->id }}">
-                                    @csrf
-                                    @method('PUT')
-                                    <input type="number" name="quantity" value="{{ $item->quantity }}" 
-                                           min="1" max="{{ $item->product->stock }}" 
-                                           class="form-control form-control-sm" style="width: 70px;">
-                                    <button type="submit" class="btn btn-sm btn-outline-primary ms-2">
-                                        <i class="fas fa-sync-alt"></i>
-                                    </button>
-                                </form>
-                            </td>
-                            <td class="vs-price-vnd">{{ number_format($item->product->price * $item->quantity, 0, ',', '.') }}₫</td>
-                            <td>
-                                <form class="cart-remove-form" data-product-id="{{ $item->product->id }}">
-                                    @csrf
-                                    @method('DELETE')
-                                    <button type="submit" class="btn btn-sm btn-danger">
-                                        <i class="fas fa-trash"></i>
-                                    </button>
-                                </form>
-                            </td>
-                        </tr>
-                        @endforeach
+                            </div>
+                        </td>
+                        <td class="vs-price-vnd">{{ number_format($item->product->price, 0, ',', '.') }}₫</td>
+                        <td>
+                            <form class="cart-update-form d-flex align-items-center" data-product-id="{{ $item->product->id }}">
+                                @csrf
+                                @method('PUT')
+                                <input type="number" name="quantity" value="{{ $item->quantity }}" 
+                                       min="1" max="{{ $item->product->stock }}" 
+                                       class="form-control form-control-sm quantity-input text-center" style="width: 60px;">
+                                <button type="submit" class="btn btn-sm btn-outline-dark ms-2 quantity-btn">
+                                    <i class="fas fa-sync-alt"></i>
+                                </button>
+                            </form>
+                        </td>
+                        <td class="vs-price-vnd">{{ number_format($item->product->price * $item->quantity, 0, ',', '.') }}₫</td>
+                        <td>
+                            <form class="cart-remove-form" data-product-id="{{ $item->product->id }}">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-sm btn-outline-danger quantity-btn border-0">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                    @endforeach
                     </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="3" class="text-end"><strong>{{ __('messages.total') }}:</strong></td>
-                            <td><strong class="vs-price-vnd" style="font-size: 1.1rem;">{{ number_format($total, 0, ',', '.') }}₫</strong></td>
-                            <td></td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </div>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="text-end py-4"><strong>{{ __('messages.total') }}:</strong></td>
+                        <td class="py-4"><strong class="vs-price-vnd" style="font-size: 1.25rem;">{{ number_format($total, 0, ',', '.') }}₫</strong></td>
+                        <td class="py-4"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
 
-            <div class="d-flex justify-content-between mt-4">
-                <a href="{{ route('products.index') }}" class="btn btn-secondary">
-                    <i class="fas fa-arrow-left"></i> {{ __('messages.continue_shopping') }}
-                </a>
-                <a href="{{ route('checkout') }}" class="btn btn-primary">
-                    {{ __('messages.proceed_to_checkout') }} <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
+        <div class="d-flex justify-content-between mt-5">
+            <a href="{{ route('products.index') }}" class="btn btn-outline-dark px-4 py-2 rounded-0 text-uppercase" style="letter-spacing: 1px;">
+                <i class="fas fa-arrow-left me-2"></i> {{ __('messages.continue_shopping') }}
+            </a>
+            <a href="{{ route('checkout') }}" class="btn btn-dark px-4 py-2 rounded-0 text-uppercase" style="letter-spacing: 1px;">
+                {{ __('messages.proceed_to_checkout') }} <i class="fas fa-arrow-right ms-2"></i>
+            </a>
         </div>
     </div>
     @else
@@ -150,7 +171,7 @@ document.querySelectorAll('.cart-update-form').forEach(form => {
         })
         .catch(() => {
             setBtnLoading(btn, false);
-            showCartToast('Có lỗi xảy ra, vui lòng thử lại!', false);
+            Swal.fire({ icon: 'error', text: 'Có lỗi xảy ra, vui lòng thử lại!' });
         });
     });
 });
@@ -177,7 +198,7 @@ document.querySelectorAll('.cart-remove-form').forEach(form => {
         })
         .catch(() => {
             setBtnLoading(btn, false);
-            showCartToast('Có lỗi xảy ra, vui lòng thử lại!', false);
+            Swal.fire({ icon: 'error', text: 'Có lỗi xảy ra, vui lòng thử lại!' });
         });
     });
 });

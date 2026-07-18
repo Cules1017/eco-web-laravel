@@ -4,15 +4,16 @@
  * ============================================================ */
 
 :root {
-    --vs-primary: #6366f1;
-    --vs-primary-dark: #4f46e5;
-    --vs-accent: #ec4899;
-    --vs-gradient: linear-gradient(135deg, #6366f1, #ec4899);
-    --vs-gradient-soft: linear-gradient(135deg, #eef2ff, #fdf2f8);
+    /* Premium Minimalist Palette */
+    --vs-primary: #121212;
+    --vs-primary-dark: #000000;
+    --vs-accent: #3b82f6;
+    --vs-gradient: linear-gradient(135deg, #121212, #2a2a2a);
+    --vs-gradient-soft: linear-gradient(135deg, #f3f4f6, #ffffff);
 
-    --vs-success: #16a34a;
-    --vs-success-dark: #15803d;
-    --vs-success-gradient: linear-gradient(135deg, #22c55e, #10b981);
+    --vs-success: #10b981;
+    --vs-success-dark: #059669;
+    --vs-success-gradient: linear-gradient(135deg, #10b981, #059669);
 
     --vs-danger: #ef4444;
     --vs-danger-dark: #dc2626;
@@ -23,34 +24,42 @@
     --vs-info: #0ea5e9;
     --vs-info-dark: #0284c7;
 
-    --vs-secondary: #64748b;
-    --vs-secondary-soft: #f1f5f9;
+    --vs-secondary: #6b7280;
+    --vs-secondary-soft: #f3f4f6;
 
-    --vs-price: #ec4899;
+    --vs-price: #121212;
 
-    --vs-text: #0f172a;
-    --vs-text-muted: #64748b;
+    --vs-text: #111827;
+    --vs-text-muted: #6b7280;
     --vs-border: #e5e7eb;
-    --vs-bg: #f8fafc;
-    --vs-bg-soft: #f1f5f9;
+    --vs-bg: #fafafa;
+    --vs-bg-soft: #f3f4f6;
 
-    --vs-radius-sm: 8px;
-    --vs-radius: 12px;
+    --vs-radius-sm: 6px;
+    --vs-radius: 10px;
     --vs-radius-lg: 16px;
     --vs-radius-pill: 999px;
 
-    --vs-shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05);
-    --vs-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
-    --vs-shadow-lg: 0 16px 40px rgba(15, 23, 42, 0.12);
+    /* Softer, larger shadows for a premium feel */
+    --vs-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.03);
+    --vs-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    --vs-shadow-lg: 0 24px 48px rgba(0, 0, 0, 0.08);
 
-    --vs-transition: 0.2s ease;
+    --vs-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
     color: var(--vs-text);
-    background: #fff;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        "Helvetica Neue", Arial, sans-serif;
+    background: var(--vs-bg);
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: var(--vs-text);
 }
 
 /* ============================================================

@@ -75,6 +75,23 @@
                         @enderror
                     </div>
                 </div>
+                <div class="form-group mb-4">
+                    <label class="fw-bold mb-3 d-block">Ảnh phụ (Gallery)</label>
+                    
+                    <!-- Upload New Images -->
+                    <div id="image-upload-zone" class="rounded text-center p-5 position-relative bg-light" style="border: 2px dashed #adb5bd; cursor: pointer; transition: all 0.2s ease;">
+                        <input type="file" id="images-input" name="images[]" multiple class="position-absolute w-100 h-100" style="top:0; left:0; opacity:0; cursor:pointer;" accept="image/*">
+                        <div class="py-3">
+                            <i class="fas fa-cloud-upload-alt text-primary mb-3" style="font-size: 3.5rem;"></i>
+                            <h5 class="text-dark fw-bold mb-2">Kéo thả ảnh vào đây hoặc click để tải lên</h5>
+                            <p class="text-muted small mb-0">Hỗ trợ định dạng JPG, PNG, GIF (Tối đa 2MB/ảnh). Có thể chọn nhiều ảnh cùng lúc.</p>
+                        </div>
+                    </div>
+                    @error('images.*')<span class="invalid-feedback d-block mt-2">{{ $message }}</span>@enderror
+
+                    <!-- Preview newly selected images -->
+                    <div id="new-images-preview" class="d-flex flex-wrap gap-3 mt-4"></div>
+                </div>
                 <div class="form-group mb-3">
                     <div class="form-check">
                         <input type="checkbox" class="form-check-input @error('is_active') is-invalid @enderror" id="is_active" name="is_active" value="1" {{ old('is_active', true) ? 'checked' : '' }}>
@@ -123,5 +140,80 @@
         branding: false,
         content_style: 'body { font-family:Roboto,sans-serif; font-size:14px }'
     });
+
+    // Handle Image Gallery Upload Preview
+    const imagesInput = document.getElementById('images-input');
+    const previewContainer = document.getElementById('new-images-preview');
+    const dropZone = document.getElementById('image-upload-zone');
+
+    if (imagesInput && previewContainer) {
+        imagesInput.addEventListener('change', function() {
+            previewContainer.innerHTML = ''; // Clear old previews
+            if (this.files && this.files.length > 0) {
+                Array.from(this.files).forEach((file, index) => {
+                    if (file.type.startsWith('image/')) {
+                        const reader = new FileReader();
+                        reader.onload = function(e) {
+                            const imgDiv = document.createElement('div');
+                            imgDiv.className = 'position-relative border rounded shadow-sm overflow-hidden bg-white';
+                            imgDiv.style.width = '110px';
+                            imgDiv.style.height = '110px';
+                            
+                            const img = document.createElement('img');
+                            img.src = e.target.result;
+                            img.style.width = '100%';
+                            img.style.height = '100%';
+                            img.style.objectFit = 'cover';
+                            
+                            const badge = document.createElement('span');
+                            badge.className = 'badge bg-success position-absolute';
+                            badge.style.top = '4px';
+                            badge.style.left = '4px';
+                            badge.innerText = 'Mới';
+                            
+                            imgDiv.appendChild(img);
+                            imgDiv.appendChild(badge);
+                            previewContainer.appendChild(imgDiv);
+                        }
+                        reader.readAsDataURL(file);
+                    }
+                });
+            }
+        });
+    }
+
+    if (dropZone) {
+        ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+            dropZone.addEventListener(eventName, preventDefaults, false);
+        });
+        function preventDefaults(e) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+
+        ['dragenter', 'dragover'].forEach(eventName => {
+            dropZone.addEventListener(eventName, () => {
+                dropZone.style.borderColor = '#007bff';
+                dropZone.style.backgroundColor = '#e9ecef';
+            }, false);
+        });
+
+        ['dragleave', 'drop'].forEach(eventName => {
+            dropZone.addEventListener(eventName, () => {
+                dropZone.style.borderColor = '#adb5bd';
+                dropZone.style.backgroundColor = '#f8f9fa';
+            }, false);
+        });
+        
+        dropZone.addEventListener('drop', function(e) {
+            const dt = e.dataTransfer;
+            const files = dt.files;
+            imagesInput.files = files; // Assign files to input
+            
+            // Trigger change event manually
+            const event = new Event('change');
+            imagesInput.dispatchEvent(event);
+        }, false);
+    }
 </script>
 @endpush 

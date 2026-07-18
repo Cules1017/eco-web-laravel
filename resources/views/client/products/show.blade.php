@@ -3,7 +3,7 @@
 @section('title', $product->name)
 
 @section('content')
-<div class="container product-detail-modern" style="max-width: 1100px;">
+<div class="container my-4" style="max-width: 1100px;">
     <!-- Breadcrumb -->
     <nav aria-label="breadcrumb" class="mb-4">
         <ol class="breadcrumb">
@@ -20,32 +20,62 @@
         </ol>
     </nav>
     <div class="row g-5">
-        <!-- Product Image + Badge -->
-        <div class="col-md-5 mb-4 position-relative">
-            <div class="product-img-modern d-flex align-items-center justify-content-center position-relative">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#productImageModal">
+        <!-- Product Image -->
+        <div class="col-md-6 mb-4">
+            <div class="product-img-modern d-flex align-items-center justify-content-center" style="background: transparent; box-shadow: none; padding: 0; aspect-ratio: 1/1; max-height: 550px; width: 100%;">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#productImageModal" class="w-100 h-100 d-flex align-items-center justify-content-center" onclick="updateModalImage('{{ $product->image ? (Str::startsWith($product->image, ['http://', 'https://']) ? $product->image : asset('storage/' . $product->image)) : 'https://via.placeholder.com/600x600' }}')">
                     <img id="product-img-{{ $product->id }}"
-                         src="{{ $product->image ? (Str::startsWith($product->image, ['http://', 'https://']) ? $product->image : asset('storage/' . $product->image)) : 'https://via.placeholder.com/600x600' }}"
+                         src="{{ $product->image ? (Str::startsWith($product->image, ['http://', 'https://']) ? $product->image : asset('storage/' . $product->image)) : 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MDAiIGhlaWdodD0iODAwIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZWVlIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGR5PSIuM2VtIiBmaWxsPSIjOTk5IiBmb250LXNpemU9IjI0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiPk5vIEltYWdlPC90ZXh0Pjwvc3ZnPg==' }}"
+                         onerror="this.onerror=null;this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MDAiIGhlaWdodD0iODAwIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZWVlIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGR5PSIuM2VtIiBmaWxsPSIjOTk5IiBmb250LXNpemU9IjI0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiPk5vIEltYWdlPC90ZXh0Pjwvc3ZnPg==';"
                          alt="{{ $product->name }}"
-                         style="max-width:340px; max-height:340px; object-fit:contain; border-radius:20px; box-shadow:0 4px 24px rgba(0,0,0,0.08); background:#fff; cursor: zoom-in; transition: box-shadow 0.2s;" />
+                         style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px; cursor: zoom-in;" />
                 </a>
-                @if($product->stock > 0)
-                    <span class="badge badge-modern badge-overlay bg-success">Còn hàng</span>
-                @else
-                    <span class="badge badge-modern badge-overlay bg-danger">Hết hàng</span>
-                @endif
             </div>
+            
+            @if($product->images && $product->images->count() > 0)
+            <div class="mt-3 d-flex flex-wrap" style="gap: 10px;">
+                <!-- Thumbnail for main image -->
+                <div class="gallery-thumb active-thumb" style="width: 80px; height: 80px; border: 2px solid #333; border-radius: 8px; overflow: hidden; cursor: pointer;" onclick="changeMainImage('{{ $product->image ? (Str::startsWith($product->image, ['http://', 'https://']) ? $product->image : asset('storage/' . $product->image)) : 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MDAiIGhlaWdodD0iODAwIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZWVlIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGR5PSIuM2VtIiBmaWxsPSIjOTk5IiBmb250LXNpemU9IjI0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiPk5vIEltYWdlPC90ZXh0Pjwvc3ZnPg==' }}', this)">
+                    <img src="{{ $product->image ? (Str::startsWith($product->image, ['http://', 'https://']) ? $product->image : asset('storage/' . $product->image)) : 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MDAiIGhlaWdodD0iODAwIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZWVlIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGR5PSIuM2VtIiBmaWxsPSIjOTk5IiBmb250LXNpemU9IjI0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiPk5vIEltYWdlPC90ZXh0Pjwvc3ZnPg==' }}" onerror="this.onerror=null;this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MDAiIGhlaWdodD0iODAwIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZWVlIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGR5PSIuM2VtIiBmaWxsPSIjOTk5IiBmb250LXNpemU9IjI0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiPk5vIEltYWdlPC90ZXh0Pjwvc3ZnPg==';" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                
+                <!-- Thumbnails for additional images -->
+                @foreach($product->images as $img)
+                <div class="gallery-thumb" style="width: 80px; height: 80px; border: 2px solid transparent; border-radius: 8px; overflow: hidden; cursor: pointer;" onclick="changeMainImage('{{ Str::startsWith($img->image_path, ['http://', 'https://']) ? $img->image_path : asset('storage/' . $img->image_path) }}', this)">
+                    <img src="{{ Str::startsWith($img->image_path, ['http://', 'https://']) ? $img->image_path : asset('storage/' . $img->image_path) }}" onerror="this.onerror=null;this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MDAiIGhlaWdodD0iODAwIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZWVlIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGR5PSIuM2VtIiBmaWxsPSIjOTk5IiBmb250LXNpemU9IjI0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiPk5vIEltYWdlPC90ZXh0Pjwvc3ZnPg==';" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                @endforeach
+            </div>
+            <script>
+                function changeMainImage(src, element) {
+                    document.getElementById('product-img-{{ $product->id }}').src = src;
+                    document.getElementById('productImageModal').querySelector('img').src = src;
+                    
+                    // Update border
+                    document.querySelectorAll('.gallery-thumb').forEach(el => el.style.borderColor = 'transparent');
+                    if (element) {
+                        element.style.borderColor = '#333';
+                    }
+                }
+                function updateModalImage(src) {
+                    // Cập nhật modal image từ main image hiện tại (vì modal nó sẽ lấy src ở thời điểm click)
+                    let currentSrc = document.getElementById('product-img-{{ $product->id }}').src;
+                    document.getElementById('modal-product-img-{{ $product->id }}').src = currentSrc;
+                }
+            </script>
+            @endif
         </div>
         <!-- Product Details -->
-        <div class="col-md-7">
-            <div class="d-flex align-items-center mb-2" style="gap: 8px;">
-                <h1 class="product-title-modern mb-0">{{ $product->name }}</h1>
-                <button id="btn-favorite" class="btn p-0 vs-icon-btn vs-icon-btn-danger" style="font-size: 1.6rem;" title="Yêu thích">
-                    <i id="icon-favorite" class="fa{{ in_array($product->id, json_decode(request()->cookie('favorite_products', '[]'), true) ?? []) ? 's' : 'r' }} fa-heart"></i>
-                </button>
-                <button id="btn-share" class="btn p-0 vs-icon-btn vs-icon-btn-primary" style="font-size: 1.6rem;" title="Chia sẻ">
-                    <i class="fas fa-share-alt"></i>
-                </button>
+        <div class="col-md-6 ps-md-4">
+            <div class="d-flex align-items-center mb-2 gap-2">
+                @if($product->stock > 0)
+                    <span class="d-inline-block rounded-circle bg-success" style="width: 8px; height: 8px;"></span> <span class="text-success fw-semibold small">Còn hàng</span>
+                @else
+                    <span class="d-inline-block rounded-circle bg-danger" style="width: 8px; height: 8px;"></span> <span class="text-danger fw-semibold small">Hết hàng</span>
+                @endif
+            </div>
+            <div class="d-flex align-items-start mb-2" style="gap: 16px;">
+                <h1 class="product-title-modern flex-grow-1 mb-0">{{ $product->name }}</h1>
             </div>
             <div class="mb-2 text-muted" style="font-size:1.1em;">
                 <span>Danh mục:
@@ -60,28 +90,41 @@
             <form id="add-to-cart-form" class="mb-3">
                 @csrf
                 <input type="hidden" name="product_id" value="{{ $product->id }}">
-                <div class="row align-items-center g-2 mb-2">
-                    <div class="col-auto">
-                        <label for="quantity" class="form-label mb-0">Số lượng</label>
-                        <input type="number" class="form-control" id="quantity" name="quantity" value="1" min="1" max="{{ $product->stock }}" style="width: 80px; display:inline-block;">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                    <!-- Quantity Control -->
+                    <div class="d-flex align-items-center border rounded-pill" style="height: 54px; background: #fff; border-color: #ddd !important; overflow: hidden;">
+                        <button type="button" class="btn btn-link text-dark px-3 text-decoration-none" style="font-size: 1.2rem;" onclick="document.getElementById('quantity').stepDown()">-</button>
+                        <input type="number" id="quantity" name="quantity" value="1" min="1" max="{{ $product->stock }}" class="form-control border-0 text-center fw-bold p-0 quantity-input-modern" style="width: 40px; height: 100%; box-shadow: none; font-size: 1.1rem; background: transparent;">
+                        <button type="button" class="btn btn-link text-dark px-3 text-decoration-none" style="font-size: 1.2rem;" onclick="document.getElementById('quantity').stepUp()">+</button>
                     </div>
-                    <div class="col">
-                        <div class="d-flex flex-row gap-3">
-                            <button type="button" class="btn btn-outline-primary flex-fill btn-add-to-cart" style="height: 56px; font-size: 1.05rem;" data-product-id="{{ $product->id }}" data-image-id="product-img-{{ $product->id }}">
-                                <i class="fas fa-cart-plus me-2"></i>Thêm vào giỏ
-                            </button>
-                            <button type="button" class="btn btn-primary flex-fill btn-add-to-cart" style="height: 56px; font-size: 1.05rem;" data-product-id="{{ $product->id }}" data-image-id="product-img-{{ $product->id }}" data-buy-now="1">
-                                <i class="fas fa-bolt me-2"></i>Mua ngay
-                            </button>
-                        </div>
-                    </div>
+
+                    <!-- Add to Cart -->
+                    <button type="button" class="btn flex-fill fw-bold rounded-pill shadow-sm btn-add-to-cart" style="height: 54px; background: #28a745; color: #fff; font-size: 1.1rem; border: none;" data-product-id="{{ $product->id }}" data-image-id="product-img-{{ $product->id }}">
+                        <i class="fas fa-cart-plus me-2"></i>Thêm vào giỏ
+                    </button>
+                </div>
+                <!-- Buy Now -->
+                <button type="button" class="btn w-100 fw-bold rounded-pill shadow-sm btn-buy-now mb-3" style="height: 54px; background: #111; color: #fff; font-size: 1.1rem; border: none;" data-product-id="{{ $product->id }}" data-image-id="product-img-{{ $product->id }}" data-buy-now="1">
+                    <i class="fas fa-bolt me-2"></i>Mua ngay
+                </button>
+                
+                <!-- Action Links -->
+                <div class="d-flex justify-content-center gap-4 mt-2">
+                    <button type="button" id="btn-favorite" class="btn btn-link text-dark text-decoration-none p-0 d-flex align-items-center" style="font-size: 0.95rem; opacity: 0.7; transition: opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">
+                        <i id="icon-favorite" class="fa{{ in_array($product->id, json_decode(request()->cookie('favorite_products', '[]'), true) ?? []) ? 's text-danger' : 'r' }} fa-heart me-2" style="font-size: 1.1rem;"></i> Yêu thích
+                    </button>
+                    <button type="button" id="btn-share" class="btn btn-link text-dark text-decoration-none p-0 d-flex align-items-center" style="font-size: 0.95rem; opacity: 0.7; transition: opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">
+                        <i class="fas fa-share-alt me-2" style="font-size: 1.1rem;"></i> Chia sẻ
+                    </button>
                 </div>
             </form>
             <!-- Mô tả sản phẩm kiểu Shopee -->
-            <div class="product-desc-toggle mt-2">
-                <h5 class="fw-semibold mb-2">Mô tả sản phẩm</h5>
+            <div class="product-desc-toggle mt-4">
+                <h5 class="fw-bold mb-3 text-uppercase border-bottom pb-2">Mô tả sản phẩm</h5>
                 <div id="desc-content" class="product-desc-modern shopee-desc-collapsed">{!! $product->description !!}</div>
-                <button id="btn-toggle-desc" class="btn btn-link px-0 mt-2" style="display:none;">Xem thêm <i class="fas fa-chevron-down"></i></button>
+                <div class="text-center mt-3">
+                    <button id="btn-toggle-desc" class="btn btn-outline-dark rounded-pill px-4" style="display:none;">Xem thêm <i class="fas fa-chevron-down ms-1"></i></button>
+                </div>
             </div>
         </div>
     </div>
@@ -91,7 +134,8 @@
             <div class="modal-content bg-transparent border-0">
                 <div class="modal-body d-flex justify-content-center align-items-center p-0 position-relative">
                     <img id="modal-product-img-{{ $product->id }}"
-                         src="{{ $product->image ? (Str::startsWith($product->image, ['http://', 'https://']) ? $product->image : asset('storage/' . $product->image)) : 'https://via.placeholder.com/600x600' }}"
+                         src="{{ $product->image ? (Str::startsWith($product->image, ['http://', 'https://']) ? $product->image : asset('storage/' . $product->image)) : 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MDAiIGhlaWdodD0iODAwIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZWVlIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGR5PSIuM2VtIiBmaWxsPSIjOTk5IiBmb250LXNpemU9IjI0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiPk5vIEltYWdlPC90ZXh0Pjwvc3ZnPg==' }}"
+                         onerror="this.onerror=null;this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MDAiIGhlaWdodD0iODAwIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZWVlIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGR5PSIuM2VtIiBmaWxsPSIjOTk5IiBmb250LXNpemU9IjI0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiPk5vIEltYWdlPC90ZXh0Pjwvc3ZnPg==';"
                          alt="{{ $product->name }}"
                          style="max-width:90vw; max-height:80vh; object-fit:contain; border-radius:16px; background:#fff; cursor: zoom-in; transition: transform 0.2s;" />
                     <button type="button" class="btn-close-custom position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -118,64 +162,47 @@
         </div>
     </div>
     <style>
-    .product-detail-modern {
-        background: #fff;
-        border-radius: 18px;
-        box-shadow: 0 2px 16px rgba(0,0,0,0.06);
-        padding: 32px 24px 32px 24px;
-        margin-bottom: 32px;
-    }
     .product-img-modern {
-        background: #f7f7f7;
-        border-radius: 24px;
-        min-height: 340px;
-        min-width: 340px;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-        padding: 16px;
         position: relative;
-    }
-    .badge-overlay {
-        position: absolute;
-        top: 18px;
-        left: 18px;
-        z-index: 2;
-        font-size: 1em;
-        padding: 6px 22px;
+        overflow: hidden;
         border-radius: 12px;
-        background: rgba(34,197,94,0.95) !important;
-        color: #fff !important;
-        font-weight: 600;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
     }
-    .badge-overlay.bg-danger { background: rgba(239,68,68,0.95) !important; }
+    .product-img-modern img {
+        transition: transform 0.3s ease;
+    }
+    .product-img-modern:hover img {
+        transform: scale(1.02);
+    }
+    .btn-add-to-cart {
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .btn-add-to-cart:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    }
+    .btn-add-to-cart:active {
+        transform: scale(0.96) translateY(0);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
     .product-title-modern {
-        font-size: 2.2rem;
-        font-weight: 700;
-        color: #222;
-        line-height: 1.2;
+        font-size: 2.75rem;
+        font-weight: 800;
+        letter-spacing: -0.04em;
+        color: #111;
+        line-height: 1.1;
     }
     .product-price-modern {
-        color: #ee4d2d;
-        font-size: 2rem;
-        font-weight: bold;
-        margin-bottom: 8px;
+        color: #0a0a0a;
+        font-size: 3.2rem;
+        font-weight: 900;
+        text-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+        margin-bottom: 12px;
     }
     .product-desc-modern {
-        color: #444;
+        color: #333;
         font-size: 1.08em;
-        background: #f9f9f9;
-        border-radius: 10px;
-        padding: 12px 16px;
-        min-height: 56px;
-    }
-    .badge-modern {
-        font-size: 1em;
-        padding: 0.5em 1.2em;
-        border-radius: 8px;
-        font-weight: 600;
-    }
-    @media (max-width: 900px) {
-        .product-img-modern, .product-detail-modern { min-width: unset; }
+        line-height: 1.6;
     }
     .btn-close-custom {
         background: rgba(0,0,0,0.65) !important;
@@ -209,31 +236,67 @@
             flex-direction: column !important;
             gap: 10px !important;
         }
+        .product-title-modern {
+            font-size: 2rem;
+        }
     }
     .shopee-desc-collapsed {
-        max-height: 4.8em;
+        max-height: 250px;
         overflow: hidden;
         position: relative;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        text-overflow: ellipsis;
-        background: #f9f9f9;
-        border-radius: 10px;
-        padding: 12px 16px;
-        color: #444;
+        color: #333;
         font-size: 1.08em;
-        transition: max-height 0.2s;
+        transition: max-height 0.3s ease;
+    }
+    .shopee-desc-collapsed::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+        pointer-events: none;
     }
     .shopee-desc-expanded {
-        max-height: 1000px;
+        max-height: none; /* Không giới hạn để tránh lỗi đè nút khi bài viết quá dài */
         overflow: visible;
-        -webkit-line-clamp: unset;
+    }
+    .product-desc-modern img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    /* Hide spin buttons for modern quantity input */
+    .quantity-input-modern::-webkit-inner-spin-button,
+    .quantity-input-modern::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    .quantity-input-modern {
+        -moz-appearance: textfield;
+    }
+    .btn-buy-now {
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+    .btn-buy-now:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 15px rgba(0,0,0,0.3) !important;
+        background: #333 !important;
+    }
+    .btn-add-to-cart {
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+    .btn-add-to-cart:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 15px rgba(40,167,69,0.3) !important;
+        background: #218838 !important;
     }
     </style>
     <script>
-    // Zoom on click for modal image
+    // Khởi tạo các sự kiện khi DOM đã load xong
     document.addEventListener('DOMContentLoaded', function() {
+        // Zoom on click for modal image
         var modalImg = document.getElementById('modal-product-img-{{ $product->id }}');
         var zoomed = false;
         if(modalImg) {
@@ -259,87 +322,80 @@
                 }
             });
         }
-    });
-    // Yêu thích sản phẩm với localStorage
-    const favoriteKey = 'favorite_products';
-    function getFavorites() {
-        try {
-            return JSON.parse(localStorage.getItem(favoriteKey)) || [];
-        } catch { return []; }
-    }
-    function setFavorites(arr) {
-        localStorage.setItem(favoriteKey, JSON.stringify(arr));
-    }
-    document.getElementById('btn-favorite').addEventListener('click', function() {
-        let favs = getFavorites();
-        const id = {{ $product->id }};
-        const icon = document.getElementById('icon-favorite');
-        if (favs.includes(id)) {
-            favs = favs.filter(x => x !== id);
-            icon.classList.remove('fas');
-            icon.classList.add('far');
-        } else {
-            favs.push(id);
-            icon.classList.remove('far');
-            icon.classList.add('fas');
+
+        // Yêu thích sản phẩm với localStorage
+        const favoriteKey = 'favorite_products';
+        function getFavorites() {
+            try {
+                return JSON.parse(localStorage.getItem(favoriteKey)) || [];
+            } catch { return []; }
         }
-        setFavorites(favs);
-    });
-    // Share sản phẩm
-    const shareModal = new bootstrap.Modal(document.getElementById('shareModal'));
-    document.getElementById('btn-share').addEventListener('click', function() {
-        shareModal.show();
-    });
-    document.getElementById('btn-copy-link').addEventListener('click', function() {
-        const input = document.getElementById('share-link');
-        input.select();
-        input.setSelectionRange(0, 99999);
-        document.execCommand('copy');
-        document.getElementById('copy-success').style.display = 'block';
-        setTimeout(() => { document.getElementById('copy-success').style.display = 'none'; }, 1500);
-    });
-    // Chỉ hiện nút Xem thêm nếu mô tả bị cắt (kể cả HTML)
-    function isClamped(el) {
-        // Tạo 1 clone ẩn để đo chiều cao thực tế nếu không bị clamp
-        const clone = el.cloneNode(true);
-        clone.style.visibility = 'hidden';
-        clone.style.position = 'absolute';
-        clone.style.maxHeight = 'none';
-        clone.style.height = 'auto';
-        clone.style.pointerEvents = 'none';
-        clone.style.zIndex = -1;
-        clone.classList.remove('shopee-desc-collapsed');
-        clone.classList.remove('shopee-desc-expanded');
-        document.body.appendChild(clone);
-        const realHeight = clone.scrollHeight;
-        document.body.removeChild(clone);
-        // So sánh với chiều cao clamp
-        return el.scrollHeight < realHeight - 2;
-    }
-    const btnToggleDesc = document.getElementById('btn-toggle-desc');
-    const descContent = document.getElementById('desc-content');
-    let expanded = false;
-    window.addEventListener('DOMContentLoaded', function() {
-        setTimeout(function() { // Đợi render HTML xong
-            if(isClamped(descContent)) {
+        function setFavorites(arr) {
+            localStorage.setItem(favoriteKey, JSON.stringify(arr));
+        }
+        document.getElementById('btn-favorite').addEventListener('click', function() {
+            let favs = getFavorites();
+            const id = {{ $product->id }};
+            const icon = document.getElementById('icon-favorite');
+            if (favs.includes(id)) {
+                favs = favs.filter(x => x !== id);
+                icon.classList.remove('fas');
+                icon.classList.add('far');
+            } else {
+                favs.push(id);
+                icon.classList.remove('far');
+                icon.classList.add('fas');
+            }
+            setFavorites(favs);
+        });
+
+        // Share sản phẩm
+        const shareModal = new bootstrap.Modal(document.getElementById('shareModal'));
+        document.getElementById('btn-share').addEventListener('click', function() {
+            shareModal.show();
+        });
+        document.getElementById('btn-copy-link').addEventListener('click', function() {
+            const input = document.getElementById('share-link');
+            input.select();
+            input.setSelectionRange(0, 99999);
+            document.execCommand('copy');
+            document.getElementById('copy-success').style.display = 'block';
+            setTimeout(() => { document.getElementById('copy-success').style.display = 'none'; }, 1500);
+        });
+
+        // Chỉ hiện nút Xem thêm nếu nội dung mô tả dài
+        const btnToggleDesc = document.getElementById('btn-toggle-desc');
+        const descContent = document.getElementById('desc-content');
+        let expanded = false;
+        
+        // Đợi 500ms để hình ảnh trong mô tả load bớt (nếu có) để tính chiều cao chuẩn hơn
+        setTimeout(function() {
+            if(descContent.scrollHeight > 250) {
                 btnToggleDesc.style.display = 'inline-block';
             } else {
                 btnToggleDesc.style.display = 'none';
                 descContent.classList.remove('shopee-desc-collapsed');
             }
-        }, 100);
-    });
-    btnToggleDesc.addEventListener('click', function() {
-        expanded = !expanded;
-        if(expanded) {
-            descContent.classList.remove('shopee-desc-collapsed');
-            descContent.classList.add('shopee-desc-expanded');
-            btnToggleDesc.innerHTML = 'Thu gọn <i class="fas fa-chevron-up"></i>';
-        } else {
-            descContent.classList.remove('shopee-desc-expanded');
-            descContent.classList.add('shopee-desc-collapsed');
-            btnToggleDesc.innerHTML = 'Xem thêm <i class="fas fa-chevron-down"></i>';
-        }
+        }, 500);
+
+        btnToggleDesc.addEventListener('click', function() {
+            expanded = !expanded;
+            if(expanded) {
+                descContent.classList.remove('shopee-desc-collapsed');
+                descContent.classList.add('shopee-desc-expanded');
+                btnToggleDesc.innerHTML = 'Thu gọn <i class="fas fa-chevron-up ms-1"></i>';
+            } else {
+                descContent.classList.remove('shopee-desc-expanded');
+                descContent.classList.add('shopee-desc-collapsed');
+                btnToggleDesc.innerHTML = 'Xem thêm <i class="fas fa-chevron-down ms-1"></i>';
+                
+                // Cuộn mượt về phần mô tả nếu đang ở quá xa bên dưới
+                const rect = descContent.getBoundingClientRect();
+                if(rect.top < 0) {
+                    descContent.scrollIntoView({behavior: "smooth", block: "nearest"});
+                }
+            }
+        });
     });
     </script>
 

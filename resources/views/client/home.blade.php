@@ -8,24 +8,24 @@
     $featuredCategories = \App\Models\Category::whereNull('parent_id')->where('is_active', true)->orderBy('order')->get();
 @endphp
 @if($banners->count())
-<div class="mb-5">
+<div class="mb-5 mt-3">
     <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             @foreach($banners as $i => $banner)
                 <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="{{ $i }}" class="{{ $i === 0 ? 'active' : '' }}" aria-current="{{ $i === 0 ? 'true' : 'false' }}" aria-label="Slide {{ $i + 1 }}"></button>
             @endforeach
         </div>
-        <div class="carousel-inner rounded-4 shadow-lg overflow-hidden" style="max-height:420px;">
+        <div class="carousel-inner rounded-4 shadow-lg overflow-hidden" style="max-height:480px;">
             @foreach($banners as $i => $banner)
-            <div class="carousel-item{{ $i === 0 ? ' active' : '' }}">
-                <a href="{{ $banner->link ?: '#' }}">
-                    <img src="{{ Str::startsWith($banner->image, ['http://', 'https://']) ? $banner->image : asset('storage/'.$banner->image) }}" class="d-block w-100" alt="{{ $banner->title }}" style="object-fit:cover; width:100%; height:420px;">
+            <div class="carousel-item{{ $i === 0 ? ' active' : '' }} h-100">
+                <a href="{{ $banner->link ?: '#' }}" class="d-block h-100">
+                    <img src="{{ Str::startsWith($banner->image, ['http://', 'https://']) ? $banner->image : asset('storage/'.$banner->image) }}" class="d-block w-100 hero-image" alt="{{ $banner->title }}" style="object-fit:cover; width:100%; height:480px;">
                 </a>
-                <div class="position-absolute" style="top:30px; left:40px; text-align:left; max-width: 50%;">
-                    <h3 class="fw-bold text-white mb-2" style="text-shadow: 1px 1px 8px #000; background:rgba(0,0,0,0.0); display:inline-block;">{{ $banner->title }}</h3>
+                <div class="position-absolute hero-text" style="top:25%; left:6%; text-align:left; max-width: 60%; pointer-events: none;">
+                    <h3 class="fw-bold text-white mb-3" style="text-shadow: 0 4px 15px rgba(0,0,0,0.5); display:inline-block; font-size: clamp(2rem, 4vw, 3rem); letter-spacing: -0.5px;">{{ $banner->title }}</h3>
                     @if($banner->description)
                         <br>
-                        <span class="text-white" style="font-size:1.1rem; text-shadow: 1px 1px 8px #000; background:rgba(0,0,0,0.0); display:inline-block;">{{ $banner->description }}</span>
+                        <span class="text-white mt-1" style="font-size: clamp(1rem, 2vw, 1.25rem); text-shadow: 0 2px 10px rgba(0,0,0,0.5); display:inline-block; font-weight: 400; opacity: 0.95;">{{ $banner->description }}</span>
                     @endif
                 </div>
             </div>
@@ -45,25 +45,32 @@
     </div>
 </div> --}}
 
-<h2 class="vs-section-title">{{ __('messages.featured_categories') }}</h2>
-<div class="featured-categories-scroll mb-5 position-relative">
-    <button class="scroll-btn left d-none" type="button" aria-label="Scroll left">
-        <svg width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="#fff"/><polyline points="19,9 13,16 19,23" fill="none" stroke="#aaa" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </button>
-    <button class="scroll-btn right d-none" type="button" aria-label="Scroll right">
-        <svg width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="#fff"/><polyline points="13,9 19,16 13,23" fill="none" stroke="#aaa" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </button>
-    <div class="featured-cate-grid d-grid flex-nowrap overflow-auto gap-3 py-2" style="grid-auto-flow: column; grid-template-rows: repeat(2, 1fr);">
-        @foreach($featuredCategories as $category)
-            <div class="text-center flex-shrink-0" style="width:120px;">
-                <a href="{{ route('products.index', ['category' => $category->slug]) }}" class="text-decoration-none text-dark d-block h-100">
-                    <div class="rounded-4 shadow-sm mx-auto mb-2 bg-white d-flex align-items-center justify-content-center" style="width:90px; height:90px; overflow:hidden;">
-                        <img src="{{ $category->image ? $category->image : 'https://via.placeholder.com/90x90?text=Category' }}" alt="{{ $category->name }}" style="width:100%; height:100%; object-fit:cover;">
-                    </div>
-                    <div class="fw-semibold small" style="min-height:38px;">{{ $category->name }}</div>
-                </a>
-            </div>
-        @endforeach
+<div class="home-section-spacing">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="vs-section-title mb-0" style="font-weight: 600; letter-spacing: -0.5px;">{{ __('messages.featured_categories') }}</h2>
+    </div>
+    <div class="featured-categories-scroll position-relative">
+        <button class="scroll-btn left d-none" type="button" aria-label="Scroll left">
+            <svg width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="#fff"/><polyline points="19,9 13,16 19,23" fill="none" stroke="#aaa" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="scroll-btn right d-none" type="button" aria-label="Scroll right">
+            <svg width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="#fff"/><polyline points="13,9 19,16 13,23" fill="none" stroke="#aaa" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="featured-cate-grid d-grid flex-nowrap overflow-auto gap-3 py-2" style="grid-auto-flow: column; grid-template-rows: repeat(2, 1fr);">
+            @foreach($featuredCategories as $category)
+                <div class="text-center flex-shrink-0" style="width:120px;">
+                    <a href="{{ route('products.index', ['category' => $category->slug]) }}" class="text-decoration-none text-dark d-block h-100 hover-zoom-cate">
+                        <div class="rounded-4 shadow-sm mx-auto mb-3 d-flex align-items-center justify-content-center cate-img-wrap position-relative" style="width:90px; height:90px; overflow:hidden; background: #f8f9fa;">
+                            <span class="position-absolute fw-bold text-uppercase" style="font-size: 2.2rem; color: #cbd5e1; z-index: 0;">{{ mb_substr($category->name, 0, 1) }}</span>
+                            <img src="{{ $category->image ? (Str::startsWith($category->image, ['http://', 'https://']) ? $category->image : asset('storage/' . $category->image)) : 'data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=' }}" 
+                                 alt="{{ $category->name }}" class="cate-img position-relative" style="width:100%; height:100%; object-fit:cover; z-index: 1; background: #fff;" 
+                                 onerror="this.style.display='none';">
+                        </div>
+                        <div class="fw-semibold small" style="min-height:38px;">{{ $category->name }}</div>
+                    </a>
+                </div>
+            @endforeach
+        </div>
     </div>
 </div>
 
@@ -72,13 +79,13 @@
 
 @foreach($sections as $section)
 {{-- id có tiền tố để không trùng id toàn trang (vd: ai-assistant-btn, cart-badge, bannerCarousel) --}}
-<section class="product-section" id="home-section-{{ $section->slug }}">
+<section class="product-section home-section-spacing" id="home-section-{{ $section->slug }}">
     <div class="container">
-        <div class="section-header d-flex justify-content-between align-items-center">
+        <div class="section-header d-flex justify-content-between align-items-center mb-4">
             <div>
-                <h2>{{ $section->title }}</h2>
+                <h2 class="mb-2" style="font-weight: 600; letter-spacing: -0.5px;">{{ $section->title }}</h2>
                 @if($section->description)
-                    <p>{{ $section->description }}</p>
+                    <p class="text-muted mb-0" style="font-size: 1.05rem;">{{ $section->description }}</p>
                 @endif
             </div>
             @php
@@ -153,11 +160,11 @@
         background: #fff;
     }
     .featured-categories-scroll {
-        background: #fcfcf7;
+        background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
         border-radius: 16px;
         padding: 18px 0 8px 0;
-        border: 1.5px solid #f5eecb;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        border: none;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
         margin-bottom: 2rem;
         position: relative;
     }
@@ -198,6 +205,47 @@
     .hover-bg-success-dark:hover { background: #218838 !important; }
     .btn.bg-transparent:hover,
     .btn.bg-transparent:focus { background: rgba(0,0,0,0.06) !important; }
+
+    /* High-end Spacing */
+    .home-section-spacing { 
+        margin-top: 80px; 
+        margin-bottom: 80px; 
+    }
+
+    /* Hero animations */
+    .hero-image {
+        transition: transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .carousel-item:hover .hero-image {
+        transform: scale(1.04);
+    }
+    
+    .hero-text {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+                    transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .carousel-item.active .hero-text {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: 0.2s;
+    }
+
+    /* Category hover zoom & custom block */
+    .cate-img-wrap {
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .hover-zoom-cate:hover .cate-img-wrap {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 24px rgba(0,0,0,0.15) !important;
+    }
+    .cate-img {
+        transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .hover-zoom-cate:hover .cate-img {
+        transform: scale(1.15);
+    }
 </style>
 @endpush
 

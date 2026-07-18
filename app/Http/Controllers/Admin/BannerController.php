@@ -55,14 +55,19 @@ class BannerController extends Controller
         $data = $request->validate([
             'title' => 'nullable|string|max:255',
             'description' => 'nullable|string',
-            'image' => 'nullable|image',
+            'image_file' => 'nullable|image',
+            'image_url' => 'nullable|string',
             'link' => 'nullable|string',
             'order' => 'nullable|integer',
             'is_active' => 'boolean'
         ]);
-        if ($request->hasFile('image')) {
-            $data['image'] = $request->file('image')->store('banners', 'public');
+
+        if ($request->input('upload_type') === 'file' && $request->hasFile('image_file')) {
+            $data['image'] = $request->file('image_file')->store('banners', 'public');
+        } elseif ($request->input('upload_type') === 'url' && $request->filled('image_url')) {
+            $data['image'] = $request->input('image_url');
         }
+
         $banner->update($data);
         return redirect()->route('admin.banners.index')->with('success', 'Cập nhật banner thành công!');
     }

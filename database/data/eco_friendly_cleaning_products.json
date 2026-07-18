@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Blueland Multi-Surface Cleaner Kit",
+        "description": "Revolutionize your cleaning routine with our reusable shatterproof bottle and powerful cleaning tablets. Just drop in water to create a refreshing, eco-friendly spray that tackles grime without harsh chemicals. Designed to eliminate single-use plastic waste while keeping your home sparkling clean.",
+        "price": 18,
+        "stock": 85,
+        "image": "https://loremflickr.com/800/800/cleaner?lock=6440",
+        "category": "Eco-friendly Cleaning Products",
+        "is_featured": true
+    },
+    {
+        "name": "Dr. Bronner's Sal Suds Biodegradable Cleaner",
+        "description": "Experience the deep cleaning power of this concentrated, all-purpose hard-surface cleaner made with plant-based surfactants. Infused with pure fir and spruce essential oils, it leaves behind a crisp, forest-fresh scent. Completely biodegradable and exceptionally effective on everything from floors to dishes.",
+        "price": 14.99,
+        "stock": 45,
+        "image": "https://loremflickr.com/800/800/soap?lock=6011",
+        "category": "Eco-friendly Cleaning Products",
+        "is_featured": false
+    },
+    {
+        "name": "Branch Basics Premium Starter Kit",
+        "description": "Transform your home into a safe haven with this completely non-toxic, plant and mineral-based concentrate. One powerful bottle replaces dozens of toxic cleaning supplies, safely handling laundry, bathrooms, and glass. Experience peace of mind with a solution that is safe for both your family and the planet.",
+        "price": 75,
+        "stock": 30,
+        "image": "https://loremflickr.com/800/800/spray?lock=4748",
+        "category": "Eco-friendly Cleaning Products",
+        "is_featured": true
+    },
+    {
+        "name": "Puracy Natural All Purpose Cleaner",
+        "description": "Harness the power of plants with this streak-free, incredibly versatile cleaner developed by doctors. It effortlessly removes food, grease, and dirt from any washable surface without leaving residue. Crafted from biodegradable ingredients, it offers a gentle yet highly effective approach to household chores.",
+        "price": 16.5,
+        "stock": 60,
+        "image": "https://loremflickr.com/800/800/bottle?lock=1072",
+        "category": "Eco-friendly Cleaning Products",
+        "is_featured": false
+    },
+    {
+        "name": "Grove Co. Multi-Purpose Cleaner Concentrate",
+        "description": "Cut through stubborn grease and daily grime with this uplifting, naturally derived cleaning concentrate. Packaged in recyclable glass, it eliminates plastic waste and minimizes carbon footprint during shipping. Delight your senses with naturally fragrant essential oils as you maintain a pristine living space.",
+        "price": 12.95,
+        "stock": 92,
+        "image": "https://loremflickr.com/800/800/cleaning?lock=8411",
+        "category": "Eco-friendly Cleaning Products",
+        "is_featured": false
+    },
+    {
+        "name": "Method All-Purpose Surface Cleaner",
+        "description": "Brighten your surfaces and your day with this vibrant, biodegradable cleaner boasting a delightfully fresh scent. The naturally derived formula effortlessly breaks down dirt and spills without the use of harsh chemical solvents. Packaged in bottles made from recycled plastic, it champions sustainability at every level.",
+        "price": 11,
+        "stock": 75,
+        "image": "https://loremflickr.com/800/800/spraybottle?lock=8005",
+        "category": "Eco-friendly Cleaning Products",
+        "is_featured": false
+    },
+    {
+        "name": "Seventh Generation Disinfecting Multi-Surface Cleaner",
+        "description": "Effectively clean and disinfect your household surfaces using the botanical power of essential oils. This botanical formula kills 99.9% of household germs without leaving behind any toxic residue or harsh chemical fumes. Enjoy a naturally clean, safe home environment for your entire family.",
+        "price": 13.49,
+        "stock": 40,
+        "image": "https://loremflickr.com/800/800/disinfectant?lock=8785",
+        "category": "Eco-friendly Cleaning Products",
+        "is_featured": false
+    }
+]

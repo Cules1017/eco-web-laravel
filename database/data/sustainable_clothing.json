@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Patagonia Capilene Cool Daily Shirt",
+        "description": "This versatile performance knit is designed for use on the trail or on the water. It provides built-in odor control and moisture-wicking properties, all made from recycled polyester.",
+        "price": 45,
+        "stock": 85,
+        "image": "https://loremflickr.com/800/800/shirt?lock=5878",
+        "category": "Sustainable Clothing",
+        "is_featured": true
+    },
+    {
+        "name": "Tentree TreeBlend Classic T-Shirt",
+        "description": "Crafted from a signature blend of recycled polyester, organic cotton, and TENCEL lyocell. This incredibly soft, lightweight tee plants ten trees for every purchase, making it a true staple for the eco-conscious wardrobe.",
+        "price": 35,
+        "stock": 50,
+        "image": "https://loremflickr.com/800/800/tshirt?lock=9049",
+        "category": "Sustainable Clothing",
+        "is_featured": false
+    },
+    {
+        "name": "Pact Organic Cotton Essential Sweatpant",
+        "description": "Experience ultimate comfort with these sweatpants made entirely from GOTS-certified organic cotton in a Fair Trade factory. They feature a relaxed fit and incredibly soft brushed interior perfect for lounging or running errands.",
+        "price": 60,
+        "stock": 42,
+        "image": "https://loremflickr.com/800/800/sweatpants?lock=1745",
+        "category": "Sustainable Clothing",
+        "is_featured": false
+    },
+    {
+        "name": "Outerknown Blanket Shirt",
+        "description": "Arguably the coziest shirt ever made, constructed from heavyweight organic cotton twill. It stands up to the elements while offering a remarkably soft touch and rugged durability for any adventure.",
+        "price": 148,
+        "stock": 30,
+        "image": "https://loremflickr.com/800/800/flannel?lock=9051",
+        "category": "Sustainable Clothing",
+        "is_featured": true
+    },
+    {
+        "name": "Allbirds Men's Sea Tee",
+        "description": "Woven with a unique blend of eucalyptus tree fiber and marine-sourced crab shell fibers, this tee boasts natural odor reduction and breathability. Its classic fit and premium feel elevate your everyday basics while protecting the oceans.",
+        "price": 48,
+        "stock": 77,
+        "image": "https://loremflickr.com/800/800/apparel?lock=6498",
+        "category": "Sustainable Clothing",
+        "is_featured": false
+    },
+    {
+        "name": "Eileen Fisher Organic Linen Classic Collar Shirt",
+        "description": "A timeless, crisp button-down shirt tailored from yarn-dyed organic linen. This garment embodies slow fashion, offering a breezy, lightweight texture that only gets softer and more beautiful with each wash.",
+        "price": 175,
+        "stock": 20,
+        "image": "https://loremflickr.com/800/800/linen?lock=9190",
+        "category": "Sustainable Clothing",
+        "is_featured": false
+    }
+]

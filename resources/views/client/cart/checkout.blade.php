@@ -171,31 +171,31 @@
       <div class="modal-body">
         <div class="mb-3">
           <label class="form-label">{{ __('messages.full_name') }}</label>
-          <input type="text" name="full_name" class="form-control" required>
+          <input type="text" name="full_name" class="form-control" required style="background-color: #ffffff; transition: border-color 0.2s ease-in-out;">
         </div>
         <div class="mb-3">
           <label class="form-label">{{ __('messages.phone_number') }}</label>
-          <input type="text" name="phone" class="form-control" required>
+          <input type="text" name="phone" class="form-control" required style="background-color: #ffffff; transition: border-color 0.2s ease-in-out;">
         </div>
         <div class="mb-3">
           <label class="form-label">{{ __('messages.address_line') }}</label>
-          <input type="text" name="address" class="form-control" required>
+          <input type="text" name="address" class="form-control" required style="background-color: #ffffff; transition: border-color 0.2s ease-in-out;">
         </div>
         <div class="mb-3">
           <label class="form-label">{{ __('messages.province') }}</label>
-          <select name="province" id="modal_province" class="form-select" required>
+          <select name="province" id="modal_province" class="form-select" required style="background-color: #ffffff; transition: border-color 0.2s ease-in-out;">
             <option value="">{{ __('messages.select_province') }}</option>
           </select>
         </div>
         <div class="mb-3">
           <label class="form-label">{{ __('messages.district') }}</label>
-          <select name="district" id="modal_district" class="form-select" required>
+          <select name="district" id="modal_district" class="form-select" required style="background-color: #ffffff; transition: border-color 0.2s ease-in-out;">
             <option value="">{{ __('messages.select_district') }}</option>
           </select>
         </div>
         <div class="mb-3">
           <label class="form-label">{{ __('messages.ward') }}</label>
-          <select name="ward" id="modal_ward" class="form-select" required>
+          <select name="ward" id="modal_ward" class="form-select" required style="background-color: #ffffff; transition: border-color 0.2s ease-in-out;">
             <option value="">{{ __('messages.select_ward') }}</option>
           </select>
         </div>
@@ -219,14 +219,14 @@ document.getElementById('checkout-form').addEventListener('submit', function(e) 
     // Validate shipping address
     const shippingAddress = document.querySelector('input[name="shipping_address_id"]:checked');
     if (!shippingAddress) {
-        alert('{{ __("messages.payment_method_required") }}');
+        Swal.fire({ title: 'Lỗi', text: '{{ __("messages.payment_method_required") }}', icon: 'error' });
         return;
     }
 
     // Validate payment method
     const paymentMethod = document.querySelector('input[name="payment_method"]:checked');
     if (!paymentMethod) {
-        alert('{{ __("messages.payment_method_required") }}');
+        Swal.fire({ title: 'Lỗi', text: '{{ __("messages.payment_method_required") }}', icon: 'error' });
         return;
     }
 
@@ -291,11 +291,12 @@ $(document).ready(function() {
             },
             success: function(response) {
                 $('#addAddressModal').modal('hide');
-                alert('Đã thêm địa chỉ thành công!');
-                location.reload();
+                Swal.fire({ title: 'Thành công', text: 'Đã thêm địa chỉ thành công!', icon: 'success' }).then(() => {
+                    location.reload();
+                });
             },
             error: function(xhr) {
-                alert('Có lỗi xảy ra: ' + (xhr.responseJSON?.message || ''));
+                Swal.fire({ title: 'Lỗi', text: 'Có lỗi xảy ra: ' + (xhr.responseJSON?.message || ''), icon: 'error' });
             }
         });
     });
@@ -310,19 +311,19 @@ $(document).ready(function() {
     border: 1px solid #ced4da;
     padding: 0.5rem 2.5rem 0.5rem 1rem;
     font-size: 1rem;
-    background-color: #f8f9fa;
+    background-color: #ffffff;
     box-shadow: none;
-    transition: border-color 0.2s, box-shadow 0.2s;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' fill='gray' viewBox='0 0 16 16'%3E%3Cpath d='M4.646 6.646a.5.5 0 0 1 .708 0L8 9.293l2.646-2.647a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 1rem center;
     background-size: 1.2em;
 }
 #addAddressModal .form-select:focus {
-    border-color: #80bdff;
+    border-color: #000;
     outline: 0;
-    box-shadow: 0 0 0 0.15rem rgba(0,123,255,.15);
-    background-color: #fff;
+    box-shadow: none;
+    background-color: #ffffff;
 }
 #addAddressModal label.form-label {
     font-weight: 500;
@@ -330,7 +331,14 @@ $(document).ready(function() {
 }
 #addAddressModal .form-control {
     border-radius: 8px;
-    background: #f8f9fa;
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    transition: border-color 0.2s ease-in-out;
+}
+#addAddressModal .form-control:focus {
+    border-color: #000;
+    box-shadow: none;
+    outline: 0;
 }
 </style>
 @endpush

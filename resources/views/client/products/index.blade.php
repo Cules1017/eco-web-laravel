@@ -3,6 +3,9 @@
 @section('title', request('featured') ? __('messages.featured_products') : __('messages.products'))
 
 @section('content')
+<style>
+    .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); grid-gap: 30px; }
+</style>
 <div class="container vs-page-wrapper">
     <nav aria-label="breadcrumb" class="mb-3">
         <ol class="breadcrumb">
@@ -83,13 +86,13 @@
                 </div>
             </div>
 
-            <div class="row g-3">
+            <div class="products-grid">
                 @forelse($products as $product)
-                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
+                <div>
                     @include('client.products.ProductItem', ['product' => $product])
                 </div>
                 @empty
-                <div class="col-12">
+                <div style="grid-column: 1 / -1;">
                     <div class="vs-empty-state">
                         <div class="vs-empty-icon"><i class="fas fa-box-open"></i></div>
                         <h5 class="mb-2">{{ __('messages.no_products') }}</h5>
