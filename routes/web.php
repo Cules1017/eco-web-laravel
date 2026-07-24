@@ -37,6 +37,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/products', [ClientProductController::class, 'index'])->name('products.index');
 Route::get('/products/{product:slug}', [ClientProductController::class, 'show'])->name('products.show');
 Route::post('/ai/consult', [AiAssistantController::class, 'consult'])->name('ai.consult');
+Route::view('/wishlist', 'client.wishlist')->name('wishlist.index');
 
 // MoMo Payment IPN & Return (public, KHÔNG yêu cầu auth)
 Route::post('/payment/momo/ipn', [PaymentController::class, 'momoIpn'])->name('payment.momo.ipn');
@@ -54,6 +55,7 @@ Route::middleware(['auth'])->group(function () {
     // Order Routes
     Route::get('/orders', [ClientOrderController::class, 'index'])->name('orders.index');
     Route::get('/orders/{order}', [ClientOrderController::class, 'show'])->name('orders.show');
+    Route::get('/orders/{order}/invoice', [ClientOrderController::class, 'exportInvoice'])->name('orders.invoice');
     Route::post('/orders', [ClientOrderController::class, 'store'])->name('orders.store');
 
     // MoMo Payment (cần auth)
@@ -89,6 +91,7 @@ Route::middleware(['auth'])->group(function () {
 // Admin Routes
 Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/dashboard/export-pdf', [DashboardController::class, 'exportPdf'])->name('dashboard.exportPdf');
     
     Route::resource('categories', CategoryController::class);
     Route::resource('products', ProductController::class);

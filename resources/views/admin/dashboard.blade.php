@@ -20,8 +20,11 @@
                 <label for="date_to">Đến ngày</label>
                 <input type="date" name="date_to" id="date_to" class="form-control" value="{{ $date_to }}">
             </div>
-            <div class="col-md-2">
-                <button type="submit" class="btn btn-primary btn-block">Lọc</button>
+            <div class="col-md-4">
+                <button type="submit" class="btn btn-primary">Lọc</button>
+                <a href="{{ route('admin.dashboard.exportPdf', request()->all()) }}" class="btn btn-outline-danger ml-2">
+                    <i class="fas fa-file-pdf"></i> Xuất PDF
+                </a>
             </div>
         </div>
     </form>

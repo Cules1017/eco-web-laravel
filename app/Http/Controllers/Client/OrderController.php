@@ -4,7 +4,10 @@ namespace App\Http\Controllers\Client;
 
 use App\Http\Controllers\Controller;
 use App\Models\Order;
+use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\OrderPlaced;
 
 class OrderController extends Controller
 {
@@ -26,11 +29,21 @@ class OrderController extends Controller
         return view('client.orders.show', compact('order'));
     }
 
+    public function exportInvoice(Order $order)
+    {
+        if ($order->user_id !== auth()->id()) {
+            abort(403);
+        }
+
+        $pdf = Pdf::loadView('client.orders.invoice', compact('order'));
+        return $pdf->download('hoadon_' . $order->order_number . '.pdf');
+    }
+
     public function store(Request $request)
     {
         $cart = session('cart', []);
         if (empty($cart)) {
-            return redirect()->route('cart.index')->with('error', __('messages.cart_empty'));
+            return redirect()->route('cart.index')->with('error', __('messages.empty_cart'));
         }
 
         $address = auth()->user()->addresses()->find($request->shipping_address_id);
@@ -63,6 +76,12 @@ class OrderController extends Controller
         }
 
         session()->forget('cart');
+
+        try {
+            Mail::to(auth()->user()->email)->send(new OrderPlaced($order));
+        } catch (\Exception $e) {
+            \Log::error('Mail sending failed: ' . $e->getMessage());
+        }
 
         if ($order->payment_method === 'momo') {
             return redirect()->route('payment.momo.show', $order);

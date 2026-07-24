@@ -110,8 +110,8 @@
                 
                 <!-- Action Links -->
                 <div class="d-flex justify-content-center gap-4 mt-2">
-                    <button type="button" id="btn-favorite" class="btn btn-link text-dark text-decoration-none p-0 d-flex align-items-center" style="font-size: 0.95rem; opacity: 0.7; transition: opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">
-                        <i id="icon-favorite" class="fa{{ in_array($product->id, json_decode(request()->cookie('favorite_products', '[]'), true) ?? []) ? 's text-danger' : 'r' }} fa-heart me-2" style="font-size: 1.1rem;"></i> Yêu thích
+                    <button type="button" onclick="toggleWishlist('{{ $product->id }}', '{{ addslashes($product->name) }}', '{{ $product->price }}', '{{ $product->image ? (Str::startsWith($product->image, ['http://', 'https://']) ? $product->image : asset('storage/' . $product->image)) : 'https://via.placeholder.com/600' }}', '{{ route('products.show', $product) }}')" class="btn btn-link text-dark text-decoration-none p-0 d-flex align-items-center btn-wishlist" data-id="{{ $product->id }}" style="font-size: 0.95rem; opacity: 0.7; transition: opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">
+                        <i class="far fa-heart me-2" style="font-size: 1.1rem;"></i> Yêu thích
                     </button>
                     <button type="button" id="btn-share" class="btn btn-link text-dark text-decoration-none p-0 d-flex align-items-center" style="font-size: 0.95rem; opacity: 0.7; transition: opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">
                         <i class="fas fa-share-alt me-2" style="font-size: 1.1rem;"></i> Chia sẻ
@@ -323,31 +323,7 @@
             });
         }
 
-        // Yêu thích sản phẩm với localStorage
-        const favoriteKey = 'favorite_products';
-        function getFavorites() {
-            try {
-                return JSON.parse(localStorage.getItem(favoriteKey)) || [];
-            } catch { return []; }
-        }
-        function setFavorites(arr) {
-            localStorage.setItem(favoriteKey, JSON.stringify(arr));
-        }
-        document.getElementById('btn-favorite').addEventListener('click', function() {
-            let favs = getFavorites();
-            const id = {{ $product->id }};
-            const icon = document.getElementById('icon-favorite');
-            if (favs.includes(id)) {
-                favs = favs.filter(x => x !== id);
-                icon.classList.remove('fas');
-                icon.classList.add('far');
-            } else {
-                favs.push(id);
-                icon.classList.remove('far');
-                icon.classList.add('fas');
-            }
-            setFavorites(favs);
-        });
+
 
         // Share sản phẩm
         const shareModal = new bootstrap.Modal(document.getElementById('shareModal'));

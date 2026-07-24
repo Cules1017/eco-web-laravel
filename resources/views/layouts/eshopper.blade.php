@@ -442,6 +442,10 @@
                 {{-- <span class="fw-bold text-dark">{{ $siteName }}</span> --}}
             </a>
             <div class="d-flex align-items-center gap-3">
+                <a href="{{ route('wishlist.index') }}" class="btn btn-link text-dark position-relative" title="Sản phẩm yêu thích">
+                    <i class="fas fa-heart text-danger"></i>
+                    <span id="wishlist-badge" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="display:none;">0</span>
+                </a>
                 <div class="dropdown">
                     <a class="btn btn-link dropdown-toggle text-dark" href="#" id="langDropdown" data-bs-toggle="dropdown">
                         <i class="fas fa-globe"></i> {{ app()->getLocale() == 'en' ? 'English' : 'Tiếng Việt' }}
@@ -591,6 +595,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ asset('js/wishlist.js') }}?v={{ time() }}"></script>
     <script>
     document.addEventListener('DOMContentLoaded', function() {
         const aiButton = document.getElementById('ai-assistant-btn');

@@ -85,6 +85,8 @@ return [
     'order_confirmation' => 'Order Confirmation',
     'thank_you' => 'Thank you for your order!',
     'order_success' => 'Your order has been placed successfully.',
+    'order_created' => 'Order created successfully!',
+    'order_paid_success' => 'Payment successful! Thank you for your purchase.',
     'order_details' => 'Order Details',
     'order_date' => 'Order Date',
     'order_status' => 'Order Status',

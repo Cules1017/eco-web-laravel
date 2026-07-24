@@ -21,9 +21,14 @@
             <h1 class="mb-1 fw-normal text-uppercase fs-3">{{ __('messages.order_details') }} #{{ $order->id }}</h1>
             <div class="text-muted">{{ $order->created_at->format('d/m/Y H:i') }}</div>
         </div>
-        <a href="{{ route('orders.index') }}" class="text-dark text-decoration-none text-uppercase fw-bold pb-1 border-bottom border-dark small">
-            {{ __('messages.back_to_orders') }}
-        </a>
+        <div class="d-flex gap-3 align-items-center">
+            <a href="{{ route('orders.invoice', $order) }}" class="btn btn-outline-dark btn-sm text-uppercase fw-bold">
+                <i class="fas fa-file-pdf"></i> Tải hóa đơn
+            </a>
+            <a href="{{ route('orders.index') }}" class="text-dark text-decoration-none text-uppercase fw-bold pb-1 border-bottom border-dark small">
+                {{ __('messages.back_to_orders') }}
+            </a>
+        </div>
     </div>
 
     <div class="row g-5">

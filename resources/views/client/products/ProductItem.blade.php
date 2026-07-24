@@ -1,5 +1,8 @@
 @props(['product'])
-<div class="product-card-modern">
+<div class="product-card-modern position-relative">
+    <button type="button" onclick="toggleWishlist('{{ $product->id }}', '{{ addslashes($product->name) }}', '{{ $product->price }}', '{{ $product->image ? (Str::startsWith($product->image, ['http://', 'https://']) ? $product->image : asset('storage/' . $product->image)) : 'https://placehold.co/400x400/f3f4f6/a1a1aa?text=No+Image' }}', '{{ route('products.show', $product->slug) }}')" class="btn position-absolute top-0 end-0 m-2 bg-white shadow-sm d-flex align-items-center justify-content-center btn-wishlist" data-id="{{ $product->id }}" style="width: 32px; height: 32px; padding: 0; z-index: 5; border: none; border-radius: 50%;">
+        <i class="far fa-heart text-muted"></i>
+    </button>
     <a href="{{ route('products.show', $product->slug) }}" class="product-img-link">
         <img id="product-img-{{ $product->id }}"
              src="{{ $product->image ? (Str::startsWith($product->image, ['http://', 'https://']) ? $product->image : asset('storage/' . $product->image)) : 'https://placehold.co/400x400/f3f4f6/a1a1aa?text=No+Image' }}"
