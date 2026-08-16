@@ -95,6 +95,12 @@
                         </a>
                     </li>
                     <li class="nav-item">
+                        <a href="{{ route('admin.game.index') }}" class="nav-link {{ request()->routeIs('admin.game.*') ? 'active' : '' }}">
+                            <i class="nav-icon fas fa-gamepad"></i>
+                            <p>Game Tặng Voucher</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a href="{{ route('admin.settings.index') }}" class="nav-link {{ request()->routeIs('admin.settings.*') ? 'active' : '' }}">
                             <i class="nav-icon fas fa-cog"></i>
                             <p>Settings</p>

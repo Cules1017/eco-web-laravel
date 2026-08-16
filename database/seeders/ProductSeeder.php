@@ -58,8 +58,15 @@ class ProductSeeder extends Seeder
                     ]
                 );
 
-                // Add 2-3 random extra images for gallery
-                if ($product->images()->count() === 0) {
+                // Add gallery images if defined in JSON
+                if (isset($item['gallery']) && is_array($item['gallery'])) {
+                    $product->images()->delete();
+                    foreach ($item['gallery'] as $galleryUrl) {
+                        $product->images()->create([
+                            'image_path' => $galleryUrl
+                        ]);
+                    }
+                } elseif ($product->images()->count() === 0) {
                     $numExtraImages = rand(2, 3);
                     $keywords = ['eco', 'nature', 'green', 'clean', 'organic'];
                     for ($i = 0; $i < $numExtraImages; $i++) {

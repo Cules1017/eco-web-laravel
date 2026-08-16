@@ -1,0 +1,562 @@
+[
+    {
+        "name": "Snack Cay Đậm Vị",
+        "description": "Snack Cay Đậm Vị chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 1538000,
+        "stock": 31,
+        "category": "Đồ ăn",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lihpl94f8pak8c",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m70yuhbuhnkxb6",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mjz7ias52k93ff",
+            "https://product.hstatic.net/200000243119/product/tomyum_178ccb852aeb446d812c381c9e0b8003_master.jpg"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Mì Lá Chanh Combo",
+        "description": "Mì Lá Chanh Combo chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 518000,
+        "stock": 14,
+        "category": "Đồ ăn",
+        "image": "https://catalog-assets-asia-southeast1.aeon-vn-prod.e.spresso.com/c3RvcmFnZS5nb29nbGVhcGlzLmNvbQ==/YWVvbnZpZXRuYW0tc3ByZXNzby1wdWJsaWM=/Rk9PRExJTkUgMjAyNA==/SlVO/MDkyNzc3MTcgKDEp.jpg",
+        "gallery": [
+            "https://aulac-vegan.com/wp-content/uploads/2025/07/mi-ga-la-chanh-chay.png",
+            "https://down-vn.img.susercontent.com/file/93fa9c9060626b055a4a2ed91f4bfd8b",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-meyhlt1v9lhgcb"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Xúc Xích Bò Combo",
+        "description": "Xúc Xích Bò Combo chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 68000,
+        "stock": 103,
+        "category": "Đồ ăn",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m6pd8j2jq5bb05",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mg0ar27kbbpk08",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lsjhbuf083pg1c",
+            "https://sg-live-01.slatic.net/p/1f3e3f204c75298cc850e6f70697fb6f.png_525x525q80.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Đồ Hộp Heo Combo",
+        "description": "Đồ Hộp Heo Combo chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 1970000,
+        "stock": 136,
+        "category": "Đồ ăn",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mh61csls09ho59",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-mb2hqq527npz75",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mgnpwhezb6dk8a",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-mdlkx339jmzz87"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Cơm Cháy Hải Sản Combo",
+        "description": "Cơm Cháy Hải Sản Combo chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 938000,
+        "stock": 123,
+        "category": "Đồ ăn",
+        "image": "https://down-vn.img.susercontent.com/file/0cfcd7d6d7d1efcd143fb6240c3e62db",
+        "gallery": [
+            "https://bizweb.dktcdn.net/100/090/383/products/01-combo-haisan-1-bc4ff872-29d5-416b-996d-4ec13f4d7298.jpg?v=1625574265533",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-ljhyfy2taozm6e",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-mal68j8yd2to7e"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Bánh Phô Mai Đậm Vị",
+        "description": "Bánh Phô Mai Đậm Vị chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 338000,
+        "stock": 62,
+        "category": "Đồ ăn",
+        "image": "https://saigonbitesbox.com/cdn/shop/files/333539928_902738137538780_2621369533181581835_n_da118755-07df-4286-be7e-a2e9f88a56c4.jpg?v=1687929232&amp;width=1946",
+        "gallery": [
+            "https://pos.nvncdn.com/bfafb3-133431/ps/20240509_cCRdO8z4k4.jpeg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mml7cvotrbidc6",
+            "https://file.hstatic.net/200000245115/file/3a248b53978393e150f4ba6a2c62ed4a_67a51f5e213c42d8af8c8037839f85ff.jpeg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Khô Gà Heo Ăn Liền",
+        "description": "Khô Gà Heo Ăn Liền chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 532000,
+        "stock": 157,
+        "category": "Đồ ăn",
+        "image": "https://down-vn.img.susercontent.com/file/sg-11134201-22120-wucytmumrqkv99",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lqvqgnxm28bd7e",
+            "https://pos.nvncdn.com/b6ea23-202700/ps/20250715_M0g5kA67HT.jpeg?v=1752566098",
+            "https://media.loveitopcdn.com/25228/kho-heo-goi-50g.png"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Xúc Xích Hải Sản Đậm Vị",
+        "description": "Xúc Xích Hải Sản Đậm Vị chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 1323000,
+        "stock": 27,
+        "category": "Đồ ăn",
+        "image": "https://kmsvina.com/wp-content/uploads/2023/04/xuc-xich-hai-san.png",
+        "gallery": [
+            "https://product.hstatic.net/1000246697/product/z4368904934252_7513f8f0af84bb28c315fa9cfe43a4fd_27c69ba1c0fa4ca783586719d984341d_master.jpg",
+            "https://cdn.tgdd.vn/Files/2021/11/26/1400755/xuc-xich-la-cusina-co-nhung-vi-nao-202111262157043415.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lsl6jjg1trbt2d"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Đồ Hộp Bò Đặc Biệt",
+        "description": "Đồ Hộp Bò Đặc Biệt chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 716000,
+        "stock": 88,
+        "category": "Đồ ăn",
+        "image": "https://www.vissan.com.vn/images/2024/thit-bo-vissan.jpg",
+        "gallery": [
+            "https://www.lottemart.vn/media/catalog/product/cache/0x0/8/9/8936036210651-1.jpg.webp",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m2xe16jdjph6f1",
+            "https://www.lottemart.vn/media/catalog/product/cache/0x0/7/7/77e683df395d8dba5867015098186dc62f6a62b171e7fff99c3ab95a24474151.jpeg.webp"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Xúc Xích Heo Combo",
+        "description": "Xúc Xích Heo Combo chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 1216000,
+        "stock": 27,
+        "category": "Đồ ăn",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mfxd2u84xoug1c",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mgs3pq37nll88e",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mj5k9lacn5l017",
+            "https://down-vn.img.susercontent.com/file/vn-11134201-7ras8-mbu76eh8xb3ed9"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Nồi Inox 304 Chính Hãng",
+        "description": "Nồi Inox 304 Chính Hãng chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 1879000,
+        "stock": 42,
+        "category": "Dụng cụ nhà bếp",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134208-820l4-micwl3knmvig54",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mjxh7qqcoikgb9",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lzvlcexkogpt92",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m95o4cmy6q2v47"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Nồi Thép Không Gỉ Bền Đẹp",
+        "description": "Nồi Thép Không Gỉ Bền Đẹp chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 1576000,
+        "stock": 73,
+        "category": "Dụng cụ nhà bếp",
+        "image": "https://cuahangdungcu.vn/resources/2023/04/10/bo-noi-wmf-astoria-6-mon-thep-khong-gi-chdc-11.jpg",
+        "gallery": [
+            "https://cuahangdungcu.vn/resources/2023/04/12/bo-noi-silit-pisa-4-mon-chdc-7.jpg",
+            "https://shopcuatui.com.vn/uploads/product/7071/1684413187-d4a227e7-6ad5-4807-a7d7-ea3ea226db3b.jpeg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mgn8erym8pai97"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Chảo Inox 304 Đáy Từ",
+        "description": "Chảo Inox 304 Đáy Từ chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 1704000,
+        "stock": 73,
+        "category": "Dụng cụ nhà bếp",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lsta6gsxayzd80",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134208-7r98o-lxaku2jluwnvf4",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lt3e4he4bvkp41",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-mauwi2t8xdxd23"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Thớt Thủy Tinh Chính Hãng",
+        "description": "Thớt Thủy Tinh Chính Hãng chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 118000,
+        "stock": 83,
+        "category": "Dụng cụ nhà bếp",
+        "image": "https://down-vn.img.susercontent.com/file/fd9eea4bd0803029dde7615915f4b7b5",
+        "gallery": [
+            "https://file.hstatic.net/1000081021/file/thot_kinh_cuong_luc_g_home_5_ly_do_nen_su_dung_3_10a3a7005a584d8a8c1c041614ebd288_grande.jpg",
+            "https://cdn.tgdd.vn/Files/2020/07/31/1275499/review-cac-loai-thot-trong-bep-pho-bien-hien-nay-va-uu-nhuoc-diem-cua-tung-loai-202008010912031654.jpg",
+            "https://down-vn.img.susercontent.com/file/bdaa7b2c9e355969808e1ec8e5d28b79"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Hộp Đựng Inox 304 Bền Đẹp",
+        "description": "Hộp Đựng Inox 304 Bền Đẹp chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 1746000,
+        "stock": 111,
+        "category": "Dụng cụ nhà bếp",
+        "image": "https://down-vn.img.susercontent.com/file/6ff1060b13573a6dfaa9de0d47896b1c",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lz3krxy4jixt67",
+            "https://bizweb.dktcdn.net/thumb/large/100/527/426/products/hop-dung-thuc-pham-inox304-mitomo.png?v=1763094512130",
+            "https://mitomo.com.vn/wp-content/uploads/2025/11/hop-dung-thuc-pham-inox304-mitomo28.png"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Chảo Inox 304 Chịu Nhiệt",
+        "description": "Chảo Inox 304 Chịu Nhiệt chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 39000,
+        "stock": 136,
+        "category": "Dụng cụ nhà bếp",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lsta6gsxayzd80",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lt3e4he4bvkp41",
+            "https://down-vn.img.susercontent.com/file/vn-11134208-820l4-mid0sq7p4g74e9",
+            "https://cdn.tgdd.vn/Products/Images/2403/320928/chao-inox-nguyen-khoi-sau-day-tu-20-cm-elmich-trimax-el-2823-080124-042030-600x600.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Bộ Vá Súp Chống Dính Bền Đẹp",
+        "description": "Bộ Vá Súp Chống Dính Bền Đẹp chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 345000,
+        "stock": 129,
+        "category": "Dụng cụ nhà bếp",
+        "image": "https://down-vn.img.susercontent.com/file/sg-11134201-7rblx-m5zfn0b8fp8gf0",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lulqdkdwic6d1a",
+            "https://cf.shopee.vn/file/c1e44f187721482f56b7d1588e08a402",
+            "https://down-vn.img.susercontent.com/file/cn-11134208-7ras8-m3yajwgtrrkae2"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Thớt Chống Dính Chính Hãng",
+        "description": "Thớt Chống Dính Chính Hãng chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 1203000,
+        "stock": 32,
+        "category": "Dụng cụ nhà bếp",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lokkhyoh98fn49",
+        "gallery": [
+            "https://bizweb.dktcdn.net/thumb/1024x1024/100/416/657/products/bo-thot-go-acacia-locknlock-ckd06-hang-chinh-hang-be-mat-cung-co-ranh-chong-tran-chong-tham-nuoc-joymall-2-1695348710285.jpg?v=1696670477090",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-ma1ait3v38sk09",
+            "https://cdn.chiaki.vn/unsafe/0x960/left/top/smart/filters:quality(75)/https://s3-images.chiaki.vn/seller/1749025667376/cloud-image-1749025667376-04062025152747-bao-hanh-24-thang-bo-3-thot-khang-khuan-cao-cap-haatz-cim296-3-thot-da-nang-chinh-hang.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Kéo Thép Không Gỉ Cao Cấp",
+        "description": "Kéo Thép Không Gỉ Cao Cấp chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 403000,
+        "stock": 172,
+        "category": "Dụng cụ nhà bếp",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lvfo5lz5dvgt8e",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/sg-11134201-7rdys-mchh48cxgyjqbc",
+            "http://hoangthinhtv.com/wp-content/uploads/2024/03/3m-1000-×-1000-px-20.png",
+            "https://down-vn.img.susercontent.com/file/vn-11134211-7ra0g-m7zc0ie32usud4"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Chảo Chống Dính Cao Cấp",
+        "description": "Chảo Chống Dính Cao Cấp chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 1215000,
+        "stock": 64,
+        "category": "Dụng cụ nhà bếp",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-m0cfucbdkezx0b",
+        "gallery": [
+            "https://product.hstatic.net/1000372798/product/upload_127fd80f5d2d481e803159e411aa5afc_master.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m15s8mr9ht2z18",
+            "https://cf.shopee.vn/file/da024b9df72c1e47a06a39e624f19b48"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Sữa Hạt Đậu Nành Hữu Cơ",
+        "description": "Sữa Hạt Đậu Nành Hữu Cơ chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 1601000,
+        "stock": 87,
+        "category": "Đồ uống hữu cơ",
+        "image": "https://unimall.vn/storage/uploads_Product/sua-dau-nanh-huu-co-edensoy-1683516525.jpg",
+        "gallery": [
+            "https://beanmart.vn/wp-content/uploads/2023/10/trai-cay-nhap-khau-2-2-1.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m8niryxefq13c3",
+            "https://www.lottemart.vn/media/catalog/product/cache/0x0/8/9/8934672701235-2.jpg.webp"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Trà Đậu Nành Thanh Lọc",
+        "description": "Trà Đậu Nành Thanh Lọc chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 1730000,
+        "stock": 41,
+        "category": "Đồ uống hữu cơ",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lhsz4qq2yda9c4",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134201-7qukw-liuzht78vi189e",
+            "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100031958786580",
+            "https://down-vn.img.susercontent.com/file/sg-11134201-7rcf6-lsjeg8k8arj0d2"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Sữa Hạt Macca Tươi",
+        "description": "Sữa Hạt Macca Tươi chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 1537000,
+        "stock": 159,
+        "category": "Đồ uống hữu cơ",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134208-7r98o-lzu5wwbruvd99e",
+        "gallery": [
+            "https://dalatmilkshop.com/blog/image-blog/th-sua-hat/th-sua-hat-macca-1l.png",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lwqurkcithwb53",
+            "https://www.cqmart.vn/images/uploaded/Dung/sua-hat-kc.jpg"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Trà Đen Tự Nhiên",
+        "description": "Trà Đen Tự Nhiên chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 1851000,
+        "stock": 14,
+        "category": "Đồ uống hữu cơ",
+        "image": "https://traphucsang.vn/wp-content/uploads/2025/09/mua-tra-den-chat-luong-de-u-chuan-vi-tai-tra-phuc-sang-1.jpg",
+        "gallery": [
+            "https://product.hstatic.net/200000516795/product/artboard_1_copy_2_415906c1d06e4a5cacbdfca7b865a199_master.jpg",
+            "http://nguyenlieuantoan.com/assets/upload/products/details/1635737432_tra-den-ceylon-1.jpg?v=0.0.3.1",
+            "https://product.hstatic.net/1000102842/product/2165_e79e86a44b9942b38f1bf5f51286ccc8_1024x1024.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Sữa Tươi Đen Tự Nhiên",
+        "description": "Sữa Tươi Đen Tự Nhiên chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 569000,
+        "stock": 71,
+        "category": "Đồ uống hữu cơ",
+        "image": "https://vn-test-11.slatic.net/p/1a825354614dbe91ea5f74e8adedefb0.jpg",
+        "gallery": [
+            "https://mixuediemdien.com/wp-content/uploads/2024/04/SUA-TUOI-TRAN-CHAU-DUONG-DEN-2.jpg",
+            "https://vn-test-11.slatic.net/p/f71d23315cb9facd24b66749dfe61734.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lvl7gk9t3v30ae"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Nước Khoáng Xanh Nguyên Chất",
+        "description": "Nước Khoáng Xanh Nguyên Chất chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 1963000,
+        "stock": 153,
+        "category": "Đồ uống hữu cơ",
+        "image": "https://product.hstatic.net/1000362335/product/binh_20l-removebg-preview__2__8fa04ef742204efa9d3b5e8859750555_master.jpg",
+        "gallery": [
+            "https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_85,/https://cdn.tgdd.vn/Products/Images/2563/306896/bhx/nuoc-khoang-la-vie-5-lit-202306121040361244.jpg",
+            "https://ecom.viettechsmart.com:5020/Media/Images/0/nuoc-khoang-la-vie-thung-24-chai.jpg",
+            "https://nuockhoanglavie.com/wp-content/uploads/2018/07/nuoc-khoang-lavie.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Nước Khoáng Đen Thanh Lọc",
+        "description": "Nước Khoáng Đen Thanh Lọc chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 817000,
+        "stock": 92,
+        "category": "Đồ uống hữu cơ",
+        "image": "https://nguoiduatin.mediacdn.vn/upload/3-2024/images/2024-08-16/Nuoc-khoang-danh-Thanh-thay-doi-nhan-dien-thuong-hieu-tiep-noi-30-nam-day-tu-hao----nh-03-1723803049-193-width946height1045.jpg",
+        "gallery": [
+            "https://giaonuochainam.com/wp-content/uploads/2022/07/Nuoc-ion-Life-19L-binh-voi.jpg",
+            "https://sangphatwater.com/upload/images/Thành phần nước khoáng lavie.jpg",
+            "https://thaonhi.com.vn/wp-content/uploads/2022/08/Nuoc-khoang-QuanTum-chinh-hang.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Nước Ép Xanh Tươi",
+        "description": "Nước Ép Xanh Tươi chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 1073000,
+        "stock": 57,
+        "category": "Đồ uống hữu cơ",
+        "image": "https://chosachaloha.vn/wp-content/uploads/2025/02/Nuoc-ep-5.jpg",
+        "gallery": [
+            "https://nhathuocvietphap.net/wp-content/uploads/2023/07/anh_3.jpg",
+            "https://traicaynhapkhaububu.com/wp-content/uploads/2022/06/Bột-Nước-Ép-Trái-Cây-Tươi-Rau-Củ-2.jpg",
+            "https://down-vn.img.susercontent.com/file/98c6ceb3c71b0074a48b8cc228bf90fe"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Nước Ép Robusta Tươi",
+        "description": "Nước Ép Robusta Tươi chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 875000,
+        "stock": 97,
+        "category": "Đồ uống hữu cơ",
+        "image": "https://raumamix.com.vn/wp-content/uploads/2025/03/Nuoc-ep-Cam-Thom-Tuoi.png",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134201-7r98o-lz6dk6zebt7ld9",
+            "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-asm/posts/uong-nuoc-ep-1.webp",
+            "https://hoaquafuji.com/storage/app/media/nuoc-ep-trai-cay-00-min.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Sữa Tươi Hạnh Nhân Tươi",
+        "description": "Sữa Tươi Hạnh Nhân Tươi chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 1275000,
+        "stock": 138,
+        "category": "Đồ uống hữu cơ",
+        "image": "https://minhcaumart.vn/media/com_eshop/products/8935217464548.jpg",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lhdi86z785de61",
+            "https://product.hstatic.net/200000559893/product/9439ed55c59266cc3f83_330e1331e05542e68ebc9096bb6bb5cf_grande.jpg",
+            "https://product.hstatic.net/200000580015/product/nut-loc-hanh-nhan-800_f1f2e358ab9e42beab38f92aa120bea1_large.png"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Rong Biển Sấy Hữu Cơ Ăn Kiêng",
+        "description": "Rong Biển Sấy Hữu Cơ Ăn Kiêng chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 760000,
+        "stock": 55,
+        "category": "Đồ ăn vặt hữu cơ",
+        "image": "https://admin.strawberrycstore.com/storage/2020/12/6N1II7PJ5LpYco9FDoabX8JwEc1uruus4iXQXuIP.jpeg",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/sg-11134201-7qvf3-lkgfuzg6387b52",
+            "https://utmai.vn/data/upload/media/3.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lvicz8oe27ppbb"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Hạt Giảm Cân Ăn Kiêng",
+        "description": "Hạt Giảm Cân Ăn Kiêng chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 450000,
+        "stock": 49,
+        "category": "Đồ ăn vặt hữu cơ",
+        "image": "https://hangngoaichinhhang.com/wp-content/uploads/2024/10/vn-11134207-7r98o-lvckjiaksarx17.jpeg",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lyja52fp61cd5d",
+            "https://cf.shopee.vn/file/vn-11134207-7r98o-lne6dilydrl9fe",
+            "https://cf.shopee.vn/file/sg-11134201-22110-3kyqdjub7dkvf8"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Hạt Giảm Cân Việt Nam",
+        "description": "Hạt Giảm Cân Việt Nam chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 1666000,
+        "stock": 190,
+        "category": "Đồ ăn vặt hữu cơ",
+        "image": "https://cf.shopee.vn/file/sg-11134201-22110-3kyqdjub7dkvf8",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m0mtbco0e8pbcf",
+            "https://meyeudongon.com/wp-content/uploads/2024/11/f3e68d740d03b65def12.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134208-7ras8-m1ma0ofsfuj738"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Hạt Mix Việt Nam",
+        "description": "Hạt Mix Việt Nam chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 755000,
+        "stock": 70,
+        "category": "Đồ ăn vặt hữu cơ",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m2q56llss9tm04",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/sg-11134201-22120-vbbxnzxe5kkv53",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lt0gyqk93dms3b",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lz24nw99ruq59a"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Trái Cây Sấy Thuần Chay Không Đường",
+        "description": "Trái Cây Sấy Thuần Chay Không Đường chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 1006000,
+        "stock": 168,
+        "category": "Đồ ăn vặt hữu cơ",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-mcbvj5011w7m27",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lncpw26drwml1e",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m77i95gwxsuw2b",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-ltteds0l9jwt5f"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Bánh Hữu Cơ Ăn Kiêng",
+        "description": "Bánh Hữu Cơ Ăn Kiêng chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 261000,
+        "stock": 90,
+        "category": "Đồ ăn vặt hữu cơ",
+        "image": "https://down-vn.img.susercontent.com/file/b73e50f56ce2aa58fa5e27f3cbb3e593",
+        "gallery": [
+            "https://cdn.chiaki.vn/unsafe/0x960/left/top/smart/filters:quality(75)/https://chiaki.vn/upload/product/2023/11/6554426ce8dc6-15112023110044.png",
+            "https://cdn.chiaki.vn/unsafe/0x640/left/top/smart/filters:quality(70)/https://chiaki.vn/upload/news/content/2023/11/banh-gao-lut-an-kieng-huu-co-gufoods-chiaki-vn-5-png-1700022042-15112023112042.png",
+            "https://cdn.chiaki.vn/unsafe/0x960/left/top/smart/filters:quality(75)/https://chiaki.vn/upload/product/2023/11/6554426cb5429-15112023110044.png"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Mứt Mix Healthy",
+        "description": "Mứt Mix Healthy chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 745000,
+        "stock": 176,
+        "category": "Đồ ăn vặt hữu cơ",
+        "image": "https://down-vn.img.susercontent.com/file/59f6c5017b395966058090ddb7442104",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lof48z3codtfa9",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lpf1uexnxr9q47",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lof48z3cfyer9b"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Trái Cây Sấy Thuần Chay Đà Lạt",
+        "description": "Trái Cây Sấy Thuần Chay Đà Lạt chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 1557000,
+        "stock": 19,
+        "category": "Đồ ăn vặt hữu cơ",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lqzy6n703mhlf7",
+        "gallery": [
+            "https://down-sg.img.susercontent.com/file/vn-11134201-23030-8ykgfbaxbsov26",
+            "https://lh6.googleusercontent.com/KzuxusuE8Tns9Cl_XqkUyvljj7JfgAHFzIXAWwV6rRNuFuJzYIg4f7lKZM0qIh6_ssEZJVscoxwnOfrQhifucr0sNyR4LxHL1l9XbGLyF6T79wcKiGcnH8lr64FID0FqjIKWq47WRuOa7_J6pu7pwrynFJtDSnxTrWWen1B7m1ge3JFE2HZBH2nHzQ",
+            "https://down-vn.img.susercontent.com/file/sg-11134201-22100-h6k3aury5viv44"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Kẹo Nguyên Cám Healthy",
+        "description": "Kẹo Nguyên Cám Healthy chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 504000,
+        "stock": 106,
+        "category": "Đồ ăn vặt hữu cơ",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134201-7ra0g-m98j5bi5n1c713",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m0rif59jedn350",
+            "https://vn-test-11.slatic.net/p/1deb331dfe3d1688e1e63589e9800849.png",
+            "https://bizweb.dktcdn.net/100/417/699/products/z4973942681930-2a64ba4725aa9d8b8f019e36d56a1810-46dbf912-099e-420d-807b-a674bbc379de.jpg?v=1730626185650"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Kẹo Thuần Chay Healthy",
+        "description": "Kẹo Thuần Chay Healthy chất lượng vượt trội. Mẫu mã hiện đại, tiện dụng và đáp ứng mọi nhu cầu của bạn.",
+        "price": 127000,
+        "stock": 100,
+        "category": "Đồ ăn vặt hữu cơ",
+        "image": "https://bizweb.dktcdn.net/thumb/1024x1024/100/351/048/products/f03ae30728dd9583cccc.jpg?v=1735114985890",
+        "gallery": [
+            "https://channel.mediacdn.vn/428462621602512896/2024/6/13/photo-2-17182795602481339755832.jpg",
+            "https://channel.mediacdn.vn/428462621602512896/2024/6/13/photo-1-17182795601811756009518.jpg",
+            "https://channel.mediacdn.vn/428462621602512896/2024/6/13/photo-1-17182795578911119281575.jpg"
+        ],
+        "is_featured": true
+    }
+]

@@ -113,4 +113,33 @@ class CartController extends Controller
         }
         return redirect()->route('cart.index')->with($success ? 'success' : 'error', $msg);
     }
+
+    public function applyVoucher(Request $request)
+    {
+        $request->validate(['code' => 'required|string']);
+        $voucher = \App\Models\Voucher::where('code', $request->code)->first();
+        
+        if (!$voucher) {
+            return back()->with('error', 'Mã giảm giá không tồn tại.');
+        }
+
+        $cart = session('cart', []);
+        $total = 0;
+        foreach ($cart as $item) {
+            $total += $item['price'] * $item['quantity'];
+        }
+
+        if (!$voucher->isValidForAmount($total)) {
+            return back()->with('error', 'Mã giảm giá đã hết hạn, hết lượt dùng hoặc đơn hàng chưa đủ điều kiện áp dụng.');
+        }
+
+        session(['voucher' => $voucher]);
+        return back()->with('success', 'Đã áp dụng mã giảm giá.');
+    }
+
+    public function removeVoucher()
+    {
+        session()->forget('voucher');
+        return back()->with('success', 'Đã gỡ mã giảm giá.');
+    }
 }

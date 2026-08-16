@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Mật Ong Rừng Tây Nguyên Nguyên Chất",
+        "description": "Mật ong rừng Tây Nguyên được thu hoạch thủ công từ đàn ong nuôi tự nhiên trong rừng già. Màu vàng sậm óng ánh, độ sánh cao, hương thơm đặc trưng của hoa rừng đa dạng. Không pha loãng, không nhiệt độ cao, giữ nguyên enzyme và dinh dưỡng quý. Độ ẩm < 20%.",
+        "price": 250000,
+        "stock": 80,
+        "image": "https://ecofarm-pay.com/st/uploads/company52/2023/08/28/64ec66a2a0304.jpeg",
+        "category": "Mật ong và sản phẩm từ ong",
+        "is_featured": true,
+        "gallery": [
+            "http://quatangctbee.com/wp-content/uploads/2023/03/mat-ong-ruoi-rung-anh-that-001.jpg",
+            "https://img.lazcdn.com/g/p/11bc871017ea4d7d5bd57428e9bb55c9.jpg_720x720q80.jpg",
+            "https://www.lottemart.vn/media/catalog/product/cache/0x0/8/9/8936007540039.jpg.webp"
+        ]
+    },
+    {
+        "name": "Mật Ong Hoa Nhãn Hưng Yên",
+        "description": "Mật ong hoa nhãn Hưng Yên được thu từ đàn ong khai thác mật trong mùa nhãn ra hoa. Có màu vàng nhạt trong suốt đặc trưng, hương thơm thanh nhẹ của hoa nhãn, vị ngọt dịu. Đây là loại mật ong được ưa chuộng nhất miền Bắc. Nguyên chất, không pha trộn.",
+        "price": 195000,
+        "stock": 100,
+        "image": "https://dacsanhungyen.com.vn/uploads/images/mat-ong-hoa-nhan-hung-yen.jpg",
+        "category": "Mật ong và sản phẩm từ ong",
+        "is_featured": false,
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lthoh3ojpmh6eb",
+            "https://down-vn.img.susercontent.com/file/e2d799050647aabad6b977a1ba577559",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lyf9pokzag0x28"
+        ]
+    },
+    {
+        "name": "Mật Ong Rừng U Minh Cà Mau",
+        "description": "Mật ong rừng tràm U Minh - loại mật ong đặc biệt chỉ có ở Cà Mau, được thu từ ong mật khai thác hoa tràm. Màu vàng nhạt, vị ngọt thanh, hơi chua nhẹ rất đặc trưng. Được các chuyên gia đánh giá có chất lượng tốt nhất Việt Nam. Đóng chai thủy tinh nguyên chất.",
+        "price": 320000,
+        "stock": 60,
+        "image": "https://media-cdn-v2.laodong.vn/storage/newsportal/2026/1/19/1643282/Mat-Ong-U-Minh-2.jpg",
+        "category": "Mật ong và sản phẩm từ ong",
+        "is_featured": true,
+        "gallery": [
+            "https://leaufood.com/wp-content/uploads/2022/08/mat-ong-rung-u-minh.png",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lkjlz610a64w36",
+            "https://media.loveitopcdn.com/2137/thumb/matong.jpg"
+        ]
+    },
+    {
+        "name": "Sữa Ong Chúa Tươi Nguyên Chất",
+        "description": "Sữa ong chúa tươi được thu hoạch trực tiếp từ tổ ong, bảo quản lạnh ngay sau khi thu. Giàu 10-HDA - acid béo đặc biệt chỉ có trong sữa ong chúa. Hỗ trợ tăng đề kháng, chống lão hóa và cải thiện sinh lý. Bảo quản -18°C để dùng lâu dài.",
+        "price": 450000,
+        "stock": 30,
+        "image": "https://down-vn.img.susercontent.com/file/5e088970bb639c6bb338ec4796e9f956",
+        "category": "Mật ong và sản phẩm từ ong",
+        "is_featured": false,
+        "gallery": [
+            "https://onmart.vn/wp-content/uploads/2022/09/Sua-ong-chua-Ladobee-2.jpg",
+            "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100064021120780",
+            "https://down-vn.img.susercontent.com/file/a939d2ccef1a601af979a67b8931cebb"
+        ]
+    },
+    {
+        "name": "Phấn Hoa Ong Rừng Tây Bắc",
+        "description": "Phấn hoa ong thu từ đàn ong rừng nuôi tại Tây Bắc, được sấy lạnh bảo quản nguyên vẹn dinh dưỡng. Viên phấn hoa tròn đều, nhiều màu sắc đẹp mắt, thơm nhẹ mùi hoa rừng. Giàu protein, vitamin và khoáng chất. Bổ sung vào sinh tố, sữa chua hoặc ăn trực tiếp.",
+        "price": 165000,
+        "stock": 70,
+        "image": "https://down-vn.img.susercontent.com/file/sg-11134201-7rfi2-m4456e6bduv733",
+        "category": "Mật ong và sản phẩm từ ong",
+        "is_featured": false,
+        "gallery": [
+            "https://matongphuckhang.vn/wp-content/uploads/2025/02/KEM_0523-scaled-1.jpg",
+            "https://matongphuckhang.vn/wp-content/uploads/2025/02/KEM_0522-scaled-1.jpg",
+            "https://cf.shopee.vn/file/9b75cecab1994865659c074170c7bca0"
+        ]
+    }
+]

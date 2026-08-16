@@ -101,8 +101,27 @@ class OrderController extends Controller
         $request->validate([
             'status' => 'required|in:pending,processing,shipping,completed,cancelled',
         ]);
+        
+        $oldStatus = $order->status;
         $order->status = $request->status;
         $order->save();
+        
+        // Add bonus question if order is completed
+        if ($oldStatus !== 'completed' && $request->status === 'completed') {
+            $session = \App\Models\GameSession::firstOrCreate(
+                ['user_id' => $order->user_id, 'date' => \Carbon\Carbon::today()],
+                [
+                    'questions_answered' => 0,
+                    'correct_streak' => 0,
+                    'total_correct' => 0,
+                    'bonus_questions' => 0,
+                    'has_won_today' => false,
+                ]
+            );
+            $session->bonus_questions += 1;
+            $session->save();
+        }
+        
         return back()->with('success', 'Cập nhật trạng thái đơn hàng thành công.');
     }
 

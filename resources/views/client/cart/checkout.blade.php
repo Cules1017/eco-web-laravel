@@ -69,12 +69,51 @@
                                     @endforeach
                                 </tbody>
                                 <tfoot>
-                                    <tr>
-                                        <td colspan="3" class="text-end"><strong>{{ __('messages.total') }}:</strong></td>
-                                        <td class="text-end"><strong>{{ number_format($total) }}đ</strong></td>
-                                    </tr>
+                                    @if(session('voucher'))
+                                        @php
+                                            $voucher = session('voucher');
+                                            $discount = $voucher->calculateDiscount($total);
+                                            $finalTotal = $total - $discount;
+                                        @endphp
+                                        <tr>
+                                            <td colspan="3" class="text-end"><strong>Tạm tính:</strong></td>
+                                            <td class="text-end"><strong>{{ number_format($total) }}đ</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3" class="text-end"><strong>Giảm giá ({{ $voucher->code }}):</strong></td>
+                                            <td class="text-end text-danger">-{{ number_format($discount) }}đ</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3" class="text-end"><strong>Thành tiền:</strong></td>
+                                            <td class="text-end"><strong><span style="font-size: 1.25rem;">{{ number_format($finalTotal) }}đ</span></strong></td>
+                                        </tr>
+                                    @else
+                                        <tr>
+                                            <td colspan="3" class="text-end"><strong>{{ __('messages.total') }}:</strong></td>
+                                            <td class="text-end"><strong><span style="font-size: 1.25rem;">{{ number_format($total) }}đ</span></strong></td>
+                                        </tr>
+                                    @endif
                                 </tfoot>
                             </table>
+                        </div>
+
+                        <!-- Voucher Input -->
+                        <div class="mt-4">
+                            <form action="{{ route('cart.voucher.apply') }}" method="POST" class="d-flex">
+                                @csrf
+                                <input type="text" name="code" class="form-control me-2" placeholder="Nhập mã giảm giá" style="text-transform: uppercase;" required>
+                                <button type="submit" class="btn btn-outline-primary" style="white-space: nowrap;">Áp dụng</button>
+                            </form>
+                            @if(session('voucher'))
+                                <div class="mt-2 text-success d-flex align-items-center">
+                                    <i class="fas fa-check-circle me-1"></i> Đang áp dụng mã: <strong class="ms-1">{{ session('voucher')->code }}</strong> 
+                                    <form action="{{ route('cart.voucher.remove') }}" method="POST" class="d-inline ms-2">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button class="btn btn-sm btn-link text-danger p-0 text-decoration-none">Gỡ mã</button>
+                                    </form>
+                                </div>
+                            @endif
                         </div>
                     </div>
                 </div>

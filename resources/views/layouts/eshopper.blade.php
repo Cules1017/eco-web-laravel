@@ -494,6 +494,13 @@
             <div class="collapse navbar-collapse d-flex align-items-center flex-nowrap" id="mainNav">
                 <ul class="navbar-nav mb-2 mb-lg-0 flex-grow-1">
                     <li class="nav-item"><a class="nav-link" href="/">{{ __('messages.home') }}</a></li>
+                    @auth
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-warning" href="{{ route('game.index') }}">
+                                <i class="fas fa-gamepad"></i> Mini Game
+                            </a>
+                        </li>
+                    @endauth
                     <li class="nav-item dropdown position-relative products-categories-dropdown">
                         <a class="nav-link dropdown-toggle" href="{{ route('products.index') }}" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             {{ __('messages.products') }}

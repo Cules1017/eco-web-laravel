@@ -56,13 +56,27 @@ class OrderController extends Controller
             $total += $item['price'] * $item['quantity'];
         }
 
+        $voucher = session('voucher');
+        $discountAmount = 0;
+        $finalTotal = $total;
+
+        if ($voucher && $voucher->isValidForAmount($total)) {
+            $discountAmount = $voucher->calculateDiscount($total);
+            $finalTotal = $total - $discountAmount;
+            
+            // Tăng used_count
+            $voucher->increment('used_count');
+        }
+
         $order = auth()->user()->orders()->create([
             'order_number' => 'OD' . time() . rand(100,999),
             'status' => 'pending',
             'payment_status' => 'pending',
             'payment_method' => $request->payment_method,
             'shipping_address_id' => $request->shipping_address_id,
-            'total_amount' => $total,
+            'total_amount' => $finalTotal,
+            'voucher_id' => $voucher ? $voucher->id : null,
+            'discount_amount' => $discountAmount,
             'notes' => $request->notes,
         ]);
 
@@ -75,7 +89,7 @@ class OrderController extends Controller
             ]);
         }
 
-        session()->forget('cart');
+        session()->forget(['cart', 'voucher']);
 
         try {
             Mail::to(auth()->user()->email)->send(new OrderPlaced($order));

@@ -1,0 +1,100 @@
+[
+    {
+        "name": "Xoài Cát Hòa Lộc Tiền Giang Hữu Cơ",
+        "description": "Xoài Cát Hòa Lộc là đặc sản nổi tiếng của Tiền Giang, có thịt dày, vị ngọt thanh, hương thơm quyến rũ. Quả to đều, không xơ, ít hạt. Được trồng theo tiêu chuẩn VietGAP, đảm bảo an toàn thực phẩm. Thu hoạch khi quả vừa chín, ngọt tự nhiên.",
+        "price": 95000,
+        "stock": 80,
+        "image": "https://product.hstatic.net/200000689759/product/farmersvietnam---xoai-cat-hoa-loc_b5b01390e3904377a91e1f7275025afb_master.jpg",
+        "category": "Trái cây",
+        "is_featured": true,
+        "gallery": [
+            "https://product.hstatic.net/200000604011/product/z5603348097667_2453d9a3955b48de25692b443a5ad5a4_6a516a24b0fe4d44b4265e7670d48f49.jpg",
+            "https://bizweb.dktcdn.net/thumb/1024x1024/100/457/054/products/15-1696408078877.png?v=1696408428080",
+            "https://vinatt.com/thumbs/600x600x1/upload/product/xoai-cat-hoa-loc-1-crop-9096.jpg"
+        ]
+    },
+    {
+        "name": "Thanh Long Ruột Đỏ Bình Thuận",
+        "description": "Thanh Long ruột đỏ đặc sản Bình Thuận, giàu vitamin C và chất chống oxy hóa. Thịt quả màu đỏ tươi, vị ngọt mát, giòn ngon. Được trồng theo phương pháp an toàn, không sử dụng chất kích thích tăng trưởng. Rất tốt cho sức khỏe tim mạch và da.",
+        "price": 45000,
+        "stock": 120,
+        "image": "https://orfarm.com.vn/images/products/2020/08/03/large/thanh-long-ruot-do_1596450663.jpg",
+        "category": "Trái cây",
+        "is_featured": false,
+        "gallery": [
+            "http://hoaquaquynhon.com/wp-content/uploads/2023/11/404928232_871052065024098_825809718894511988_n.jpg",
+            "https://ecofarm-pay.com/st/uploads/company52/2024/04/22/66264eb5dddc3.jpeg",
+            "https://hoaquaquynhon.com/wp-content/uploads/2023/11/403870489_871052175024087_7027284351525984665_n.jpg"
+        ]
+    },
+    {
+        "name": "Vải Thiều Lục Ngạn Bắc Giang",
+        "description": "Vải thiều Lục Ngạn - thương hiệu trái cây số 1 Bắc Giang, được xuất khẩu sang Nhật Bản và châu Âu. Quả vải tròn đều, vỏ mỏng, thịt dày giòn trắng muốt, vị ngọt mát đặc trưng. Mùa vải chín từ tháng 5 đến tháng 6, thu hoạch thủ công. Hộp 1kg.",
+        "price": 55000,
+        "stock": 60,
+        "image": "https://cdn.nhandan.vn/images/f5c4bd7bc51049bdc2b6094c14bb7c462729248573bcc39cb76c8be6f77d06857efc329de812fb70be6a5b308af04153118bbb11b99f4fbc4146a3fd77f2277ae667d376bf869970b83bd2a9ea12e0ea/vai-thieu-luc-ngan-2-579.jpg",
+        "category": "Trái cây",
+        "is_featured": true,
+        "gallery": [
+            "https://vaithieu.net/wp-content/uploads/2018/03/vai-thieu-luc-ngan-vietgap.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lqf1dik9ladu09",
+            "https://cdn.nhandan.vn/images/f5c4bd7bc51049bdc2b6094c14bb7c462729248573bcc39cb76c8be6f77d06857efc329de812fb70be6a5b308af04153cbf6a5a95e452190a0327f85208a47be63a899dc0d598a8828a44264337440e8/vai-thieu-luc-ngan-9180.jpg"
+        ]
+    },
+    {
+        "name": "Nhãn Lồng Hưng Yên Đặc Sản",
+        "description": "Nhãn lồng Hưng Yên - đặc sản nổi tiếng nhất Việt Nam, được trồng theo phương pháp truyền thống hàng trăm năm. Quả nhãn to tròn, vỏ vàng mỏng, thịt dày, vị ngọt đậm, hương thơm nồng nàn. Cùi nhãn giòn, ít nước hơn các giống nhãn khác. Khay 1kg.",
+        "price": 75000,
+        "stock": 90,
+        "image": "https://product.hstatic.net/200000684957/product/long_nhan_hung_yen_450_mockup_6bffbe935eaf44ccae1ccdfadfddaab9_master.jpg",
+        "category": "Trái cây",
+        "is_featured": false,
+        "gallery": [
+            "https://product.hstatic.net/200000684957/product/moi__1__a9a856fe278a4aa4897d52ac120e7742_master.jpg",
+            "https://dulichvietnam.com.vn/vnt_upload/news/07_2023/1_nhan_long_hung_yen.jpg",
+            "https://down-vn.img.susercontent.com/file/sg-11134201-7rav4-madnl272jjwwee"
+        ]
+    },
+    {
+        "name": "Bơ 034 Lâm Đồng Hữu Cơ Dẻo Thơm",
+        "description": "Bơ 034 Lâm Đồng - loại bơ ngon nhất Việt Nam, thịt bơ vàng óng, béo ngậy, không xơ. Được trồng trên vùng đất bazan màu mỡ Đà Lạt theo tiêu chuẩn hữu cơ. Giàu chất béo lành mạnh Omega-3, tốt cho tim mạch và não bộ. Phù hợp làm bánh, salad hoặc ăn trực tiếp. Túi 1kg.",
+        "price": 85000,
+        "stock": 50,
+        "image": "https://i.pinimg.com/736x/11/f4/d9/11f4d9c84d33b2896485e327957dad58.jpg",
+        "category": "Trái cây",
+        "is_featured": true,
+        "gallery": [
+            "https://namtinhvegetable.com/wp-content/uploads/2025/06/Gioi-thieu-Bo-034-Lam-Dong.jpg",
+            "https://namtinhvegetable.com/wp-content/uploads/2025/06/Bo-034-Vip-Lam-Dong.jpg",
+            "https://www.cqmart.vn/images/thumbs/0008104_bo-034-lam-dong-tui-2kg.png"
+        ]
+    },
+    {
+        "name": "Bưởi Da Xanh Bến Tre Đặc Sản",
+        "description": "Bưởi da xanh Bến Tre - đặc sản miền Tây nổi tiếng với vỏ xanh, múi hồng ngọt, ít hạt. Thịt bưởi giòn mọng nước, vị ngọt thanh pha chút chua nhẹ rất dễ chịu. Không chua gắt như bưởi thường. Trái nặng 1.2-1.5kg, trồng theo tiêu chuẩn GlobalGAP.",
+        "price": 65000,
+        "stock": 70,
+        "image": "https://product.hstatic.net/200000604011/product/34_f91055b1f2a047fd980a65e59b328e77_grande.jpg",
+        "category": "Trái cây",
+        "is_featured": false,
+        "gallery": [
+            "https://dacsanmientay.org/wp-content/uploads/2022/10/Buoi-600x600.png",
+            "https://vuatraicaygiare.com/wp-content/uploads/2024/02/buoi-da-xanh-ben-tre-1.png",
+            "https://bentretoplist.com/wp-content/uploads/2024/01/buoi-da-xanh-khoi-tran-bentretoplist.jpg"
+        ]
+    },
+    {
+        "name": "Sầu Riêng Monthong Bình Phước",
+        "description": "Sầu riêng Monthong Bình Phước - vua của các loại trái cây, nổi tiếng với múi to dày, hạt nhỏ lép, màu vàng tươi bắt mắt. Cơm sầu riêng khô ráo, béo ngậy, vị ngọt thanh đặc trưng. Được thu hoạch khi chín cây, không dùng thuốc giục chín. Khoảng 2-3 múi/túi.",
+        "price": 195000,
+        "stock": 40,
+        "image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100068523005836",
+        "category": "Trái cây",
+        "is_featured": false,
+        "gallery": [
+            "https://vietmartjp.com/wp-content/uploads/2023/06/sau-rieng-monthong-dong-lanh-400g.jpeg",
+            "https://product.hstatic.net/200000483681/product/nnt_food_-_sau_say_monthong_04_fbb8497e6df24c0f835851426638844b_master.png",
+            "https://nguoiduatin.mediacdn.vn/thumb_w/930/media/ngac-kim-giang/2023/09/19/sau-rieng-binh-phuoc.jpg"
+        ]
+    }
+]

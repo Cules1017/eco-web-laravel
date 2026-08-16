@@ -94,14 +94,26 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {{ request()->routeIs('admin.banners.*') ? 'active' : '' }}" href="{{ route('admin.banners.index') }}">
-                                <i class="fas fa-images"></i>
-                                <span>Quản lý Banner</span>
+                                <i class="nav-icon fas fa-images"></i>
+                                <p>Quản lý Banner</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {{ request()->routeIs('admin.home-sections.*') ? 'active' : '' }}" href="{{ route('admin.home-sections.index') }}">
-                                <i class="fas fa-th-large"></i>
-                                <span>Quản lý Section</span>
+                                <i class="nav-icon fas fa-th-large"></i>
+                                <p>Quản lý Section</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {{ request()->routeIs('admin.vouchers.*') ? 'active' : '' }}" href="{{ route('admin.vouchers.index') }}">
+                                <i class="nav-icon fas fa-ticket-alt"></i>
+                                <p>Mã giảm giá</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('admin.game.index') }}" class="nav-link {{ request()->routeIs('admin.game.*') ? 'active' : '' }}">
+                                <i class="nav-icon fas fa-gamepad"></i>
+                                <p>Cấu hình game</p>
                             </a>
                         </li>
                         <li class="nav-item">

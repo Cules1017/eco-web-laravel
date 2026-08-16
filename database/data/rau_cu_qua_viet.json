@@ -1,0 +1,100 @@
+[
+    {
+        "name": "Rau Muống Hữu Cơ Đà Lạt",
+        "description": "Rau muống hữu cơ trồng tại Đà Lạt, được canh tác hoàn toàn bằng phân bón tự nhiên và tưới nước suối sạch. Lá to xanh mướt, thân giòn, vị ngọt nhẹ. Đóng gói túi hút chân không giúp bảo quản tươi lâu hơn 5 ngày. Không thuốc trừ sâu.",
+        "price": 25000,
+        "stock": 200,
+        "image": "https://cdn.hstatic.net/products/200000423303/c__sunny_harvest_300_g___g_i___afdfc1f209d549fd8da694abf71edf84_master_18c6c839c8e940f2b62085dd80a50e2e_grande.jpg",
+        "category": "Rau củ quả",
+        "is_featured": false,
+        "gallery": [
+            "https://www.lottemart.vn/media/catalog/product/cache/0x0/8/9/8938525767189-1.jpg.webp",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lxc4uzwf0jizaa",
+            "https://www.lottemart.vn/media/catalog/product/cache/0x0/8/9/8938525767189-4.jpg.webp"
+        ]
+    },
+    {
+        "name": "Cải Xanh Hữu Cơ Đà Lạt",
+        "description": "Cải xanh hữu cơ Đà Lạt, trồng trong môi trường khí hậu mát lạnh đặc trưng, lá xanh bóng, thân mập, ăn giòn ngọt. Được chứng nhận hữu cơ, không dùng thuốc bảo vệ thực vật hóa học. Thu hoạch sáng sớm, giao đến tay người dùng còn tươi nguyên.",
+        "price": 20000,
+        "stock": 180,
+        "image": "https://orfarm.com.vn/images/products/2017/08/02/large/orfarm-rau-cai-xanh-huu-co_1501669679.jpg.jpg",
+        "category": "Rau củ quả",
+        "is_featured": false,
+        "gallery": [
+            "https://orfarm.com.vn/images/products/2020/07/14/large/cach-che-bien-muc-mot-nang-2-2_1594710052.jpg",
+            "https://minhcaumart.vn/media/com_eshop/products/image_649a9e6906fca_Untitled-1.webp",
+            "https://teststage.alinafood.vn/wp-content/uploads/2023/01/OGRCBCX0000CPV-Bong-cai-xanh-huu-co-CP-Da-Lat-100g.png"
+        ]
+    },
+    {
+        "name": "Cà Chua Bi Cherry Hữu Cơ",
+        "description": "Cà chua bi cherry hữu cơ, quả tròn đều, màu đỏ óng bắt mắt, vị chua ngọt hài hòa. Trồng trong nhà kính theo tiêu chuẩn GlobalGAP, không sử dụng thuốc trừ sâu hóa học. Rất thích hợp để ăn sống, làm salad hoặc trang trí món ăn.",
+        "price": 35000,
+        "stock": 150,
+        "image": "https://shop.classicfinefoods.vn/hanoi/3415-large_default/ca-chua-bi-sieu-ngt-cherry-tomato-500g-queen-hokkaido.jpg",
+        "category": "Rau củ quả",
+        "is_featured": true,
+        "gallery": [
+            "https://vivina.net/static/media/images/shop/s1000_1000/ca-cherry-do-huu-co-ctfarm-01-1024x1024-1759978665.jpg",
+            "https://bizweb.dktcdn.net/thumb/1024x1024/100/457/054/products/ca-chua-cherry-huu-co-kg-1681867807369.png?v=1681867810507",
+            "https://hatgiongtot.vn/wp-content/uploads/2023/11/hat-giong-ca-chua-bi-cherry-6.jpg"
+        ]
+    },
+    {
+        "name": "Bí Đỏ Hokaido Nhật Bản Đà Lạt",
+        "description": "Bí đỏ Hokaido trồng tại Đà Lạt theo quy trình Nhật Bản. Ruột bí màu cam đậm, vị ngọt đậm đặc trưng, ít nước hơn các loại bí thông thường. Rất giàu beta-carotene và vitamin A, tốt cho mắt và da. Phù hợp nấu súp, hấp, nướng hoặc làm bánh.",
+        "price": 42000,
+        "stock": 100,
+        "image": "https://trucvufarm.com.vn/wp-content/uploads/2025/05/vn-11134207-7qukw-lheu9q5iq4xx3f.jpg",
+        "category": "Rau củ quả",
+        "is_featured": true,
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134201-7ra0g-ma3xucxld9qaa4",
+            "https://down-vn.img.susercontent.com/file/sg-11134201-7rfh8-m9941vw37mz982",
+            "https://down-vn.img.susercontent.com/file/vn-11134201-7ras8-mcvhsnwwp7q41e"
+        ]
+    },
+    {
+        "name": "Dưa Leo Nhật Nhà Kính Hữu Cơ",
+        "description": "Dưa leo Nhật được trồng trong nhà kính kiểm soát hoàn toàn, vỏ mỏng không đắng, ruột ít hạt, thịt giòn mát. Hàm lượng nước cao, thích hợp ăn sống giải nhiệt mùa hè. Không dùng thuốc kích thích ra quả, thu hoạch đúng độ chín tự nhiên.",
+        "price": 28000,
+        "stock": 160,
+        "image": "https://bizweb.dktcdn.net/thumb/1024x1024/100/457/054/products/dua-leo-nhat-huu-co-kg-1681703321964.png?v=1681703326147",
+        "category": "Rau củ quả",
+        "is_featured": false,
+        "gallery": [
+            "https://file.hstatic.net/200000359503/file/2_6dbfb81c99eb4df5a0da62fb6e803177.png",
+            "https://file.hstatic.net/200000359503/file/3_b86efae916d74334a905fa6203223d99.png",
+            "https://xuannong.vn/images/stories/virtuemart/product/resized/dua-leo-nhat_214x214.jpg"
+        ]
+    },
+    {
+        "name": "Khoai Tây Đà Lạt Hữu Cơ",
+        "description": "Khoai tây Đà Lạt trồng ở độ cao 1.500m, đất đỏ bazan màu mỡ. Vỏ khoai vàng mỏng, ruột vàng nhạt, chắc thịt, bở nhuyễn khi nấu chín. Không dùng chất bảo quản, không tẩy trắng. Phù hợp để chiên khoai tây, hầm súp, nướng phô mai.",
+        "price": 32000,
+        "stock": 120,
+        "image": "https://binhdienonline.com.vn/thumbs_size/product/2021_02/khoai-tay/[1200x1200-cr]khoai-tay-vang41.jpg",
+        "category": "Rau củ quả",
+        "is_featured": false,
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/f9054d8551832c9c680d108e1da68219",
+            "https://binhdienonline.com/thumbs_size/product/2025_03/[1200x1200-cr]khoai-tay-vang67.jpg",
+            "https://binhdienonline.com.vn/thumbs_size/product/2021_02/khoai-tay/[1200x1200-cr]khoai-tay-vang15.jpg"
+        ]
+    },
+    {
+        "name": "Rau Baby Mix Đà Lạt",
+        "description": "Hỗn hợp rau baby gồm cải xanh non, rau rocket, cải mầm và cải chân vịt - được thu hoạch khi còn non tơ mềm ngon nhất. Rất giàu dinh dưỡng, ít calo, thích hợp để làm salad, ăn kèm thịt nướng. Đóng hộp nhựa food-safe, bảo quản trong ngăn mát tủ lạnh.",
+        "price": 45000,
+        "stock": 80,
+        "image": "https://sunrisefruits.vn/wp-content/uploads/2023/08/bong-cai-baby-600x600-1.jpg",
+        "category": "Rau củ quả",
+        "is_featured": true,
+        "gallery": [
+            "https://www.lottemart.vn/media/catalog/product/cache/0x0/9/3/9350336000146-1-1.jpg.webp",
+            "https://cf.shopee.vn/file/4f6416073034102c9c2933fb73ab8c11",
+            "https://cf.shopee.vn/file/sg-11134201-22100-u7llj626bciv23"
+        ]
+    }
+]

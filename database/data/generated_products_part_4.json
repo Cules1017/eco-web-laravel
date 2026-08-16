@@ -1,0 +1,1402 @@
+[
+    {
+        "name": "Hạnh Nhân Đỏ Đồng Tháp",
+        "description": "Hạnh Nhân Đỏ Đồng Tháp là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 294000,
+        "stock": 196,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lz728153kvc1e5",
+        "gallery": [
+            "https://quaoccho.vn/wp-content/uploads/Hat-hanh-nhan-o-Dong-Thap.png",
+            "https://quaoccho.vn/wp-content/uploads/Hat-hanh-nhan-tai-Dong-Thap.png",
+            "https://hathanhnhan.com/wp-content/uploads/hat-hanh-nhan-mua-tai-dong-thap.png"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Nếp Rang Thượng Hạng",
+        "description": "Nếp Rang Thượng Hạng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 142000,
+        "stock": 185,
+        "category": "Gạo & Ngũ cốc",
+        "image": "http://icheckcdn.net/images/original/-TheHulk/702b67ccfe/1495024685_a19062e349a84cda8aff8c6ede2797c7_5ad003.jpg",
+        "gallery": [
+            "https://vn-live-01.slatic.net/p/3b06bedd95275ab891636ccbfae9e29f.jpg",
+            "https://tvpfood.com/wp-content/uploads/2024/11/mockup-bao-bot_efc7c5e21f254cc6b39acab10466843d1.jpg",
+            "https://tvpfood.com/wp-content/uploads/2024/11/mockup-bao-bot_f0596a039ff04ed8a2fa4ce3f7aa85581.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Hạt Sen Đỏ Ăn Kiêng",
+        "description": "Hạt Sen Đỏ Ăn Kiêng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 184000,
+        "stock": 90,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://cf.shopee.vn/file/552d55f68de508c825cccd1978ccc135",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lvlyutq8e2a939",
+            "https://cf.shopee.vn/file/vn-11134207-7r98o-lpj06p4wblmd2d",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lg22qo36obca01"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Hạt Điều St25 Cho Người Tiểu Đường",
+        "description": "Hạt Điều St25 Cho Người Tiểu Đường là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 86000,
+        "stock": 160,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://megao.com.vn/wp-content/uploads/2026/01/gao-st25-cho-nguoi-bi-tieu-duong.png",
+        "gallery": [
+            "https://product.hstatic.net/1000300839/product/gao_mam_gaba_st25_ddeff8a3d1cd414cb25ad24cfd0bdd2f_master.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lh4ze7rfk4xf5c",
+            "http://trongtamrice.com/files/upload/tin-tuc/cong-thuc-ruou-gao-hap-dan-tu-gao-st25-ngon-nhat-the-gioi/z3700558904967_2914dcbdb35833bc97777704a7d5ac6e.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Hạt Xanh Thượng Hạng",
+        "description": "Hạt Xanh Thượng Hạng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 474000,
+        "stock": 166,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-li0zhl8g1rid92",
+        "gallery": [
+            "https://hatxanh.com.vn/wp-content/uploads/2022/06/cong-dung-cua-tra-xanh-thuong-hang.jpg",
+            "https://cf.shopee.vn/file/vn-11134201-23030-pw97z8d9n6nv37",
+            "https://cf.shopee.vn/file/5714876131db74e2ba4f6e2d2cb4df65"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Ngũ Cốc Rang Đồng Tháp",
+        "description": "Ngũ Cốc Rang Đồng Tháp là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 215000,
+        "stock": 190,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lvsqj5pjff5l3b",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/6dad8640f98d2407fdebf57954e5cbd3",
+            "https://down-vn.img.susercontent.com/file/sg-11134201-22110-z95fw4xyvijvee",
+            "https://media.loveitopcdn.com/1082/thumb/dsc00755-small.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Gạo Đỏ Thượng Hạng",
+        "description": "Gạo Đỏ Thượng Hạng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 121000,
+        "stock": 120,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://down-vn.img.susercontent.com/file/54d21c34412f50f4e34cf042aba075b1",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mfclau8wsmbx79",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lnne0sxr5td9a0",
+            "https://cf.shopee.vn/file/vn-11134207-7r98o-lu8sdcoizk7zcc"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Hạt Hữu Cơ Đồng Tháp",
+        "description": "Hạt Hữu Cơ Đồng Tháp là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 418000,
+        "stock": 175,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-mbv4uxtmfjpq56",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lx70quniubbta1",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m20pdqru9sri50",
+            "https://bachhoaxelam.com/wp-content/uploads/2023/08/52-Cach-nhan-biet-hat-sen-Dong-Thap.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Gạo Hữu Cơ Đồng Tháp",
+        "description": "Gạo Hữu Cơ Đồng Tháp là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 366000,
+        "stock": 194,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-ljr8vt29ol9wd3",
+        "gallery": [
+            "https://product.hstatic.net/200000876993/product/baobi5kg___gaoongdu_st25_hh_94c1a34984e84f97ad7cb673b6ee3a00_master.jpg",
+            "https://down-vn.img.susercontent.com/file/sg-11134201-22110-belh19hb24jv74",
+            "https://imagevietnam.vnanet.vn/MediaUpload/Org/2023/12/19/z4988494721325-2944450c5709b8ab03af64d88fd5f0bd19-10-54-10.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Gạo Rang Sóc Trăng",
+        "description": "Gạo Rang Sóc Trăng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 458000,
+        "stock": 95,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lkanm2uzcuqkf7",
+        "gallery": [
+            "https://product.hstatic.net/200000876993/product/baobi1kg_gaoongdu_st25hh_50b6f81295794d50929c9bc96e7c96ee_master.jpg",
+            "https://product.hstatic.net/200000876993/product/baobi5kg___gaoongdu_st25_td_green_cd376eb69de24c92b7a88117e5fe8dea_1024x1024.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m6f17ygqeug107"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Hạnh Nhân Lứt Ăn Kiêng",
+        "description": "Hạnh Nhân Lứt Ăn Kiêng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 366000,
+        "stock": 86,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-ljjqpacsw2rm1e",
+        "gallery": [
+            "https://lzd-img-global.slatic.net/g/p/68a92ee23c6ecfcc0959f6dd0ddf733e.jpg_960x960q80.jpg_.webp",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lv5ystznsja2b1",
+            "https://cf.shopee.vn/file/9d0d2013531249df82cbcf88705270fc"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Hạt Điều St25 Tây Bắc",
+        "description": "Hạt Điều St25 Tây Bắc là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 279000,
+        "stock": 16,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://hatdieubaokhanh.com/wp-content/uploads/2025/09/hat-dieu-rang-muoi.png",
+        "gallery": [
+            "https://hathuongviet.com/wp-content/uploads/2026/02/khung-san-pham-3.png",
+            "https://hatdieubaokhanh.com/wp-content/uploads/2023/09/Hat-dieu-A-VIP-A180-1.jpg",
+            "https://hatdieubaokhanh.com/wp-content/uploads/2023/09/151.jpg"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Gạo Mix Đồng Tháp",
+        "description": "Gạo Mix Đồng Tháp là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 108000,
+        "stock": 59,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://media.thuonghieucongluan.vn/uploads/2025/01/06/69163281-706771096402295-2265023850485907456-n-1736143761.jpg",
+        "gallery": [
+            "https://mkt.1cdn.vn/2023/12/20/gao1.jpg",
+            "https://img.lsvn.vn/resize/th/upload/2025/03/05/gao-st25-10240778.jpg",
+            "https://congnghieptieudung.vn/Content/images/tin tức/Doanh nghiệp - doanh nhân/1_ Ảnh đại diện.png"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Hạt Óc Chó St25 Ăn Kiêng",
+        "description": "Hạt Óc Chó St25 Ăn Kiêng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 455000,
+        "stock": 178,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://cf.shopee.vn/file/vn-11134207-7qukw-lgn7jisszxgy56",
+        "gallery": [
+            "https://cf.shopee.vn/file/vn-11134207-7qukw-lgn7jist456ab4",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m0u28s8aywa551",
+            "https://cf.shopee.vn/file/vn-11134207-7qukw-lgn7jist1c1e12"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Hạt Sen St24 Đồng Tháp",
+        "description": "Hạt Sen St24 Đồng Tháp là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 51000,
+        "stock": 157,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m400mazfgw07f0",
+        "gallery": [
+            "https://conetfood.com/content_traicaytannoi/upload/Image/hat-sen/hat-sen-kho-dong-thap-3.jpg",
+            "https://down-vn.img.susercontent.com/file/7c7993b68d70c7c3359a99613a56071b",
+            "https://down-vn.img.susercontent.com/file/2020ec5b8f15cd34b79b1cd15911b6a3"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Nếp Đỏ Sóc Trăng",
+        "description": "Nếp Đỏ Sóc Trăng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 354000,
+        "stock": 94,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://cdn.hstatic.net/products/200000876993/z7648078910068_1346fff72c78e4b5718e05c4a24a101c_41f3478a2a484b80a188747847700eeb_master.jpg",
+        "gallery": [
+            "https://cdn.hstatic.net/products/200000876993/z7788507535550_969ea85a784a6dba8fd07b28fe98cf9e_2a04beef4a7e40b8b02cf80bfb56255d_master.jpg",
+            "https://cdn.hstatic.net/products/200000876993/z7648078894137_f8a706442109035bd1540b57e88dfd7a_a0f9c7ca8d5c4abfbcdcb448221861ba_master.jpg",
+            "https://phunuvietnam.mediacdn.vn/thumb_w/700/179072216278405120/2023/12/13/minh-chau-1-17024332321741471582772.jpg"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Mè Đen Tây Bắc",
+        "description": "Mè Đen Tây Bắc là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 357000,
+        "stock": 12,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-mblaxzfyub2f73",
+        "gallery": [
+            "https://shoptaybac.com/wp-content/uploads/2025/11/hat-vung-den-to-deu-dam-bao-chat-luong-hat.png",
+            "https://shoptaybac.com/wp-content/uploads/2025/11/Hat-vung-den-me-den-tai-Shop-Tay-Bac-1200x900.png",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m70wqi9ox17c37"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Gạo Đen Đồng Tháp",
+        "description": "Gạo Đen Đồng Tháp là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 389000,
+        "stock": 79,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://product.hstatic.net/200000907653/product/z6369184797470_dfc0ad797127bc622c59cfae286681a1_e113f923ab9f4ecc8c7ad99c0a7e546c_master.jpg",
+        "gallery": [
+            "https://product.hstatic.net/200000907653/product/z6369184808600_de2ddb6c12e427e77b5d890edfc35a27_3f1c49b3bff74b1481bb4be8be5cc0a3_master.jpg",
+            "https://product.hstatic.net/200000907653/product/z6369184797205_b38d3ab4829af661b990a6349d8a330b_2ecb3309d2bb4daabf30a32055ee00f5_master.jpg",
+            "https://product.hstatic.net/200000907653/product/z6369184819350_2de5eb2df35890bc9a37635941c29280_cdff3903e1ba48ac8e51a5434041f2bf_master.jpg"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Ngũ Cốc St24 Tây Bắc",
+        "description": "Ngũ Cốc St24 Tây Bắc là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 470000,
+        "stock": 37,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1391253576129279",
+        "gallery": [
+            "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfEtfPhI5URkI6F7q1D1TirO2A4Av_JuWFMLs08p1yRqw5Qm6kbPPHQ2mhjNZ6NA01jSNWDbdF_rdHhJNlNRo5awo7PjZ_5XjVrcMUcfrlEC3WUjw7vRz95tXdtbZNkAH7sLoKaHiCvJrePvI60-ziHzuXTt3S5u2DpXKbcRfAxqZahztz66sQLrNx6qE/w1200-h630-p-k-no-nu/bot-ngu-coc-gao-lut.webp",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mik08ir0ewht90",
+            "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnX72qRwCTZ2Se3rqdFm3ivreYoEAfi3fm0Kt8_U0CywOnRKJykFDnp0fySLdNl94zuckzVvYchxrm6zESthu0XMAmRsBdVczWwELZbh5XFz_hOmLF-SnOK8cIq_DxZqqhvbfinp2CUD_W9h0P8MLAtwI5H1GW9_wM4yzKitFxXFWMQ66T5Lz-4G1Zqf8/s1600/bot-ngu-coc-gao-lut-2.webp"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Hạt Điều Đen Thượng Hạng",
+        "description": "Hạt Điều Đen Thượng Hạng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 146000,
+        "stock": 70,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://cdn.hstatic.net/products/200000817725/mockup_h_t_di_u_-_t_t_7bf6af4bb7084f88acba047ea2c9b163.jpg",
+        "gallery": [
+            "https://cdn.hstatic.net/products/200000438877/up-s_n-ph_m_9f7726d1b35149189a4476e7ef32abff_1024x1024.jpg",
+            "https://abby.vn/wp-content/uploads/2022/11/B6228-1660816764292.jpeg",
+            "https://socorganic.shop/wp-content/uploads/2026/04/ChatGPT-Image-15_59_32-7-thg-4-2026.png"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Đậu Rang Thượng Hạng",
+        "description": "Đậu Rang Thượng Hạng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 82000,
+        "stock": 114,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://vuonnhien.vn/wp-content/uploads/2024/07/bot-ngu-coc-vuonnhien3x3-1-1024x1024.jpg",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf5bggpnstqi94",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-llue6h75m7rz13",
+            "https://choqueonline.vn/uploads/product/dau-phong-rang-toi-ot-250gr_PKGJwOadbN.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Hạt St24 Sóc Trăng",
+        "description": "Hạt St24 Sóc Trăng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 411000,
+        "stock": 63,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m3jiwdt0rjtt3b",
+        "gallery": [
+            "https://giagao.com/wp-content/uploads/2019/01/ST24-768x1025.jpg",
+            "https://hotelmart.vn/uploads/share-images/2020/11/17/1738_i5fb3967b39b4d.png",
+            "https://hotelmart.vn/uploads/share-images/2020/11/17/1738_i5fb39675a2b63.png"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Hạnh Nhân St25 Ăn Kiêng",
+        "description": "Hạnh Nhân St25 Ăn Kiêng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 331000,
+        "stock": 61,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lv5ystznsja2b1",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134208-7qukw-ljl8nnnpirw44c",
+            "https://cf.shopee.vn/file/9682cacff118f5a7b5d089666038d065",
+            "https://cf.shopee.vn/file/579c8a458173783648cfff6599042db0"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Ngũ Cốc Hữu Cơ Dinh Dưỡng",
+        "description": "Ngũ Cốc Hữu Cơ Dinh Dưỡng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 185000,
+        "stock": 16,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://hub.asbc.vn/cdn/uploadv2/news/1732079102_1.png",
+        "gallery": [
+            "https://thanhanfood.com.vn/wp-content/uploads/2023/01/TBA-200-SlimLeaf-PPH-c4ffe8a8-1b70-4711-a615-4f2d7c48db4f-e1710132328598.png",
+            "https://down-vn.img.susercontent.com/file/sg-11134201-22120-ghfo8bj3xqlv3c",
+            "https://media.loveitopcdn.com/1082/dsc00755-small.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Yến Mạch Xanh Thượng Hạng",
+        "description": "Yến Mạch Xanh Thượng Hạng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 129000,
+        "stock": 29,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://innovationnuts.com/wp-content/uploads/2026/03/SP-YM-1kg-xanh-01.jpg",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/sg-11134201-22110-ezez5fz5eyjv98",
+            "https://product.hstatic.net/200000316271/product/ymngcah500-3_f93028b699744bf8bb7a80d8dfe9e424_master.jpg",
+            "https://vuayenmach.vn/wp-content/uploads/2022/06/5.png"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Yến Mạch Xanh Sóc Trăng",
+        "description": "Yến Mạch Xanh Sóc Trăng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 178000,
+        "stock": 99,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://innovationnuts.com/wp-content/uploads/2026/03/SP-YM-1kg-xanh-01.jpg",
+        "gallery": [
+            "http://dailyhcm.congtytanhuevien.vn/wp-content/uploads/2025/09/OATMILK-2.jpeg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lvtvchahb1098d",
+            "https://down-vn.img.susercontent.com/file/sg-11134201-22110-ezez5fz5eyjv98"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Hạnh Nhân Xanh Xuất Khẩu",
+        "description": "Hạnh Nhân Xanh Xuất Khẩu là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 324000,
+        "stock": 101,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://salt.tikicdn.com/cache/750x750/ts/product/eb/d5/3d/b19ee2d6302f02fbbef1f8b6acf62bf8.png",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lzswlv5b3sct89",
+            "https://ocopangiang.vn/datafiles/1964589092457172992/2025-09/73241240-Tra-xanh-1.jpg",
+            "https://down-vn.img.susercontent.com/file/c42fb4f07e41b3f191b8f58d6e1bdc74"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Ngũ Cốc St25 Đồng Tháp",
+        "description": "Ngũ Cốc St25 Đồng Tháp là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 377000,
+        "stock": 145,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://storage.googleapis.com/sc_pcm_product/prod/2026/4/7/712963-OL1775552986161.webp",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lua8b0yxhv69e0",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lvsqj5pjff5l3b",
+            "https://media.loveitopcdn.com/1082/dsc00755-small.jpg"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Hạt Đỏ Thượng Hạng",
+        "description": "Hạt Đỏ Thượng Hạng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 402000,
+        "stock": 145,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m8fpzj9zd28723",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-ltly0kz2xte20d",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m128t2x5mylbc7",
+            "https://file.hstatic.net/1000334199/file/tao-do-kho-tan-cuong-thuong-hang-__4__a562c5dda02249d4b9c599b666608b1c.jpg"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Hạnh Nhân Mix Thượng Hạng",
+        "description": "Hạnh Nhân Mix Thượng Hạng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 349000,
+        "stock": 125,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://cf.shopee.vn/file/sg-11134201-22110-1pfohx4i2pjv7c",
+        "gallery": [
+            "https://cf.shopee.vn/file/186d99a49e920d0b6d54fa1c815c7329",
+            "https://cf.shopee.vn/file/7b6740438c9905d4fd8969a393ef08bd",
+            "https://cf.shopee.vn/file/sg-11134201-22110-b42vktbi2pjv6f"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Hạt Óc Chó Đỏ Cho Người Tiểu Đường",
+        "description": "Hạt Óc Chó Đỏ Cho Người Tiểu Đường là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 425000,
+        "stock": 57,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m8voji9bsryaee",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-mcd3y5h6esakc0",
+            "https://punfood.vn/wp-content/uploads/2023/09/nhan-oc-cho-do-say-1.jpg",
+            "https://balifood.vn/wp-content/uploads/2023/02/nhan-hat-oc-cho-1.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Yến Mạch Rang Ăn Kiêng",
+        "description": "Yến Mạch Rang Ăn Kiêng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 246000,
+        "stock": 66,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://cf.shopee.vn/file/2563d17bc3834d11dde499de93f1daf5",
+        "gallery": [
+            "https://cf.shopee.vn/file/c4eda3a30e4f229715f0a4c15697965e",
+            "https://cf.shopee.vn/file/5e852a995981fccbc40b90df7683b64d",
+            "https://cf.shopee.vn/file/dc8f0128193b92841b321050f0d03ee9"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Hạt Điều Đỏ Thượng Hạng",
+        "description": "Hạt Điều Đỏ Thượng Hạng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 269000,
+        "stock": 95,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lkrn2g028s3f43",
+        "gallery": [
+            "https://storage.googleapis.com/onelife-public/8938504125702.jpg",
+            "https://cf.shopee.vn/file/85d1818de7e6c71ebf9a5696da234488",
+            "https://product.hstatic.net/200000868055/product/natural_hat_dieu_do_dh_foods_50g_7e2ccb2fc7e745a99d253195b6c0cec0.png"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Đậu Lứt Ăn Kiêng",
+        "description": "Đậu Lứt Ăn Kiêng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 230000,
+        "stock": 171,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://cf.shopee.vn/file/5d20b4e60604a88cbbdf2c7f931f8564",
+        "gallery": [
+            "https://media.tripmap.vn/marketplace/2026/01/banh-dau-do-gao-lut-an-kieng-tot-suc-khoe-250g-500g-1.000g-it-ngot-thom-ngon-gia-tot-54k-1768841655-600x600.webp",
+            "https://media.tripmap.vn/marketplace/2026/01/combo-banh-gao-lut-an-kieng-giam-can-healthy-it-duong-dau-do-dau-tam-thom-mem-180k-1768527964-600x600.webp",
+            "https://cf.shopee.vn/file/vn-11134201-23020-zy42bvwd8tnv1e"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Hạt Đỏ Tây Bắc",
+        "description": "Hạt Đỏ Tây Bắc là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 416000,
+        "stock": 198,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://media.tabfarm.vn/2024/04/ky-tu-do-tay-bac-tabfarm-05-1024x1024.jpg",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m0kbjo40pken8a",
+            "https://media.tabfarm.vn/2024/04/ky-tu-do-tay-bac-tabfarm-04.jpg",
+            "https://media.tabfarm.vn/2024/04/ky-tu-do-tay-bac-tabfarm-07-1024x1024.jpg"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Muối Đen Lý Sơn",
+        "description": "Muối Đen Lý Sơn là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 468000,
+        "stock": 197,
+        "category": "Gia vị Việt",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lt35dwl578p0db",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lt2odtgay9w9ee",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-ltf2esde6hoqba",
+            "https://olvis.vn/wp-content/uploads/2022/10/421e9f12eab263ec3aa320.jpg"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Nghệ Cay Tây Bắc",
+        "description": "Nghệ Cay Tây Bắc là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 46000,
+        "stock": 60,
+        "category": "Gia vị Việt",
+        "image": "https://langngheviet.com.vn/stores/news_dataimages/langnghevietcomvn/032023/03/14/nghe-theu-thu-cong-o-vung-cao-tay-bac-17-.3621.jpg",
+        "gallery": [
+            "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=597364089879722",
+            "https://ik.imagekit.io/tvlk/blog/2023/07/lang-may-tre-dan-phu-vinh-3-1024x683.png?tr=dpr-2,w-675",
+            "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122093002569129456"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Hồi Khô Phú Quốc",
+        "description": "Hồi Khô Phú Quốc là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 415000,
+        "stock": 156,
+        "category": "Gia vị Việt",
+        "image": "https://product.hstatic.net/1000300839/product/kho-muc-phu-quoc-2_485b06ba936b489bb904815ba4b9a17a_master.jpg",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lo8a27up77nvf6",
+            "https://product.hstatic.net/200000741813/product/230713_thumb_new-03_44a496eec6924126932209df8f57da5a_master.png",
+            "https://ongvove.com/uploads/0000/17/2023/08/07/hai-san-kho-phu-quoc-ong-vo-ve.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Nước Mắm Cô Đơn Thanh Hóa",
+        "description": "Nước Mắm Cô Đơn Thanh Hóa là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 110000,
+        "stock": 10,
+        "category": "Gia vị Việt",
+        "image": "https://ngon1.vn/uploads/2021/03/p-11742-nuoc-mam-ca-com-ba-lang-thanh-hoa-can-5l-sieu-tiet-kiem.jpg",
+        "gallery": [
+            "https://ngon1.vn/uploads/stores/8/2023/05/nuoc-mam-cot-rut-no-dac-san-ba-lang-thanh-hoa-chai-1l-1.jpg",
+            "https://ngon1.vn/uploads/2021/03/p-433-nuoc-mam-cot-rut-no-dac-biet-thanh-hoa.jpg",
+            "https://balang.com.vn/wp-content/uploads/2023/06/CHAI-VA-HOP-NUOC-MAM-COT-TH-600x600.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Quế Truyền Thống Nhà Làm",
+        "description": "Quế Truyền Thống Nhà Làm là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 198000,
+        "stock": 49,
+        "category": "Gia vị Việt",
+        "image": "https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2022/12/16/243948309272030121592484388461604321798398n-167115911052124951219.jpg",
+        "gallery": [
+            "https://dunghangviet.vn/wp-content/uploads/2024/12/que-Bao-Yen.jpg",
+            "https://daissywholefoods.com/cdn/shop/files/vo-kem-oc-que-chay.jpg?v=1722667450&amp;width=1445",
+            "https://salt.tikicdn.com/ts/product/a2/0e/eb/1f6d9e8c0ec1b81ea10f111032985c6e.png"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Gừng Nhỉ Đặc Sản",
+        "description": "Gừng Nhỉ Đặc Sản là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 268000,
+        "stock": 141,
+        "category": "Gia vị Việt",
+        "image": "https://phucnguyenrose.com/wp-content/uploads/2025/04/quatgung-PhucNguyenRose-Dacsan-HoiAn.jpg",
+        "gallery": [
+            "https://dacsannguyenha.com/storage/photos/1/63fcb91b0f436.jpg",
+            "https://product.hstatic.net/200000619097/product/zhu08941_4_5f42dd7a3e4b41c2bd47b4a17cbf8a37_master.jpg",
+            "https://down-vn.img.susercontent.com/file/15f5274f2c9952bf11eaacd05e669c29"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Tương Ớt Khô Thái Nguyên",
+        "description": "Tương Ớt Khô Thái Nguyên là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 26000,
+        "stock": 183,
+        "category": "Gia vị Việt",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mhcncftttvyi6e.webp",
+        "gallery": [
+            "https://dadaydaitrangltd.vn/wp-content/uploads/2024/09/images-upload-woo2F62f49edc34cbf0e9fa919533ad7a69cd-800x800.jpg",
+            "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100063542855146",
+            "https://cf.shopee.vn/file/c3bf42cc06e24e0f4f40f7291a74ac1b"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Hành Nguyên Hoa Phú Quốc",
+        "description": "Hành Nguyên Hoa Phú Quốc là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 47000,
+        "stock": 99,
+        "category": "Gia vị Việt",
+        "image": "https://cdn.thuvienphapluat.vn/uploads/tintuc/2022/11/04/nong-san-la-gi.jpg",
+        "gallery": [
+            "https://ik.imagekit.io/tvlk/blog/2023/07/lang-may-tre-dan-phu-vinh-3-1024x683.png?tr=dpr-2,w-675",
+            "https://3w-logistics.com/wp-content/uploads/2022/06/thu-tuc-xuat-khau-nong-san-sang-trung-quoc1.png",
+            "https://gonatour.vn/vnt_upload/news/09_2021/ho_tieu_phu_quoc.jpg"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Gừng Sọ Lạng Sơn",
+        "description": "Gừng Sọ Lạng Sơn là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 210000,
+        "stock": 115,
+        "category": "Gia vị Việt",
+        "image": "https://hivn.vn/storage/tra-thao-duoc-cumin-gung-gio-nui-da-5.jpg?s=ac8bb216a02c1e5d097141667e32382f",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/42de19902b7d47429a19bef65e94cf06",
+            "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1311208810440183",
+            "https://hivn.vn/storage/tra-thao-duoc-cumin-gung-gio-nui-da-4.jpg?s=2fb4f274b9b37d9ae7b3713cc29479ce"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Hồi Nguyên Hoa Tây Ninh",
+        "description": "Hồi Nguyên Hoa Tây Ninh là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 152000,
+        "stock": 125,
+        "category": "Gia vị Việt",
+        "image": "https://down-vn.img.susercontent.com/file/bd81da89daac1dae2f7fbc4967b43baa",
+        "gallery": [
+            "https://bizweb.dktcdn.net/100/454/616/products/e65903e1-b445-4ab9-94e2-05c1c960cb1c.jpg?v=1655437720087",
+            "https://product.hstatic.net/200000726505/product/bot-hoa-hoi-uy-tin_1c1075d447d94642b81086c948090060.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lwabzwv5k0yh6d"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Tiêu Nguyên Hoa Phú Quốc",
+        "description": "Tiêu Nguyên Hoa Phú Quốc là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 178000,
+        "stock": 169,
+        "category": "Gia vị Việt",
+        "image": "https://nguyenhuongpq.com/upload/sanpham/chitiet/tieu-do-phu-quoc-250g-688.jpg",
+        "gallery": [
+            "https://nguyenhuongpq.com/upload/sanpham/chitiet/tieu-so-phu-quoc-250g-900.jpg",
+            "https://dhfoods.com.vn/upload/Kham-Pha-Gia-Vi/Natural-Gia-Vi-Tu-Nhien/Tieu-Phu-Quoc/2-Tieu-Phu-Quoc.webp",
+            "https://bachkhoaland.com/wp-content/uploads/2021/07/tieu-ngao-duong-phu-quoc.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Gừng Tôm Nhà Làm",
+        "description": "Gừng Tôm Nhà Làm là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 327000,
+        "stock": 101,
+        "category": "Gia vị Việt",
+        "image": "https://tomkho.vn/wp-content/uploads/2026/01/Non-Tom-Hap-01.jpg",
+        "gallery": [
+            "https://tomkho.vn/wp-content/uploads/2026/01/Non-Tom-Hap-25.jpg",
+            "https://cdn.tgdd.vn/Files/2020/03/04/1239983/3-cach-che-bien-mon-tom-hap-ngon-don-gian-nhanh-chong-26-760x367.jpg",
+            "https://i.ytimg.com/vi/v7ccUCkJVoc/maxresdefault.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Tỏi Bột Nhà Làm",
+        "description": "Tỏi Bột Nhà Làm là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 251000,
+        "stock": 187,
+        "category": "Gia vị Việt",
+        "image": "https://phugiaantoan.com/wp-content/uploads/2023/10/cha-lua.jpg",
+        "gallery": [
+            "https://vucongagro.com/wp-content/uploads/2025/06/cach-lam-bot-toi11.jpg",
+            "https://vietpepper.com.vn/wp-content/uploads/2024/07/Social-11-3-960x960.png",
+            "https://dolambanhdanang.com/wp-content/uploads/2023/04/toi-bot-hu-70gr-vipep-1682680879-510x680.jpeg"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Nghệ Chỉ Thiên Đặc Sản",
+        "description": "Nghệ Chỉ Thiên Đặc Sản là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 256000,
+        "stock": 136,
+        "category": "Gia vị Việt",
+        "image": "https://nongbio.vn/wp-content/uploads/2024/01/cong-dung-cua-hat-giong-ot-chi-thien.jpg",
+        "gallery": [
+            "https://www.lottemart.vn/media/catalog/product/cache/0x0/8/9/8936079282325.jpg.webp",
+            "https://doanhchu.vn/images/2024/11/ocop_06112024ld.jpg",
+            "https://doanhchu.vn/images/2024/11/ocop_06112024bd.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Tỏi Bột Phú Quốc",
+        "description": "Tỏi Bột Phú Quốc là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 441000,
+        "stock": 136,
+        "category": "Gia vị Việt",
+        "image": "https://phusinh.com.vn/wp-content/uploads/2023/08/bot-toi.jpg",
+        "gallery": [
+            "https://dhfoods.com.vn/upload/SP_Big Size_GVTN Và Nấu Ướp/Toi-Bot-1kg.png",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m3rhdbewfgdx3e",
+            "https://hoachathaiphong.com/wp-content/uploads/2023/11/366243494-1289810621641284-3341294079770004834-n.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Tương Ớt Nguyên Hoa Lạng Sơn",
+        "description": "Tương Ớt Nguyên Hoa Lạng Sơn là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 381000,
+        "stock": 87,
+        "category": "Gia vị Việt",
+        "image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100063542855146",
+        "gallery": [
+            "https://www.tuongviethoasen.vn/application/media/2024/tuong-ot-hoa-sen-3.jpg",
+            "https://thucphamphucminh.com/wp-content/uploads/tuong-ot-hoa-sen-gia-si.png",
+            "https://hoanguyenfoods.com/wp-content/uploads/2024/06/3-1-768x768.jpg"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Hành Nguyên Hoa Đặc Sản",
+        "description": "Hành Nguyên Hoa Đặc Sản là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 397000,
+        "stock": 186,
+        "category": "Gia vị Việt",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-ln878dluyxpv4b",
+        "gallery": [
+            "https://topthanhhoaaz.com/wp-content/uploads/2025/06/image4.png",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m9y7pn72sy84d7",
+            "https://img.ws.mms.shopee.vn/vn-11134216-7ra0g-m7i826awewc3c0"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Muối Nhỉ Lạng Sơn",
+        "description": "Muối Nhỉ Lạng Sơn là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 466000,
+        "stock": 106,
+        "category": "Gia vị Việt",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134201-23020-z7x76zqvqknvb8",
+        "gallery": [
+            "https://langsonshop.com/wp-content/uploads/2023/11/a95fdbb7c6eb6fb536fa1.jpg",
+            "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1083735510441063",
+            "https://langsonshop.com/wp-content/uploads/2023/03/ba11e4fdab2f76712f3e4-747x1024.jpg"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Tương Ớt Khô Nhà Làm",
+        "description": "Tương Ớt Khô Nhà Làm là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 295000,
+        "stock": 199,
+        "category": "Gia vị Việt",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mjdt8lfuo6bm1a",
+        "gallery": [
+            "https://dadaydaitrangltd.vn/wp-content/uploads/2024/09/images-upload-woo2Fd52f89a1b0a770a59714f2c3b7e109ce-800x800.jpg",
+            "https://cdn.eva.vn/upload/2-2020/images/2020-04-21/1587468412-672-thumbnail_schema_article.jpg",
+            "https://img.lazcdn.com/g/ff/kf/S3ef92ae2cd5b47c3bdef1b3aad54cfc4p.jpg_720x720q80.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Sa Tế Nhỉ Thái Nguyên",
+        "description": "Sa Tế Nhỉ Thái Nguyên là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 175000,
+        "stock": 179,
+        "category": "Gia vị Việt",
+        "image": "https://havamall.com/wp-content/uploads/2024/11/thai.png",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lmbhzaga2xunb2",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lw5kg78l355n1b",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lzpr1t2eqhsxf5"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Muối Tôm Nhà Làm",
+        "description": "Muối Tôm Nhà Làm là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 196000,
+        "stock": 69,
+        "category": "Gia vị Việt",
+        "image": "https://mia.vn/media/uploads/blog-du-lich/muoi-tom-tay-ninh-vuong-van-huong-vi-dam-da-mien-nam-bo-06-1661173297.jpeg",
+        "gallery": [
+            "https://vn-live-01.slatic.net/p/36a64798b5aebfdcd3514a40b471f26b.jpg",
+            "https://mikiri.com.vn/wp-content/uploads/2024/12/tk-85-1.jpg",
+            "https://muoitomnhuy.vn/images/configs/2024/07/11/group-2658-793.png"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Tiêu Bột Tây Ninh",
+        "description": "Tiêu Bột Tây Ninh là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 381000,
+        "stock": 59,
+        "category": "Gia vị Việt",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m8lcxt6ush366d",
+        "gallery": [
+            "https://quaquenambo.vn/wp-content/uploads/2022/11/3-MUOI-TIEU-OT-1024x1024.jpg",
+            "https://huongvietmart.vn/wp-content/uploads/2022/11/2-MUOI-TIEU.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lhp001i5mumd34"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Muối Nhỉ Thanh Hóa",
+        "description": "Muối Nhỉ Thanh Hóa là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 23000,
+        "stock": 55,
+        "category": "Gia vị Việt",
+        "image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1083735510441063",
+        "gallery": [
+            "http://kb136.com.vn/nganh_images/3018/Muoi thuc pham.jpg",
+            "https://cdn.luatminhkhue.vn/lmk/articles/95/476678/muoi-la-gi-476678.jpg",
+            "https://cdn.hi1.vn/images/uploads/nhaiMaiYSaiNXuaiITNuiOiICMaiIMAiNDaiIMChanBei_6936d5367954e48d571d556e747b6e25.png"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Quế Chua Ngọt Đặc Sản",
+        "description": "Quế Chua Ngọt Đặc Sản là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 391000,
+        "stock": 125,
+        "category": "Gia vị Việt",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lll2hfu9qlov8a",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134211-7r98o-lxoe5k7xva3fbc",
+            "https://product.hstatic.net/200000762757/product/3_3b2800a8de254ebcab1875001358f3b5_master.jpeg",
+            "https://product.hstatic.net/200000762757/product/4_913470fed0a3436f929774502f767d30_master.jpeg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Hồi Nhỉ Lạng Sơn",
+        "description": "Hồi Nhỉ Lạng Sơn là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 443000,
+        "stock": 159,
+        "category": "Gia vị Việt",
+        "image": "https://langsonshop.com/wp-content/uploads/2025/12/aeff24395043df1d86527.jpg",
+        "gallery": [
+            "https://cdn.hstatic.net/products/1000316204/hoa-hoi-vipep-40g_75ea5cc4ca4f4069931cf31c7db9bd8a_master.jpg",
+            "https://down-vn.img.susercontent.com/file/sg-11134201-22110-xmuegepo00jv6c",
+            "https://down-vn.img.susercontent.com/file/sg-11134201-22120-alufyc2moykv98"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Tương Ớt Bột Nhà Làm",
+        "description": "Tương Ớt Bột Nhà Làm là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 211000,
+        "stock": 46,
+        "category": "Gia vị Việt",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mjdt8lfuo6bm1a",
+        "gallery": [
+            "https://pic.trangvangvietnam.com/pics_low/395699485/tuong-ot-(11).jpg",
+            "https://pic.trangvangvietnam.com/pics_low/395699485/Tuong-ot-Tien-Phat-4.5kg-2.jpg",
+            "https://pic.trangvangvietnam.com/pics_low/395699485/tuong-ot-(10).jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Sa Tế Đen Hữu Cơ",
+        "description": "Sa Tế Đen Hữu Cơ là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 430000,
+        "stock": 200,
+        "category": "Gia vị Việt",
+        "image": "https://mikiri.com.vn/wp-content/uploads/2024/12/3-3.png",
+        "gallery": [
+            "https://mikiri.com.vn/wp-content/uploads/2024/12/sa-te-den-mikiri-1.jpg",
+            "https://mikiri.com.vn/wp-content/uploads/2024/12/black-satay-1-21c9edc6-cdd8-49f1-ba2e-f1954b6b98bf-1.jpg",
+            "https://mikiri.com.vn/wp-content/uploads/2024/12/sa-te-den-9a17e6f8-5b0e-4d16-bc23-ad0d3324f656-3.jpg"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Hồi Sọ Hữu Cơ",
+        "description": "Hồi Sọ Hữu Cơ là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 77000,
+        "stock": 42,
+        "category": "Gia vị Việt",
+        "image": "https://cf.shopee.vn/file/8c82273c7bea72725dcebd18614abb72",
+        "gallery": [
+            "https://cf.shopee.vn/file/157cb2af5f0ad0a3e48c7239cbfeceaa",
+            "https://product.hstatic.net/1000282430/product/290017896000-hoa-hoi-huu-co-farmers-20g_4e94bb15c23b421a8f7f33d95b9da6b2_master.jpg",
+            "https://down-vn.img.susercontent.com/file/c34968866851d5381fc59491fc57b8d6"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Ớt Sọ Nhà Làm",
+        "description": "Ớt Sọ Nhà Làm là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 321000,
+        "stock": 78,
+        "category": "Gia vị Việt",
+        "image": "https://img.lazcdn.com/g/ff/kf/S3ef92ae2cd5b47c3bdef1b3aad54cfc4p.jpg_720x720q80.jpg",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lzt4fm3257dt12",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-mb4s3u974kbccc",
+            "https://dadaydaitrangltd.vn/wp-content/uploads/2024/09/images-upload-woo2Fdfb2cabc43f3f28c87187c2f7c1cd996-768x768.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Ớt Nhỉ Nhà Làm",
+        "description": "Ớt Nhỉ Nhà Làm là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 480000,
+        "stock": 161,
+        "category": "Gia vị Việt",
+        "image": "https://dadaydaitrangltd.vn/wp-content/uploads/2024/09/images-upload-woo2Fd52f89a1b0a770a59714f2c3b7e109ce-800x800.jpg",
+        "gallery": [
+            "https://cf.shopee.vn/file/a9f35a67f359e30ed4ca340309735b66",
+            "https://www.tiktok.com/api/img/?itemId=7598464405973634312&amp;location=0&amp;aid=1988",
+            "https://dadaydaitrangltd.vn/wp-content/uploads/2024/09/images-upload-woo2F37711ed1a90c33bc6bdb0579a4c19a7f-800x800.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Ớt Cô Đơn Phú Quốc",
+        "description": "Ớt Cô Đơn Phú Quốc là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 388000,
+        "stock": 62,
+        "category": "Gia vị Việt",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m6xq1yhnoaxzce",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lpz7fq8w8yt330",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lpz7fq8wel2vff",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m1ax6jkltwyk31"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Muối Khô Hữu Cơ",
+        "description": "Muối Khô Hữu Cơ là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 269000,
+        "stock": 68,
+        "category": "Gia vị Việt",
+        "image": "https://cf.shopee.vn/file/1873ce47ba09592f9ac04a6f0cd32034",
+        "gallery": [
+            "https://cf.shopee.vn/file/31a81ff1a175345cb85fb9d9aaccefb6",
+            "https://cf.shopee.vn/file/427ebfd133d650a10fe25694854b4059",
+            "https://down-vn.img.susercontent.com/file/201c92081b63261476062db8719fd28e"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Hành Nhỉ Nhà Làm",
+        "description": "Hành Nhỉ Nhà Làm là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 125000,
+        "stock": 101,
+        "category": "Gia vị Việt",
+        "image": "https://down-vn.img.susercontent.com/file/132fc1c2ec98e6fb3f027a7edd928da1",
+        "gallery": [
+            "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1564949968021636&amp;get_thumbnail=1",
+            "https://hiephoinuocmamtruyenthong.vn/wp-content/uploads/2023/05/mam-2869-1683766977-1.jpg",
+            "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100027702771655"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Nước Mắm Truyền Thống Lý Sơn",
+        "description": "Nước Mắm Truyền Thống Lý Sơn là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 222000,
+        "stock": 138,
+        "category": "Gia vị Việt",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m69y0h7x6ny061",
+        "gallery": [
+            "https://haisanlyson.com/wp-content/uploads/sites/26/2021/11/v-min.jpg",
+            "https://toilyson.com.vn/datafiles/23397/upload/files/tỏi đen lý sơn/nuoc-mam-ly-son-068.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lxdn8snmugnv52"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Muối Bột Hữu Cơ",
+        "description": "Muối Bột Hữu Cơ là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 471000,
+        "stock": 123,
+        "category": "Gia vị Việt",
+        "image": "https://cdn-media.bechef.vn/shop_1/products/img_sa-bot-huu-co-tran-chau-40g_1426.jpg",
+        "gallery": [
+            "https://baumay.com/data/product/500/tieu-xanh-muoi-huu-co-15-gr.jpg",
+            "https://cdn-media.bechef.vn/shop_1/products/img_nghe-bot-huu-co-tran-chau-45g_8726.jpg",
+            "https://nhahuuco.vn/wp-content/uploads/2023/02/tong-hop-muoi-hong-himalaya-nha-huu-co-1-800x800.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Tiêu Chỉ Thiên Tây Ninh",
+        "description": "Tiêu Chỉ Thiên Tây Ninh là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 420000,
+        "stock": 124,
+        "category": "Gia vị Việt",
+        "image": "https://dhfoods.com.vn/upload/Kham-Pha-Gia-Vi/Muoi-Cham/Muoi-Tom-Ot/Bia-Muoi-Tom-Ot-Tay-Ninh.webp",
+        "gallery": [
+            "http://dhfoods.com.vn/upload/import/Muoi-Tieu-Tay-Ninh-110gr.png",
+            "https://www.lottemart.vn/media/catalog/product/cache/0x0/8/9/8936079287276-75g.jpg.webp",
+            "https://tuongviethoasen.vn/application/media/2024/hoi-cho-dac-san-tay-ninh_9.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Quế Tôm Thái Nguyên",
+        "description": "Quế Tôm Thái Nguyên là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 431000,
+        "stock": 35,
+        "category": "Gia vị Việt",
+        "image": "https://imgcdn.tapchicongthuong.vn/thumb/w_1920/tcct-media/23/11/3/ve-thai-nguyen-thuong-thuc-dac-san-che-tom-non-5-sao-ocop_6544ef97145c1.png",
+        "gallery": [
+            "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=267216551927554",
+            "https://media.thuonghieucongluan.vn/uploads/2026/03/04/tom-cuon-thua-lam-dac-san-thai-nguyen-1772593984.jpg",
+            "https://haitratancuong.com/wp-content/uploads/2023/04/tra-non-tom-thai-nguyen-600k.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Tương Ớt Cô Đơn Phú Quốc",
+        "description": "Tương Ớt Cô Đơn Phú Quốc là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 363000,
+        "stock": 86,
+        "category": "Gia vị Việt",
+        "image": "https://vn-test-11.slatic.net/p/578e46c8f95b9f04fcb50f0ffcc30151.png",
+        "gallery": [
+            "https://vn-test-11.slatic.net/p/a91051021d0e1bbe3b49b35bea11b839.png",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-mclr2y5s27oca8",
+            "http://dauanofood.vn/upload/img/products/27072023/z4549078437273-26f6527783029a8e638292b4e7bd298e.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Hành Chua Ngọt Lạng Sơn",
+        "description": "Hành Chua Ngọt Lạng Sơn là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 111000,
+        "stock": 38,
+        "category": "Gia vị Việt",
+        "image": "https://zarvita.com/public/uploads/all/Um16fIITqCB27Oof0g3rrWLStGJSOtb1uOGjjChO.jpg",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lqy88dpzo3wk89",
+            "https://media.tripmap.vn/marketplace/2026/01/hanh-tim-ly-son-ngam-giam-chua-ngot-giam-26-dac-san-hon-soi-chi-119500d-1769799897-lrvaqi-600x600.webp",
+            "https://media.tripmap.vn/marketplace/2026/01/hanh-tim-ly-son-ngam-giam-chua-ngot-giam-26-dac-san-hon-soi-chi-119500d-1769799906-sgj2tr-380x380.webp"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Hồi Chỉ Thiên Thanh Hóa",
+        "description": "Hồi Chỉ Thiên Thanh Hóa là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 230000,
+        "stock": 98,
+        "category": "Gia vị Việt",
+        "image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=294040324464977",
+        "gallery": [
+            "https://agrivietfactory.com/wp-content/uploads/2025/05/ot-chi-thien-hinh-avatar-web.jpg",
+            "https://thanhhoatoplist.com/wp-content/uploads/2025/06/top-5-dia-chi-ban-ca-hoi-dong-lanh-o-thanh-hoa-chat-luong-nhat.jpg",
+            "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1339446314849651&amp;get_thumbnail=1"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Hồi Sọ Tây Bắc",
+        "description": "Hồi Sọ Tây Bắc là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 389000,
+        "stock": 10,
+        "category": "Gia vị Việt",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lwc8u1vg3jkr47",
+        "gallery": [
+            "https://media.tripmap.vn/marketplace/2026/03/hoa-hoi-kho-1kg-dai-hoi-dac-san-tay-bac-huong-vi-dam-da-gia-uu-dai-130k-1772349853-4zqprh-600x600.webp",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lln2cqjobem470",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lwabzwv5k0yh6d"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Quế Cô Đơn Thái Nguyên",
+        "description": "Quế Cô Đơn Thái Nguyên là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 150000,
+        "stock": 199,
+        "category": "Gia vị Việt",
+        "image": "https://bizweb.dktcdn.net/100/258/505/products/phan-giun-que-thai-nguyen.jpg?v=1700556045507",
+        "gallery": [
+            "https://trunquetaynguyen.com/provision/mainimage/hailamTruocc.jpg",
+            "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100069622015084",
+            "https://thaoduocvn.net/wp-content/uploads/2023/06/nguyet-que9.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Tương Ớt Đen Lạng Sơn",
+        "description": "Tương Ớt Đen Lạng Sơn là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 302000,
+        "stock": 56,
+        "category": "Gia vị Việt",
+        "image": "https://ngocminhfood.com/wp-content/uploads/2024/08/27.png",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m6e5dja3sja963",
+            "https://cf.shopee.vn/file/b27a91b1fd8f44107a42439b6ae02e4a",
+            "https://huyvietshop.com/wp-content/uploads/2025/01/tuong-ot-chinsu-tang-nuoc-tuon.jpg"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Nước Mắm Truyền Thống Đặc Sản",
+        "description": "Nước Mắm Truyền Thống Đặc Sản là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 69000,
+        "stock": 122,
+        "category": "Gia vị Việt",
+        "image": "https://nuocmammuoiquy.com/wp-content/uploads/2023/10/204A9757.jpg",
+        "gallery": [
+            "https://nuocmammuoiquy.com/wp-content/uploads/2023/10/Dac-biet-300.png",
+            "https://lzd-img-global.slatic.net/g/p/789d224c0a3d99abd3584b7c10450177.jpg_720x720q80.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-m06u639lk5u7e7"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Ớt Bột Đặc Sản",
+        "description": "Ớt Bột Đặc Sản là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 459000,
+        "stock": 171,
+        "category": "Gia vị Việt",
+        "image": "https://down-vn.img.susercontent.com/file/0d03259f07f17d6af3d7c26bdf96c5ed",
+        "gallery": [
+            "https://dacsanquangbinh.com/wp-content/uploads/2021/09/ot-bot.jpg",
+            "https://uthadacsan.com/wp-content/uploads/2022/05/ot-bot-hue-02.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mj8fldsjqrd148"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Nước Mắm Nhỉ Tây Bắc",
+        "description": "Nước Mắm Nhỉ Tây Bắc là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 375000,
+        "stock": 94,
+        "category": "Gia vị Việt",
+        "image": "https://product.hstatic.net/200000303871/product/full_66ccf5e484af42fc49908ffb2ccc19e8_71ba6d096b164fc08ab689eaa631da42_1024x1024.png",
+        "gallery": [
+            "https://nuocmambahai.com/Uploads/images/SanPham/MamNhi/12a.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-llel5w271ih482",
+            "https://product.hstatic.net/200000303871/product/full_c46969f70db9e2449c9107e8722c93e7_8b7d9de73ae945a88fb2b005b8c535d6_1024x1024.png"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Hành Chua Ngọt Thanh Hóa",
+        "description": "Hành Chua Ngọt Thanh Hóa là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 403000,
+        "stock": 132,
+        "category": "Gia vị Việt",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lqy88dpzo3wk89",
+        "gallery": [
+            "https://media.tripmap.vn/marketplace/2026/01/hanh-tim-ly-son-ngam-giam-chua-ngot-giam-26-dac-san-hon-soi-chi-119500d-1769799897-lrvaqi-600x600.webp",
+            "https://cdnv2.tgdd.vn/bhx-static/bhx/Products/Images/8285/332502/bhx/332502-1-2_202411261613517806.png",
+            "https://static.vinwonders.com/production/nem-chua-ba-lan-thanh-hoa.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Tiêu Cay Tây Bắc",
+        "description": "Tiêu Cay Tây Bắc là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 100000,
+        "stock": 63,
+        "category": "Gia vị Việt",
+        "image": "https://media.tripmap.vn/marketplace/2026/01/hat-tieu-den-tay-bac-dien-bien-loai-1-gia-vi-thom-cay-nguyen-hat-sach-gia-tot-50k-1768570546-600x600.webp",
+        "gallery": [
+            "https://anvatchimap.com/wp-content/uploads/2022/08/298408452_2273458112808763_4173698038697535736_n.jpg",
+            "https://media.tripmap.vn/marketplace/2026/01/hat-tieu-den-tay-bac-dien-bien-loai-1-gia-vi-thom-cay-nguyen-hat-sach-gia-tot-50k-1768570552-380x380.webp",
+            "https://chodacsan.com.vn/wp-content/uploads/2026/04/quality_restoration_20260408151614412.jpeg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Nước Mắm Đen Phú Quốc",
+        "description": "Nước Mắm Đen Phú Quốc là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 193000,
+        "stock": 30,
+        "category": "Gia vị Việt",
+        "image": "https://www.khosifafood.vn/uploads/images/info/kho-si-fafood-ban-nuoc-mam-phu-quoc.png",
+        "gallery": [
+            "https://bizweb.dktcdn.net/100/362/433/products/nuoc-mam-phu-quoc-khai-hoan-40-do-dam-hop-6-chai-thuy-tinh-520ml-x-6-508b65e9-2f0d-4ae5-b4b7-4279ff0f5c4c.jpg?v=1584072529547",
+            "https://khaihoanphuquoc.com.vn/wp-content/uploads/2023/01/Nuoc-mam-truyen-thong-Khai-Hoan-45-do-dam-thung-6-chai-thuy-tinh-90ml.png",
+            "https://static-images.vnncdn.net/files/publish/2023/10/1/w-nuoc-mam-phu-quoc-23-1-743.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Muối Truyền Thống Đặc Sản",
+        "description": "Muối Truyền Thống Đặc Sản là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 210000,
+        "stock": 71,
+        "category": "Gia vị Việt",
+        "image": "https://bizweb.dktcdn.net/100/443/455/products/z4867252836226-71b28bca8984429c1438ac1400e2381a-1704790152248.jpg?v=1704790156753",
+        "gallery": [
+            "https://media.vov.vn/sites/default/files/styles/large_watermark/public/2024-07/festival_nghe_muoi_viet_nam_-_bac_lieu_nam_2024_nham_ton_vinh_nghe_muoi_truyen_thong_nang_cao_gia_tri_nghe_muoi_cua_viet_nam_noi_chung_va_bac_lieu_noi_rieng.jpg",
+            "https://bizweb.dktcdn.net/100/443/455/products/sahu-muoi-hot-sea-salt-1696647787313.jpg?v=1696934568083",
+            "https://bachhoadakao.com/wp-content/uploads/2024/01/z5064668986473_8d331016b04da73a949eaa636c908ded-1024x1024.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Gừng Khô Tây Ninh",
+        "description": "Gừng Khô Tây Ninh là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 226000,
+        "stock": 152,
+        "category": "Gia vị Việt",
+        "image": "https://noomfood.com/wp-content/uploads/2024/01/Bot-gung-Tay-Giang-03.jpg",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m7tn02aq4fb73d",
+            "https://nganhabiotech.com/image/Gung_kho_thai_lat_1.jpg",
+            "https://huongvique.vn/wp-content/uploads/2022/10/banh-trang-deo-gung-me-6-512x512.jpg"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Ớt Bột Lạng Sơn",
+        "description": "Ớt Bột Lạng Sơn là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 470000,
+        "stock": 96,
+        "category": "Gia vị Việt",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m40ptmpw0c1z8d",
+        "gallery": [
+            "https://media.sohuutritue.net.vn/files/huongmi/2024/02/16/mang-ot-lang-son-1440.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-liduftcwlyvmec",
+            "https://img.ws.mms.shopee.vn/vn-11134233-7r98o-lyw8rctbs42p0a"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Tiêu Chỉ Thiên Đặc Sản",
+        "description": "Tiêu Chỉ Thiên Đặc Sản là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 200000,
+        "stock": 186,
+        "category": "Gia vị Việt",
+        "image": "https://agrivietfactory.com/wp-content/uploads/2025/05/ot-chi-thien-logo-web-3.jpg",
+        "gallery": [
+            "https://muabannongsan.com.vn/wp-content/uploads/2021/11/QcKYBCVzXDQxxR8RfTA5gwJhREj7kL6LKdHRMpna.png",
+            "https://anvanthinh.com/multidata/m-vinacel-6_1462175956-433.jpg",
+            "https://agrivietfactory.com/wp-content/uploads/2025/05/ot-chi-thien-logo-web-4.jpg"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Tiêu Nguyên Hoa Hữu Cơ",
+        "description": "Tiêu Nguyên Hoa Hữu Cơ là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 54000,
+        "stock": 156,
+        "category": "Gia vị Việt",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134201-23030-xah0kl5hc5nvd2",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134201-23030-rs2laj1fc5nv7c",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lw6yn43p64t521",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-loxuk6n2kk0r0e"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Quế Bột Hữu Cơ",
+        "description": "Quế Bột Hữu Cơ là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 451000,
+        "stock": 200,
+        "category": "Gia vị Việt",
+        "image": "https://cdn-media.bechef.vn/shop_1/products/img_que-bot-huu-co-tran-chau-45g_3823.jpg",
+        "gallery": [
+            "https://product.hstatic.net/1000316204/product/bot_que_huu_co_vinasamex_a2d98bf86d804ef381cb6b0927c70caf_master.jpg",
+            "https://cf.shopee.vn/file/4b748167c6672c8d49b56d4f19f2f96f",
+            "https://product.hstatic.net/200000423303/product/bot-que-huu-co-farmers_4f6c5e7e842e41bb84e05e029ef3e95c_grande.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Quế Cay Lạng Sơn",
+        "description": "Quế Cay Lạng Sơn là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 97000,
+        "stock": 100,
+        "category": "Gia vị Việt",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m26wow1av06sb0",
+        "gallery": [
+            "https://langsonshop.com/wp-content/uploads/2022/10/anh-cay-que.jpg",
+            "https://langsonshop.com/wp-content/uploads/2025/12/38a6655a11209e7ec73111.jpg",
+            "https://langsonshop.com/wp-content/uploads/2019/07/hinh-anh-tinh-dau-que-va-hoi.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Tiêu Truyền Thống Tây Bắc",
+        "description": "Tiêu Truyền Thống Tây Bắc là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 310000,
+        "stock": 91,
+        "category": "Gia vị Việt",
+        "image": "https://shoptaybac.com/wp-content/uploads/2025/05/Pa-pinh-top-trong-co-cac-dip-dac-biet-cua-nguoi-Tay-Bac-768x576.png",
+        "gallery": [
+            "https://langngheviet.com.vn/stores/news_dataimages/langnghevietcomvn/022023/20/07/san-pham-lang-nghe-truyen-thong-tay-bac-hap-dan-du-khach-thu-do-27-.6823.JPG",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lvd26jmijjhg74",
+            "https://dantoc.vietnamtourism.gov.vn/wp-content/uploads/2024/12/13.10.-Nhung-mon-am-thuc-dac-trung-vung-Tay-Bac-1.jpg"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Ớt Sọ Thái Nguyên",
+        "description": "Ớt Sọ Thái Nguyên là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 461000,
+        "stock": 46,
+        "category": "Gia vị Việt",
+        "image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100076017213364",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lzt4fm3257dt12",
+            "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=910104518045608",
+            "https://vucongagro.com/wp-content/uploads/2024/10/34.png"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Nước Mắm Tôm Thanh Hóa",
+        "description": "Nước Mắm Tôm Thanh Hóa là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 458000,
+        "stock": 20,
+        "category": "Gia vị Việt",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m8xmvom6mdfm64",
+        "gallery": [
+            "https://ngon1.vn/uploads/stores/8/2022/10/mam-tom-ba-lang-thanh-hoa-chai-300ml-ngon1-3.jpg",
+            "https://thucphamhuongduong.com/wp-content/uploads/2026/01/MA-TOM-1L.png",
+            "https://thucphamhuongduong.com/wp-content/uploads/2023/10/1-1.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Gừng Nguyên Hoa Nhà Làm",
+        "description": "Gừng Nguyên Hoa Nhà Làm là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 273000,
+        "stock": 23,
+        "category": "Gia vị Việt",
+        "image": "https://nhahoala.com/wp-content/uploads/2022/10/tra_tia_to_nha_hoa_la_3-2.jpg",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134208-7qukw-lgd1v089936y90",
+            "https://nhahoala.com.vn/wp-content/uploads/2025/07/tra_tia_to_nha_hoa_la_2-2.jpg",
+            "https://mqflavor.com/wp-content/uploads/2018/06/bot-gung-van-giu-nguyen-dac-trung-nong-am-nhu-cu-gung-nguyen-chat.png"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Ớt Khô Tây Bắc",
+        "description": "Ớt Khô Tây Bắc là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 319000,
+        "stock": 105,
+        "category": "Gia vị Việt",
+        "image": "https://dacsanvungtaybac.org/wp-content/uploads/2026/04/ot-bot-rang-xay.jpg",
+        "gallery": [
+            "https://dacsanvungtaybac.org/wp-content/uploads/2026/04/ot-bot-rang-xay-chuan-dan-toc-thai.webp",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-mcrmxuyrv2vw2d",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-mdh0z68g0zap5c"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Tương Ớt Truyền Thống Đặc Sản",
+        "description": "Tương Ớt Truyền Thống Đặc Sản là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 426000,
+        "stock": 165,
+        "category": "Gia vị Việt",
+        "image": "https://bizweb.dktcdn.net/100/333/236/products/spico-tuong-ot-truyen-thong-01.jpg?v=1700187934257",
+        "gallery": [
+            "https://spico.vn/wp-content/uploads/2022/03/sp-gt.png",
+            "https://down-vn.img.susercontent.com/file/4c96702c10244a138a49d3af54f55f78",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m6p2d09drvz5d7"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Quế Nguyên Hoa Lý Sơn",
+        "description": "Quế Nguyên Hoa Lý Sơn là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 45000,
+        "stock": 59,
+        "category": "Gia vị Việt",
+        "image": "https://vietthangvn.com/wp-content/uploads/2023/06/bot-que-gia-vi-viet-thang-2-768x768.png",
+        "gallery": [
+            "https://quetrabonghieudung.com/wp-content/uploads/2023/10/z4813452863249_97c37b19dd7a04fc36e9cf56feb1ea68-768x1024.jpg",
+            "https://media.baosonla.org.vn/public/hieupt/2024-04-16/7.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134208-7r98o-lz5n19t9jln123"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Tỏi Khô Lạng Sơn",
+        "description": "Tỏi Khô Lạng Sơn là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 500000,
+        "stock": 166,
+        "category": "Gia vị Việt",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m4i9hi98180f5b",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lvdix0e4tvnx68",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m6yanmclnupkc6",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mlzowv8h60as89"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Hành Đen Đặc Sản",
+        "description": "Hành Đen Đặc Sản là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 69000,
+        "stock": 66,
+        "category": "Gia vị Việt",
+        "image": "https://static.vinwonders.com/production/dac-san-mang-den-top-banner.jpg",
+        "gallery": [
+            "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=105311249011402",
+            "https://cdn.thuvienphapluat.vn/uploads/tintuc/2022/11/04/nong-san-la-gi.jpg",
+            "https://tourdulichmangden.vn/upload/news/dac-san-mang-den-6678.jpg"
+        ],
+        "is_featured": true
+    }
+]

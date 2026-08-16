@@ -1,0 +1,86 @@
+[
+    {
+        "name": "Bộ Ống Hút Tre Tự Nhiên Kèm Cọ",
+        "description": "Bộ ống hút tre tự nhiên 100% thân thiện môi trường, có kèm cọ rửa chuyên dụng. Mỗi ống hút được làm từ thân tre già tự nhiên, không sơn phủ hóa chất. Thay thế hoàn toàn ống hút nhựa dùng một lần. Bộ 10 ống, có thể tái sử dụng hàng trăm lần, vệ sinh dễ dàng.",
+        "price": 65000,
+        "stock": 150,
+        "image": "https://hotelmart.vn/uploads/share-images/2022/05/23/2026_i628b43ff7cea7.jpg",
+        "category": "Thực phẩm hữu cơ",
+        "is_featured": true,
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134211-7r98o-lwplzwgg8ct564",
+            "https://tramdot.com/wp-content/uploads/2020/05/Pack-6-3.jpg",
+            "https://tramdot.com/wp-content/uploads/2020/05/Pack-6-5.jpg"
+        ]
+    },
+    {
+        "name": "Bộ Đũa Tre Cao Cấp Xuất Khẩu",
+        "description": "Bộ đũa tre cao cấp đạt tiêu chuẩn xuất khẩu Nhật Bản, được làm từ tre già chọn lọc. Đũa nhẵn bóng, không có mùi hóa chất, kháng khuẩn tự nhiên. Bộ 10 đôi được đựng trong hộp gỗ sang trọng, phù hợp làm quà tặng. Bền hơn đũa nhựa, thân thiện môi trường.",
+        "price": 89000,
+        "stock": 120,
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134208-7r98o-lmgdoog4ca1r67",
+        "category": "Thực phẩm hữu cơ",
+        "is_featured": false,
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lh5891h1fos206",
+            "https://down-vn.img.susercontent.com/file/vn-11134208-7r98o-lmgdoog4avhb70",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lwn0t3xvmdp73d"
+        ]
+    },
+    {
+        "name": "Màng Bọc Thực Phẩm Sáp Ong Beeswax Wrap",
+        "description": "Màng bọc thực phẩm làm từ sáp ong tự nhiên, cotton hữu cơ và nhựa cây. Thay thế hoàn toàn màng bọc nhựa thông thường. Có thể tái sử dụng 200+ lần, kháng khuẩn tự nhiên từ sáp ong. Bộ 3 miếng (S/M/L), dùng hơi ấm tay để định hình quanh đồ ăn.",
+        "price": 145000,
+        "stock": 80,
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134208-7qukw-lfjoh9x6d11g29",
+        "category": "Thực phẩm hữu cơ",
+        "is_featured": true,
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lfjor6v43iid52",
+            "https://product.hstatic.net/200000854141/product/z5534678063582_108f07495248c1a2a15e294a65e47925_f41ad5d0137c4be8bb680262ca84a96e_master.jpg",
+            "https://product.hstatic.net/200000854141/product/mbtpppp_f06dada962664627a6ed5d933cc60e35_master.png"
+        ]
+    },
+    {
+        "name": "Túi Vải Canvas Đi Chợ ECO",
+        "description": "Túi vải canvas đi chợ nhiều lần, kích thước 40x35cm chứa được lượng hàng hóa lớn. Chất vải canvas dày dặn, chắc chắn, chịu được tải trọng 10kg. Có thể giặt máy, phơi khô nhanh. Thay thế hàng nghìn túi nilon trong vòng đời sử dụng. In hoa văn ECO đẹp mắt.",
+        "price": 55000,
+        "stock": 200,
+        "image": "https://giftbag.vn/uploads/tui-vai-canvas/tui-vai-di-cho/mau-tui-di-cho-vai-bo_(24).jpg",
+        "category": "Thực phẩm hữu cơ",
+        "is_featured": false,
+        "gallery": [
+            "https://giftbag.vn/uploads/tui-vai-canvas/tui-vai-di-cho/tui-vai-bo-canvas-di-cho_(14).png",
+            "https://greenclothbag.com/uploads/tui-vai-canvas/tui-vai-di-cho/tui-vai-di-cho-7.jpg",
+            "https://bizweb.dktcdn.net/thumb/1024x1024/100/320/566/products/1-79976.jpg?v=1584349097973"
+        ]
+    },
+    {
+        "name": "Hộp Cơm Thủy Tinh Glasslock Chia Ngăn",
+        "description": "Hộp cơm thủy tinh Glasslock chia 3 ngăn tiện lợi, dung tích 1000ml. Thủy tinh cường lực chịu nhiệt, an toàn cho lò vi sóng và máy rửa bát. Nắp khóa 4 góc chống rò rỉ, không chứa BPA. Dùng đựng cơm trưa, thức ăn dư trữ. Bền đẹp, vệ sinh dễ dàng.",
+        "price": 185000,
+        "stock": 90,
+        "image": "https://sanhangre.net/image/data/glasslock/bo-3-hop-thuy-tinh-va-tui-giu-nhiet-glasslock-670-715-400.jpg",
+        "category": "Thực phẩm hữu cơ",
+        "is_featured": false,
+        "gallery": [
+            "https://quatangviva.com/wp-content/uploads/2023/04/bo-hop-com-thuy-tinh-glasslock-715ml-1000ml-chia-ngan-kem-tui-giu-nhiet-5.jpg",
+            "https://quatangviva.com/wp-content/uploads/2023/04/bo-hop-com-thuy-tinh-glasslock-400ml2-670ml-chia-ngan-5.jpg",
+            "https://quatangviva.com/wp-content/uploads/2023/04/bo-hop-com-thuy-tinh-glasslock-715ml-1000ml-chia-ngan-kem-tui-giu-nhiet-3.jpg"
+        ]
+    },
+    {
+        "name": "Nước Rửa Chén Sinh Học Hữu Cơ Minh Hồng",
+        "description": "Nước rửa chén sinh học hữu cơ Minh Hồng chiết xuất từ bồ kết, vỏ chanh và tinh dầu tự nhiên. Không hóa chất tổng hợp độc hại, an toàn cho tay và môi trường. Tạo bọt nhanh, làm sạch dầu mỡ hiệu quả, không gây hại nguồn nước. Can 2 lít tiết kiệm.",
+        "price": 75000,
+        "stock": 100,
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lzifkl8nieu975",
+        "category": "Thực phẩm hữu cơ",
+        "is_featured": true,
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lsv48jwbofq187",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lo21xu6at5dmc1",
+            "https://cdn.tgdd.vn/Files/2021/11/23/1399969/top-6-nuoc-rua-chen-huu-co-an-toan-tot-nhat-hien-nay-202111232029079330.jpg"
+        ]
+    }
+]

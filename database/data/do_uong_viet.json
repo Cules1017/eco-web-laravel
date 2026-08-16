@@ -1,0 +1,86 @@
+[
+    {
+        "name": "Trà Xanh Thái Nguyên Tân Cương Đặc Biệt",
+        "description": "Trà Thái Nguyên loại Đặc Biệt - được hái từ những búp trà non mập nhất trên đồi chè bao phủ sương mù vùng Tân Cương. Pha ra nước xanh trong vắt, hương thơm mát dịu đặc trưng của vùng chè Thái Nguyên. Vị chát nhẹ, hậu ngọt lâu. Hộp 200g sang trọng.",
+        "price": 155000,
+        "stock": 120,
+        "image": "https://media.loveitopcdn.com/2360/thumb/tra-xanh-tan-cuong-thai-nguyen-goi-100g.jpg",
+        "category": "Đồ uống hữu cơ",
+        "is_featured": true,
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m4eh6zh3n9uod9",
+            "https://media.loveitopcdn.com/2360/165817-cung-cap-tra-xanh-tan-cuong-thai-nguyen-goi-100g.jpg",
+            "https://product.hstatic.net/200000601239/product/tra_xanh_1_c53e012c58384f24a2c489ee47c46661_93e3adb72a4346ddb778d2bd160d541f_1024x1024.jpeg"
+        ]
+    },
+    {
+        "name": "Cà Phê Robusta Cầu Đất Đà Lạt Rang Mộc",
+        "description": "Cà phê Robusta Cầu Đất Đà Lạt, được trồng ở độ cao 1.650m trên những đồi cà phê quanh năm mây mù bao phủ. Hạt cà phê rang mộc nguyên chất, không pha trộn. Vị đắng đậm đà, hương thơm bền, crema đẹp khi pha espresso. Xay mịn pha phin truyền thống. Túi 500g.",
+        "price": 145000,
+        "stock": 100,
+        "image": "https://salt.tikicdn.com/ts/product/5b/e6/62/f48fe3bf03a270f854398fc9d975288c.jpg",
+        "category": "Đồ uống hữu cơ",
+        "is_featured": true,
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lzx1gqwue2bxf0",
+            "https://s3.hongbaocoffee.com/wp-content/uploads/2024/06/04184850/M2R8A.jpg",
+            "https://salt.tikicdn.com/ts/product/cc/11/f4/d17fe8034bc1b48dedfa7209b9358cde.jpg"
+        ]
+    },
+    {
+        "name": "Nước Cốt Dừa Hữu Cơ Vietcoco",
+        "description": "Sữa dừa hữu cơ Vietcoco được ép từ cơm dừa già tươi Bến Tre, nguyên chất 100% không pha nước. Hàm lượng chất béo cao, béo ngậy thơm ngon tự nhiên. Không chất bảo quản, không chất nhũ hóa tổng hợp. Dùng nấu cari, làm kem, làm bánh. Hộp 400ml.",
+        "price": 48000,
+        "stock": 150,
+        "image": "https://product.hstatic.net/200000423303/product/nuoc_cot_dua_organic_dong_lon_vietcoco_400ml_1a4fe01b9823481cb83c89829b5ceba1_grande.jpg",
+        "category": "Đồ uống hữu cơ",
+        "is_featured": false,
+        "gallery": [
+            "https://bizweb.dktcdn.net/thumb/1024x1024/100/457/054/products/z7070195591800-f93d3f1fd0020c510f0b391abd3a8f2a.jpg?v=1759311590993",
+            "https://www.conngongvang.com/wp-content/uploads/2020/12/nuoc_cot_dua_huu_co_vietcoco_400ml.jpg",
+            "https://down-vn.img.susercontent.com/file/e36fc525a0900d8272c21be4985c07be"
+        ]
+    },
+    {
+        "name": "Trà Atiso Đà Lạt Nguyên Chất",
+        "description": "Trà atiso Đà Lạt nguyên chất từ hoa atiso tươi sấy khô, không pha trộn. Màu nước đỏ nâu đẹp, hương thơm thanh dịu, vị đắng nhẹ thanh mát. Tốt cho gan, hỗ trợ giải độc và giảm mỡ máu. Pha nước nóng hoặc để nguội uống đều ngon. Hộp 100g.",
+        "price": 85000,
+        "stock": 110,
+        "image": "https://down-vn.img.susercontent.com/file/sg-11134201-7rd6z-m6terzk8imac6f",
+        "category": "Đồ uống hữu cơ",
+        "is_featured": false,
+        "gallery": [
+            "https://cungiominimart.com/images/products/2023/03/16/tra-atiso-dalat-farm-50tuiloc-f-173.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mnb3snq7j0g4dd",
+            "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1400279360095762"
+        ]
+    },
+    {
+        "name": "Nước Ép Trái Cây Tươi Le Fruit",
+        "description": "Nước ép hỗn hợp trái cây tươi Việt Nam (ổi hồng, xoài, dứa) nguyên chất 100%, được ép lạnh Cold Press giữ nguyên vitamin C và chất chống oxy hóa. Không thêm đường và chất bảo quản. Chai thủy tinh 260ml tiện lợi. Bảo quản lạnh 4-7 ngày.",
+        "price": 55000,
+        "stock": 90,
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m8c5i18sc8ryff",
+        "category": "Đồ uống hữu cơ",
+        "is_featured": false,
+        "gallery": [
+            "https://img.idesign.vn/2018/04/25/idesign_lefruit_01.jpg",
+            "https://product.hstatic.net/200000868055/product/nuoc_ep_trai_cay_nhiet_doi_le_fruit_1l_e41d1fab4217491a947143752f896951.png",
+            "https://cf.shopee.vn/file/d17941fbbcb6b1ef6a78b6ca000535ef"
+        ]
+    },
+    {
+        "name": "Trà Hoa Cúc Mật Ong Hữu Cơ",
+        "description": "Trà hoa cúc vàng hữu cơ Lâm Đồng kết hợp mật ong rừng nguyên chất, có tác dụng an thần, giảm stress và cải thiện giấc ngủ. Hoa cúc vàng sấy khô nguyên bông, màu sắc đẹp, hương thơm dịu nhẹ. Pha nước nóng 85°C trong 3-5 phút. Không caffeine - uống được buổi tối.",
+        "price": 75000,
+        "stock": 110,
+        "image": "https://bichchi.com.vn/vnt_upload/product/10_2025/tra_hoa_cua_mat_ong.png",
+        "category": "Đồ uống hữu cơ",
+        "is_featured": true,
+        "gallery": [
+            "https://chothuocbacsaigon.com/uploads/source/san-pham/tra-hoa-cuc-duong-phen-mat-ong/moi/z3127978803544-136e011dbea9b6cfd624fb712a345e10.jpg",
+            "https://chothuocbacsaigon.com/uploads/source/san-pham/cuc-mat-ong-han-linh/moi/z5802679386695-39c7553f20f585e73a12304ddf5ca143.jpg",
+            "https://trungtamthuoc.com/images/products/tra-hoa-cuc-mat-1-h3613.jpg"
+        ]
+    }
+]

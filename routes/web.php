@@ -17,6 +17,7 @@ use App\Http\Controllers\Admin\BannerController;
 use App\Http\Controllers\Admin\HomeSectionController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\VoucherController;
 use App\Http\Controllers\Client\AiAssistantController;
 use App\Http\Controllers\Client\PaymentController;
 
@@ -50,6 +51,8 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/cart/add', [CartController::class, 'add'])->name('cart.add');
     Route::put('/cart/update', [CartController::class, 'update'])->name('cart.update');
     Route::delete('/cart/remove', [CartController::class, 'remove'])->name('cart.remove');
+    Route::post('/cart/voucher', [CartController::class, 'applyVoucher'])->name('cart.voucher.apply');
+    Route::delete('/cart/voucher', [CartController::class, 'removeVoucher'])->name('cart.voucher.remove');
     Route::get('/checkout', [CartController::class, 'checkout'])->name('checkout');
     
     // Order Routes
@@ -86,6 +89,12 @@ Route::middleware(['auth'])->group(function () {
     Route::put('/user/update', [\App\Http\Controllers\Client\UserController::class, 'update'])->name('client.user.update');
     Route::get('/user/change-password', [\App\Http\Controllers\Client\UserController::class, 'showChangePassword'])->name('client.user.change_password');
     Route::post('/user/change-password', [\App\Http\Controllers\Client\UserController::class, 'changePassword'])->name('client.user.change_password.update');
+
+    // Game Routes
+    Route::get('/game', [\App\Http\Controllers\Client\GameController::class, 'index'])->name('game.index');
+    Route::post('/game/question', [\App\Http\Controllers\Client\GameController::class, 'getQuestion'])->name('game.question');
+    Route::post('/game/answer', [\App\Http\Controllers\Client\GameController::class, 'answerQuestion'])->name('game.answer');
+    Route::post('/game/shake', [\App\Http\Controllers\Client\GameController::class, 'shakeJar'])->name('game.shake');
 });
 
 // Admin Routes
@@ -100,6 +109,7 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
     Route::post('/orders/{order}/mark-paid', [OrderController::class, 'markPaid'])->name('orders.markPaid');
     Route::post('/orders/{order}/mark-unpaid', [OrderController::class, 'markUnpaid'])->name('orders.markUnpaid');
     Route::resource('banners', BannerController::class);
+    Route::resource('vouchers', VoucherController::class);
 
     // Settings
     Route::get('settings', [SettingController::class, 'index'])->name('settings.index');
@@ -108,6 +118,16 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
     Route::post('products/{product}/toggle', [ProductController::class, 'toggle'])->name('products.toggle');
     Route::post('products/{product}/upload-gallery', [ProductController::class, 'uploadGallery'])->name('products.uploadGallery');
     Route::delete('products/image/{id}', [ProductController::class, 'deleteImage'])->name('products.deleteImage');
+
+    // Game Management
+    Route::prefix('game')->name('game.')->group(function () {
+        Route::get('/', [\App\Http\Controllers\Admin\GameController::class, 'index'])->name('index');
+        Route::post('/', [\App\Http\Controllers\Admin\GameController::class, 'update'])->name('update');
+        Route::get('/questions', [\App\Http\Controllers\Admin\GameController::class, 'questions'])->name('questions');
+        Route::post('/questions', [\App\Http\Controllers\Admin\GameController::class, 'storeQuestion'])->name('questions.store');
+        Route::put('/questions/{question}', [\App\Http\Controllers\Admin\GameController::class, 'updateQuestion'])->name('questions.update');
+        Route::delete('/questions/{question}', [\App\Http\Controllers\Admin\GameController::class, 'destroyQuestion'])->name('questions.destroy');
+    });
 
     // Home Sections Management
     Route::resource('home-sections', HomeSectionController::class);

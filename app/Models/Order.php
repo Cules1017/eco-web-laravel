@@ -21,6 +21,8 @@ class Order extends Model
         'paid_at',
         'shipping_address_id',
         'total_amount',
+        'voucher_id',
+        'discount_amount',
         'notes',
     ];
 
@@ -52,5 +54,10 @@ class Order extends Model
             return $this->total_amount;
         }
         return $this->items->sum('subtotal');
+    }
+
+    public function voucher()
+    {
+        return $this->belongsTo(Voucher::class);
     }
 }

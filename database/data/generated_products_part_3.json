@@ -1,0 +1,1402 @@
+[
+    {
+        "name": "Bưởi Xiêm Tiền Giang",
+        "description": "Bưởi Xiêm Tiền Giang là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 86000,
+        "stock": 171,
+        "category": "Trái cây Việt",
+        "image": "https://hoptacxa.vn/images/11062021/6cdf2085cdc72fbc7e909d51a1721b44.jpg",
+        "gallery": [
+            "https://tiimtravel.vn/uploads/files/2023/05/27/buoi-dien.jpg",
+            "https://i.ytimg.com/vi/-MzlubktzgY/maxresdefault.jpg",
+            "https://media.vov.vn/sites/default/files/styles/large_watermark/public/2025-02/z6304106610748_95dad530aad05055fabc195e95fbad9a_20250210142856.jpg"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Kem Chống Nắng Nha Đam Hữu Cơ",
+        "description": "Kem Chống Nắng Nha Đam Hữu Cơ là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 349000,
+        "stock": 56,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m2xgdlbao2k05c",
+        "gallery": [
+            "http://vaadi.vn/cdn/shop/files/2_fa1b66f4-ef9f-4ef3-8d4a-0b9b4415149a.jpg?v=1731645980",
+            "https://bqn.1cdn.vn/2024/07/03/san-pham-kem-chong-nang-nha-dam-nhu-thuy-co-3-tac-dung-chong-nang-duong-am-va-trang-diem-da.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-me7b8ax1gcg485"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Kem Chống Nắng Cám Gạo Trắng Da",
+        "description": "Kem Chống Nắng Cám Gạo Trắng Da là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 26000,
+        "stock": 164,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-mblt1e97f1vo47",
+        "gallery": [
+            "https://bizweb.dktcdn.net/thumb/1024x1024/100/525/087/products/294346563-4786354254799982-4605949888729649491-n.jpg?v=1752470700600",
+            "https://oharabeauty.com/wp-content/uploads/2023/06/chong-nang-cam-gao-ha-lrocre.png",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-mccyda06sl6t60"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Kem Chống Nắng Mật Ong Thiên Nhiên",
+        "description": "Kem Chống Nắng Mật Ong Thiên Nhiên là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 394000,
+        "stock": 123,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://cf.shopee.vn/file/3702ea31952fa36f01c2c3241fa70ad9",
+        "gallery": [
+            "https://cf.shopee.vn/file/86c60cca519f45d82e17c980b4ba763d",
+            "http://www.myphamngocmai.com.vn/uploads/kem_chng_nng_x3_ong_anh_chit_xut_nc_ong_spf_50_pa_9.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m720mjunsz8898"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Nước Hoa Hồng Cám Gạo Hữu Cơ",
+        "description": "Nước Hoa Hồng Cám Gạo Hữu Cơ là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 265000,
+        "stock": 128,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://product.hstatic.net/200000018520/product/d8cbaf017ac1462fbbc7c15b158b1eca_637c5781c5324f7793be98701932ffef_master.png",
+        "gallery": [
+            "https://product.hstatic.net/200000921795/product/upload_bf2723ab666548369d726cc7a906e467_large.jpg",
+            "https://product.hstatic.net/200000921795/product/upload_ca6762e078a240469d8e81758c3e98df_1024x1024.jpg",
+            "https://down-vn.img.susercontent.com/file/8458466004af24650a37f0dc19a78ebe"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Dầu Gội Vỏ Bưởi Thuần Chay",
+        "description": "Dầu Gội Vỏ Bưởi Thuần Chay là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 466000,
+        "stock": 196,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://lido.vn/data/upload_file/Image/900-dau-goi-pomelo/900-dau-goi-pomelo6.jpg",
+        "gallery": [
+            "https://annshop.vn/wp-content/uploads/6329_467736162-122197174004223802-1144853293252604994-n_20241124084158.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lw33xh8edpsr6f",
+            "https://product.hstatic.net/200000885339/product/b56c032cd3ab4d0999004d9813963877_ea4af0dc48ca41d290f5a043bc23aad3_grande.png"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Mặt Nạ Bồ Kết Trị Mụn",
+        "description": "Mặt Nạ Bồ Kết Trị Mụn là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 262000,
+        "stock": 168,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://i.pinimg.com/736x/19/08/78/1908781388314c1e4fe10de652400759.jpg",
+        "gallery": [
+            "https://bizweb.dktcdn.net/100/345/186/files/5160-h-nh-21.jpg?v=1617007532785",
+            "https://tiki.vn/blog/wp-content/uploads/2023/04/2VY7Kq7K7UUb-Hy7lD-CFHvRGLpJppLCXGwrgyZ2hCX49WLrGHg0EdXhNgRWNPykvp7CfgkjIzqa5W32QCPCTpl95flhu60rKZsY-4u5CCTs-kxHUcnbQ1XAxAX67SYiaPC30jdrfSner68k8xGd0vQ.png",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lyu9hfdn48y5f1"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Dầu Gội Trà Xanh Trị Mụn",
+        "description": "Dầu Gội Trà Xanh Trị Mụn là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 238000,
+        "stock": 169,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://www.lottemart.vn/media/catalog/product/cache/0x0/8/9/8934868143307-1-3.jpg.webp",
+        "gallery": [
+            "https://cf.shopee.vn/file/a03825040ef172a5808368396a99d578",
+            "https://www.lottemart.vn/media/catalog/product/cache/0x0/8/9/8934868143307_3.jpg.webp",
+            "https://cf.shopee.vn/file/380af1609d2421ffb9318e44a41657c1"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Tẩy Trang Hoa Hồng Thiên Nhiên",
+        "description": "Tẩy Trang Hoa Hồng Thiên Nhiên là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 487000,
+        "stock": 163,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://i.pinimg.com/736x/48/c2/5d/48c25df9ab5b9588ce389b882c031acd.jpg",
+        "gallery": [
+            "https://daugoihuongnhu.com/wp-content/uploads/2018/08/nuoc-tay-trang-hoa-hong-2.jpg",
+            "https://bizweb.dktcdn.net/thumb/1024x1024/100/426/039/products/nuoc-tay-trang-hoa-hong-cocoon-500ml.jpg?v=1667124252157",
+            "https://image.cocoonvietnam.com/uploads/29892168_slide_3_d9bbec8e77.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Xà Bông Dầu Dừa Handmade",
+        "description": "Xà Bông Dầu Dừa Handmade là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 109000,
+        "stock": 77,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://missdep.com/wp-content/uploads/2019/10/27079152_Unknown-1.jpg",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/91f8e63df44dd58442fcc597bd56241b",
+            "https://cf.shopee.vn/file/1ab7542a2109667b90aa863f94ec5e9e",
+            "https://cf.shopee.vn/file/1515effbfe99fa8d8f7117073dd5f383"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Toner Bồ Kết Dưỡng Ẩm",
+        "description": "Toner Bồ Kết Dưỡng Ẩm là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 179000,
+        "stock": 27,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://down-vn.img.susercontent.com/file/sg-11134201-22120-ryjqrqevttkvb6",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134208-7r98o-lwie86q5f7x526",
+            "https://crm.osaci.vn/quan_ly/thuong_hieu/uploads/1749862738_Hình sàn Toner-01.png",
+            "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1453424813456508&amp;get_thumbnail=1"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Xà Bông Than Tre Dưỡng Ẩm",
+        "description": "Xà Bông Than Tre Dưỡng Ẩm là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 117000,
+        "stock": 60,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/xbttre.jpg?v=1759232356007",
+        "gallery": [
+            "https://product.hstatic.net/200000116869/product/upload_3646dcb15a964ef4ac13db61fcee681b_master.jpg",
+            "https://pos.nvncdn.com/cbd503-85749/ps/Xa-bong-thao-duoc-Than-tre-5.png?v=1761935828",
+            "https://bizweb.dktcdn.net/thumb/grande/100/456/761/products/xa-bong-thao-duoc-2-e72dbbd1-aa38-4b7a-91d0-64175a708687.png?v=1753769518157"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Tẩy Trang Bồ Kết Dưỡng Ẩm",
+        "description": "Tẩy Trang Bồ Kết Dưỡng Ẩm là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 138000,
+        "stock": 137,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-mc07c1ox2jjmf9",
+        "gallery": [
+            "https://product.hstatic.net/200000697677/product/431721645_394249486880221_2906244237030599100_n_28748ea18d69488e9773afa117e751c2.jpg",
+            "https://www.kiengiahuy.com/mydata/photo-large/2026030112125518.jpg",
+            "https://image.cocoonvietnam.com/uploads/Tay_Da_Chet_Da_Dau_Bo_Ket_50ml_0a75705654.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Son Cám Gạo Trị Mụn",
+        "description": "Son Cám Gạo Trị Mụn là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 204000,
+        "stock": 174,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://bizweb.dktcdn.net/100/479/330/products/1-bot-cam-gao-sua-obaxua.jpg?v=1684405412360",
+        "gallery": [
+            "https://sieuthibot68.com/storage/images/bot-cam-gao-dap-mat-trang-da-tri-mun-hieu-qua-2023-04-12-1681289638.jpg",
+            "https://dermalogica.com.vn/cdn/shop/files/exfoliants-exfoliants-daily-microfoliant-b-t-cam-g-o-t-y-da-ch-t-tai-t-o-da-h-ng-ngay-31775493685453.png?v=1749020844&amp;width=1445",
+            "https://seebaby.vn/wp-content/uploads/2025/09/san-pham-mat-na-cam-gao-vo-cam-thien-nhien-giup-tri-mun.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Mặt Nạ Cám Gạo Cho Da Nhạy Cảm",
+        "description": "Mặt Nạ Cám Gạo Cho Da Nhạy Cảm là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 44000,
+        "stock": 187,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://soja.co/media/Blog/keana-rice-mask.jpg",
+        "gallery": [
+            "https://soja.co/media/Blog/keana-rice-mask-2.png",
+            "https://chiaki.vn/upload/news/content/2023/03/mat-na-cho-da-dau-mun-nhay-cam-keana-rice-mask-jpg-1679560849-23032023154049.jpg",
+            "https://bizweb.dktcdn.net/100/239/651/files/dap-mat-na-gao-han-quoc.jpg?v=1568878205925"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Dầu Gội Hoa Hồng Dưỡng Ẩm",
+        "description": "Dầu Gội Hoa Hồng Dưỡng Ẩm là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 264000,
+        "stock": 118,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://media.hasaki.vn/catalog/product/d/a/dau-goi-pantene-micellar-huong-hoa-hong-thanh-loc-duong-am-530ml-2_img_800x800_eb97c5_fit_center.jpg",
+        "gallery": [
+            "https://media.hcdn.vn/wysiwyg/HaNguyen1/dau-goi-rejoice-4.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lmit3pu0zsgvf1",
+            "https://media.hasaki.vn/wysiwyg/HaNguyen1/dau-goi-rejoice-1.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Xà Bông Nha Đam Hữu Cơ",
+        "description": "Xà Bông Nha Đam Hữu Cơ là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 134000,
+        "stock": 122,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://cdn.hstatic.net/products/1000382910/x__b_ng_nha_dam-01-18_8ad6f43590004894ba03711337a6d064_1024x1024.jpg",
+        "gallery": [
+            "https://cdn.chiaki.vn/unsafe/0x480/left/top/smart/filters:quality(75)/https://s3-images.chiaki.vn/seller/1751965896757/cloud-image-1751965896757-08072025161136-xa-bong-nha-dam-giam-mun-lung-man-ngua-tay-te-bao-chet-125-gr.jpg",
+            "https://product.hstatic.net/1000382910/product/xa_bong-14_ac867955724641b4b30afc56ea758cac.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m84h1kxdwl0uc5"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Mặt Nạ Than Tre Cho Da Nhạy Cảm",
+        "description": "Mặt Nạ Than Tre Cho Da Nhạy Cảm là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 256000,
+        "stock": 60,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://cdn.chiaki.vn/unsafe/0x480/left/top/smart/filters:quality(75)/https://s3-images.chiaki.vn/seller/1758714887755/cloud-image-1758714887755-24092025185447-hang-cong-ty-kb-pure-dark-mask-mat-na-than-tre-thai-doc-da-bo-sung-o2-lam-sach-sau.jpg",
+        "gallery": [
+            "https://ecofarm-pay.com/st/uploads/company52/2024/04/08/6613b112a0d1e.png",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lombafk41r77b4",
+            "https://myphamhera.com/wp-content/uploads/2023/08/cong-dung-mat-na-tinh-than-tre-huong-thi-myphamheracom.jpg"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Serum Than Tre Cho Da Nhạy Cảm",
+        "description": "Serum Than Tre Cho Da Nhạy Cảm là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 429000,
+        "stock": 94,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://media.hcdn.vn/catalog/product/f/a/facebook-dynamic-combo-serum-tia-m-lam-sang-phuc-hoi-cho-da-dau-mun-nhay-cam-cang-bong-tre-hoa-da-40mlx2-1713752512.jpg",
+        "gallery": [
+            "https://seebaby.vn/wp-content/uploads/2025/09/top-10-serum-tri-mun-cho-da-nhay-cam-an-toan-hieu-qua-nhat-05082024162041.jpg",
+            "https://image.hsv-tech.io/1200x630/bbx/common/44cf879c-8fa0-4bf4-a0ab-df48b69233ff.webp",
+            "https://images-us.eucerin.com/~/media/eucerin/local/vn/serum-cho-da-nhay-cam/serum-cho-da-nhay-cam-banner.jpg?rx=0&amp;ry=0&amp;rw=650&amp;rh=220&amp;hash=7D63375C6AE0DE3306C980F16DD14531"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Kem Chống Nắng Hoa Hồng Handmade",
+        "description": "Kem Chống Nắng Hoa Hồng Handmade là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 141000,
+        "stock": 91,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lw8l9fkw6v2x4a",
+        "gallery": [
+            "https://cdn.chiaki.vn/unsafe/0x960/left/top/smart/filters:quality(70)/https://chiaki.vn/upload/news/content/2024/02/top-kem-chong-nang-whoo-tot-nhat-4-jpg-1708744864-24022024102104.jpg",
+            "https://myphamhongnhung.vn/wp-content/uploads/2024/10/445351450_2792362447585156_3108486683861546650_n.jpg",
+            "https://media.hcdn.vn/wysiwyg/kimhuy/kem-chong-nang-d-alba-nang-tong-sang-hong-tu-nhien-50ml.jpg"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Toner Gấc Handmade",
+        "description": "Toner Gấc Handmade là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 392000,
+        "stock": 150,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100041691109462",
+        "gallery": [
+            "https://buttercosmetic.com/wp-content/uploads/2022/08/TONER-1024x710.jpg",
+            "https://i.pinimg.com/736x/a1/e7/7c/a1e77caf718cbd5e43bb1b573d1f7ef8.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lwch67wjzzkrc6"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Toner Mật Ong Handmade",
+        "description": "Toner Mật Ong Handmade là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 56000,
+        "stock": 190,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://afamilycdn.com/150157425591193600/2025/3/24/1-17428091230121740402396.png",
+        "gallery": [
+            "https://afamilycdn.com/150157425591193600/2025/3/24/4-17428091231241651487402.png",
+            "https://down-vn.img.susercontent.com/file/sg-11134207-7rfib-m95i81e55dwna9",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m220oeycqf8b19"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Kem Dưỡng Than Tre Handmade",
+        "description": "Kem Dưỡng Than Tre Handmade là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 112000,
+        "stock": 49,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://photos.icheckcdn.net/FJl1-ISUrJuUEip5kTTCvtqZbJmUL0VYv3OKTV-ljos.jpg",
+        "gallery": [
+            "https://cdn-ecommerce.hellohealthgroup.com/media/catalog/product/cache/affabd953505e4c2dee2d727b9abdc3a/2/_/2_19.jpg",
+            "https://bize.vn/wp-content/uploads/2024/03/Kem-Trang-Da-Toan-Than-Mam-Gao-1-1024x1024.jpg",
+            "https://cf.shopee.vn/file/2cae976592f723e3f947d24e93850601"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Kem Chống Nắng Dầu Dừa Thuần Chay",
+        "description": "Kem Chống Nắng Dầu Dừa Thuần Chay là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 426000,
+        "stock": 72,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://product.hstatic.net/1000006063/product/sg-11134207-7qvdd-likyl7xhwzd993_9de81b8753f64717ac17e67a84101c96_1024x1024.jpg",
+        "gallery": [
+            "https://image-us.24h.com.vn/upload/4-2022/images/2022-11-17/picture-6-1668677457-771-width1280height1280.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mjnwx8nrvnk443",
+            "https://product.hstatic.net/1000006063/product/sg-11134207-7rd6y-lw2cgjbr14di63_9a1e10fa371a4755a44785aa7eb3e5ab_1024x1024.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Dầu Gội Hoa Hồng Handmade",
+        "description": "Dầu Gội Hoa Hồng Handmade là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 379000,
+        "stock": 40,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m8zmpe4t76v6c7",
+        "gallery": [
+            "https://mcnatural.vn/wp-content/uploads/2017/07/z6119387460232_0948d1c6f90106c7f2221ccd442a518b.jpg",
+            "https://saigonsilk.com.vn/wp-content/uploads/2024/10/dau-goi-bo-ket-hoa-hong-250.jpg",
+            "https://cf.shopee.vn/file/9ea1923851bcb173c40a97bf0efef046"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Kem Chống Nắng Mật Ong Cho Da Nhạy Cảm",
+        "description": "Kem Chống Nắng Mật Ong Cho Da Nhạy Cảm là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 460000,
+        "stock": 168,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=756694259941548",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134208-7ras8-mb256b1cklhz74",
+            "https://tiki.vn/blog/wp-content/uploads/2023/05/kem-chong-nang-cho-da-nhay-cam-1.jpg",
+            "http://www.myphamngocmai.com.vn/uploads/kem_chng_nng_x3_ong_anh_chit_xut_nc_ong_spf_50_pa_9.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Dầu Gội Cám Gạo Dưỡng Ẩm",
+        "description": "Dầu Gội Cám Gạo Dưỡng Ẩm là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 275000,
+        "stock": 100,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://cf.shopee.vn/file/sg-11134201-22120-e8c4gd95ktkvad",
+        "gallery": [
+            "https://cf.shopee.vn/file/d878c6ef237b1eb1b230f7e4c0c32735",
+            "https://cf.shopee.vn/file/a00a57c5faa88c73577cdb978e621658",
+            "https://cf.shopee.vn/file/720bb852748b8f27a664b5e613668631"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Xà Bông Vỏ Bưởi Thiên Nhiên",
+        "description": "Xà Bông Vỏ Bưởi Thiên Nhiên là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 111000,
+        "stock": 141,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://thiennienxanh.com/wp-content/uploads/2022/02/buoi.jpg",
+        "gallery": [
+            "https://bachmagreen.com/wp-content/uploads/2023/06/8.jpg",
+            "https://www.lienminhxanh.com/wp-content/uploads/2023/12/xa-bong-buoi-thanh-tra.png",
+            "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100094170079128"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Serum Mật Ong Trị Mụn",
+        "description": "Serum Mật Ong Trị Mụn là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 246000,
+        "stock": 93,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://boribeauty.com/wp-content/uploads/2023/06/serum-nicos-mau-moi-1.jpg",
+        "gallery": [
+            "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=466794065461999",
+            "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=475365014604904",
+            "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=518425916955135"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Sữa Tắm Bồ Kết Trị Mụn",
+        "description": "Sữa Tắm Bồ Kết Trị Mụn là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 198000,
+        "stock": 56,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://kalakala.vn/uploads/product/2022/10/30/1667108696-30-days-miracle-acne-clear-body-cleanser-400g3.jpg",
+        "gallery": [
+            "https://img.riokupon.com/upload/images/2025/08/07/06e41eed4a87603e96524484308b986a.jpg",
+            "https://down-vn.img.susercontent.com/file/b5ed7b1ae7f9e341275c65c526a78715",
+            "https://lh4.googleusercontent.com/-y-mJ4FHe6yp0mTwZNiNHt08V7SCXPgf864wdsXQCLZ7e1X3TUoovZggS-07zetEv6Hotl10swdDvmUDBDXiqlA6N6tibQ8x9YwPvgr7pjHFFCz2bmZ4wklErCPWTpuDAZJL5XJq2zAWHblh1ys4ZLzw4G8"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Xà Bông Vỏ Bưởi Trắng Da",
+        "description": "Xà Bông Vỏ Bưởi Trắng Da là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 253000,
+        "stock": 127,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://khosimypham.com/wp-content/uploads/26110_xa-bong-vita-soap-xbttb-2_20250212092805-1.png",
+        "gallery": [
+            "https://thiennienxanh.com/wp-content/uploads/2022/02/buoi.jpg",
+            "https://bachmagreen.com/wp-content/uploads/2023/06/8.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lnitbfpg35kdd8"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Sữa Tắm Than Tre Handmade",
+        "description": "Sữa Tắm Than Tre Handmade là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 468000,
+        "stock": 69,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://down-vn.img.susercontent.com/file/0e891ea2a45e5d1d785e1e67fcf14d04",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/sg-11134201-7qvfd-lf9jpyqtc9rq5d",
+            "https://down-vn.img.susercontent.com/file/cf6fc815deef0d6a434f213143ad885e",
+            "https://down-vn.img.susercontent.com/file/c914fbb2691fd3de400f1b9d85c22209"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Son Hoa Hồng Trắng Da",
+        "description": "Son Hoa Hồng Trắng Da là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 484000,
+        "stock": 37,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://simyphamonline.com/wp-content/uploads/15516-z2845850366450-454a3ada5a0e800e58abe4838eaa9423-1.jpg",
+        "gallery": [
+            "https://product.hstatic.net/200000960342/product/e6e02267f4e9418e87ab763b7982517c_c358472f30ff4530aade69089761494a_grande.jpg",
+            "https://myphamhera.com/wp-content/uploads/2023/10/nuoc-hoa-hong-duong-trang-va-tai-tao-da-the-nature-book-myphamheracom1.jpg",
+            "https://myphamhera.com/wp-content/smush-webp/2024/01/nuoc-hoa-hong-luxury-white-lotion-AO-II-ampleur-myphamheracom6.jpg.webp"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Xà Bông Dầu Dừa Thiên Nhiên",
+        "description": "Xà Bông Dầu Dừa Thiên Nhiên là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 437000,
+        "stock": 172,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-ljblneubh72k71",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lq03hwpqhec2ea",
+            "http://evagiahan.com/wp-content/uploads/2018/04/xa-phong-hangmade-xa-bong-dau-dua-rich-coco-soap-natural-soap-xa-phong-dau-dua-xa-phong-thien-nhien-xa-phong-lam-thu-cong-xa-bong-tam-duong-da-coconut-oil-soap-9-1170x878.jpg",
+            "https://cf.shopee.vn/file/vn-11134207-7qukw-lje02q7wk24ya3"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Kem Dưỡng Nha Đam Chống Lão Hóa",
+        "description": "Kem Dưỡng Nha Đam Chống Lão Hóa là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 285000,
+        "stock": 52,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://down-vn.img.susercontent.com/file/https://cf.shopee.vn/file/sg-11134201-7rbmk-lphweffwkuhv0f",
+        "gallery": [
+            "https://cf.shopee.vn/file/de58ce48aeb2227294a684734e7c0ebc",
+            "https://product.hstatic.net/200000580395/product/z3761917026054_7b063a3d310e2ee7a6d76dc4cf47e391_eaf1611c14e9472c92c9f39e1a516538_master.jpg",
+            "https://down-vn.img.susercontent.com/file/62d492a22441cd5dec234a813f047969"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Mặt Nạ Dầu Dừa Hữu Cơ",
+        "description": "Mặt Nạ Dầu Dừa Hữu Cơ là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 446000,
+        "stock": 36,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://down-vn.img.susercontent.com/file/sg-11134201-7rdw9-m0imfyxaj8p505",
+        "gallery": [
+            "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=502460555218983",
+            "https://1001hangphap.com/wp-content/uploads/2024/01/z6438601767690_a28afcea88a36e41777b020b9022cf68.jpg",
+            "https://bellelab.co/wp-content/uploads/2023/05/Farm-To-Face-Sheet-Mask-Coconut-Oil-x3.png"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Xà Bông Nghệ Thiên Nhiên",
+        "description": "Xà Bông Nghệ Thiên Nhiên là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 240000,
+        "stock": 75,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://cf.shopee.vn/file/sg-11134201-22110-wdaooqqylzjv9b",
+        "gallery": [
+            "https://www.onatree.vn/cdn/shop/files/IMG_8310_1024x1024@2x.jpg?v=1683283861",
+            "https://cf.shopee.vn/file/sg-11134201-22100-25l3xz1xiyiv12",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lvlqlsmssiz5d0"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Dầu Gội Mật Ong Trắng Da",
+        "description": "Dầu Gội Mật Ong Trắng Da là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 363000,
+        "stock": 164,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://bizweb.dktcdn.net/thumb/grande/100/480/056/products/z5850591259754-abaa08baf57f6b54066579d0df90f0c7-1726832341267.jpg?v=1737132412917",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lvs9dnjquml6df",
+            "https://product.hstatic.net/200000868185/product/ggggggg_c8114a332f8b429387a5be8f7b048a07_master.png",
+            "https://phuchungltd.com/wp-content/uploads/2025/05/3.jpg"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Dầu Gội Gấc Thiên Nhiên",
+        "description": "Dầu Gội Gấc Thiên Nhiên là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 260000,
+        "stock": 200,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lpxiq53slzv6d1",
+        "gallery": [
+            "https://naturalmoc.store/wp-content/uploads/2026/03/Xanh-la-my-pham-hien-dai-phu-nu-dang-Instagram-4-800x800.png",
+            "https://tinhdaufacare.com.vn/wp-content/uploads/2021/11/dau-gac-3-2.jpg",
+            "https://tinhdauthaomoc.com.vn/wp-content/uploads/2021/11/dau-gac-1-2.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Sữa Tắm Nghệ Hữu Cơ",
+        "description": "Sữa Tắm Nghệ Hữu Cơ là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 448000,
+        "stock": 35,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://bizweb.dktcdn.net/thumb/1024x1024/100/434/531/products/438300545-794614572764688-3105441601737017984-n.jpg?v=1730632280157",
+        "gallery": [
+            "https://bizweb.dktcdn.net/thumb/1024x1024/100/434/531/products/anh-dai-dien-san-pham-1-b57008f4-3ef5-4fdc-9bc0-5cd9b3b49d99.jpg?v=1730632275943",
+            "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/0136ead8c1b34d9c87a29f33322b6df5~tplv-aphluv4xwc-resize-jpeg:800:800.jpeg?dr=15584&amp;t=555f072d&amp;ps=933b5bde&amp;shp=6ce186a1&amp;shcp=e1be8f53&amp;idc=maliva&amp;from=1826719393",
+            "https://product.hstatic.net/200000617989/product/2_dc220669f5154d1fbe092c4f97757f5e.png"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Xà Bông Mật Ong Handmade",
+        "description": "Xà Bông Mật Ong Handmade là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 363000,
+        "stock": 83,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://trungtamthuoc.com/images/products/xa-bong-nghe-mo-1-c1107.jpg",
+        "gallery": [
+            "https://trungtamthuoc.com/images/products/xa-bong-nghe-mo-5-m4108.jpg",
+            "https://trungtamthuoc.com/images/item/xa-bong-nghe-MO-b3.jpg",
+            "https://trungtamthuoc.com/images/item/xa-bong-nghe-MO-b1.jpg"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Kem Dưỡng Hoa Hồng Trắng Da",
+        "description": "Kem Dưỡng Hoa Hồng Trắng Da là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 174000,
+        "stock": 162,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://myphamcacdai.vn/upload/products/large/myphamcacdai-bach-hoa-hong-kem-duong-trang-da-15g-do-2.jpg",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lxezbrua2w9n32",
+            "https://thuvienvatly.com/images/deals/thumb/kem-duong-trang-da-body-lapia-chiet-xuat-tu-hoa-hong-phap-retinol-glutathione-250g-tang-xa-bong-hoa-hong.jpg",
+            "https://pos.nvncdn.com/ffa9b4-8073/ps/20241009_oobsN8Fqjk.jpeg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Sữa Tắm Nghệ Dưỡng Ẩm",
+        "description": "Sữa Tắm Nghệ Dưỡng Ẩm là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 198000,
+        "stock": 149,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-ma15we97z2myf3",
+        "gallery": [
+            "https://khoetunhien24h.com/wp-content/uploads/2024/07/sua-tam-duong-am-dang-kem-1024x1024.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-mckxcbk8hj6kc9",
+            "https://bizweb.dktcdn.net/100/353/847/files/7ac895d18f14a1bee8eb88df13d6c6ea.jpg?v=1694573070394"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Nước Hoa Hồng Bồ Kết Trị Mụn",
+        "description": "Nước Hoa Hồng Bồ Kết Trị Mụn là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 451000,
+        "stock": 16,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://cdn.abphotos.link/photos/resized/1024x/2025/01/17/1737109843_07YPu21ewcpvHAmf_1737112320-phpitryzu.png",
+        "gallery": [
+            "https://cdn.abphotos.link/photos/resized/1024x/2024/10/31/1730350658_toNdCRYADj6I72un_1730356344-phpdzywwy.png",
+            "https://bizweb.dktcdn.net/thumb/1024x1024/100/368/378/products/sapo-4.png?v=1690530062850",
+            "https://www.hangngoainhap.com.vn/images/201807/goods_img/2436_P_1530673346692.jpg"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Tẩy Trang Bồ Kết Trị Mụn",
+        "description": "Tẩy Trang Bồ Kết Trị Mụn là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 160000,
+        "stock": 45,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://media.tripmap.vn/marketplace/2026/04/nuoc-tay-trang-bi-500ml-tang-bo-ket-50ml-gel-tam-duong-thot-not-50ml-tay-trang-bi-50ml-cocoon-gia-299000-vnd-1776119173-cmn66b-600x600.webp",
+        "gallery": [
+            "https://annshop.vn/wp-content/uploads/4999_z5524474150303-1a87b3e1f039eeca793cced9004b62c5_20240611184913.jpg",
+            "https://bloganchoi.com/wp-content/uploads/2021/07/nuoc-tay-trang-bi-dao-cocoon-winter-melon-micellar-water-6-1.jpg",
+            "https://www.bioderma.com.vn/sites/vn/files/inline-images/Bioderma Sébium H2O.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Sữa Tắm Than Tre Cho Da Nhạy Cảm",
+        "description": "Sữa Tắm Than Tre Cho Da Nhạy Cảm là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 79000,
+        "stock": 183,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://aceman.vn/wp-content/uploads/2024/06/z5560973864343_6da149bef222df85c38290ca1f21ae96.jpg",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/sg-11134201-22120-5w29oclg3nlv45",
+            "https://down-vn.img.susercontent.com/file/c914fbb2691fd3de400f1b9d85c22209",
+            "https://guo.vn/wp-content/uploads/2023/04/Sua-rua-mat-Than-Tre-Tram-Tra-cho-da-nhay-cam-GUO-Acne-Solution-Cleansing-Cream-GUO.png"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Nước Hoa Hồng Gấc Dưỡng Ẩm",
+        "description": "Nước Hoa Hồng Gấc Dưỡng Ẩm là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 174000,
+        "stock": 72,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://myphamthuanchay.com/data/upload_file/Image/3136/tonerhoahongcocoon.jpg",
+        "gallery": [
+            "https://image.cocoonvietnam.com/uploads/29892142_slide_3_aeb65b422b.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m2t1m3rnx322b2",
+            "https://hanipeni.vn/wp-content/uploads/2025/10/nuoc-hoa-hong-nsorganic-moisturizing-toner-300ml-1-2.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Sữa Tắm Hoa Hồng Handmade",
+        "description": "Sữa Tắm Hoa Hồng Handmade là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 116000,
+        "stock": 50,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://sanphamhuucothiennhien.vn/image/cache/catalog/san-pham/cham-soc-co-the/xa-bong/Sua-Tam-Body-Shower-Gel-Hoa-Hong-KOLAN-500-ml-2-0x0.jpg",
+        "gallery": [
+            "https://sanphamhuucothiennhien.vn/image/cache/catalog/san-pham/cham-soc-co-the/xa-bong/Sua-Tam-Body-Shower-Gel-Hoa-Hong-KOLAN-500-ml-0x0.jpg",
+            "https://tinhdauhoanen.com/wp-content/uploads/2024/07/z5404406448381_d5c2337f9ff186bbf36baff538a4b326-e1721099419768.jpg",
+            "https://product.hstatic.net/1000353126/product/dsc_5761_bad73e9bd50e4484a95ca94362f5c723_master.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Mặt Nạ Trà Xanh Hữu Cơ",
+        "description": "Mặt Nạ Trà Xanh Hữu Cơ là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 247000,
+        "stock": 143,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://cf.shopee.vn/file/1b2de9d97475cc75a7baa108f3453a36",
+        "gallery": [
+            "https://vn-test-11.slatic.net/shop/8a5be2e288a9aa00292b7c987a49d3b4.jpeg",
+            "https://thefaceshopvn.com/wp-content/uploads/2023/07/97c91299a7675f390676.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134208-7ras8-m3ye8cypnl48e5"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Mặt Nạ Hoa Hồng Handmade",
+        "description": "Mặt Nạ Hoa Hồng Handmade là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 136000,
+        "stock": 192,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m6g6zia57tx448",
+        "gallery": [
+            "https://image.cocoonvietnam.com/uploads/29892141_slide_3_0ff3f6b980.png",
+            "https://cf.shopee.vn/file/315e629ef05958f276fa8e915a46f09a",
+            "https://down-vn.img.susercontent.com/file/vn-11134208-7qukw-lfjibp17t01wc5"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Mặt Nạ Vỏ Bưởi Trắng Da",
+        "description": "Mặt Nạ Vỏ Bưởi Trắng Da là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 52000,
+        "stock": 170,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://dost.hochiminhcity.gov.vn/media/images/buoi1_oRwTP2e.width-800.jpg",
+        "gallery": [
+            "https://mypharma.vn/wp-content/uploads/2019/09/Mặt-nạ-cao-vỏ-bưởi-Milaganics.jpg",
+            "https://image.cocoonvietnam.com/uploads/Website_448744049_486999170354190_4651515310287941209_240911_2f2521e90d.jpg",
+            "https://ikani.vn/wp-content/uploads/2022/08/khau-trang-y-te-huong-tinh-dau-vo-buoi-4-lop-gold-mask.webp"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Toner Than Tre Handmade",
+        "description": "Toner Than Tre Handmade là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 272000,
+        "stock": 42,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://gonhuaanbinh.com/ckfinder/userfiles/images/tam-op-than-tre/tam-op-than-tre-2.webp",
+        "gallery": [
+            "https://file.hstatic.net/200000868185/file/8809381449994.jpg",
+            "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100070971623310",
+            "https://micebeauty.com/wp-content/uploads/2021/11/xa-phong-handmade-tinh-than-tre-micebeauty-1.jpg"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Kem Dưỡng Cám Gạo Thiên Nhiên",
+        "description": "Kem Dưỡng Cám Gạo Thiên Nhiên là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 63000,
+        "stock": 81,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://filebroker-cdn.lazada.vn/kf/S0ba729509dcf4909b1e2182970821c26H.jpg",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m2wg8uzxgu0gcb",
+            "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=459547902941798",
+            "https://trungtamthuoc.com/images/item/Keana-Rice-Cream-1.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Kem Dưỡng Cám Gạo Chống Lão Hóa",
+        "description": "Kem Dưỡng Cám Gạo Chống Lão Hóa là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 153000,
+        "stock": 42,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://cdn.chiaki.vn/unsafe/0x960/left/top/smart/filters:quality(75)/https://chiaki.vn/upload/product-gallery/106673/kem-duong-cam-gao-phuc-hoi-da-purles-104-advanced-rice-cream-1708055955106673.jpg",
+        "gallery": [
+            "https://cdn.chiaki.vn/unsafe/0x480/left/top/smart/filters:quality(75)/https://chiaki.vn/upload/product-gallery/106673/kem-duong-cam-gao-phuc-hoi-da-purles-104-advanced-rice-cream-1708055950106673.jpg",
+            "https://filebroker-cdn.lazada.vn/kf/S0ba729509dcf4909b1e2182970821c26H.jpg",
+            "https://cdn.chiaki.vn/unsafe/0x960/left/top/smart/filters:quality(75)/https://chiaki.vn/upload/product/2024/02/kem-duong-cam-gao-phuc-hoi-da-purles-104-advanced-rice-cream-65cedcbb7a9dd-16022024105539.png"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Nước Hoa Hồng Nha Đam Trị Mụn",
+        "description": "Nước Hoa Hồng Nha Đam Trị Mụn là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 320000,
+        "stock": 31,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://media.hasaki.vn/wysiwyg/ThuyHao/nuoc-hoa-hong-chiet-xuat-rau-ma-ho-tro-phuc-hoi-tai-tao-da-skin1004-madagascar-centella-toning-toner-210ml-4.jpg",
+        "gallery": [
+            "https://www.hangngoainhap.com.vn/images/upload/Image/My-pham/tri-mun/nuoc-hoa-hong-tri-mun-aha-bha-pha-30day-miracle-toner-150ml-chinh-hang.jpg",
+            "https://www.hangngoainhap.com.vn/images/201807/goods_img/2436_P_1530673346692.jpg",
+            "https://cdn.abphotos.link/photos/resized/1024x/2024/10/31/1730350658_toNdCRYADj6I72un_1730356344-phpdzywwy.png"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Nước Hoa Hồng Dầu Dừa Thiên Nhiên",
+        "description": "Nước Hoa Hồng Dầu Dừa Thiên Nhiên là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 493000,
+        "stock": 150,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://rumilab.com/wp-content/uploads/2025/01/hoa-hong.png",
+        "gallery": [
+            "https://onmart.vn/wp-content/uploads/2022/09/TN047.jpg",
+            "https://tranmao.vn/wp-content/uploads/2021/06/noi-mua-nuoc-hoa-hong-thien-nhien-tran-mao.jpg",
+            "https://tinhdaufacare.com.vn/wp-content/uploads/2021/12/tinh-dau-hoa-hong-5.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Mặt Nạ Than Tre Thuần Chay",
+        "description": "Mặt Nạ Than Tre Thuần Chay là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 283000,
+        "stock": 52,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134208-7r98o-lyqb27ixjd7lc0",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134208-7r98o-lyqb27inpdu537",
+            "https://ecofarm-pay.com/st/uploads/company52/2024/04/08/6613b112a0d1e.png",
+            "https://lzd-img-global.slatic.net/g/p/8ae95bb902753e94ae5388b9a955814d.jpg_720x720q80.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Son Nghệ Trị Mụn",
+        "description": "Son Nghệ Trị Mụn là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 154000,
+        "stock": 59,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://cdn.chiaki.vn/unsafe/0x960/left/top/smart/filters:quality(70)/https://chiaki.vn/upload/news/content/2022/12/tinh-chat-nghe-hung-yen-cocoon-turmeric-serum-giam-tham-mun-jpg-1672117759-27122022120919.jpg",
+        "gallery": [
+            "https://cdn.chiaki.vn/unsafe/0x960/left/top/smart/filters:quality(70)/https://chiaki.vn/upload/news/content/2024/06/kem-nghe-erythromycin-nghe-nam-ha-jpg-1717667560-06062024165240.jpg",
+            "https://lipocumin.com/wp-content/uploads/2024/11/Top-3-San-Pham-Kem-Nghe-Khong-Mau-Tri-Mun-Hot-Nhat-Nam-2024.png",
+            "https://thorakaocaugiay.com/wp-content/uploads/2020/11/Sua-rua-mat-hat-nghe-Thorakao-100g_tcg.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Kem Dưỡng Cám Gạo Trị Mụn",
+        "description": "Kem Dưỡng Cám Gạo Trị Mụn là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 307000,
+        "stock": 40,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://filebroker-cdn.lazada.vn/kf/S0ba729509dcf4909b1e2182970821c26H.jpg",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-mblt5zsl696c63",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lpd0z5n3hbgu56",
+            "https://pos.nvncdn.com/07a8a4-117856/ps/20250908_XODGVIfv9X.webp?v=1757323773"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Tẩy Trang Cám Gạo Thuần Chay",
+        "description": "Tẩy Trang Cám Gạo Thuần Chay là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 274000,
+        "stock": 171,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-makzmqqtmi1j01",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lzlo6m9ygtvxe3",
+            "https://down-vn.img.susercontent.com/file/1a7b955eb3dd9469c93cd41ff296e5b9",
+            "https://haiyencosmetic.com/wp-content/uploads/2024/01/z5061724593731_c83100a44d0e74b00ac2933133a0daf1.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Son Dầu Dừa Trị Mụn",
+        "description": "Son Dầu Dừa Trị Mụn là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 431000,
+        "stock": 145,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://media.hasaki.vn/wysiwyg/HaNguyen/son-duong-dau-dua-ben-tre-cocoon-5g-3.jpg",
+        "gallery": [
+            "https://cf.shopee.vn/file/1c0aed58768a66c4368fc5bdd1effa5d",
+            "https://missdep.com/wp-content/uploads/2019/07/4-cây-son.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-mcj15yhscvj041"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Son Dầu Dừa Thiên Nhiên",
+        "description": "Son Dầu Dừa Thiên Nhiên là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 158000,
+        "stock": 142,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://lh7-us.googleusercontent.com/bpYvejTto9PoKDaVIIjXZUf0MnODQYZt89fcDCsyx78EBcqKQRb7wk3KaxFOPUIGyCJHqlA-ithqV2owFJjpsq31Ma9GmRlkEmjCv6yo72249f9Jqk30GfvgABe0VWndMeLq0H68dPrS4lIXrwbzVHw",
+        "gallery": [
+            "https://media.hasaki.vn/wysiwyg/HaNguyen/son-duong-dau-dua-ben-tre-cocoon-5g-3.jpg",
+            "https://file.hstatic.net/1000006063/file/ioiskinfood.com_-_son_duong_cocoon_co_thanh_phan_tu_dau_dua__bo_hat_mo.jpg",
+            "http://nuhoanggac.com/uploads/shops/2026_03/son-dau-dua-hoa-lan.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Kem Chống Nắng Bồ Kết Thuần Chay",
+        "description": "Kem Chống Nắng Bồ Kết Thuần Chay là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 441000,
+        "stock": 175,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-me7b8ax1gcg485",
+        "gallery": [
+            "https://product.hstatic.net/1000006063/product/sg-11134207-7qvdd-likyl7xhwzd993_9de81b8753f64717ac17e67a84101c96_1024x1024.jpg",
+            "https://product.hstatic.net/1000006063/product/sg-11134207-7rd6y-lw2cgjbr14di63_9a1e10fa371a4755a44785aa7eb3e5ab_1024x1024.jpg",
+            "https://down-vn.img.susercontent.com/file/sg-11134207-7qveo-lhwqyiuf3u6r77"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Kem Chống Nắng Than Tre Thiên Nhiên",
+        "description": "Kem Chống Nắng Than Tre Thiên Nhiên là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 270000,
+        "stock": 196,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://cdn-v2.kidsplaza.vn/media/wysiwyg/product/Do-ve-sinh/kem-chong-nang/kem-chong-nang-tre-em-kutieskin-spf-50-30g-1.jpg",
+        "gallery": [
+            "https://cdn.chiaki.vn/unsafe/0x960/left/top/smart/filters:quality(75)/https://s3-images.chiaki.vn/seller/1768173090598/cloud-image-1768173090598-12012026061130-kem-chong-nang-orico-sun-screen-bao-ve-da-khoi-tia-uv-voi-cong-nghe-hien-dai-100-tu-thien-nhien.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m8ee87wtqgkuff",
+            "https://down-vn.img.susercontent.com/file/vn-11134208-7ras8-mc0fkkb06may3e"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Kem Chống Nắng Nghệ Thiên Nhiên",
+        "description": "Kem Chống Nắng Nghệ Thiên Nhiên là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 82000,
+        "stock": 197,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://misamom.vn/wp-content/uploads/2026/03/kem-chong-nang-tinh-chat-bo-nghe.jpg",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m2oxvwl1fovua8",
+            "https://duocthaoviet.vn/wp-content/uploads/2025/10/kem-chong-nang-thien-nhien-3.png",
+            "https://down-vn.img.susercontent.com/file/ec6c403f392919551276d6f6eea72df6"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Dầu Gội Bồ Kết Cho Da Nhạy Cảm",
+        "description": "Dầu Gội Bồ Kết Cho Da Nhạy Cảm là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 454000,
+        "stock": 67,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-mauocwndo0ch52",
+        "gallery": [
+            "https://pazoda.com/wp-content/uploads/2021/06/Dau-goi-dau-Bo-ket-Thorakao-750ml3-thorakao-1024x1024.jpg",
+            "https://myphamtinhnhien.vn/upload/product/dau-goi-thao-moc-bo-ket-tinh-nhien-500-ml-cover-4070.jpg",
+            "https://greenmaxvn.com/wp-content/uploads/2024/05/z5357354428375_64f752453c3fcbfcaf224c5c9d000b42-2000x1895.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Tẩy Trang Vỏ Bưởi Handmade",
+        "description": "Tẩy Trang Vỏ Bưởi Handmade là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 320000,
+        "stock": 73,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://image.cocoonvietnam.com/uploads/Artboard_2_191af5d813.jpg",
+        "gallery": [
+            "https://myphamthuanchay.com/images/news/giay-chung-nhan-cong-bo-san-pham-kem-u-toc-vo-buoi-bo-ket-herbario-so-y-te-cap-phep.jpg",
+            "https://myphamthuanchay.com/images/news/giay-chung-nhan-cong-bo-san-pham-nuoc-duong-toc-vo-buoi-bo-ket-herbario-so-y-te-cap-phep.jpg",
+            "https://image.cocoonvietnam.com/uploads/Website_448744049_486999170354190_4651515310287941209_240911_2f2521e90d.jpg"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Serum Than Tre Thiên Nhiên",
+        "description": "Serum Than Tre Thiên Nhiên là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 27000,
+        "stock": 25,
+        "category": "Mỹ phẩm hữu cơ",
+        "image": "https://cf.shopee.vn/file/vn-11134201-7qukw-lesfkp4qvn2ifd",
+        "gallery": [
+            "https://product.hstatic.net/1000382910/product/1a3be51ca2137a4d2302_7aed9ced298d435aaf24b81ce4a8b71e_grande.jpg",
+            "https://thanhmochuongvietnam.com/wp-content/uploads/2022/10/820ff1d8-4551-49a4-9fbc-bfd518cf336d.jpg",
+            "https://bizweb.dktcdn.net/100/473/870/products/825d9f8303f7fbb4b4aca66c6c93a2ec-1671104543577.jpg?v=1672968360013"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Yến Mạch Đỏ Cho Người Tiểu Đường",
+        "description": "Yến Mạch Đỏ Cho Người Tiểu Đường là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 406000,
+        "stock": 105,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m910biglggaq46",
+        "gallery": [
+            "https://cdn.hstatic.net/200001060005/file/san_pham_yen_cho_nguoi_tieu_duong_ef139c62ad254cfe937ea019f97cc484.png",
+            "https://cf.shopee.vn/file/c893c50ff078b8c9d40109972199fdf3",
+            "https://mypharma.vn/wp-content/uploads/2021/03/không-có-tiêu-đề-2021-03-28T121635.175.png"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Gạo Nguyên Cám Thượng Hạng",
+        "description": "Gạo Nguyên Cám Thượng Hạng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 123000,
+        "stock": 147,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://product.hstatic.net/200000260805/product/gao-huu-co-0909190875_4f3d25e2e17e4f71ac2a32316b0f16ce.png",
+        "gallery": [
+            "https://caromi.org/wp-content/uploads/2026/04/6.png",
+            "https://projectchogaomientay.weebly.com/uploads/1/4/6/0/146072414/hinh-10-cho-gao-mien-tay-cung-cap-gao-con-cam-chat-luong_orig.jpg",
+            "https://product.hstatic.net/200000260805/product/gao-lut-nguyen-cam-organic-3q99v_0412500152d74b1c869d39034fcb2c40.jpg"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Hạt Nguyên Cám Thượng Hạng",
+        "description": "Hạt Nguyên Cám Thượng Hạng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 207000,
+        "stock": 29,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134201-7r98o-ls16a4tbhx9k83",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-mk1zz9milgcg94",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lzfxanp1rag12a",
+            "https://baguettesaigon.net/wp-content/uploads/2026/01/21.png"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Ngũ Cốc Sấy Xuất Khẩu",
+        "description": "Ngũ Cốc Sấy Xuất Khẩu là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 227000,
+        "stock": 52,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://sunsay.vn/wp-content/uploads/2025/03/ngu-coc-say-kho.jpg",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/392de9ee5a504bd5ebde1a4b0cd5bf08",
+            "https://cf.shopee.vn/file/1d19e7e6ccfe7426112a1a4211566b5a",
+            "https://dacsanxunau.vn/wp-content/uploads/2026/01/z7418439398393_73e5e129cc270337877bd413b0190cce.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Hạt Óc Chó Đen Xuất Khẩu",
+        "description": "Hạt Óc Chó Đen Xuất Khẩu là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 86000,
+        "stock": 187,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://img.lazcdn.com/g/p/f85c9d02a7d071e617e1374ed0e2a566.jpg_720x720q80.jpg",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-m0404kue595b93",
+            "https://dreamvinakv.com/wp-content/uploads/2025/03/ngu-coc-dau-den-hanh-nhan-hat-oc-cho-damtuh-hop-50-goi-1.jpg",
+            "https://product.hstatic.net/1000301274/product/_10101264__hat_oc_cho_tach_vo_tili_250gr_77fd720c662b4f3caa6f47cb1b90c208_1024x1024.png"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Mè Xanh Tây Bắc",
+        "description": "Mè Xanh Tây Bắc là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 171000,
+        "stock": 126,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://file.hstatic.net/1000164870/article/dgfd_12c113e3c31d458094acbeb8535aebf9.png",
+        "gallery": [
+            "https://channel.mediacdn.vn/428462621602512896/2023/8/16/photo-1-1692175810425289298848.jpg",
+            "https://imgcdn.thitruongsi.com/tts/rs:fill:1200:0:1:1/g:sm/plain/file:/product/2025/08/23/db6efb40-7fe4-11f0-877d-3536cc4e1b51.jpg",
+            "https://lzd-img-global.slatic.net/g/p/48197e7d5db4e91aff0bba01492906b1.jpg_720x720q80.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Ngũ Cốc Đỏ Sóc Trăng",
+        "description": "Ngũ Cốc Đỏ Sóc Trăng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 391000,
+        "stock": 189,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=495319952648689",
+        "gallery": [
+            "http://dailyhcm.congtytanhuevien.vn/wp-content/uploads/2026/04/ngu-coc-co-duong-4.jpeg",
+            "https://bizweb.dktcdn.net/thumb/1024x1024/100/482/360/products/san-pham-2024-07-22t101605-747.jpg?v=1721618293617",
+            "https://bizweb.dktcdn.net/thumb/1024x1024/100/451/459/products/ngu-coc-callbe-do-750g-1.jpg?v=1700627407003"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Ngũ Cốc Đen Dinh Dưỡng",
+        "description": "Ngũ Cốc Đen Dinh Dưỡng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 55000,
+        "stock": 45,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://cdn.hstatic.net/products/200001012752/bot-ngu-coc-dinh-duong-khong-duong-tu-me-den-greenmax-1_49a6d26dc50a40aab830526cc8ae1e4e_master.jpg",
+        "gallery": [
+            "https://www.robins.vn/wp-content/uploads/2025/09/ngu-coc-dinh-duong-viet-dai-bich-500g-202209050838193769.jpg.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lwzr9wpvr17ff8",
+            "https://product.hstatic.net/200000585467/product/3_6cce371eb08e44f88349ecce71e19120_1024x1024.png"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Mè Đỏ Sóc Trăng",
+        "description": "Mè Đỏ Sóc Trăng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 267000,
+        "stock": 102,
+        "category": "Gạo & Ngũ cốc",
+        "image": "http://dailyhcm.congtytanhuevien.vn/wp-content/uploads/2025/10/z7172866143958_850c6230e5cf3faeb4e9b791e9498cea.jpg",
+        "gallery": [
+            "http://dailyhcm.congtytanhuevien.vn/wp-content/uploads/2026/04/me-xung-deo-1.jpeg",
+            "https://www.dacsanhuongviet.com/site/wp-content/uploads/2015/10/me-lao-tan-hue-vien.jpg",
+            "https://www.dacsanbanhpia.com/wp-content/uploads/2013/12/me-lao-dsbp.jpg"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Gạo Đỏ Đồng Tháp",
+        "description": "Gạo Đỏ Đồng Tháp là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 389000,
+        "stock": 22,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://gaokienquoc.vn/Data/images/gao-lut-do-kien-quoc.jpg",
+        "gallery": [
+            "https://i.ytimg.com/vi/3hDGwKKwvRw/maxresdefault.jpg",
+            "https://hnm.1cdn.vn/2023/12/25/24-12-anh-gao-hapro-1.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-mdng4qxzr0kxd6"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Nếp St24 Cho Người Tiểu Đường",
+        "description": "Nếp St24 Cho Người Tiểu Đường là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 381000,
+        "stock": 118,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=755189623485929",
+        "gallery": [
+            "https://cdn.chiaki.vn/unsafe/0x480/left/top/smart/filters:quality(75)/https://s3-images.chiaki.vn/seller/1772939234940/cloud-image-1772939234940-08032026100714-gao-phuc-cu-20kg-gao-lut-den-loai-ngon-nep-than-huu-co-tot-cho-nguoi-tieu-duong-an-kieng.jpg",
+            "https://toplistviet.org/wp-content/uploads/2024/10/Top-5-san-pham-sua-cho-nguoi-tieu-duong-tot-nhat-hien-nay.png",
+            "https://cdn.chiaki.vn/unsafe/0x960/left/top/smart/filters:quality(75)/https://s3-images.chiaki.vn/seller/1772939257308/cloud-image-1772939257308-08032026100737-gao-phuc-cu-60kg-gao-lut-den-loai-ngon-nep-than-huu-co-tot-cho-nguoi-tieu-duong-an-kieng.jpg"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Nếp Lứt Đồng Tháp",
+        "description": "Nếp Lứt Đồng Tháp là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 109000,
+        "stock": 78,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://khaiminh.vn/wp-content/uploads/nep-lut-cai-hoa-vang-1068x1068.jpg",
+        "gallery": [
+            "https://media-cdn-v2.laodong.vn/storage/newsportal/2025/1/19/1452460/Ky-Nguyen-Moi-Kinh-T-15.JPG",
+            "https://down-vn.img.susercontent.com/file/ebb413dde52866ea93a9abc3ec9cb7e2",
+            "https://www.keodua.vn/site/wp-content/uploads/2022/11/kep-mang-cau-00-1536x1536.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Hạt Sen Đỏ Sóc Trăng",
+        "description": "Hạt Sen Đỏ Sóc Trăng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 74000,
+        "stock": 122,
+        "category": "Gạo & Ngũ cốc",
+        "image": "http://dailyhcm.congtytanhuevien.vn/wp-content/uploads/2025/10/sen-say-1.jpg",
+        "gallery": [
+            "https://thaoduochoangyen.com/wp-content/uploads/2023/10/hat-sen-do.png",
+            "https://thaoduochoangyen.com/wp-content/uploads/2023/10/cong-dung-cua-hat-sen-do.png",
+            "http://dailyhcm.congtytanhuevien.vn/wp-content/uploads/2025/08/sen-say-wasabi-.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Hạt Óc Chó Nguyên Cám Xuất Khẩu",
+        "description": "Hạt Óc Chó Nguyên Cám Xuất Khẩu là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 240000,
+        "stock": 132,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://choqueonline.vn/uploads/product/hat-oc-cho-nguyen-vo-tili-500gr_2ZzuCpJb6W.jpg",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lxvwk14h2di3c3",
+            "https://bazanland.com/wp-content/uploads/2020/02/hat-oc-cho-nguyen-vo-300g-bazanland-600x600.jpg",
+            "https://suachobeyeu.vn/upload/sua-tuoi/sua-hat/sua-137-degrees/thung-sua-hat-oc-cho-nguyen-chat-137-degrees-hop-180ml/thung-sua-hat-oc-cho-nguyen-chat-137-degrees-hop-180ml-1.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Đậu Đen Ăn Kiêng",
+        "description": "Đậu Đen Ăn Kiêng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 488000,
+        "stock": 130,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lxuxioouhxp53a",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m77jdnjx7kgof6",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m24difmdzjrydd",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m4o4envs3nd395"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Hạnh Nhân Nguyên Cám Ăn Kiêng",
+        "description": "Hạnh Nhân Nguyên Cám Ăn Kiêng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 139000,
+        "stock": 169,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134201-7qukw-leu0t6jz7as7ab",
+        "gallery": [
+            "https://cf.shopee.vn/file/cf16bc8cd0e2e9a52739cf4be55aec6b",
+            "https://product.hstatic.net/200000827887/product/upload_e2fac56550114e8fb741b6e450afcb18_master.jpg",
+            "https://cf.shopee.vn/file/837a5e94bbb7e0f796d48bba63058dea"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Hạt Đỏ Cho Người Tiểu Đường",
+        "description": "Hạt Đỏ Cho Người Tiểu Đường là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 374000,
+        "stock": 19,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://homelpharma.com.vn/uploads/menlait-sua-hat-tieu-duong-vipp-dinh-duong-cho-nguoi-tieu-duong.jpg",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lv33pm5ewuex23",
+            "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=187909441028191",
+            "https://cf.shopee.vn/file/vn-11134201-7qukw-lev4xisozybu4b"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Gạo Mix Xuất Khẩu",
+        "description": "Gạo Mix Xuất Khẩu là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 339000,
+        "stock": 160,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://vietaircargo.asia/wp-content/uploads/2025/05/cac-nuoc-xuat-khau-gao-lon-nhat-the-gioi-2023-2024-2769.jpg",
+        "gallery": [
+            "https://media.vneconomy.vn/w800/images/upload/2022/10/05/h1.jpg",
+            "https://cdn.tuoitre.vn/471584752817336320/2024/3/6/base64-17097254723251728110705.jpeg",
+            "https://baobiab.com/wp-content/uploads/2024/05/bao-bi-gao-58.png"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Ngũ Cốc Nguyên Cám Ăn Kiêng",
+        "description": "Ngũ Cốc Nguyên Cám Ăn Kiêng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 132000,
+        "stock": 139,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://thanhanfood.com.vn/wp-content/uploads/2023/01/Bot-Ngu-coc-An-Kieng-600g-1.png",
+        "gallery": [
+            "https://salt.tikicdn.com/cache/750x750/ts/product/b7/c8/ba/e304099289edaf4d7dd319b69fabae94.png",
+            "https://vn-test-11.slatic.net/p/0510f7105d1f2d82643680d2b02669aa.png",
+            "https://vn-test-11.slatic.net/p/6909d9f1ab582bba73823004d929c889.png"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Hạt Đen Cho Người Tiểu Đường",
+        "description": "Hạt Đen Cho Người Tiểu Đường là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 273000,
+        "stock": 52,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lv33pm5ewuex23",
+        "gallery": [
+            "https://cf.shopee.vn/file/vn-11134201-7qukw-lev4xisozybu4b",
+            "https://vn-test-11.slatic.net/p/1a9c50227ef1a8eb28a4bbce8f7dfff9.jpg",
+            "https://vn-test-11.slatic.net/p/76177cddcec37ec034735d1a455a945a.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Đậu Xanh Sóc Trăng",
+        "description": "Đậu Xanh Sóc Trăng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 113000,
+        "stock": 104,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://tnntrading.com.vn/wp-content/uploads/2025/06/dca0f4f296cd465890ab8f0d1c8de84dtplv-aphluv4xwc-origin-jpeg-scaled.jpeg",
+        "gallery": [
+            "https://tnntrading.com.vn/wp-content/uploads/2025/06/c5149602c54047d7b8619ce670aa7342tplv-aphluv4xwc-origin-jpeg.jpeg",
+            "https://tnntrading.com.vn/wp-content/uploads/2025/06/e4c5041c2c104375b647d5d384ef5603tplv-aphluv4xwc-origin-jpeg-scaled.jpeg",
+            "https://quaquehuong.vn/wp-content/uploads/2023/03/Banh-pia-xanh-768x768.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Hạt Sen St25 Dinh Dưỡng",
+        "description": "Hạt Sen St25 Dinh Dưỡng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 310000,
+        "stock": 87,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134208-7r98o-lqcx4yg5n5tj9c",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lux6nliw4mcl55",
+            "http://giagao.com.vn/upload/images/SAN PHAM/dinh duong gao ST25.png",
+            "https://product.hstatic.net/200000684957/product/hat_sen_say_an_lien_300gr_79a96a5527fb48739b4944ced221f6fd_master.png"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Gạo Nguyên Cám Sóc Trăng",
+        "description": "Gạo Nguyên Cám Sóc Trăng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 21000,
+        "stock": 195,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://ecom.viettechsmart.com:5020/Media/Images/0/gao-st25-dac-san-soc-trang-10kg.jpg",
+        "gallery": [
+            "https://cerafoods.com/wp-content/uploads/2023/08/gao-st-25-01-min-400x400.jpg",
+            "https://cdn.tgdd.vn/Products/Images/2513/229846/bhx/gao-thom-soc-trang-st-25-tui-5kg-202012111123577642.jpg",
+            "https://chillifoods.vn/wp-content/uploads/2024/10/gao-ST-25-soc-trang.png"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Nếp St25 Sóc Trăng",
+        "description": "Nếp St25 Sóc Trăng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 116000,
+        "stock": 163,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://vn-live-01.slatic.net/shop/f915f592835cce79b482bd86aeb96d32.png",
+        "gallery": [
+            "https://vn-live-01.slatic.net/p/d41b3153adc92f52795c0b041b7a9c8b.jpg",
+            "https://gaotuanmui.com/uploads/images/2021/11/1637675807-single_product1-csare37541.jpg",
+            "https://khogaosaigon.com.vn/wp-content/uploads/2022/08/gao-st25-soc-trang-768x768.jpg"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Hạt Óc Chó Lứt Xuất Khẩu",
+        "description": "Hạt Óc Chó Lứt Xuất Khẩu là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 103000,
+        "stock": 68,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://hananuts.com/wp-content/uploads/2021/06/nhan-oc-vang.jpg",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134202-7qukw-ljnk8g71chs211",
+            "https://punfood.vn/wp-content/uploads/2023/09/nhan-oc-cho-vang-say-2.jpg",
+            "https://www.lottemart.vn/media/catalog/product/cache/0x0/8/9/8936121240099.jpg.webp"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Yến Mạch Rang Cho Người Tiểu Đường",
+        "description": "Yến Mạch Rang Cho Người Tiểu Đường là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 382000,
+        "stock": 192,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://cf.shopee.vn/file/c893c50ff078b8c9d40109972199fdf3",
+        "gallery": [
+            "https://cf.shopee.vn/file/b825939b2aa0311ed836f3df74cdc93e",
+            "https://cf.shopee.vn/file/84921e26e9f3180e186b4e2c916eca67",
+            "https://cf.shopee.vn/file/e7b0669829541a4d62cce01f956ffac9"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Hạt Lứt Tây Bắc",
+        "description": "Hạt Lứt Tây Bắc là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 419000,
+        "stock": 74,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://taybac.tv/wp-content/uploads/2024/02/bot-ngu-coc-gao-lut.jpg",
+        "gallery": [
+            "https://phuclamshop.vn/wp-content/uploads/2022/11/z3861409940445_6fffb0c004bbf4b3f94cd7f5786fc201-800x800.png",
+            "https://product.hstatic.net/200000031322/product/gaolutden_c8cab7b2af384d31937f9c48d08fe1e3_master.jpg",
+            "https://tanvietfood.com/wp-content/uploads/2024/06/z5487001594441_0dac4610cb6674b5adc709630e925de0-1024x1024.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Hạt Điều Nguyên Cám Cho Người Tiểu Đường",
+        "description": "Hạt Điều Nguyên Cám Cho Người Tiểu Đường là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 367000,
+        "stock": 41,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://damtuhvietnam.com/wp-content/uploads/2024/08/cac-loai-hat-nguyen-cam-tot-cho-nguoi-tieu-duong-1.jpg",
+        "gallery": [
+            "https://lutfarm.vn/wp-content/uploads/2023/03/z4178125763983_be9c87d711790fa5be7afd1499ba4691-1024x1024.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-mbxy5obgfpn270",
+            "https://cdn.tgdd.vn/Products/Images/8286/83731/bhx/ngu-coc-dinh-duong-nguyen-cam-nutifood-diabet-care-bich-400g-202210191401194148.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Yến Mạch Nguyên Cám Sóc Trăng",
+        "description": "Yến Mạch Nguyên Cám Sóc Trăng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 254000,
+        "stock": 173,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://bizweb.dktcdn.net/thumb/1024x1024/100/513/911/products/yen-mach-nguyen-cam-500gr.jpg?v=1712821549757",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/65270b6ba6692d146b3976de80f91d18",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lz72wimpnyvh46",
+            "https://sanhangchinhhang.vn/img/yen-mach-uc-tuoi-nguyen-chat-nguyen-cam-loai-1-1.jpg"
+        ],
+        "is_featured": true
+    },
+    {
+        "name": "Hạt Lứt Cho Người Tiểu Đường",
+        "description": "Hạt Lứt Cho Người Tiểu Đường là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 312000,
+        "stock": 70,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-ma2zi549b7fydf",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mjndsy75bmkjc2",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m0to0s5y2cj1b8",
+            "https://salt.tikicdn.com/ts/product/c6/17/72/b53bfa745bf22ddddf41ac5caefc4ac7.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Ngũ Cốc St24 Xuất Khẩu",
+        "description": "Ngũ Cốc St24 Xuất Khẩu là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 464000,
+        "stock": 76,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://baomoi-photo-fbcrawler.bmcdn.me/w700_r3x2/2023_12_19_579_47852392/30dd6eb717fbfea5a7ea.jpg",
+        "gallery": [
+            "https://singvietfood.vn/wp-content/uploads/2025/09/Anh-dai-dien-NCGL-ID.png",
+            "https://dongnailogistics.com/wp-content/uploads/2025/09/Screenshot-2025-09-16-093631-1024x510.png",
+            "https://sunsay.vn/wp-content/uploads/2025/03/ngu-coc-say-kho.jpg"
+        ],
+        "is_featured": false
+    },
+    {
+        "name": "Ngũ Cốc Hữu Cơ Ăn Kiêng",
+        "description": "Ngũ Cốc Hữu Cơ Ăn Kiêng là sản phẩm chất lượng cao, an toàn cho sức khỏe và thân thiện với môi trường. Phù hợp cho mọi gia đình Việt.",
+        "price": 217000,
+        "stock": 57,
+        "category": "Gạo & Ngũ cốc",
+        "image": "https://cf.shopee.vn/file/sg-11134202-22100-250ghzsw8sivca",
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134208-7r98o-lxi3rals0t0917",
+            "https://shopruamui.com/wp-content/uploads/2024/11/vn-11134207-7r98o-lxjmhavowkbdc4.jpeg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lqtt1mu2qjte6c"
+        ],
+        "is_featured": false
+    }
+]

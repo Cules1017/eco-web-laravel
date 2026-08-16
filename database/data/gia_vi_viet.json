@@ -1,0 +1,86 @@
+[
+    {
+        "name": "Tiêu Phú Quốc Nguyên Hạt",
+        "description": "Tiêu Phú Quốc - gia vị số 1 Việt Nam được xuất khẩu đi toàn thế giới. Hạt tiêu to đều, màu đen bóng, tinh dầu nhiều cho mùi thơm và vị cay nồng đặc trưng. Được thu hoạch thủ công và phơi khô tự nhiên, bảo quản trong túi zip kín. Không pha trộn.",
+        "price": 85000,
+        "stock": 150,
+        "image": "https://www.lottemart.vn/media/catalog/product/cache/0x0/f/8/f89fdd04b6f90172be30d9982089755c1925e1b3073545095839978a3f75aad5.jpeg.webp",
+        "category": "Gia vị hữu cơ",
+        "is_featured": true,
+        "gallery": [
+            "https://www.lottemart.vn/media/catalog/product/cache/0x0/8/9/8936007662557-1-1.jpg.webp",
+            "https://www.lottemart.vn/media/catalog/product/cache/0x0/8/9/8936007662557-1.jpg.webp",
+            "https://1shop.vn/datafiles/11/2023-09/22025961-Bản sao của IMG_0828.jpg"
+        ]
+    },
+    {
+        "name": "Nghệ Bột Hữu Cơ Tây Ninh",
+        "description": "Nghệ bột hữu cơ nguyên chất từ củ nghệ tươi Tây Ninh, hàm lượng Curcumin cao gấp 3 lần nghệ thường. Màu vàng tươi đẹp, hương thơm mạnh, vị đắng nhẹ đặc trưng. Không pha trộn chất phụ gia. Tốt cho sức khỏe chống viêm, hỗ trợ tiêu hóa và làm đẹp da.",
+        "price": 65000,
+        "stock": 120,
+        "image": "https://product.hstatic.net/200000845121/product/organic_turmeric_powder_tv_45g_503e909028304ddfacab9b972b22fc32_master.png",
+        "category": "Gia vị hữu cơ",
+        "is_featured": false,
+        "gallery": [
+            "https://product.hstatic.net/1000316204/product/bot_nghe_huu_co_vinasamex_bebe4669481f4a39bfbd098afce9cf9b_master.jpg",
+            "https://product.hstatic.net/200000423303/product/tinh_bot_nghe_huu_co_dace_f925b004e9574d25bbe1f4499fbc09e8_grande.jpg",
+            "https://product.hstatic.net/1000217254/product/tinh_bot_nghe_huu_co_dace_6eb2bed8b2c84be0bbbd0f91a0071061_master.png"
+        ]
+    },
+    {
+        "name": "Quế Thanh Hóa Hữu Cơ",
+        "description": "Quế Thanh Hóa - loại quế tốt nhất Việt Nam, nổi tiếng với hàm lượng tinh dầu cinnamaldehyde cao. Vỏ quế dày, màu nâu đỏ đẹp, hương thơm ấm áp đặc trưng. Được thu hoạch từ cây quế 10-15 năm tuổi, phơi khô tự nhiên. Dùng nấu phở, làm bánh, pha trà.",
+        "price": 78000,
+        "stock": 100,
+        "image": "https://product.hstatic.net/200000423303/product/que_thanh_huu_co_vinasamex_35g_e9c0af9b7f7444b59343b93f205e126c_grande.jpg",
+        "category": "Gia vị hữu cơ",
+        "is_featured": true,
+        "gallery": [
+            "https://luxuryfoods.vn/wp-content/uploads/2025/05/que-thanh-huu-co-35gr.png",
+            "https://bizweb.dktcdn.net/100/258/505/files/phan-trun-que-5kg.jpg?v=1700552304833",
+            "https://congtythanhchao.com/images/stories/virtuemart/product/resized/bao-bi-1_400x400.png"
+        ]
+    },
+    {
+        "name": "Gừng Khô Hữu Cơ Thái Nguyên",
+        "description": "Gừng khô nguyên chất Thái Nguyên, được trồng trên vùng đất đồi núi màu mỡ. Thái lát mỏng và phơi khô tự nhiên dưới nắng, giữ nguyên vẹn tinh chất gingerol và dầu bay hơi. Vị cay nồng, thơm đặc trưng. Pha trà gừng ấm bụng, nấu canh chua, tẩm ướp thịt.",
+        "price": 55000,
+        "stock": 130,
+        "image": "https://down-vn.img.susercontent.com/file/c0560714d514f4f49a99c5f4be5d34fa",
+        "category": "Gia vị hữu cơ",
+        "is_featured": false,
+        "gallery": [
+            "https://bkfoods.org/wp-content/uploads/2024/06/z5493186356688_bbd502f9f6290d2e427b264e3c0cd11a-1.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-ltdcw0184og496",
+            "https://pic.trangvangvietnam.com/395753862/gung (2).jpg"
+        ]
+    },
+    {
+        "name": "Hồi Nguyên Hoa Lạng Sơn",
+        "description": "Hoa hồi Lạng Sơn nguyên bông to đều, màu nâu đỏ tươi, tinh dầu anethole đậm cho mùi thơm nồng đặc biệt. Là gia vị không thể thiếu trong nước phở, bún bò Huế, hay các món hầm. Được phơi khô tự nhiên, đóng gói kín giữ nguyên mùi thơm.",
+        "price": 72000,
+        "stock": 90,
+        "image": "https://cdn.hstatic.net/products/1000316204/hoa-hoi-vipep-40g_75ea5cc4ca4f4069931cf31c7db9bd8a_master.jpg",
+        "category": "Gia vị hữu cơ",
+        "is_featured": false,
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m4q7qmd9qxeo75",
+            "https://down-vn.img.susercontent.com/file/sg-11134201-22120-alufyc2moykv98",
+            "https://down-vn.img.susercontent.com/file/sg-11134201-22110-xmuegepo00jv6c"
+        ]
+    },
+    {
+        "name": "Tỏi Cô Đơn Lý Sơn",
+        "description": "Tỏi cô đơn Lý Sơn - đặc sản quý hiếm của đảo Lý Sơn, Quảng Ngãi. Mỗi củ tỏi chỉ có một tép duy nhất, vị cay nồng gấp đôi tỏi thường, hương thơm đặc biệt. Được trồng trên đất núi lửa giàu khoáng chất, không dùng phân bón hóa học. Sử dụng ngâm rượu, nấu ăn, tăng cường miễn dịch.",
+        "price": 185000,
+        "stock": 50,
+        "image": "https://product.hstatic.net/1000178034/product/f400e547-4614-4cb2-87bd-4b9da8d601e0_cb865943a16547f78652455dc4d4c3d7_master.jpg",
+        "category": "Gia vị hữu cơ",
+        "is_featured": true,
+        "gallery": [
+            "https://product.hstatic.net/1000178034/product/hinh_anh_toi_co_don_411cb1834bf5493a83ac749d8683a979_master.jpg",
+            "https://down-vn.img.susercontent.com/file/sg-11134201-22120-sqtkfqob4qkvad",
+            "https://cf.shopee.vn/file/7317622847b361f60db68779e94b015e"
+        ]
+    }
+]

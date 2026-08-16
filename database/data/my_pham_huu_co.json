@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Son Môi Thiên Nhiên Dưỡng Gấc Cỏ Mềm",
+        "description": "Son môi thiên nhiên từ thương hiệu Cỏ Mềm, làm từ dầu gấc, sáp ong và bơ shea hữu cơ. Không paraben, không silicon, không chất tạo màu tổng hợp. Dưỡng môi mềm mịn, màu sắc tự nhiên tươi tắn. Thỏi 4g đựng trong ống giấy tái chế thân thiện môi trường.",
+        "price": 95000,
+        "stock": 100,
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134208-7r98o-llwwqagv8man1d",
+        "category": "Thực phẩm hữu cơ",
+        "is_featured": true,
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/7d45e08169116f3bc7e0bec6b4d8e39f",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-mc687tav3m516d",
+            "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1720451711499475"
+        ]
+    },
+    {
+        "name": "Dầu Gội Bồ Kết Vỏ Bưởi Cocoon",
+        "description": "Dầu gội bồ kết vỏ bưởi Cocoon - thương hiệu mỹ phẩm thuần Việt nổi tiếng. Chiết xuất từ bồ kết, vỏ bưởi và dầu dừa hữu cơ. Giảm gãy rụng tóc, kích thích mọc tóc, làm sạch sâu da đầu. Không sulfate, không paraben, không silicon. Chai 310ml.",
+        "price": 145000,
+        "stock": 80,
+        "image": "https://bizweb.dktcdn.net/100/426/039/products/dau-goi-buoi-cocoon-31002.jpg?v=1685505355873",
+        "category": "Thực phẩm hữu cơ",
+        "is_featured": false,
+        "gallery": [
+            "https://bizweb.dktcdn.net/100/426/039/products/dau-goi-buoi-cocoon.jpg?v=1685261181013",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-mc07bm59tkglab",
+            "https://image.cocoonvietnam.com/uploads/IMG_5252_8f3fe2deab.jpg"
+        ]
+    },
+    {
+        "name": "Xà Bông Sinh Dược Nghệ và Mật Ong",
+        "description": "Xà bông thảo dược kết hợp nghệ vàng và mật ong rừng nguyên chất, làm sạch nhẹ nhàng và nuôi dưỡng da. Curcumin trong nghệ giúp chống viêm, làm đều màu da, mờ thâm sạm. Mật ong dưỡng ẩm sâu. Không hóa chất tổng hợp. Bánh 100g dùng được 3-4 tuần.",
+        "price": 65000,
+        "stock": 120,
+        "image": "https://thaomocanan.vn/wp-content/uploads/2021/05/xa-bong-nghe-mat-ong-1-scaled.jpg",
+        "category": "Thực phẩm hữu cơ",
+        "is_featured": true,
+        "gallery": [
+            "https://lzd-img-global.slatic.net/g/p/6db9ce71335ddcd40de03933ff3d17fb.jpg_720x720q80.jpg",
+            "https://down-vn.img.susercontent.com/file/01f78291dae8de946859cdb5d572e59e",
+            "https://cf.shopee.vn/file/17c1a37301bf93eda04bc9c3035089da"
+        ]
+    },
+    {
+        "name": "Tinh Dầu Dưỡng Tóc Vỏ Bưởi Cocoon",
+        "description": "Tinh dầu dưỡng tóc vỏ bưởi Cocoon chiết xuất từ vỏ bưởi tươi, giúp mọc tóc và giảm rụng tóc hiệu quả. Hương thơm bưởi tự nhiên dễ chịu, thẩm thấu nhanh không nhờn dính. Phù hợp cho tóc hư tổn, khô xơ. Không cồn, không paraben. Chai 140ml.",
+        "price": 165000,
+        "stock": 70,
+        "image": "https://cdn.chiaki.vn/unsafe/0x960/left/top/smart/filters:quality(75)/https://chiaki.vn/upload/seller/1673795953-00502953-nuoc-duong-toc-tinh-dau-buoi-cocoon-140ml-phien-ban-nang-cap-3307-63b8-large.jpg",
+        "category": "Thực phẩm hữu cơ",
+        "is_featured": false,
+        "gallery": [
+            "https://image.cocoonvietnam.com/uploads/Nuoc_Buoi_Moi_Edit_tach_nen_Size_Web_ef5c4fc93b.jpg",
+            "https://afamilycdn.com/150157425591193600/2024/12/2/1-1733127883070862561731.png",
+            "https://image.cocoonvietnam.com/uploads/Avatar_Website_Nuoc_duong_toc_tinh_dau_buoi_140ml_Cai_tien_moi_240629_7819f9ba98.jpg"
+        ]
+    },
+    {
+        "name": "Nước Hoa Hồng Cỏ Mềm Chưng Cất Tự Nhiên",
+        "description": "Nước hoa hồng Cỏ Mềm được chưng cất trực tiếp từ cánh hoa hồng tươi không hóa chất. Cân bằng độ ẩm da, se khít lỗ chân lông, làm dịu da kích ứng. Hương thơm hoa hồng tự nhiên tinh tế. Phù hợp mọi loại da, dùng sau bước tẩy trang hoặc rửa mặt. Chai 150ml.",
+        "price": 125000,
+        "stock": 90,
+        "image": "https://lalifa.com/wp-content/uploads/2023/11/tinh-dau-hoa-hong-va-nuoc-hoa-hong.png.webp",
+        "category": "Thực phẩm hữu cơ",
+        "is_featured": false,
+        "gallery": [
+            "https://media.comem.vn/uploads/July2023/nuoc-hoa-hong-co-se-khit-lo-chan-long-khong.webp",
+            "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=656504514560872",
+            "https://down-vn.img.susercontent.com/file/vn-11134208-7ras8-m1qra6fh15qr2c"
+        ]
+    }
+]

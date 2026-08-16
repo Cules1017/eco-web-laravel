@@ -100,12 +100,14 @@ def main():
         ('Duyệt sản phẩm', 'Xem danh sách sản phẩm với phân trang (12 sản phẩm/trang), lọc theo danh mục, khoảng giá (min/max), từ khóa tìm kiếm, và sắp xếp (giá tăng/giảm, tên A-Z/Z-A, mới nhất).'),
         ('Chi tiết sản phẩm', 'Xem thông tin chi tiết sản phẩm, gallery ảnh phụ với zoom modal, mô tả sản phẩm có thể thu gọn/mở rộng, sản phẩm liên quan cùng danh mục.'),
         ('Giỏ hàng', 'Thêm sản phẩm vào giỏ hàng (lưu Session), cập nhật số lượng, xóa sản phẩm, xem tổng tiền. Hỗ trợ nút "Mua ngay" chuyển thẳng đến trang thanh toán.'),
-        ('Đặt hàng & Thanh toán', 'Chọn địa chỉ giao hàng, chọn phương thức thanh toán (COD, MoMo, Chuyển khoản). Hệ thống tự sinh mã đơn hàng dạng OD + timestamp, gửi email xác nhận đơn hàng tự động.'),
+        ('Áp dụng mã giảm giá (Voucher)', 'Nhập mã giảm giá tại trang thanh toán. Hệ thống kiểm tra mã hợp lệ (còn hiệu lực, chưa hết lượt dùng, đơn đủ giá trị tối thiểu). Hỗ trợ 2 loại: giảm tiền trực tiếp (fixed) và giảm phần trăm (percent). Hiển thị rõ tạm tính, số tiền giảm, và thành tiền sau giảm.'),
+        ('Đặt hàng & Thanh toán', 'Chọn địa chỉ giao hàng, chọn phương thức thanh toán (COD, MoMo, Chuyển khoản). Hệ thống tự sinh mã đơn hàng dạng OD + timestamp, áp dụng voucher giảm giá nếu có, gửi email xác nhận đơn hàng tự động.'),
         ('Theo dõi đơn hàng', 'Xem lịch sử đơn hàng với phân trang, lọc theo trạng thái (chờ xử lý, đang xử lý, đang giao, hoàn thành, đã hủy), xem chi tiết từng đơn, xuất hoá đơn PDF.'),
         ('Quản lý địa chỉ', 'Thêm/sửa/xóa nhiều địa chỉ giao hàng, đặt địa chỉ mặc định. Tích hợp API GHN để lấy danh sách Tỉnh/Thành → Quận/Huyện → Phường/Xã tự động.'),
         ('Sản phẩm yêu thích', 'Lưu/bỏ lưu sản phẩm yêu thích vào LocalStorage (không cần đăng nhập), xem trang danh sách sản phẩm yêu thích riêng. Icon trái tim hiển thị trên mọi card sản phẩm.'),
         ('Trợ lý AI tư vấn', 'Chatbot AI tư vấn mua sắm tích hợp Google Gemini API, gợi ý sản phẩm dựa trên ngữ cảnh hội thoại và dữ liệu thực từ CSDL. Lịch sử chat lưu LocalStorage, giới hạn 20 lượt/phiên.'),
         ('Đổi mật khẩu & Hồ sơ', 'Xem và cập nhật thông tin cá nhân (họ tên, SĐT), đổi mật khẩu với xác minh mật khẩu cũ.'),
+        ('Game Lắc Hũ nhận Voucher', 'Chơi mini quiz Đúng/Sai hàng ngày (5 câu miễn phí/ngày + bonus từ mua hàng). Trả lời đúng 3 câu liên tiếp (streak) → kích hoạt animation lắc hũ → xác suất trúng voucher theo % cấu hình. Giao diện: progress bar streak, animation lắc hũ, hiển thị mã voucher khi trúng.'),
     ])
     
     doc.add_heading('2.2.2. Yêu cầu chức năng phía Quản trị viên', level=3)
@@ -116,6 +118,8 @@ def main():
         ('Quản lý Đơn hàng', 'Xem danh sách đơn hàng với bộ lọc (ngày bắt đầu/kết thúc, trạng thái, ID khách hàng). Cập nhật trạng thái đơn: pending → processing → shipping → completed/cancelled. Xác nhận/hủy thanh toán chuyển khoản (markPaid/markUnpaid).'),
         ('Quản lý Người dùng', 'Xem danh sách người dùng (email/SĐT được che bảo mật bằng dấu *, bấm icon mắt để hiện). Nâng/hạ quyền Admin (bảo vệ admin cuối cùng), xóa tài khoản.'),
         ('Quản lý Banner', 'CRUD banner quảng cáo hiển thị trên trang chủ, upload ảnh hoặc nhập URL, sắp xếp thứ tự hiển thị, bật/tắt hiển thị.'),
+        ('Quản lý Mã giảm giá (Voucher)', 'CRUD mã giảm giá. Cấu hình: mã code (unique), loại giảm (percent/fixed), mức giảm, đơn tối thiểu áp dụng, thời hạn (start_date/end_date), giới hạn lượt dùng (usage_limit), bật/tắt kích hoạt. Theo dõi số lượt đã dùng (used_count).'),
+        ('Quản lý Game Lắc Hũ', 'Cấu hình game: bật/tắt (game_enabled), số câu hỏi/ngày (daily_questions), số câu đúng liên tiếp để lắc hũ (streak_required), tỷ lệ trúng % (win_probability), chọn voucher thưởng (game_voucher_id). CRUD ngân hàng câu hỏi Đúng/Sai với giải thích.'),
         ('Quản lý Section trang chủ', 'Tùy chỉnh các khu vực hiển thị sản phẩm trên trang chủ: Sản phẩm nổi bật (type=1), Sản phẩm mới (type=2), Theo danh mục (type=3). Kéo thả sắp xếp thứ tự, bật/tắt.'),
         ('Cài đặt hệ thống', 'Cấu hình tên website, logo, mô tả. Cấu hình thanh toán: bank_bin, bank_name, bank_account_no, bank_account_name cho VietQR.'),
     ])
@@ -152,6 +156,8 @@ flowchart LR
         UC11(Luu SP yeu thich)
         UC12(Chat voi AI tu van)
         UC13(Xuat hoa don PDF)
+        UC14(Ap dung ma giam gia)
+        UC15(Choi Game Lac Hu)
     end
     KH --- UC1
     KH --- UC2
@@ -166,6 +172,8 @@ flowchart LR
     KH --- UC11
     KH --- UC12
     KH --- UC13
+    KH --- UC14
+    KH --- UC15
 """
     add_diagram(doc, 'Use Case - Phía Khách hàng', uc_client, 'd01.png')
     
@@ -184,6 +192,8 @@ flowchart LR
         ('Lưu SP yêu thích', 'Khách hàng', 'Toggle trái tim trên card SP, lưu vào LocalStorage trình duyệt.', 'Không cần đăng nhập', 'Click icon trái tim → toggleWishlist() JS → Lưu/xóa khỏi localStorage → Cập nhật badge + icon trái tim.'),
         ('Chat với AI tư vấn', 'Khách hàng', 'Hỏi đáp với chatbot AI về sản phẩm, nhận gợi ý SP phù hợp.', 'Không cần đăng nhập', 'Nhập câu hỏi → POST /ai/consult → extractKeywords → Query DB tìm SP liên quan → Gọi Gemini API → Trả về reply + suggested products.'),
         ('Xuất hoá đơn PDF', 'Khách hàng', 'Tải xuống file PDF hoá đơn cho đơn hàng đã đặt.', 'Đã đăng nhập, có đơn hàng', 'Click "Tải hoá đơn" → GET /orders/{id}/invoice → Render Blade template → dompdf stream download.'),
+        ('Áp dụng mã giảm giá', 'Khách hàng', 'Nhập mã voucher tại trang checkout để được giảm giá đơn hàng.', 'Đã đăng nhập, có giỏ hàng', 'Nhập mã code → POST /cart/voucher → Voucher::where(code) → isValidForAmount(total) kiểm tra: is_active, usage_limit, start_date/end_date, min_order_amount → Lưu voucher vào session → Hiển thị số tiền giảm.'),
+        ('Chơi Game Lắc Hũ', 'Khách hàng', 'Chơi mini quiz Đúng/Sai để nhận cơ hội lắc hũ trúng voucher.', 'Đã đăng nhập, game đang bật', 'GET /game → firstOrCreate GameSession → fetch random QuizQuestion → trả lời Đúng/Sai → đúng: streak+1, sai: streak=0 → đủ streak → lắc hũ → rand(1,100) <= win_probability → trúng: nhận voucher code.'),
     ])
     
     # =============================================
@@ -208,6 +218,9 @@ flowchart LR
         A10(Quan ly Section trang chu)
         A11(Cai dat he thong)
         A12(Xuat bao cao PDF)
+        A13(Quan ly Ma giam gia)
+        A14(Quan ly Game Lac Hu)
+        A15(Quan ly Cau hoi Quiz)
     end
     AD --- A1
     AD --- A2
@@ -221,6 +234,9 @@ flowchart LR
     AD --- A10
     AD --- A11
     AD --- A12
+    AD --- A13
+    AD --- A14
+    AD --- A15
 """
     add_diagram(doc, 'Use Case - Phía Quản trị viên', uc_admin, 'd02.png')
     
@@ -236,6 +252,8 @@ flowchart LR
         ('Quản lý Section trang chủ', 'Tùy chỉnh khu vực hiển thị SP trên trang chủ.', 'Index: orderBy order. Create: chọn type (1=nổi bật, 2=mới, 3=theo danh mục) + chọn categories. UpdateOrder: AJAX cập nhật thứ tự hàng loạt. ToggleActive: bật/tắt hiển thị.'),
         ('Cài đặt hệ thống', 'Cấu hình website và thông tin ngân hàng.', 'Index: load all settings keyed by key. Update: validate + updateOrCreate cho site_name, site_description, logo (upload file), bank_bin, bank_name, bank_account_no, bank_account_name.'),
         ('Xuất báo cáo PDF', 'Xuất báo cáo doanh thu ra file PDF.', 'GET /admin/dashboard/export-pdf → tính lại metrics + top 10 SP → render Blade template admin.dashboard.pdf → Barryvdh DomPDF stream download.'),
+        ('Quản lý Mã giảm giá', 'CRUD mã voucher giảm giá cho khách hàng.', 'Index: paginate 10, hiển thị code/mức giảm/điều kiện/thời hạn/lượt dùng. Create/Store: validate code unique + discount_type + discount_value + min_order_amount + start_date/end_date + usage_limit + is_active. Edit/Update: sửa thông tin. Destroy: xóa voucher.'),
+        ('Quản lý Game Lắc Hũ', 'Cấu hình và CRUD câu hỏi quiz cho game tặng voucher.', 'index: load GameConfig (5 key). update: set game_enabled, daily_questions, streak_required, win_probability, game_voucher_id. questions: paginate 10 QuizQuestion. storeQuestion/updateQuestion: validate question + is_correct_true + explanation + is_active. destroyQuestion: xóa.'),
     ])
     
     # =============================================
@@ -260,12 +278,15 @@ graph TD
     B --> B6[Quan ly dia chi]
     B --> B7[Wishlist - Yeu thich]
     B --> B8[AI tu van]
+    B --> B9[Game Lac Hu]
     C --> C1[QL San pham va Danh muc]
     C --> C2[QL Don hang]
     C --> C3[QL Nguoi dung]
     C --> C4[QL Banner va Section]
     C --> C5[Thong ke va Bao cao]
     C --> C6[Cai dat he thong]
+    C --> C7[Quan ly Ma giam gia]
+    C --> C8[Quan ly Game va Cau hoi]
     D --> D1[COD - Thanh toan khi nhan]
     D --> D2[MoMo e-Wallet]
     D --> D3[Chuyen khoan VietQR]
@@ -293,6 +314,14 @@ graph TD
         ('QL Banner & Section', 'Admin\\BannerController, Admin\\HomeSectionController', 'Banner: CRUD + upload. Section: CRUD + updateOrder (AJAX bulk) + toggleActive. Type: 1=featured, 2=new, 3=by category.'),
         ('Thống kê & Báo cáo', 'Admin\\DashboardController', 'index: count orders, sum revenue, count users, top 5 SP (JOIN order_items). exportPdf: top 10 SP → dompdf download.'),
         ('Cài đặt hệ thống', 'Admin\\SettingController', 'index: load all key-value. update: updateOrCreate cho site_name, site_description, logo, bank_bin, bank_name, bank_account_no, bank_account_name.'),
+        ('QL Mã giảm giá', 'Admin\\VoucherController', 'CRUD đầy đủ. Store: validate code unique, discount_type (percent/fixed), discount_value, min_order_amount, start_date/end_date, usage_limit, is_active. Index: paginate 10, hiển thị used_count/usage_limit. Destroy: xóa voucher.'),
+        ('QL Game Lắc Hũ', 'Admin\\GameController', 'index: load 5 GameConfig key-value + danh sách vouchers active. update: validate + GameConfig::set() cho 5 cấu hình. questions: paginate 10. storeQuestion/updateQuestion/destroyQuestion: CRUD QuizQuestion.'),
+    ])
+    
+    doc.add_heading('Phân hệ Game Tương tác', level=4)
+    add_table(doc, ['Chức năng', 'Controller xử lý', 'Mô tả nghiệp vụ'], [
+        ('Game Lắc Hũ (Client)', 'Client\\GameController', 'index: kiểm tra game_enabled → firstOrCreate GameSession (user_id + today). getQuestion: query QuizQuestion active random, trả JSON. answerQuestion: so sánh is_correct_true == answer → đúng: streak+1, sai: streak=0. shakeJar: kiểm tra streak >= streak_required → rand(1,100) <= win_probability → trúng: trả voucher code.'),
+        ('Bonus câu hỏi', 'Admin\\OrderController', 'Khi đơn chuyển status=completed → tăng bonus_questions trong game_sessions của user → khách có thêm lượt chơi.'),
     ])
     
     doc.add_heading('Phân hệ Thanh toán', level=4)
@@ -557,13 +586,14 @@ sequenceDiagram
     
     doc.add_paragraph('Mô tả chi tiết từng bước:')
     add_steps(doc, [
-        'Khách hàng ở trang /checkout chọn địa chỉ giao hàng (shipping_address_id), phương thức thanh toán (payment_method: cod/momo/bank_transfer), và nhập ghi chú (notes).',
+        'Khách hàng ở trang /checkout chọn địa chỉ giao hàng (shipping_address_id), phương thức thanh toán (payment_method: cod/momo/bank_transfer), và nhập ghi chú (notes). Có thể nhập mã giảm giá (voucher) trước khi đặt hàng.',
         'Browser gửi POST /orders. OrderController validate: address_id phải thuộc về user hiện tại, payment_method phải hợp lệ.',
         'Lấy mảng cart từ session, kiểm tra giỏ hàng không rỗng. Nếu rỗng → redirect về /cart kèm lỗi.',
-        'Tính tổng tiền total_amount = Σ(price × quantity) cho tất cả sản phẩm trong giỏ.',
-        'Tạo bản ghi Order: order_number = "OD" + date("YmdHis") + random digits (đảm bảo unique), status = "pending", payment_status = "pending".',
+        'Tính tổng tiền total = Σ(price × quantity) cho tất cả sản phẩm trong giỏ.',
+        'Kiểm tra voucher trong session: Nếu có voucher → gọi $voucher->isValidForAmount($total) kiểm tra hợp lệ → gọi $voucher->calculateDiscount($total) tính số tiền giảm (percent: total × value/100, fixed: value) → finalTotal = total - discountAmount → increment used_count.',
+        'Tạo bản ghi Order: order_number = "OD" + date("YmdHis") + random digits, status = "pending", payment_status = "pending", total_amount = finalTotal (sau giảm), voucher_id = voucher.id nếu có, discount_amount = số tiền được giảm.',
         'Vòng lặp tạo OrderItem cho mỗi sản phẩm trong giỏ: ghi nhận order_id, product_id, quantity, price (giá tại thời điểm mua), subtotal = price × quantity.',
-        'Xóa session cart: session()->forget("cart"). Giỏ hàng trở về trống.',
+        'Xóa session cart VÀ session voucher: session()->forget(["cart", "voucher"]). Giỏ hàng và mã giảm giá trở về trống.',
         'Gửi email xác nhận đơn hàng tự động qua Mail::to($user)->send(new OrderPlaced($order)).',
         'Redirect theo phương thức thanh toán: MoMo → /payment/momo/{order_id}, Chuyển khoản → /payment/bank/{order_id}, COD → /orders/{order_id} (trang chi tiết đơn).',
     ])
@@ -742,6 +772,73 @@ sequenceDiagram
         'Controller validate trạng thái mới phải nằm trong enum cho phép, cập nhật cột status trong bảng orders, redirect kèm thông báo thành công.',
     ])
     
+    # --- Diagram: Game Quiz Sequence ---
+    doc.add_heading('3.2.9. Sơ đồ tuần tự - Game Lắc Hũ nhận Voucher', level=3)
+    doc.add_paragraph('Mô tả luồng chơi game mini quiz từ khi khách hàng vào trang game đến khi lắc hũ nhận kết quả:')
+    
+    seq_game = """
+sequenceDiagram
+    actor KH as Khach hang
+    participant Browser
+    participant GameCtrl as Client/GameController
+    participant GS as GameSession
+    participant QQ as QuizQuestion
+    participant GC as GameConfig
+    participant V as Voucher
+    
+    KH->>Browser: Truy cap /game
+    Browser->>GameCtrl: GET /game
+    GameCtrl->>GC: get(game_enabled)
+    GC-->>GameCtrl: 1 (bat)
+    GameCtrl->>GS: firstOrCreate(user_id, today)
+    GS-->>GameCtrl: session data
+    GameCtrl-->>Browser: Render game UI
+    
+    KH->>Browser: Nhan Bat dau
+    Browser->>GameCtrl: POST /game/question
+    GameCtrl->>GS: canPlay()?
+    GS-->>GameCtrl: true
+    GameCtrl->>QQ: active().inRandomOrder().first()
+    QQ-->>GameCtrl: {id, question}
+    GameCtrl-->>Browser: JSON {id, question}
+    
+    KH->>Browser: Chon Dung hoac Sai
+    Browser->>GameCtrl: POST /game/answer
+    GameCtrl->>QQ: find(question_id)
+    GameCtrl->>GS: update streak
+    GS-->>GameCtrl: {is_correct, streak, can_shake}
+    GameCtrl-->>Browser: JSON ket qua
+    
+    alt Du streak (can_shake = true)
+        Browser->>Browser: Hien animation lac hu
+        KH->>Browser: Nhan vao hu
+        Browser->>GameCtrl: POST /game/shake
+        GameCtrl->>GC: get(win_probability)
+        GameCtrl->>GameCtrl: rand(1,100)
+        alt Trung thuong
+            GameCtrl->>V: find(game_voucher_id)
+            V-->>GameCtrl: voucher data
+            GameCtrl-->>Browser: {success, voucher code}
+            Browser-->>KH: Hien ma voucher
+        else Khong trung
+            GameCtrl-->>Browser: {success false}
+            Browser-->>KH: Chuc may man lan sau
+        end
+    end
+"""
+    add_diagram(doc, 'Sơ đồ tuần tự - Game Lắc Hũ', seq_game, 'd18.png')
+    
+    doc.add_paragraph('Mô tả chi tiết từng bước:')
+    add_steps(doc, [
+        'Khách hàng đã đăng nhập truy cập /game. GameController kiểm tra game_enabled từ bảng game_configs. Nếu tắt → redirect về trang chủ.',
+        'Tạo hoặc lấy GameSession::firstOrCreate(user_id + today): đảm bảo mỗi user chỉ có 1 phiên chơi/ngày. Hiển thị: lượt còn lại, streak hiện tại, progress bar ngôi sao.',
+        'Nhấn "Bắt đầu": POST /game/question. Controller kiểm tra canPlay() (còn lượt chơi không). Lấy câu hỏi ngẫu nhiên từ QuizQuestion::active()->inRandomOrder()->first().',
+        'Khách chọn "Đúng" hoặc "Sai": POST /game/answer. So sánh với is_correct_true: đúng → correct_streak += 1, sai → correct_streak = 0. Cập nhật questions_answered += 1.',
+        'Nếu correct_streak >= streak_required (mặc định 3): can_shake = true. Client ẩn khu vực câu hỏi, hiển animation hũ quà với CSS @keyframes shake.',
+        'Khách nhấn vào hũ: animation shake 2 giây → POST /game/shake. Server reset streak = 0, tạo rand(1,100). Nếu <= win_probability → trúng.',
+        'Trúng: kiểm tra voucher (game_voucher_id) còn hợp lệ (is_active + usage_limit). Trả về mã voucher code → client hiển mã + nút sao chép. Không trúng: hiển "Chúc may mắn lần sau", quay lại chơi nếu còn lượt.',
+    ])
+    
     # =============================================
     # 3.3 State Diagrams
     # =============================================
@@ -881,6 +978,19 @@ erDiagram
         string ward_name
         boolean is_default
     }
+    vouchers ||--o{ orders : applied_to
+    vouchers {
+        bigint id PK
+        string code UK
+        enum discount_type
+        decimal discount_value
+        decimal min_order_amount
+        datetime start_date
+        datetime end_date
+        integer usage_limit
+        integer used_count
+        boolean is_active
+    }
     banners {
         bigint id PK
         string title
@@ -901,6 +1011,30 @@ erDiagram
         text value_col
         string type
     }
+    users ||--o{ game_sessions : plays
+    quiz_questions {
+        bigint id PK
+        text question
+        boolean is_correct_true
+        text explanation
+        boolean is_active
+    }
+    game_sessions {
+        bigint id PK
+        bigint user_id FK
+        date date_col
+        integer questions_answered
+        integer correct_streak
+        integer total_correct
+        integer bonus_questions
+        boolean has_won_today
+    }
+    game_configs {
+        bigint id PK
+        string key_col UK
+        text value_col
+        text description
+    }
 """
     add_diagram(doc, 'Sơ đồ quan hệ thực thể (ERD)', erd, 'd15.png')
     
@@ -914,6 +1048,8 @@ erDiagram
         ('Product - OrderItem', 'products', 'order_items', '1:N', 'order_items.product_id → products.id', 'Một sản phẩm xuất hiện trong nhiều order items. Xóa product → cascade.'),
         ('Order - OrderItem', 'orders', 'order_items', '1:N', 'order_items.order_id → orders.id', 'Một đơn hàng chứa nhiều chi tiết sản phẩm. Xóa order → cascade xóa items.'),
         ('Order - Address', 'orders', 'addresses', 'N:1', 'orders.shipping_address_id → addresses.id', 'Nhiều đơn hàng có thể dùng chung một địa chỉ giao hàng.'),
+        ('Voucher - Order', 'vouchers', 'orders', '1:N', 'orders.voucher_id → vouchers.id (NULL ON DELETE)', 'Một mã giảm giá có thể được sử dụng cho nhiều đơn hàng. Xóa voucher → set null.'),
+        ('User - GameSession', 'users', 'game_sessions', '1:N', 'game_sessions.user_id → users.id CASCADE', 'Một user có nhiều phiên chơi game (1 phiên/ngày). Xóa user → cascade xóa sessions. UNIQUE(user_id, date).'),
     ])
     
     # --- Data Dictionary ---
@@ -964,7 +1100,9 @@ erDiagram
             ('payment_method', 'VARCHAR(255)', 'NULLABLE', 'cod/momo/bank_transfer'),
             ('payment_transaction_id', 'VARCHAR(255)', 'NULLABLE', 'Mã GD thanh toán'),
             ('payment_payload', 'JSON', 'NULLABLE', 'Dữ liệu từ cổng TT'),
-            ('total_amount', 'DECIMAL(12,2)', 'NOT NULL', 'Tổng tiền'),
+            ('total_amount', 'DECIMAL(12,2)', 'NOT NULL', 'Tổng tiền (sau giảm giá)'),
+            ('voucher_id', 'BIGINT UNSIGNED', 'FK → vouchers.id NULL ON DELETE, NULLABLE', 'Mã giảm giá đã áp dụng'),
+            ('discount_amount', 'DECIMAL(12,2)', 'DEFAULT 0', 'Số tiền được giảm'),
             ('notes', 'TEXT', 'NULLABLE', 'Ghi chú'),
             ('paid_at', 'TIMESTAMP', 'NULLABLE', 'Thời điểm thanh toán'),
         ]),
@@ -1016,6 +1154,41 @@ erDiagram
             ('type', 'VARCHAR(255)', 'DEFAULT string', 'Kiểu dữ liệu'),
             ('description', 'VARCHAR(255)', 'NULLABLE', 'Mô tả'),
         ]),
+        ('Bảng vouchers - Mã giảm giá (Voucher)', [
+            ('id', 'BIGINT UNSIGNED', 'PK, AUTO_INCREMENT', 'Khóa chính'),
+            ('code', 'VARCHAR(255)', 'UNIQUE, NOT NULL', 'Mã code giảm giá (VD: SALE50, GIAM10K)'),
+            ('discount_type', 'ENUM(percent, fixed)', 'DEFAULT fixed', 'Loại giảm: percent = %, fixed = tiền trực tiếp'),
+            ('discount_value', 'DECIMAL(12,2)', 'NOT NULL', 'Mức giảm: VD 10 (= 10%) hoặc 50000 (= 50.000đ)'),
+            ('min_order_amount', 'DECIMAL(12,2)', 'DEFAULT 0', 'Giá trị đơn tối thiểu để áp dụng mã'),
+            ('start_date', 'DATETIME', 'NULLABLE', 'Ngày bắt đầu hiệu lực'),
+            ('end_date', 'DATETIME', 'NULLABLE', 'Ngày hết hạn'),
+            ('usage_limit', 'INTEGER', 'NULLABLE', 'Số lượt dùng tối đa (NULL = vô hạn)'),
+            ('used_count', 'INTEGER', 'DEFAULT 0', 'Số lượt đã sử dụng'),
+            ('is_active', 'BOOLEAN', 'DEFAULT true', 'Trạng thái kích hoạt'),
+        ]),
+        ('Bảng quiz_questions - Ngân hàng câu hỏi Quiz', [
+            ('id', 'BIGINT UNSIGNED', 'PK, AUTO_INCREMENT', 'Khóa chính'),
+            ('question', 'TEXT', 'NOT NULL', 'Nội dung câu hỏi Đúng/Sai'),
+            ('is_correct_true', 'BOOLEAN', 'NOT NULL', 'true = mệnh đề đúng, false = mệnh đề sai'),
+            ('explanation', 'TEXT', 'NULLABLE', 'Giải thích hiển khi trả lời sai'),
+            ('is_active', 'BOOLEAN', 'DEFAULT true', 'Bật/tắt câu hỏi'),
+        ]),
+        ('Bảng game_sessions - Phiên chơi game hàng ngày', [
+            ('id', 'BIGINT UNSIGNED', 'PK, AUTO_INCREMENT', 'Khóa chính'),
+            ('user_id', 'BIGINT UNSIGNED', 'FK → users.id CASCADE', 'Người chơi'),
+            ('date', 'DATE', 'NOT NULL, UNIQUE(user_id, date)', 'Ngày chơi (đảm bảo 1 session/user/ngày)'),
+            ('questions_answered', 'INTEGER', 'DEFAULT 0', 'Số câu đã trả lời'),
+            ('correct_streak', 'INTEGER', 'DEFAULT 0', 'Chuỗi đúng liên tiếp hiện tại'),
+            ('total_correct', 'INTEGER', 'DEFAULT 0', 'Tổng câu đúng trong ngày'),
+            ('bonus_questions', 'INTEGER', 'DEFAULT 0', 'Lượt thưởng từ mua hàng'),
+            ('has_won_today', 'BOOLEAN', 'DEFAULT false', 'Đã trúng thưởng trong ngày chưa'),
+        ]),
+        ('Bảng game_configs - Cấu hình game', [
+            ('id', 'BIGINT UNSIGNED', 'PK, AUTO_INCREMENT', 'Khóa chính'),
+            ('key', 'VARCHAR(255)', 'UNIQUE', 'Tên cấu hình (game_enabled, daily_questions, streak_required, win_probability, game_voucher_id)'),
+            ('value', 'TEXT', 'NULLABLE', 'Giá trị cấu hình'),
+            ('description', 'TEXT', 'NULLABLE', 'Mô tả cấu hình'),
+        ]),
     ]
     
     for title, cols in tables_dd:
@@ -1025,7 +1198,7 @@ erDiagram
     
     # --- Diagram 16: Class Diagram ---
     doc.add_heading('3.4.3. Sơ đồ lớp (Class Diagram) - Quan hệ Model', level=3)
-    doc.add_paragraph('Sơ đồ lớp thể hiện 7 Eloquent Model chính và các mối quan hệ giữa chúng (belongsTo, hasMany):')
+    doc.add_paragraph('Sơ đồ lớp thể hiện 11 Eloquent Model chính và các mối quan hệ giữa chúng (belongsTo, hasMany):')
     
     class_d = """
 classDiagram
@@ -1076,6 +1249,41 @@ classDiagram
         +string image_path
         +product() BelongsTo
     }
+    class Voucher {
+        +bigint id
+        +string code
+        +enum discount_type
+        +decimal discount_value
+        +decimal min_order_amount
+        +isValidForAmount() bool
+        +calculateDiscount() decimal
+    }
+    class GameSession {
+        +bigint id
+        +date date
+        +integer questions_answered
+        +integer correct_streak
+        +integer bonus_questions
+        +boolean has_won_today
+        +user() BelongsTo
+        +questionsAvailable() int
+        +canPlay() bool
+        +hasStreak() bool
+    }
+    class QuizQuestion {
+        +bigint id
+        +text question
+        +boolean is_correct_true
+        +text explanation
+        +boolean is_active
+        +scopeActive() Builder
+    }
+    class GameConfig {
+        +string key
+        +text value
+        +get() static
+        +set() static
+    }
     User "1" --> "*" Order
     User "1" --> "*" Address
     Category "1" --> "*" Product
@@ -1084,6 +1292,8 @@ classDiagram
     Product "1" --> "*" ProductImage
     Order "1" --> "*" OrderItem
     Order "*" --> "1" Address
+    Voucher "1" --> "*" Order
+    User "1" --> "*" GameSession
 """
     add_diagram(doc, 'Sơ đồ lớp - Quan hệ Model Eloquent', class_d, 'd16.png')
     
@@ -1103,6 +1313,9 @@ classDiagram
         ('Order', 'shippingAddress()', 'belongsTo(Address)', 'Một đơn hàng giao đến một địa chỉ.'),
         ('OrderItem', 'order()', 'belongsTo(Order)', 'Một chi tiết thuộc về một đơn hàng.'),
         ('OrderItem', 'product()', 'belongsTo(Product)', 'Một chi tiết liên kết đến một sản phẩm.'),
+        ('GameSession', 'user()', 'belongsTo(User)', 'Một phiên game thuộc về một user. firstOrCreate theo (user_id + today).'),
+        ('GameConfig', 'get(key)', 'Static helper', 'Truy vấn giá trị cấu hình game theo key. Trả về default nếu không tìm thấy.'),
+        ('QuizQuestion', 'scopeActive()', 'Scope', 'Lọc câu hỏi đang active. Sử dụng: QuizQuestion::active()->inRandomOrder().'),
     ])
     
     # --- 3.5 Công nghệ ---
@@ -1214,6 +1427,34 @@ classDiagram
         'HTML structure: Mỗi ô chứa 2 span: .masked-text (hiển thị bản che) và .full-text.d-none (ẩn bản đầy đủ). Kèm icon <i class="fas fa-eye toggle-eye">.',
         'JavaScript toggle: Click icon mắt → toggle class d-none giữa masked-text và full-text, đổi icon fa-eye ↔ fa-eye-slash.',
         'Kết quả: Admin thấy "cu*****@gmail.com" và "090****123" mặc định. Bấm icon mắt → hiện đầy đủ. Bấm lại → ẩn.',
+    ])
+    
+    doc.add_heading('3.7.7. Module Mã giảm giá (Voucher)', level=3)
+    doc.add_paragraph('Quy trình tạo và áp dụng mã giảm giá cho khách hàng:')
+    add_steps(doc, [
+        'Admin tạo voucher qua /admin/vouchers/create: nhập mã code (unique, viết hoa), chọn loại giảm (discount_type: "percent" hoặc "fixed"), nhập mức giảm (discount_value), đơn tối thiểu (min_order_amount), thời hạn (start_date/end_date), giới hạn lượt dùng (usage_limit), bật/tắt (is_active).',
+        'Khách hàng tại trang checkout (/checkout) nhập mã voucher vào ô input → POST /cart/voucher (CartController@applyVoucher).',
+        'Controller truy vấn Voucher::where("code", $code)->first(). Nếu không tìm thấy → redirect back kèm lỗi "Mã giảm giá không tồn tại".',
+        'Gọi $voucher->isValidForAmount($total) kiểm tra 5 điều kiện: (1) is_active = true, (2) used_count < usage_limit (hoặc usage_limit = null), (3) start_date <= now, (4) end_date >= now, (5) total >= min_order_amount.',
+        'Nếu mã hợp lệ: lưu object Voucher vào session(["voucher" => $voucher]). Giao diện checkout hiển thị: dòng "Tạm tính" (tổng gốc), dòng "Giảm giá (CODE)" (số tiền giảm, màu đỏ), dòng "Thành tiền" (tổng sau giảm, chữ lớn hơn).',
+        'Gỡ mã: Nút "Gỡ mã" gửi DELETE /cart/voucher (CartController@removeVoucher) → session()->forget("voucher") → redirect back.',
+        'Khi đặt hàng (OrderController@store): lấy voucher từ session → tính discountAmount bằng calculateDiscount($total) → finalTotal = total - discountAmount → lưu voucher_id và discount_amount vào bảng orders → tăng used_count += 1.',
+        'calculateDiscount($amount): Nếu discount_type = "percent" → discount = amount × (discount_value / 100). Nếu discount_type = "fixed" → discount = discount_value.',
+    ])
+    
+    doc.add_heading('3.7.8. Module Game Lắc Hũ tặng Voucher', level=3)
+    doc.add_paragraph('Quy trình chi tiết của tính năng mini game quiz tương tác:')
+    add_steps(doc, [
+        'Admin cấu hình game tại /admin/game: bật/tắt game (game_enabled), số câu miễn phí/ngày (daily_questions, mặc định 5), số câu đúng liên tiếp để lắc hũ (streak_required, mặc định 3), tỷ lệ trúng % (win_probability, mặc định 30%), chọn voucher thưởng (game_voucher_id). Tất cả lưu vào bảng game_configs dạng key-value.',
+        'Admin quản lý ngân hàng câu hỏi tại /admin/game/questions: CRUD câu hỏi dạng Đúng/Sai (question + is_correct_true + explanation + is_active). Phân trang 10 câu/trang.',
+        'Khách hàng truy cập /game (yêu cầu đăng nhập): kiểm tra game_enabled == 1, nếu không redirect về home. Tạo GameSession::firstOrCreate(user_id + Carbon::today()) → đảm bảo mỗi ngày chỉ có 1 session.',
+        'Hiển thị giao diện: lượt còn lại (questionsAvailable = daily_questions + bonus_questions - questions_answered), chuỗi đúng hiện tại (correct_streak/streak_required), progress bar ngôi sao.',
+        'Nhấn "Bắt đầu" → POST /game/question: query QuizQuestion::active()->inRandomOrder()->first() → trả về JSON {id, question}.',
+        'Khách chọn "Đúng" hoặc "Sai" → POST /game/answer {question_id, answer}: so sánh answer == is_correct_true. Đúng: correct_streak += 1, total_correct += 1. Sai: correct_streak = 0. Cập nhật questions_answered += 1.',
+        'Nếu correct_streak >= streak_required: client hiển animation lắc hũ (CSS @keyframes shake + hình hũ quà). Khách nhấn vào hũ → animation shake 2 giây.',
+        'Sau animation, POST /game/shake: server tạo rand(1,100), nếu <= win_probability → trúng. Kiểm tra voucher (game_voucher_id): is_active và used_count < usage_limit. Nếu hợp lệ → trả về {success: true, voucher: {code, discount_type, discount_value}}.',
+        'Trúng: hiển mã voucher code với nút "Sao chép mã" (navigator.clipboard.writeText). Không trúng: hiển "Chúc bạn may mắn lần sau". Cả hai đều reset correct_streak = 0.',
+        'Bonus lượt chơi: Khi Admin chuyển đơn hàng sang status=completed (OrderController@updateStatus) → tăng bonus_questions += 1 trong GameSession của user ngày hôm đó → khách có thêm lượt chơi.',
     ])
     
     # --- Diagram 17: Deployment ---

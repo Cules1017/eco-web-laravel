@@ -1,0 +1,86 @@
+[
+    {
+        "name": "Gạo ST25 Hữu Cơ Ông Cua Sóc Trăng",
+        "description": "Gạo ST25 - loại gạo ngon nhất thế giới năm 2019, được trồng theo phương pháp hữu cơ tại Sóc Trăng bởi kỹ sư Hồ Quang Cua. Hạt gạo dài trắng trong, cơm mềm dẻo, thơm hương dứa tự nhiên rất đặc trưng. Không sử dụng thuốc trừ sâu và phân bón hóa học. Đóng túi 5kg hút chân không.",
+        "price": 85000,
+        "stock": 200,
+        "image": "https://giagao.com/wp-content/uploads/2023/11/gao-ong-cua-st25-lua-tom.jpg",
+        "category": "Gạo và ngũ cốc",
+        "is_featured": true,
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-mb2jprtdbogc43",
+            "https://product.hstatic.net/200000876993/product/baobi5kg___gaoongdu_st25_hh_94c1a34984e84f97ad7cb673b6ee3a00_master.jpg",
+            "https://cf.shopee.vn/file/5bb61551198db0f7b93ff7341b5a2dee"
+        ]
+    },
+    {
+        "name": "Gạo ST24 Hữu Cơ Thượng Hạng",
+        "description": "Gạo ST24 đặc sản Sóc Trăng, anh em của giống ST25 nổi tiếng. Hạt gạo thon dài, trắng trong, cơm thơm nhẹ và mềm dẻo vừa phải. Được canh tác hoàn toàn hữu cơ, không thuốc bảo vệ thực vật. Phù hợp với khẩu vị người Việt miền Nam.",
+        "price": 75000,
+        "stock": 180,
+        "image": "http://aan.vn/images/companies/1/products/z3391377152354_b07ed54e34574baf80a9a2755b8354d4.jpg?1651744238403",
+        "category": "Gạo và ngũ cốc",
+        "is_featured": false,
+        "gallery": [
+            "https://bakafood.com/wp-content/uploads/2021/11/gao-ST24-bakafood-N.jpg",
+            "https://sieuthigao.vn/wp-content/uploads/2023/04/gao-st24-huu-co-hoa-sua-hop-1kg.webp",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lpyslqco4pivd3"
+        ]
+    },
+    {
+        "name": "Gạo Hương Lài Đồng Tháp",
+        "description": "Gạo Hương Lài đặc sản Miền Tây, nổi tiếng với hương thơm tự nhiên như hoa lài. Hạt dài mảnh, cơm mềm dẻo vừa phải, phù hợp với khẩu vị người Việt. Được canh tác bằng phương pháp truyền thống, đảm bảo sạch và an toàn. Túi 5kg.",
+        "price": 72000,
+        "stock": 150,
+        "image": "https://product.hstatic.net/200000342195/product/92b80b410061502e0ab55f23b95702c9.png_525x525q80_df5e6ccceab440dd9b76336cbdfbfdae_1024x1024.jpg",
+        "category": "Gạo và ngũ cốc",
+        "is_featured": false,
+        "gallery": [
+            "https://vn-live-01.slatic.net/p/1366a5cdecbc6b8a165d468c4f233b2e.jpg",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-m05o7q9rtc6l3e",
+            "https://lzd-img-global.slatic.net/g/p/805c9125f8e7b95fbfdb3f7e181f1c07.jpg_720x720q80.jpg"
+        ]
+    },
+    {
+        "name": "Gạo Lứt Đỏ Hữu Cơ ECOBA",
+        "description": "Gạo lứt đỏ nguyên cám hữu cơ ECOBA, giàu chất xơ và vitamin B, hỗ trợ giảm cân và ổn định đường huyết. Được trồng theo quy trình hữu cơ hoàn toàn, không sử dụng hóa chất, phù hợp cho người ăn kiêng và người tiểu đường. Hộp 1kg tiện dụng.",
+        "price": 68000,
+        "stock": 100,
+        "image": "https://cdn.hstatic.net/products/200000460455/g_o_l_t_d__h_u_c__ecoba__h_p_1kg__55d3da75797344aabdefe1b69f6c4509_master.png",
+        "category": "Gạo và ngũ cốc",
+        "is_featured": true,
+        "gallery": [
+            "https://product.hstatic.net/1000282430/product/gao_lut_do_e6e4ee95b10c42478b2abf4480fd8175_master.jpg",
+            "https://product.hstatic.net/200000423303/product/gao_lut_do_huu_co_ecoba__org_red_rice__15df2fc084b94c2cb8db8162f38c8a78_grande.jpg",
+            "https://sieuthigao.vn/wp-content/uploads/2023/03/gao-ecoba-huyet-rong.webp"
+        ]
+    },
+    {
+        "name": "Hạt Chia Hữu Cơ Organic Nhập Khẩu",
+        "description": "Hạt Chia hữu cơ nhập khẩu Mexico chứng nhận USDA Organic, siêu thực phẩm giàu Omega-3, protein và chất xơ. Hỗ trợ giảm cân, tăng cường năng lượng và cải thiện sức khỏe tim mạch. Có thể dùng làm Chia Pudding, thêm vào smoothie hoặc salad.",
+        "price": 120000,
+        "stock": 60,
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m1cmur13mvq42a",
+        "category": "Gạo và ngũ cốc",
+        "is_featured": false,
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m3naoo9xi8m9f6",
+            "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m9r12jbd8kka19",
+            "https://down-vn.img.susercontent.com/file/vn-11134201-23020-ldvkxnp6brnv3e"
+        ]
+    },
+    {
+        "name": "Ngũ Cốc Ăn Sáng Dinh Dưỡng Hữu Cơ",
+        "description": "Hỗn hợp ngũ cốc ăn sáng gồm yến mạch hữu cơ, hạt điều, hạt óc chó, nho khô và hạt bí rang. Bổ sung đầy đủ dinh dưỡng cho bữa sáng, không thêm đường tinh luyện và chất bảo quản. Phù hợp ăn cùng sữa tươi, sữa hạt hoặc sữa chua.",
+        "price": 145000,
+        "stock": 70,
+        "image": "https://thanhanfood.com.vn/wp-content/uploads/2023/01/TBA-200-SlimLeaf-PPH-c4ffe8a8-1b70-4711-a615-4f2d7c48db4f-e1710132328598-901x1024.png",
+        "category": "Gạo và ngũ cốc",
+        "is_featured": true,
+        "gallery": [
+            "https://down-vn.img.susercontent.com/file/sg-11134201-22120-ghfo8bj3xqlv3c",
+            "https://salt.tikicdn.com/ts/product/de/2d/d5/5513d85e95e241ba457084fd1dfc625a.jpg",
+            "https://cf.shopee.vn/file/cb44994c960b48d681f52390cda370cf"
+        ]
+    }
+]
