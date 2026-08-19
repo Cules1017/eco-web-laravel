@@ -13,7 +13,7 @@
                         <a href="{{ route('admin.game.index') }}" class="btn btn-secondary me-2">
                             <i class="fas fa-arrow-left"></i> Trở về cấu hình
                         </a>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createModal">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#createModal">
                             <i class="fas fa-plus"></i> Thêm câu hỏi
                         </button>
                     </div>
@@ -58,7 +58,7 @@
                                             @endif
                                         </td>
                                         <td>
-                                            <button class="btn btn-sm btn-info" data-bs-toggle="modal" data-bs-target="#editModal{{ $question->id }}">
+                                            <button class="btn btn-sm btn-info" data-toggle="modal" data-target="#editModal{{ $question->id }}">
                                                 <i class="fas fa-edit"></i>
                                             </button>
                                             <form action="{{ route('admin.game.questions.destroy', $question) }}" method="POST" class="d-inline" onsubmit="return confirm('Bạn có chắc chắn muốn xóa?');">
@@ -80,7 +80,9 @@
                                                     @method('PUT')
                                                     <div class="modal-header">
                                                         <h5 class="modal-title">Sửa câu hỏi</h5>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
                                                     </div>
                                                     <div class="modal-body">
                                                         <div class="mb-3">
@@ -104,7 +106,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
                                                         <button type="submit" class="btn btn-primary">Cập nhật</button>
                                                     </div>
                                                 </form>
@@ -137,7 +139,9 @@
                 @csrf
                 <div class="modal-header">
                     <h5 class="modal-title">Thêm câu hỏi mới</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
                 <div class="modal-body">
                     <div class="mb-3">
@@ -161,7 +165,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
                     <button type="submit" class="btn btn-primary">Thêm mới</button>
                 </div>
             </form>
