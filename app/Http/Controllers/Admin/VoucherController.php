@@ -24,7 +24,16 @@ class VoucherController extends Controller
         $validated = $request->validate([
             'code' => 'required|string|unique:vouchers,code',
             'discount_type' => 'required|in:percent,fixed',
-            'discount_value' => 'required|numeric|min:0',
+            'discount_value' => [
+                'required',
+                'numeric',
+                'min:0',
+                function ($attribute, $value, $fail) use ($request) {
+                    if ($request->input('discount_type') === 'percent' && $value > 100) {
+                        $fail('Mức giảm theo phần trăm không thể vượt quá 100%.');
+                    }
+                }
+            ],
             'min_order_amount' => 'nullable|numeric|min:0',
             'start_date' => 'nullable|date',
             'end_date' => 'nullable|date|after_or_equal:start_date',
@@ -49,7 +58,16 @@ class VoucherController extends Controller
         $validated = $request->validate([
             'code' => 'required|string|unique:vouchers,code,' . $voucher->id,
             'discount_type' => 'required|in:percent,fixed',
-            'discount_value' => 'required|numeric|min:0',
+            'discount_value' => [
+                'required',
+                'numeric',
+                'min:0',
+                function ($attribute, $value, $fail) use ($request) {
+                    if ($request->input('discount_type') === 'percent' && $value > 100) {
+                        $fail('Mức giảm theo phần trăm không thể vượt quá 100%.');
+                    }
+                }
+            ],
             'min_order_amount' => 'nullable|numeric|min:0',
             'start_date' => 'nullable|date',
             'end_date' => 'nullable|date|after_or_equal:start_date',
