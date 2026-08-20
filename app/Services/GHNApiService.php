@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Log;
  */
 class GHNApiService
 {
-    protected string $openApiUrl = 'https://provinces.open-api.vn/api';
+    protected string $openApiUrl = 'https://provinces.open-api.vn/api/v1';
     protected string $ghnBaseUrl;
     protected ?string $ghnToken;
 
