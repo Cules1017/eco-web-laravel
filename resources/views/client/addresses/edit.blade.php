@@ -144,11 +144,12 @@
         });
     }
 
-    fetch('{{ route('api.provinces') }}')
+    fetch('{{ route('api.provinces') }}?t=' + new Date().getTime())
         .then(r => r.json())
         .then(data => {
             fillSelect(provinceSel, data || [], 'ProvinceID', 'ProvinceName', currentProvince);
             if (provinceSel.value) {
+                provinceName.value = provinceSel.options[provinceSel.selectedIndex].dataset.name || '';
                 loadDistricts(provinceSel.value);
             }
         });
@@ -156,12 +157,13 @@
     function loadDistricts(provinceId) {
         districtSel.disabled = true;
         wardSel.disabled = true;
-        fetch('{{ route('api.districts') }}?province_id=' + encodeURIComponent(provinceId))
+        fetch('{{ route('api.districts') }}?province_id=' + encodeURIComponent(provinceId) + '&t=' + new Date().getTime())
             .then(r => r.json())
             .then(data => {
                 fillSelect(districtSel, data || [], 'DistrictID', 'DistrictName', currentDistrict);
                 districtSel.disabled = false;
                 if (districtSel.value) {
+                    districtName.value = districtSel.options[districtSel.selectedIndex].dataset.name || '';
                     loadWards(districtSel.value);
                 }
             });
@@ -169,7 +171,7 @@
 
     function loadWards(districtId) {
         wardSel.disabled = true;
-        fetch('{{ route('api.wards') }}?district_id=' + encodeURIComponent(districtId))
+        fetch('{{ route('api.wards') }}?district_id=' + encodeURIComponent(districtId) + '&t=' + new Date().getTime())
             .then(r => r.json())
             .then(data => {
                 fillSelect(wardSel, data || [], 'WardCode', 'WardName', currentWard);

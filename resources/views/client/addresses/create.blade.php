@@ -138,7 +138,7 @@
         });
     }
 
-    fetch('{{ route('api.provinces') }}')
+    fetch('{{ route('api.provinces') }}?t=' + new Date().getTime())
         .then(r => r.json())
         .then(data => {
             fillSelect(provinceSel, data || [], 'ProvinceID', 'ProvinceName', oldProvince);
@@ -151,7 +151,7 @@
     function loadDistricts(provinceId) {
         districtSel.disabled = true;
         wardSel.disabled = true;
-        fetch('{{ route('api.districts') }}?province_id=' + encodeURIComponent(provinceId))
+        fetch('{{ route('api.districts') }}?province_id=' + encodeURIComponent(provinceId) + '&t=' + new Date().getTime())
             .then(r => r.json())
             .then(data => {
                 fillSelect(districtSel, data || [], 'DistrictID', 'DistrictName', oldDistrict);
@@ -165,7 +165,7 @@
 
     function loadWards(districtId) {
         wardSel.disabled = true;
-        fetch('{{ route('api.wards') }}?district_id=' + encodeURIComponent(districtId))
+        fetch('{{ route('api.wards') }}?district_id=' + encodeURIComponent(districtId) + '&t=' + new Date().getTime())
             .then(r => r.json())
             .then(data => {
                 fillSelect(wardSel, data || [], 'WardCode', 'WardName', oldWard);
